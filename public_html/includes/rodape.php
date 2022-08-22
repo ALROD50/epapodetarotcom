@@ -2333,7 +2333,7 @@
 				// Conecta + Status + Mostra Chamada
 				function CreateSocketWrapper(){
 					// Conexão
-					var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NS');
+					var conn = new WebSocket('wss://epapodetarot.com.br/wss87/NS');
 					// Abre Conexão
 					conn.onopen = function(e) {
 						console.log("Connection established!!");

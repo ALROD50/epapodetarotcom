@@ -123,7 +123,7 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo' AND $tarolo
           // ###################################    WebSocket     ####################################################
 
           // Conecta o cliente no servidor com WebSocket para fazer a chamada
-          var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NS');
+          var conn = new WebSocket('wss://epapodetarot.com.br/wss87/NS');
           // Abre Conexão
           conn.onopen = function(e) {
             console.log("Connection established!");
