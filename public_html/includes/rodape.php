@@ -2415,18 +2415,10 @@
 	  		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	  		<style amp-boilerplate>
 		  		body {
-				    background-image: url('images/background.webp');
-				    background-size: 1920px 1169px;
-				    background-repeat: no-repeat;
-				    background-attachment: fixed;
+				    
 				}
 			    @media (max-width: 426px) {
-				    body {
-				        background-image: url('images/bgcel.webp');
-				        background-size: 338px 338px;
-				        background-repeat: inherit;
-				        background-attachment: fixed;
-				    }
+				    
 				}
 			</style>
 		 	<?php
