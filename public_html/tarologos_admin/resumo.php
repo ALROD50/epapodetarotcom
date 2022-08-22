@@ -16,7 +16,7 @@ function ConfirmaExclusao($id) {
 
 <?php
 //instancia o objeto PDO, conectando com o banco mysqli
-$conn = new PDO('mysqli:host=localhost;port=3306;dbname=tarotdeh_sistema', 'tarotdeh_sistema', 'AZ4xGDcBI,Q+');
+$conn = new PDO('mysqli:host=localhost;port=3306;dbname=epapodetarotcom_sistema', 'epapodetarotcom_67674', 'AZ4xGDcBI,Q+');
 $conn-> exec("set names utf8");
 
 //executa a instrução de consulta

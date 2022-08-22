@@ -24,8 +24,8 @@ include "filtro.php";
 */
 // o dsn é a string para conexão com o PDO que pode variar de banco para banco
 // Por isto, preste atenção que nesta string temos o driver, o host e o banco(dbname)
-defined('DSN') or define('DSN', 'mysql:host=localhost;dbname=tarotdeh_sistema');
-defined('USUARIO') or define('USUARIO', 'tarotdeh_sistema');
+defined('DSN') or define('DSN', 'mysql:host=localhost;dbname=epapodetarotcom_sistema');
+defined('USUARIO') or define('USUARIO', 'epapodetarotcom_67674');
 defined('SENHA') or define('SENHA', 'AZ4xGDcBI,Q+');
 
 /*

@@ -1,9 +1,9 @@
 <?php
 function conexao () {
 $servername = "localhost";
-$username = "tarotdeh_sistema";
+$username = "epapodetarotcom_sistema";
 $password = "AZ4xGDcBI,Q+";
-$database = "tarotdeh_sistema";
+$database = "epapodetarotcom_67674";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password,
     array(
