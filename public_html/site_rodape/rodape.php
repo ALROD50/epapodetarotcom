@@ -26,7 +26,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 	<div class="row" style="font-size:20px;">
 		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			<h2 class="title"><i class="fas fa-ankh"></i> Quem Somos?</h2>
-			<p><amp-img src="images/logo3.webp" width="279" height="61" alt="É Papo de Tarot"></p></amp-img>
+			<p><img src="images/logo3.webp" width="279" height="61" alt="É Papo de Tarot"></p></img>
 			<p style="color:#000;">É Papo de Tarot é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online. Nossa equipe foi rigorosamente selecionada em cada um de seus conhecimentos e dons especiais, onde são utilizadas em consultas via chat, com a intenção de auxiliar e orientar, para que você possa tomar a melhor decisão ou o melhor caminho a seguir na questão que lhe aflige... <a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
 		</div>
 		<div class="col-xl-auto col-lg-auto col-md-6 col-sm-12 col-xs-12">
@@ -56,7 +56,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 		<center>
 			<p><i class="fab fa-expeditedssl"></i> O site É Papo de Tarot usa técnologias de última geração na segurança e proteção de dados, com certificado SSL.</p>
 			<p>
-				<a href="https://www.sslshopper.com/ssl-checker.html#hostname=www.epapodetarot.com.br" target="_blank"><amp-img src="images/seguranca.webp" width="138" height="35" alt="Site Seguro" title="Site Seguro"></amp-img></a> <a href="https://sitecheck.sucuri.net/results/www.epapodetarot.com.br" target="_blank"><amp-img src="images/selo-sitechecksucuri.webp" width="106" height="35" alt="Site Seguro" title="Site Seguro"></amp-img></a>
+				<a href="https://www.sslshopper.com/ssl-checker.html#hostname=www.epapodetarot.com.br" target="_blank"><img src="images/seguranca.webp" width="138" height="35" alt="Site Seguro" title="Site Seguro"></img></a> <a href="https://sitecheck.sucuri.net/results/www.epapodetarot.com.br" target="_blank"><img src="images/selo-sitechecksucuri.webp" width="106" height="35" alt="Site Seguro" title="Site Seguro"></img></a>
 			</p>
 		</center>
 	</div>

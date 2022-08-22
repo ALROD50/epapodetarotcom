@@ -71,7 +71,7 @@
   </a>
 </div>
 
-<amp-img src="images/homel.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></amp-img><amp-img src="images/homer.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></amp-img><center><i class="fas fa-star-and-crescent"></i><amp-img src="images/logotexto.webp" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></amp-img><i class="fas fa-star-and-crescent"></i></center>
+<img src="images/homel.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></img><img src="images/homer.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></img><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.webp" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></img><i class="fas fa-star-and-crescent"></i></center>
 
 <center>
   <h2 style="margin-top:0px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;"><i class="fas fa-comments"></i> Fale Com Um Tarólogo Online Agora!</h2>
@@ -158,7 +158,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><amp-img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></amp-img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -265,7 +265,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><amp-img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></amp-img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -374,7 +374,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><amp-img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></amp-img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
