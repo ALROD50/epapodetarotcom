@@ -1,5 +1,5 @@
 //WebSocket
-var conn = new WebSocket('wss://epapodetarot.com.br/wss2/NNN'); 
+var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NS'); 
 
 ///////////////////////////////////////////////
 var form1 = document.getElementById('form1');
