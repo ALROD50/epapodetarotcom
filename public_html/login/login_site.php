@@ -1,6 +1,6 @@
 <script src="https://www.google.com/recaptcha/api.js?render=6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw"></script>
 <!-- Login com Google -->
-<script src="https://apis.google.com/js/api:client.js"></script>
+<!-- <script src="https://apis.google.com/js/api:client.js"></script>
 <script>
   var googleUser = {};
   var startApp = function() {
@@ -32,7 +32,7 @@
         //alert(JSON.stringify(error, undefined, 2));
     });
   }
-</script>
+</script> -->
 <!-- Login com Google -->
 <?php
 $Mask="SIM";
@@ -158,5 +158,5 @@ if(@$row_onlinex=="offline" OR @$row_onlinex=="") { ?>
 </script>
 
 <!-- Login com Google -->
-<script>startApp();</script>
+<!-- <script>startApp();</script> -->
 <!-- Login com Google -->
