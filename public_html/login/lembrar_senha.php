@@ -1,4 +1,4 @@
-<script src="https://www.google.com/recaptcha/api.js?render=6LekxqsZAAAAAP-YFkg74ENqbRiYepBfdxkt1bez"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw"></script>
 <?php
 if(isset($_POST['envia'])){
 
@@ -9,7 +9,7 @@ if(isset($_POST['envia'])){
   // Captcha ###############################################################
     $url = "https://www.google.com/recaptcha/api/siteverify";
     $data = [
-      'secret' => "6LekxqsZAAAAAKopDTGnipBCuJQWYWkQ38hY4LvO",
+      'secret' => "6LfIKpwhAAAAANDvMK29MCEGmhSDJ3s7RAxHCERj",
       'response' => $_POST['token'],
       // 'remoteip' => $_SERVER['REMOTE_ADDR']
     ];
@@ -104,7 +104,7 @@ if(isset($_POST['envia'])){
 
 <script>
   grecaptcha.ready(function() {
-      grecaptcha.execute('6LekxqsZAAAAAP-YFkg74ENqbRiYepBfdxkt1bez', {action: 'homepage'}).then(function(token) {
+      grecaptcha.execute('6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw', {action: 'homepage'}).then(function(token) {
         // console.log(token);
         document.getElementById("token").value = token;
       });

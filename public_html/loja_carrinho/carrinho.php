@@ -183,10 +183,10 @@ if ($row > 0) {
 					        </div>
 					    </div>
 					</div>
-					<script src="https://www.google.com/recaptcha/api.js?render=6LekxqsZAAAAAP-YFkg74ENqbRiYepBfdxkt1bez"></script>
+					<script src="https://www.google.com/recaptcha/api.js?render=6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw"></script>
 					<script>
 					  grecaptcha.ready(function() {
-					    grecaptcha.execute('6LekxqsZAAAAAP-YFkg74ENqbRiYepBfdxkt1bez', {action: 'homepage'}).then(function(token) {
+					    grecaptcha.execute('6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw', {action: 'homepage'}).then(function(token) {
 					      // console.log(token);
 					      document.getElementById("token").value = token;
 					   });
@@ -194,7 +194,7 @@ if ($row > 0) {
 					</script>
 					<script>
 					  grecaptcha.ready(function() {
-					    grecaptcha.execute('6LekxqsZAAAAAP-YFkg74ENqbRiYepBfdxkt1bez', {action: 'homepage'}).then(function(token) {
+					    grecaptcha.execute('6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw', {action: 'homepage'}).then(function(token) {
 					      // console.log(token);
 					      document.getElementById("token2").value = token;
 					   });

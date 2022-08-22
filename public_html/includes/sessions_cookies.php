@@ -38,7 +38,7 @@ if(isset($_POST['loginsite'])){
     // Captcha ###############################################################
         $url = "https://www.google.com/recaptcha/api/siteverify";
         $data = [
-          'secret' => "6LekxqsZAAAAAKopDTGnipBCuJQWYWkQ38hY4LvO",
+          'secret' => "6LfIKpwhAAAAANDvMK29MCEGmhSDJ3s7RAxHCERj",
           'response' => $_POST['token2'],
            // 'remoteip' => $_SERVER['REMOTE_ADDR']
         ];
@@ -138,7 +138,7 @@ if(isset($_POST['enviacadastrar'])) {
     // Captcha ###############################################################
         $url = "https://www.google.com/recaptcha/api/siteverify";
         $data = [
-          'secret' => "6LekxqsZAAAAAKopDTGnipBCuJQWYWkQ38hY4LvO",
+          'secret' => "6LfIKpwhAAAAANDvMK29MCEGmhSDJ3s7RAxHCERj",
           'response' => $_POST['token'],
                   // 'remoteip' => $_SERVER['REMOTE_ADDR']
         ];

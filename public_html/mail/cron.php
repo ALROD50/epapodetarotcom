@@ -159,7 +159,7 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 		                $PHPMailer->SMTPAuth = true;
 		                $PHPMailer->Port     = 587; // Usar 587 porta SMTP
 		                $PHPMailer->Username = "contato@epapodetarot.com.br"; 
-		                $PHPMailer->Password = "fqF7OxrWEi9x";
+		                $PHPMailer->Password = "AG!eo{wOQRHA";
 		                $PHPMailer->From     = "contato@epapodetarot.com.br"; // Remetente
 		                $PHPMailer->FromName = "É Papo de Tarot"; // Seu nome
 		                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
@@ -255,7 +255,7 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 		            $PHPMailer->SMTPAuth =true;
 		            $PHPMailer->Port     =587; //  Usar 587 porta SMTP
 		            $PHPMailer->Username ="contato@epapodetarot.com.br"; 
-		            $PHPMailer->Password ="fqF7OxrWEi9x";
+		            $PHPMailer->Password ="AG!eo{wOQRHA";
 		            $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
 		            $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
 		            $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
@@ -347,7 +347,7 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 			            $PHPMailer->SMTPAuth =true;
 			            $PHPMailer->Port     =587; //  Usar 587 porta SMTP
 			            $PHPMailer->Username ="contato@epapodetarot.com.br"; 
-			            $PHPMailer->Password ="fqF7OxrWEi9x";
+			            $PHPMailer->Password ="AG!eo{wOQRHA";
 			            $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
 			            $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
 			            $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente

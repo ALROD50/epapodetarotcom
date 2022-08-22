@@ -466,7 +466,7 @@ function EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensa
   $PHPMaileremail->SMTPAuth =true;
   $PHPMaileremail->Port     =465; //  Usar 587 porta SMTP
   $PHPMaileremail->Username ="contato@epapodetarot.com.br"; 
-  $PHPMaileremail->Password ="fqF7OxrWEi9x";
+  $PHPMaileremail->Password ="AG!eo{wOQRHA";
   $PHPMaileremail->setFrom('contato@epapodetarot.com.br', 'É Papo de Tarot');
   $PHPMaileremail->addReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
   // $PHPMaileremail->DKIM_domain = 'epapodetarot.com.br';
