@@ -1,0 +1,58 @@
+[25-Mar-2021 12:31:04 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:31:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:31:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:31:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:31:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:31:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:31:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 28
+[25-Mar-2021 12:41:34 UTC] PHP Notice:  Undefined index: imagem in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 6
+[25-Mar-2021 12:41:34 UTC] PHP Notice:  Undefined variable: im in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 56
+[25-Mar-2021 12:41:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 56
+[25-Mar-2021 12:41:34 UTC] PHP Notice:  Undefined variable: im in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 57
+[25-Mar-2021 12:41:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 57
+[25-Mar-2021 12:41:34 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 72
+[25-Mar-2021 12:41:34 UTC] PHP Notice:  Undefined variable: im in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 74
+[25-Mar-2021 12:41:34 UTC] PHP Notice:  Undefined variable: im in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 74
+[25-Mar-2021 12:41:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 74
+[25-Mar-2021 12:41:34 UTC] PHP Notice:  Undefined variable: im in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 74
+[25-Mar-2021 12:41:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 74
+[25-Mar-2021 12:41:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 74
+[25-Mar-2021 12:41:53 UTC] PHP Notice:  Undefined variable: arquivo_miniatura in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 91
+[25-Mar-2021 12:41:53 UTC] PHP Notice:  Undefined variable: arquivo_miniatura in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 113
+[25-Mar-2021 12:42:15 UTC] PHP Notice:  Undefined variable: arquivo_miniatura in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 91
+[25-Mar-2021 12:42:15 UTC] PHP Notice:  Undefined variable: arquivo_miniatura in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 113
+[25-Mar-2021 12:42:18 UTC] PHP Notice:  Undefined variable: arquivo_miniatura in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 91
+[25-Mar-2021 12:42:19 UTC] PHP Notice:  Undefined variable: arquivo_miniatura in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 113
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagecrop() expects exactly 2 parameters, 4 given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 17
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 19
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagepalettetotruecolor() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 21
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 22
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 23
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagewebp() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 24
+[25-Mar-2021 13:21:59 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 25
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagecrop() expects exactly 2 parameters, 4 given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 18
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 19
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagepalettetotruecolor() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 21
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 22
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 23
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagewebp() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 24
+[25-Mar-2021 13:23:51 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 25
+[25-Mar-2021 13:24:12 UTC] PHP Warning:  imagecrop() expects exactly 2 parameters, 4 given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 18
+[25-Mar-2021 13:24:12 UTC] PHP Warning:  imagepalettetotruecolor() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 21
+[25-Mar-2021 13:24:12 UTC] PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 22
+[25-Mar-2021 13:24:12 UTC] PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 23
+[25-Mar-2021 13:24:12 UTC] PHP Warning:  imagewebp() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 24
+[25-Mar-2021 13:24:12 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 25
+[25-Mar-2021 13:24:46 UTC] PHP Warning:  imagecrop() expects exactly 2 parameters, 4 given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 18
+[25-Mar-2021 13:24:46 UTC] PHP Warning:  imagepalettetotruecolor() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 21
+[25-Mar-2021 13:24:46 UTC] PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 22
+[25-Mar-2021 13:24:46 UTC] PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 23
+[25-Mar-2021 13:24:46 UTC] PHP Warning:  imagewebp() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 24
+[25-Mar-2021 13:24:46 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 25
+[25-Mar-2021 13:26:03 UTC] PHP Warning:  imagecopyresized(): Invalid image dimensions in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 19
+[25-Mar-2021 13:26:50 UTC] PHP Notice:  Undefined variable: image_p in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 17
+[25-Mar-2021 13:26:50 UTC] PHP Warning:  imagepalettetotruecolor() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 17
+[25-Mar-2021 13:26:50 UTC] PHP Notice:  Undefined variable: image_p in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 18
+[25-Mar-2021 13:26:50 UTC] PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 18
+[25-Mar-2021 13:26:50 UTC] PHP Notice:  Undefined variable: image_p in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 19
+[25-Mar-2021 13:26:50 UTC] PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in /home/tarotdehoruscom/public_html/tarologos_admin/fotos/thumb.php on line 19

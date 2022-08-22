@@ -1,0 +1,4 @@
+[10-Aug-2020 17:47:32 UTC] PHP Warning:  move_uploaded_file(images/clikaqui.png): failed to open stream: No such file or directory in /home/tarotdehoruscom/public_html/scripts/postAcceptor.php on line 46
+[10-Aug-2020 17:47:32 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpHvyQVo' to 'images/clikaqui.png' in /home/tarotdehoruscom/public_html/scripts/postAcceptor.php on line 46
+[10-Aug-2020 17:49:14 UTC] PHP Warning:  move_uploaded_file(images/clikaqui.png): failed to open stream: No such file or directory in /home/tarotdehoruscom/public_html/scripts/postAcceptor.php on line 46
+[10-Aug-2020 17:49:14 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpQJlCTL' to 'images/clikaqui.png' in /home/tarotdehoruscom/public_html/scripts/postAcceptor.php on line 46

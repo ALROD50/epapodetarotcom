@@ -1,0 +1,20 @@
+[17-Aug-2020 17:51:15 Brazil/East] PHP Fatal error:  Call to a member function query() on null in /home/tarotdehoruscom/public_html/mail/cron.php on line 99
+[17-Aug-2020 17:52:04 Brazil/East] PHP Fatal error:  Call to a member function query() on null in /home/tarotdehoruscom/public_html/mail/cron.php on line 99
+[17-Aug-2020 17:56:03 Brazil/East] PHP Fatal error:  Call to a member function query() on null in /home/tarotdehoruscom/public_html/mail/cron.php on line 99
+[17-Aug-2020 17:56:42 Brazil/East] PHP Notice:  Undefined variable: pdo in /home/tarotdehoruscom/public_html/mail/cron.php on line 103
+[17-Aug-2020 17:56:42 Brazil/East] PHP Fatal error:  Call to a member function query() on null in /home/tarotdehoruscom/public_html/mail/cron.php on line 103
+[17-Aug-2020 17:58:06 Brazil/East] PHP Notice:  Undefined variable: msg_id in /home/tarotdehoruscom/public_html/mail/cron.php on line 130
+[17-Aug-2020 18:05:00 Brazil/East] PHP Notice:  Undefined variable: result in /home/tarotdehoruscom/public_html/mail/cron.php on line 140
+[17-Aug-2020 18:05:00 Brazil/East] PHP Fatal error:  Call to a member function fetch() on null in /home/tarotdehoruscom/public_html/mail/cron.php on line 140
+[17-Aug-2020 19:16:01 Brazil/East] PHP Notice:  Undefined variable: PHPMaileremail in /home/tarotdehoruscom/public_html/mail/cron.php on line 172
+[17-Aug-2020 19:16:01 Brazil/East] PHP Fatal error:  Uncaught Error: Call to a member function AddBCC() on null in /home/tarotdehoruscom/public_html/mail/cron.php:172
+Stack trace:
+#0 {main}
+  thrown in /home/tarotdehoruscom/public_html/mail/cron.php on line 172
+[17-Aug-2020 19:25:01 Brazil/East] PHP Notice:  Undefined variable: PHPMaileremail in /home/tarotdehoruscom/public_html/mail/cron.php on line 172
+[17-Aug-2020 19:25:01 Brazil/East] PHP Fatal error:  Uncaught Error: Call to a member function AddBCC() on null in /home/tarotdehoruscom/public_html/mail/cron.php:172
+Stack trace:
+#0 {main}
+  thrown in /home/tarotdehoruscom/public_html/mail/cron.php on line 172
+[17-Aug-2020 19:35:32 Brazil/East] PHP Notice:  Undefined variable: PHPMaileremail in /home/tarotdehoruscom/public_html/mail/cron.php on line 172
+[17-Aug-2020 19:35:32 Brazil/East] PHP Fatal error:  Call to a member function AddBCC() on null in /home/tarotdehoruscom/public_html/mail/cron.php on line 172

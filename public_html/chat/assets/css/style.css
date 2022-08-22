@@ -1,0 +1,243 @@
+*{
+    margin:0;padding:0;
+}
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    color: #fff;
+    font-size: 15px;
+    background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+    background-size: 1920px 1169px;
+    background-size: cover !important;
+}
+.d-none {
+    display: none;
+}
+#clientes {
+    overflow: hidden;
+    color: #820000;
+    background: url(https://www.tarotdehorus.com.br/images/clientes.png) no-repeat;
+    width: 320px;
+    height: 113px;
+    padding-top: 20px;
+}
+/*Barra de Rolagem*/
+/* width */
+#content::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+#content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #383838; 
+  border-radius: 10px;
+}
+/* Handle */
+#content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+}
+/* Handle on hover */
+#content::-webkit-scrollbar-thumb:hover {
+  background: #383838; 
+}
+/*Barra de Rolagem*/
+.title {
+    color: #FFF9E5;
+    text-shadow: 0 0 6px rgba(255,144,0,0.5);
+}
+.form-group {
+    /* margin-bottom: 15px; */
+}
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 0px;
+}
+    button, input[type='button'], input[type='submit'] {
+    padding: 9px 27px;
+}
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 104%;
+    margin-left: -3px;
+}
+textarea.form-control {
+    height: 40px;
+}
+#hedchat {
+    padding: 20px;
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+    background-size: 1920px 1169px;
+    background-size: cover !important;
+}
+#bg, #infos {
+    background: #eeeeee;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+}
+#erro{
+    width:400px;
+    margin:0 auto;
+    background:#fff;
+    color:#f00;
+    text-align:center;
+}
+#frm-login {
+    width: 400px;
+    margin: 0 auto;
+    background:#fff;    
+}
+#frm-login fieldset{
+    border:1px solid #ccc;
+    padding:10px ;
+}
+#frm-login a{
+    color:#333;
+    display:block;
+    text-align:center;
+}
+#frm-login a:hover{
+    background:#ccc;
+}
+#frm-login label input{
+    padding:5px 0; 
+    width:250px; 
+    border:1px solid #ccc; 
+    -moz-border-radius:5px;
+}
+#frm-login label input:focus{
+    border-color:#333;
+}
+#frm-login .btn{
+    padding:5px 10px;
+    cursor:pointer;
+}
+#frm-msg {
+    width: 900px;
+    margin: 0 auto;
+    background:#fff;
+}
+#frm-msg  fieldset{border:0}
+#frm-msg label{
+    width:750px;
+    display:block;
+    float:left;
+}
+#frm-msg label span{
+    display:block;
+    color:#333;
+}
+#frm-msg label textarea{
+    width:750px;
+    height: 0px;
+    border:1px solid #ccc;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    overflow:auto;
+}
+#frm-msg label textarea:focus{
+    border-color:#333;
+}
+#frm-msg #submit{
+    padding:14px 30px;
+    float:right;
+    margin-top:23px;
+}
+#tudo {
+    margin: 0 auto;
+    position: relative;
+    min-height:100%;
+}
+#content {
+    padding-top: 155px;
+    padding-left: 25px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width:75%;
+    bottom: 70px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    height: 100%;
+}
+#content p{
+    padding: 3px 3px 3px 3px;
+    margin: 3px 3px 3px 3px;
+}
+.me {
+    text-align: left;
+    background: #2090BC;
+    color: #fff;
+    border-radius: 4px;
+    display: table;
+    margin-top: 5px;
+}
+.other {
+    text-align: left;
+    background: #BF9328;
+    color: #fff;
+    border-radius: 4px;
+    display: table;
+    margin-top: 5px;
+}
+#tempo_mobile {
+    /*display: none;*/
+    font-size: 0px;
+}
+#key {
+    bottom:45px;
+    left:125px; 
+    font-size:12px;
+}
+/*@-moz-document url-prefix() { 
+  #key {
+    bottom:50px;
+    }
+}*/
+footer {
+    /*background: #E8E8E8;*/
+    background: transparent;
+    position: absolute; 
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    /*display: flex;*/
+}
+
+.container-fluid {
+    /*min-height: 100%;*/
+    height: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="col-"], header, nav, aside, section, div[role="main"] {
+    position: relative;
+
+}
+div[role="main"] {
+    position: relative;
+    /*background-color: #fff;*/
+}
+div[role="main"], nav, aside {
+    position: relative;
+    /*height: 100%;*/
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#chat-application {
+    display: none !important;
+}

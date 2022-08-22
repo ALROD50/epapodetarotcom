@@ -1,0 +1,664 @@
+body {
+    overflow-x: hidden;
+    font-family: 'dumbledor_1regular';
+    color: #000;
+    font-size: 22px;
+}
+
+@media (max-width: 426px) {
+    body {
+        overflow-x: hidden;
+        font-family: 'dumbledor_1regular';
+        color: #000;
+        font-size: 22px;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #383838;
+    background: #6b6b6b;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #4c4c4c;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #383838;
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs {
+        font-size: 17px;
+    }
+
+    .titlecriarnovaconta {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs {
+        font-size: 17px;
+    }
+
+    .titlecriarnovaconta {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 426px) {
+    main {
+        background: rgb(255 255 255 / 63%) !important;
+        padding: 15px;
+    }
+
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+/* LOGO */
+#logo {
+    width: 300px;
+    margin-left: 15px;
+    margin-right: 145px;
+}
+
+#sizelogo {
+    width: 300px;
+}
+
+@media (max-width: 1025px) {
+    #logo {
+        width: 300px;
+        margin-left: 15px;
+        margin-right: 95px;
+    }
+
+    #oraculos {
+        height: 205px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #logo {
+        width: 300px;
+        position: absolute;
+        top: 39px;
+        z-index: 9;
+    }
+
+    #sizelogo {
+        width: 275px !important;
+    }
+
+    #menusitecell {
+        right: 15px !important;
+        top: 15px;
+        position: absolute;
+    }
+
+    .estilomenu {
+        min-height: 70px;
+    }
+
+    #menusite .navbar-collapse {
+        z-index: 9;
+        margin-top: 60px;
+    }
+
+    #oraculos {
+        height: 205px !important;
+    }
+}
+
+@media (max-width: 769px) {
+    #logo {
+        width: 300px;
+        position: absolute;
+        top: 41px;
+        z-index: 9;
+    }
+
+    #sizelogo {
+        width: 275px !important;
+    }
+
+    #menusitecell {
+        right: 15px !important;
+        top: 15px;
+        position: absolute;
+    }
+
+    .estilomenu {
+        min-height: 70px;
+    }
+
+    #menusite .navbar-collapse {
+        z-index: 9;
+        margin-top: 60px;
+    }
+
+    #oraculos {
+        height: 205px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    #logo {
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 0px;
+        position: absolute;
+        top: 48px;
+        z-index: 9;
+    }
+
+    #sizelogo {
+        width: 200px !important;
+    }
+
+    #menusitecell {
+        right: 10px !important;
+        top: 15px;
+        position: absolute;
+    }
+
+    .estilomenu {
+        min-height: 70px;
+    }
+
+    #menusite .navbar-collapse {
+        z-index: 9;
+        margin-top: 60px;
+    }
+
+    #oraculos {
+        height: 240px !important;
+    }
+
+    #whatsapp a {
+        left: -10px !important;
+        font-size: 40px !important;
+    }
+
+    #subir {
+        right: -10px !important;
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    #logo {
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 0px;
+        position: absolute;
+        top: 48px;
+        z-index: 9;
+    }
+
+    #sizelogo {
+        width: 200px !important;
+    }
+
+    #menusitecell {
+        right: 10px !important;
+        top: 15px;
+        position: absolute;
+    }
+
+    .estilomenu {
+        min-height: 70px;
+    }
+
+    #menusite .navbar-collapse {
+        z-index: 9;
+        margin-top: 60px;
+    }
+
+    #oraculos {
+        height: 240px !important;
+    }
+
+    #whatsapp a {
+        left: -10px !important;
+        font-size: 40px !important;
+    }
+
+    #subir {
+        right: -10px !important;
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 321px) {
+    #oraculos {
+        height: 265px !important;
+    }
+
+    #whatsapp a {
+        left: -10px !important;
+        font-size: 40px !important;
+    }
+
+    #subir {
+        right: -10px !important;
+        font-size: 30px !important;
+    }
+}
+
+.youtube {
+    color: #f00;
+}
+
+.instagram {
+    color: #BE31A6;
+}
+
+.azul {
+    color: #1374a4;
+}
+
+.vermelho {
+    color: #963f10;
+}
+
+.verde {
+    color: #636f03;
+}
+
+.verdao {
+    color: #0ab435;
+}
+
+.branco {
+    color: #ffffff;
+}
+
+.preto {
+    color: #000;
+}
+
+.laranja {
+    color: #f7b334;
+}
+
+.laranjaescuro {
+    color: #ea7a19;
+}
+
+.sombratexto {
+    text-shadow: 0px 2px 2px #000;
+}
+
+.title {
+    color: #0e0c0c;
+    text-shadow: 0px 2px 4px #da8345;
+}
+
+a.link-padraoum {
+    text-decoration: none;
+    color: #7bdaff;
+}
+
+a.link-padraoum:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.link-padraodois {
+    text-decoration: underline;
+    color: #2090bc;
+}
+
+a.link-padraodois:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+a.link-padraotres {
+    text-decoration: underline;
+    color: #683939;
+}
+
+a.link-padraotres:hover {
+    text-decoration: underline;
+    color: #990000;
+}
+
+a.linkClientesAdmin:visited {
+    color: red;
+}
+
+a.linkClientesAdmin:active {
+    color: red;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.efeito:hover {
+    opacity: 0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+
+.efeitodois:hover {
+    overflow: hidden;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.progress {
+    border-radius: 0;
+    height: 6px;
+    box-shadow: none;
+    margin: 0px 0;
+    background: #eee;
+}
+
+#header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #f7b334;
+}
+
+@media (max-width: 992px) {
+    #header {
+        background: #2090bcd9 !important;
+    }
+
+    a.link-padraoum {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+#usuariobox {
+    text-align: right;
+    margin-top: 5px;
+}
+
+#usuariobox p {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 420px) {
+    #usuariobox {
+        text-align: right;
+        font-size: 19px;
+    }
+}
+
+#usuarioboxlogado {
+    text-align: right;
+    font-size: 17px;
+}
+
+@media (max-width: 420px) {
+    #usuarioboxlogado {
+        text-align: right;
+        font-size: 17px;
+    }
+}
+
+/* Menu */
+.navbar {
+    font-size: 18px;
+    border-bottom: 3px solid #f7b334;
+}
+
+@media (max-width: 992px) {
+    .estilomenu {
+        background-color: #000000d9 !important;
+    }
+}
+
+.estilomenu {
+    background-color: #2090bcd9;
+}
+
+a.menulink {
+    color: #fff !important;
+}
+
+a.menulink:hover {
+    color: #000 !important;
+    background: #f7b334;
+    border-bottom: 3px solid #e8cf8e;
+}
+
+a.menulink:active {
+    color: #f7b334 !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Deixa caixa menu dropbox mais proximo da área clicavel do menu. Resolve problema de menu dropbox sumir ao mover o mouse até ele. */
+.dropdown-menu {
+    margin: 0px !important;
+}
+
+/* SlideSHhow */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+#myCarouselDepoimentos {
+    background-image: url('images/bgbanner.webp');
+    background-size: 1150px 1115px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+}
+
+#whatsapp a {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px;
+    z-index: 99999;
+    margin: 10px;
+    font-size: 60px;
+    color: #009e00;
+}
+
+#whatsapp a:hover {
+    color: #fff;
+}
+
+#subir {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    z-index: 99999;
+    margin: 10px;
+    font-size: 40px;
+    color: #2090BC;
+}
+
+#subir :hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+#copy {
+    background: #2090BC;
+    color: #fff;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+/* Video */
+
+/* Formulário */
+.labelvermelho {
+    color: #ff0000;
+}
+
+.bordaverde {
+    border: 2px solid #0DC143 !important;
+}
+
+#chat-application {
+    display: none !important;
+}
+
+.grecaptcha-badge {
+    opacity: 0 !important;
+}
+
+.progress {
+    height: 19px;
+}
+
+.rounded {
+    border-radius: 0.50rem !important;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.online {
+    color: #0f0;
+}
+
+.offline {
+    color: #f00;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel {
+    position: relative;
+    background: #000;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/* Featurettes
+    ------------------------- */
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+    -------------------------------------------------- */
+@media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */

@@ -1,0 +1,238 @@
+*{
+    margin:0;padding:0;
+}
+html, body{
+	height: 100%;
+	overflow: hidden;
+}
+body {
+    color: #000;
+    font-size: 15px;
+    background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+    background-size: 1920px 1169px;
+    background-size: cover !important;
+}
+.d-none {
+	display: none;
+}
+.title {
+    color: #FFF9E5;
+    text-shadow: 0 0 6px rgba(255,144,0,0.5);
+}
+.form-group {
+    /* margin-bottom: 15px; */
+}
+.btn-lg, .btn-group-lg > .btn {
+	border-radius: 0px;
+}
+	button, input[type='button'], input[type='submit'] {
+    padding: 9px 27px;
+}
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 104%;
+    margin-left: -3px;
+}
+textarea.form-control {
+    height: 40px;
+}
+#hedchat {
+	padding: 5px;
+	position: absolute; 
+    top: 0px;
+    width: 100%;
+    height: 44px;
+	z-index: 1;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e8e8e8 57%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e8e8e8 57%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%,#e8e8e8 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+#logo {
+    margin-top: -5px;
+    width: 180px;
+}
+#lateral_direita {
+	display: none;
+}
+#mensagem_texto {
+	display: none;
+}
+#mensagem_textarea {
+	margin-left: 5px;
+}
+#bg, #infos {
+	background: #eeeeee;
+}
+h1 {
+	color: #fff;
+	text-align: center;
+}
+#erro{
+	width:400px;
+	margin:0 auto;
+	background:#fff;
+	color:#f00;
+	text-align:center;
+}
+#frm-login {
+	width: 400px;
+	margin: 0 auto;
+	background:#fff;	
+}
+#frm-login fieldset{
+	border:1px solid #ccc;
+	padding:10px ;
+}
+#frm-login a{
+	color:#333;
+	display:block;
+	text-align:center;
+}
+#frm-login a:hover{
+	background:#ccc;
+}
+#frm-login label input{
+	padding:5px 0; 
+	width:250px; 
+	border:1px solid #ccc; 
+	-moz-border-radius:5px;
+}
+#frm-login label input:focus{
+	border-color:#333;
+}
+#frm-login .btn{
+	padding:5px 10px;
+	cursor:pointer;
+}
+#frm-msg {
+	width: 900px;
+	margin: 0 auto;
+	background:#fff;
+}
+#frm-msg  fieldset{border:0}
+#frm-msg label{
+	width:750px;
+	display:block;
+	float:left;
+}
+#frm-msg label span{
+	display:block;
+	color:#333;
+}
+#frm-msg label textarea{
+	width:750px;
+	height: 0px;
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	overflow:auto;
+}
+#frm-msg label textarea:focus{
+	border-color:#333;
+}
+#frm-msg #submit{
+	padding:14px 30px;
+	float:right;
+	margin-top:23px;
+}
+#tudo {
+	margin: 0 auto;
+	position: relative;
+	min-height:100%;
+}
+#content {
+	padding-top: 185px; 
+	padding-left: 25px;
+	padding-right: 10px;
+	width: 103%;
+	bottom: 70px;
+	overflow: scroll;
+	overflow-x: hidden;
+	background: #fff;
+	color: #000;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+}
+#content p{
+	padding: 3px 3px 3px 3px;
+	margin: 3px 3px 3px 3px;
+}
+.me {
+    text-align: left;
+    background: #2090BC;
+	color: #fff;
+	border-radius: 4px;
+	display: table;
+	margin-top: 5px;
+}
+.other {
+    text-align: left;
+    background: #BF9328;
+	color: #fff;
+	border-radius: 4px;
+	display: table;
+	margin-top: 5px;
+}
+#tempo_mobile {
+	display: block;
+    margin-left: 8px;
+    font-size: 10px;
+    padding-top: 5px;
+}
+#key {
+	bottom:47px;
+	left: 180px;
+	font-size:10px;
+}
+footer {
+	background: rgba(0, 0, 0, 0.2);
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    /*display: flex;*/
+}
+#form1 {
+	margin-top: 0px !important;
+}
+.container-fluid {
+	/*min-height: 100%;*/
+	height: 100%;
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+[class*="col-"], header, nav, aside, section, div[role="main"] {
+	position: relative;
+}
+div[role="main"] {
+	position: relative;
+	/*background-color: #fff;*/
+}
+div[role="main"], nav, aside {
+	position: relative;
+	/*height: 100%;*/
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.form-control {
+    width: 142%;
+}
+button, input[type='button'], input[type='submit'] {
+    padding: 9px 27px;
+    position: absolute;
+    right: 15px;
+}
+#chat-application {
+	display: none !important;
+}
+@media (max-width: 999px){
+	#content {
+	    padding-top: 120px;
+	}
+}

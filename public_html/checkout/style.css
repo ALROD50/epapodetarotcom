@@ -1,0 +1,127 @@
+/*//////////////////////////////////////////
+/ PAGSEGURO TRANSPARENTE - NOVA SYSTEMS //
+//////////////////////////////////////////*/
+body {
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 19px;
+}
+@media (max-width: 426px) {
+    #mainsite {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+#logo {
+    margin-top: 10px !important;
+}
+@media (max-width: 769px) {
+    #logo {
+        top: 30px !important;
+    }
+}
+@media (max-width: 375px) {
+    #logo {
+        top: 38px !important;
+    }
+}
+.estilomenu {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+#navbarSupportedContent {
+    display: none !important;
+}
+#menusitecell {
+    display: none !important;
+}
+footer {
+    display: none !important;
+}
+/* ------------------------------------ */
+.tabbable {
+    border: 1px solid #82c75f;
+}
+.tab-content {
+    padding: 20px;
+}
+.pg_topright {
+    background: url(img/topright.png) top right no-repeat;
+    width: 110px;
+    height: 86px;
+    float: right;
+}
+label {
+    display: block;
+}
+.form-horizontal .form-group {
+    margin-left: 0px;
+}
+@media (max-width: 424px) {
+    .nav-tabs {
+        width: 100%;
+        float: none;
+        display: inline-grid;
+    }
+    .pg_topright {
+        display: none;
+    }
+}
+@media (max-width: 321px) {
+    #usuarioboxlogado {
+        text-align: right;
+        font-size: 15px;
+    }
+}
+.checkbox-inline input[type=radio]:checked {
+    /* opacity: 1 !important; */
+    /* border: 1px solid #7cbd5b !important; */
+    /* color: #7cbd5b !important; */
+    /*outline: 3px solid #7cbd5b;*/
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+}
+h2 {
+    color: #74B255;
+}
+h4 {
+    color: #74B255;
+}
+#conteudo input:focus, textarea:focus {
+    background: #ffe; /* Fundo amarelo palha */
+    border: 2px solid #66afe9; /* Borda azul de 2px */
+}
+#conteudo .bordavermelha input:focus {
+    border: 2px solid #ff0000; /* Borda vermelha de 2px */
+}
+#conteudo input.bordavermelha:focus {
+    border: 2px solid #ff0000; /* Borda vermelha de 2px */
+}
+input.bordavermelha {
+    border: 2px solid #ff0000; /* Borda vermelha de 2px */
+}
+#conteudo .bordavermelha select:focus {
+    border: 2px solid #ff0000; /* Borda vermelha de 2px */
+}
+#conteudo select.bordavermelha:focus {
+    border: 2px solid #ff0000; /* Borda vermelha de 2px */
+}
+select.bordavermelha {
+    border: 2px solid #ff0000; /* Borda vermelha de 2px */
+}
+.labelvermelho {
+    color: #ff0000;
+}
+.bordaverde {
+  border: 2px solid #0DC143 !important; /* Borda verde de 2px */
+}
+.affix {
+    position: fixed;
+    z-index: 10;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: #686868 #dee2e6 #fff;
+}
+.shadow {
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15) !important;
+}

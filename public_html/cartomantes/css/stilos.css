@@ -1,0 +1,37 @@
+body {
+    overflow-x: hidden;
+    font-family: 'dumbledor_1regular';
+    color: #000;
+    font-size: 20px;
+    background: #000 url('https://www.tarotdehorus.com.br/images/background.webp') 50% 0 fixed no-repeat;
+    background-size: cover !important;
+}
+label, input, button, select, textarea {
+    font-size: 25px !important;
+}
+h1 {
+    color: #2090bc;
+    font-weight: 700;
+}
+h2 {
+    color: #b98729;
+    font-weight: 700;
+}
+h3 {
+    color: #9e3434;
+    text-shadow: 0px 1px 1px #b54a4a;
+    font-weight: 500;
+}
+#geral {
+    background: rgba(255, 255, 255, 0.8);
+}
+#chat-application {
+    display: none !important;
+}
+.labelvermelho {
+    color: #ff0000;
+    border: 2px solid #ff0000 !important; /* Borda vermelha de 2px */
+}
+.bordaverde {
+    border: 2px solid #0DC143 !important; /* Borda verde de 2px */
+}

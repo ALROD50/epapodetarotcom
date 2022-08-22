@@ -1,0 +1,428 @@
+## No directory listings
+IndexIgnore *
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymlinks
+Options -Indexes
+
+## Mod_rewrite in use.
+
+RewriteEngine On
+
+#Força www. no inicio da URL utilizando https ou http
+RewriteCond %{HTTP_HOST} ^tarotdehorus\.com\.br
+RewriteCond %{HTTPS} =on
+RewriteRule .* https://www.%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# Redirecionar para abrir sempre com HTTPS
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+## Begin - Rewrite rules to block out some common exploits.
+# If you experience problems on your site block out the operations listed below
+# This attempts to block the most common type of exploit `attempts` to Joomla!
+#
+# Block out any script trying to base64_encode data within the URL.
+RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+# Block out any script that includes a <script> tag in URL.
+RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL.
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL.
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Return 403 Forbidden header and show the content of the root homepage
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* index.php [F]
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+#
+## End - Rewrite rules to block out some common exploits.
+
+## nega o acesso a todos os arquivos .php
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+</Files>
+## libera o acesso apenas ao index.php
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files index2.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files 404.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files logout.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files verifica_online.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files area51.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files hangar18.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files teste.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files entrada.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files enviadas.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files lixeira.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files excluir.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files lererespondermensagem.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files lermensagem.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files restaurar_lixeira.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files thumb.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files calcularfrete.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files op.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files inicia_chat.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files chama_chat.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files deleta_chamada_n_at.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files chatvideo-index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files finalizarchatvideo.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files chat-index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files finalizar.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files chat.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files auth.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files config.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files depoimentos.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files sub_depo.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files config.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files define.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files functions.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files BD.class.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files Chat.class.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files add_credit_paypal.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files retorno_gn.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files autoload.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files retorno_pagseguro.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files gravapedido.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files postAcceptor.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files WideImage.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files valida_email.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files valida_senha.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files cron.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files padrao_carrega_modelo.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files chat-server.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files historico.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files procLogin.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files updatepix.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# nega acesso ao diretório
+
+# BEGIN W3TC Browser Cache e Gzip
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType text/x-component .htc
+    AddType application/x-javascript .js
+    AddType application/javascript .js2
+    AddType text/javascript .js3
+    AddType text/x-js .js4
+    AddType text/html .html .htm
+    AddType text/richtext .rtf .rtx
+    AddType image/svg+xml .svg .svgz
+    AddType text/plain .txt
+    AddType text/xsd .xsd
+    AddType text/woff2 .woff2
+    AddType text/xsl .xsl
+    AddType text/xml .xml
+    AddType video/asf .asf .asx .wax .wmv .wmx
+    AddType video/avi .avi
+    AddType image/bmp .bmp
+    AddType image/webp .webp
+    AddType application/java .class
+    AddType video/divx .divx
+    AddType application/msword .doc .docx
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-msdownload .exe
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType application/json .json
+    AddType application/vnd.ms-access .mdb
+    AddType audio/midi .mid .midi
+    AddType video/quicktime .mov .qt
+    AddType audio/mpeg .mp3 .m4a
+    AddType video/mp4 .mp4 .m4v
+    AddType video/mpeg .mpeg .mpg .mpe
+    AddType application/vnd.ms-project .mpp
+    AddType application/x-font-otf .otf
+    AddType application/vnd.ms-opentype .otf
+    AddType application/vnd.oasis.opendocument.database .odb
+    AddType application/vnd.oasis.opendocument.chart .odc
+    AddType application/vnd.oasis.opendocument.formula .odf
+    AddType application/vnd.oasis.opendocument.graphics .odg
+    AddType application/vnd.oasis.opendocument.presentation .odp
+    AddType application/vnd.oasis.opendocument.spreadsheet .ods
+    AddType application/vnd.oasis.opendocument.text .odt
+    AddType audio/ogg .ogg
+    AddType application/pdf .pdf
+    AddType image/png .png
+    AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+    AddType audio/x-realaudio .ra .ram
+    AddType application/x-shockwave-flash .swf
+    AddType application/x-tar .tar
+    AddType image/tiff .tif .tiff
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/vnd.ms-opentype .ttf .ttc
+    AddType audio/wav .wav
+    AddType audio/wma .wma
+    AddType application/vnd.ms-write .wri
+    AddType application/font-woff .woff
+    AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+    AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css A31536000
+    ExpiresByType text/x-component A31536000
+    ExpiresByType application/x-javascript A31536000
+    ExpiresByType application/javascript A31536000
+    ExpiresByType text/javascript A31536000
+    ExpiresByType text/x-js A31536000
+    ExpiresByType text/html A3600
+    ExpiresByType text/richtext A3600
+    ExpiresByType image/svg+xml A3600
+    ExpiresByType text/plain A3600
+    ExpiresByType text/woff2 A31536000
+    ExpiresByType text/xsd A3600
+    ExpiresByType text/xsl A3600
+    ExpiresByType text/xml A3600
+    ExpiresByType video/asf A31536000
+    ExpiresByType video/avi A31536000
+    ExpiresByType image/bmp A31536000
+    ExpiresByType image/webp A31536000
+    ExpiresByType application/java A31536000
+    ExpiresByType video/divx A31536000
+    ExpiresByType application/msword A31536000
+    ExpiresByType application/vnd.ms-fontobject A31536000
+    ExpiresByType application/x-msdownload A31536000
+    ExpiresByType image/gif A31536000
+    ExpiresByType application/x-gzip A31536000
+    ExpiresByType image/x-icon A31536000
+    ExpiresByType image/jpeg A31536000
+    ExpiresByType application/json A31536000
+    ExpiresByType application/vnd.ms-access A31536000
+    ExpiresByType audio/midi A31536000
+    ExpiresByType video/quicktime A31536000
+    ExpiresByType audio/mpeg A31536000
+    ExpiresByType video/mp4 A31536000
+    ExpiresByType video/mpeg A31536000
+    ExpiresByType application/vnd.ms-project A31536000
+    ExpiresByType application/x-font-otf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType application/vnd.oasis.opendocument.database A31536000
+    ExpiresByType application/vnd.oasis.opendocument.chart A31536000
+    ExpiresByType application/vnd.oasis.opendocument.formula A31536000
+    ExpiresByType application/vnd.oasis.opendocument.graphics A31536000
+    ExpiresByType application/vnd.oasis.opendocument.presentation A31536000
+    ExpiresByType application/vnd.oasis.opendocument.spreadsheet A31536000
+    ExpiresByType application/vnd.oasis.opendocument.text A31536000
+    ExpiresByType audio/ogg A31536000
+    ExpiresByType application/pdf A31536000
+    ExpiresByType image/png A31536000
+    ExpiresByType application/vnd.ms-powerpoint A31536000
+    ExpiresByType audio/x-realaudio A31536000
+    ExpiresByType image/svg+xml A31536000
+    ExpiresByType application/x-shockwave-flash A31536000
+    ExpiresByType application/x-tar A31536000
+    ExpiresByType image/tiff A31536000
+    ExpiresByType application/x-font-ttf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType audio/wav A31536000
+    ExpiresByType audio/wma A31536000
+    ExpiresByType application/vnd.ms-write A31536000
+    ExpiresByType application/font-woff A31536000
+    ExpiresByType application/vnd.ms-excel A31536000
+    ExpiresByType application/zip A31536000
+</IfModule>
+<IfModule mod_deflate.c>
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+        AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/json
+    <IfModule mod_mime.c>
+        # DEFLATE by extension
+        AddOutputFilter DEFLATE js css htm html xml
+    </IfModule>
+</IfModule>
+<FilesMatch "\.(css|htc|less|js|js2|js3|js4|CSS|HTC|LESS|JS|JS2|JS3|JS4)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|XML)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(asf|asx|wax|wmv|wmx|avi|bmp|webp|woff2|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|wav|wma|wri|woff|xla|xls|xlsx|xlt|xlw|zip|ASF|ASX|WAX|WMV|WMX|AVI|BMP|CLASS|DIVX|DOC|DOCX|EOT|EXE|GIF|GZ|GZIP|ICO|JPG|JPEG|JPE|JSON|MDB|MID|MIDI|MOV|QT|MP3|M4A|MP4|M4V|MPEG|MPG|MPE|MPP|OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|PNG|POT|PPS|PPT|PPTX|RA|RAM|SVG|SVGZ|SWF|TAR|TIF|TIFF|TTF|TTC|WAV|WMA|WRI|WOFF|XLA|XLS|XLSX|XLT|XLW|ZIP)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+    </IfModule>
+</FilesMatch>
+# END W3TC Browser Cache e Gzip
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

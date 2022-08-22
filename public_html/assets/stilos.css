@@ -1,0 +1,519 @@
+body {
+    overflow-x: hidden;
+    font-family: 'dumbledor_1regular';
+    color: #000;
+    font-size: 20px;
+}
+h1 {
+    color: #2090bc;
+    font-weight: 700;
+}
+h2 {
+    color: #b98729;
+    font-weight: 700;
+}
+h3 {
+    color: #9e3434;
+    text-shadow: 0px 1px 1px #b54a4a;
+    font-weight: 500;
+}
+.page-header {
+    padding-bottom: 0;
+    margin: 0;
+    border-bottom: none;
+}
+.btn {
+    font-size: 20px;
+}
+@media (min-width: 1200px) {
+    .layout-rounded {
+        width: 1200px;
+        margin: 20px auto;
+        background: #f6f6f6;
+        box-shadow: none; 
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}
+#bd.pattern7 {
+    background: #000 url('https://www.tarotdehorus.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat;
+    background-size: 1920px 1169px;
+}
+/* Coloca o background em todos os tamanhos de tela - a patir de 100px*/
+@media (min-width: 100px) {
+    #bd.pattern7 {
+        background: #000 url('https://www.tarotdehorus.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat;
+        background-size: 1920px 1169px;
+    }
+}
+/* Background Maior */
+@media (min-width: 1440px) {
+    #bd.pattern7 {
+        background: #1b2933 url('https://www.tarotdehorus.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat !important;
+        background-size: cover !important;
+    }
+}
+#yt_wrapper {
+    background: rgba(255, 255, 255, 0.1);
+}
+#yt_top {
+    height: 40px;
+    line-height: 42px;
+    background: #f3f3f3;
+    color: #707070;
+}
+#yt_header {
+  padding: 10px;
+  /*background: rgba(255, 255, 255, 0.8);*/
+  /*background-image: url('https://www.tarotdehorus.com.br/images/header.jpg');*/
+  /*background-attachment: fixed;*/
+  background: transparent;
+}
+#header-left {
+    margin-left: 8px;
+    padding-left: 22px;
+}
+#header-right {
+    margin-right: -15px;
+}
+.logo {
+    display: none !important;
+}
+#yt_logo {
+    display: none !important;
+}
+/* Menu*/
+#yt_mainmenu {
+    font-family: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#yt_menuwrap {
+    font-family: inherit;
+    z-index: 2;
+    background: #2090bc;
+    border: none;
+}
+/* Menu Ativos e Quando Passa o Mouse por Cima */
+#moonavigator li.level1.active > .item-link, #moonavigator li.level1.hover > .item-link {
+    color: #000;
+    background: #f7b334;
+    padding: 15px;
+    margin: 0px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #e8cf8e;
+}
+#moonavigator li.level1 > .item-link {
+    margin: 0;
+    padding: 18px 14px 14px 14px;
+    color: #ffffff;
+    font-size: 17px;
+    display: block;
+    cursor: pointer;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+/* Menu Celular */
+ul.resmenu li a:focus, ul.resmenu li a:hover, ul.resmenu li a.active {
+    background: #2090bc;
+    color: #fff;
+    text-transform: capitalize;
+}
+.modal-backdrop {
+    z-index: 1;
+}
+/* Main Site nivel 1 */
+#content {
+    background: rgba(255, 255, 255, 0.8);
+}
+/* Main Site nivel 2*/
+#content_main{
+    background: transparent;
+    padding-bottom: 30px;
+}
+/* Main Site nivel 3*/
+#content #yt_component {
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* Home - site_tarologos/tarologos_home.php */
+button, input[type='button'], input[type='submit'] {
+    padding: 5px 10px;
+}
+.module div.modcontent {
+    padding: 0px;
+}
+.module {
+    background: #fff;
+    padding: 0px 0;
+}
+.well {
+    background: transparent;
+}
+.progress {
+    border-radius: 0;
+    height: 6px;
+    box-shadow: none;
+    margin: 0px 0;
+    background: #eee;
+}
+.consultachat_icone_estilo {
+    background: url('https://www.tarotdehorus.com.br/admin/img/chat_c.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+}
+.aconsultarporemail_icone_estilo {
+    background: url('https://www.tarotdehorus.com.br/admin/img/email_c.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+}
+.aviseme_icone_estilo {
+    background: url('https://www.tarotdehorus.com.br/admin/img/aviseme.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+}
+#icones .consultachat_icone_estilo:hover {
+    background: url('https://www.tarotdehorus.com.br/admin/img/chat_c.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+#icones .aconsultarporemail_icone_estilo:hover {
+    background: url('https://www.tarotdehorus.com.br/admin/img/email_c.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+#icones .aviseme_icone_estilo:hover {
+    background: url('https://www.tarotdehorus.com.br/admin/img/aviseme.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+#foto .efeito:hover {
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+#icones {
+    width: 132px;
+}
+/*Página tarólogos*/
+#iconesT .consultachat_icone_estilo:hover {
+    background: url('https://www.tarotdehorus.com.br/admin/img/chat_c.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+#iconesT .aconsultarporemail_icone_estilo:hover {
+    background: url('https://www.tarotdehorus.com.br/admin/img/email_c.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+#iconesT .aviseme_icone_estilo:hover {
+    background: url('https://www.tarotdehorus.com.br/admin/img/aviseme.png');
+    border: none;
+    width: 38px;
+    height: 38px;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+/* Comprar Créditos - site_planos/planos.php */
+.br_plano {
+    /*background: #544948 url("../admin/img/plano.jpg");*/
+    /*width: 165px;*/
+    /*height: 210px;*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9c667+0,f79621+100;Orange+3D+%234 */
+    background: #f9c667; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9c667 0%, #f79621 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f9c667 0%,#f79621 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 ); /* IE6-9 */
+}
+#compre {
+    background: #fff;
+    padding: 5px;
+}
+#minutos {
+    padding-top: 0px;
+}
+.minutos {
+    font-size: 80px;
+    line-height: 100%;
+    color: #130330;
+}
+#minutos_texto {
+    /*padding-top: 20px;*/
+}
+.minutos_texto {
+    font-size: 28px;
+    color: #130330;
+}
+#valor {
+    /*padding-top: 20px;*/
+}
+.valor {
+    font-size: 28px;
+    color: #130330;
+    /*font-weight: 700;*/
+    /*text-shadow: 1px 1px #666;*/
+}
+#bonus {
+    background: #80bf03;
+    padding: 3px;
+    height: 35px;
+}
+.bonus {
+    font-size: 12px;
+    color: #fff;
+}
+.planos_lista {
+    width: 90%;
+    height: 210px;
+    position: absolute;
+    border: none;
+    background:transparent;
+}
+/* Detalhes Comprar Plano - site_planos/comprar_planos.php */
+.titulo-pagamento {
+    font-size: 18px;
+    color: #666;
+    line-height: 105%;
+}
+.titulo-pagamento2 {
+    font-size: 18px;
+    color: #669900;
+    line-height: 105%;
+}
+.detalhes_plano {
+    padding: 8px 3px;
+    width: 276px;
+    height: 240px;
+    position: absolute;
+    border: 1px solid #ccc;
+    background:transparent;
+}
+/* Detalhes Comprar Plano - site_planos/incluir_transfmanual.php */
+.transf {
+    padding: 8px 3px;
+    width: 169px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid #ccc;
+}
+.blog .items-row .item .item-image .img-date {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    right: 0;
+    padding: 15px;
+    background: #f7941d;
+    text-align: center;
+    display: none;
+    max-width: 60px;
+    text-transform: uppercase;
+}
+/* SlideShow */
+.module_menu, div.module {
+     margin: 0 0 0px; 
+}
+#slideshow {
+    background: transparent;
+}
+#yt_slideshow .module {
+    background: transparent;
+    padding: 0;
+}
+#yt_slideshow {
+    margin: 0px 0px 0px 0px;
+}
+#yt_slideshow .module div.modcontent {
+    padding: 0px;
+}
+#yt_slideshow .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: auto;
+}
+/* Artigos */
+#yt_spotlight3 {
+    background: rgba(255, 255, 255, 0.8);
+}
+#yt_spotlight3:after {
+    background: transparent;
+}
+#yt_spotlight3 #main-bottom .module {
+    background: transparent;
+}
+.module h3.modtitle {
+    background: transparent;
+    color: #000;
+}
+.module h3.modtitle:after {
+    background: #000;
+}
+/* Footer */
+#yt_spotlight4 {
+    background: rgba(255, 255, 255, 0.5);
+    padding-top: 32px;
+    font-size: 13px;
+    color: #000;
+}
+#yt_footer {
+    color: #fff;
+    padding: 25px 0px 25px 0px;
+    background: #2090BC;
+}
+#yt_spotlight4 h2.modtitle {
+    font-weight: 600;
+    font-family:inherit;
+    background: none;
+    color: #000000;
+    font-size: 35px;
+    text-shadow: 0px 1px 1px #da8345;
+}
+/*Assinatura*/
+#yt_footer #yt_copyright {
+    color: #d8d3d3;
+    text-align: center;
+}
+#yt_footer #yt_copyright a {
+    color: #fff;
+}
+#yt_footer #yt_copyright a:hover {
+    color: #6e6565;
+}
+.module a {
+    color: #000;
+}
+.module a:hover {
+    color: #fff;
+}
+#yt_spotlight4 h3.modtitle:after {
+    background: none;
+    margin-top: 10px;
+    width: 40px;
+}
+.module h3.modtitle {
+    border-bottom: hidden;
+}
+/* Espaço entre o título e o inicio do conteúdo do módulo*/
+#yt_spotlight4 .module .modcontent {
+    padding: 0px 0; 
+}
+#main-bottom {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.bt-cs .bt-inner .bt-title {
+    clear: both;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 150%;
+    display: inline-block;
+}
+.button, button, .btReverse {
+    background: #000 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 20px;
+    vertical-align: top;
+}
+/*Paginação artigos*/
+.pagination ul.pagination li.active a, .pagination ul.pagination li.active span, .pagination ul.pagination li:hover a, .pagination ul.pagination li:hover span {
+    color: #fff;
+    background: #707070;
+    border: #707070;
+}
+.module {
+    color:#000;
+}
+.btn-padrao {
+    background: #fff;
+    color: #444;
+    font-size: 14px;
+}
+.btn-padrao:hover {
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+
+
+#whatsapp {
+    position: fixed;
+    bottom: 0px;
+    padding: 5px;
+    z-index: 99999;
+    margin:10px;
+}
+/* Blog Coluna Esquerda */
+#content_left {
+    margin-top: 30px;
+}
+.module {
+    background: transparent;
+    padding: 0px 0;
+}
+#k2ModuleBox153 {
+    margin-top: 30px;
+}
+div.itemToolbar {
+    display: none;
+}
+h3.catItemTitle a {
+    color: #000000;
+}
+div.catItemIntroText {
+    padding: 0;
+}
+div.catItemImageBlock {
+    margin: 0 0 0px 0;
+}
+div.catItemBody {
+    margin-bottom: -20px;
+}
+div.catItemView {
+    margin-bottom: -5px;
+    padding: 4px;
+}
+div.itemListCategoriesBlock {
+    display: none; 
+}
+.grecaptcha-badge {
+    opacity: 0 !important;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+[06-Aug-2020 22:38:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatetruecolor() in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 19
+[06-Aug-2020 22:38:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatetruecolor() in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 19
+[06-Aug-2020 22:38:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatetruecolor() in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 19
+[06-Aug-2020 22:38:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatetruecolor() in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 19
+[07-Aug-2020 13:08:26 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[08-Aug-2020 00:41:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[09-Aug-2020 18:21:58 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[09-Aug-2020 18:25:23 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[19-Aug-2020 22:25:41 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[19-Aug-2020 22:48:41 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[25-Aug-2020 18:39:10 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[25-Aug-2020 19:22:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[29-Aug-2020 04:30:19 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[31-Aug-2020 23:58:39 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[19-Oct-2020 19:35:54 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[19-Oct-2020 19:48:18 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[14-Nov-2020 13:52:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[21-Nov-2020 17:06:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[21-Nov-2020 21:22:23 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[19-Dec-2020 07:19:38 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[05-Jan-2021 05:30:10 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[15-Jan-2021 14:35:02 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[17-Jan-2021 11:53:32 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[18-Jan-2021 19:30:21 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
+[27-Jan-2021 18:23:52 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/tarotdehoruscom/public_html/loja_admin/fotos/2020.06.28-18.11.57_5ef9079d5f816/thumb.php on line 35
