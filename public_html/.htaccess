@@ -10,7 +10,7 @@ Options -Indexes
 RewriteEngine On
 
 #Força www. no inicio da URL utilizando https ou http
-RewriteCond %{HTTP_HOST} ^tarotdehorus\.com\.br
+RewriteCond %{HTTP_HOST} ^epapodetarot\.com\.br
 RewriteCond %{HTTPS} =on
 RewriteRule .* https://www.%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
