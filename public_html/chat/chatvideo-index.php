@@ -259,7 +259,7 @@ if (!empty($_SESSION["cod_sala"])){
 					var cod_sala = "<?php echo $cod_sala; ?>";
 					function CreateSocketWrapper(){
 						console.log("cod_sala 1 = " + cod_sala);
-						var conn = new WebSocket('wss://epapodetarot.com.br/wss2/wss2/NNN');
+						var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NS');
 						// Abre Conexão
 						conn.onopen = function(e) {
 							console.log("Connection established!!");

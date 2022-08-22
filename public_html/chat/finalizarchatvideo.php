@@ -53,7 +53,7 @@ WHERE id='$id_cliente'");
 <script type="text/javascript">
     var cod_sala = "<?php echo $cod_sala; ?>";
     function CreateSocketWrapper(){
-        var conn = new WebSocket('wss://epapodetarot.com.br/wss2/wss2/NNN');
+        var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NS');
         // Abre Conexão
         conn.onopen = function(e) {
             console.log("Connection established!!");
