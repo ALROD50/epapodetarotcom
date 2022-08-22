@@ -70,7 +70,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
   <!-- Tarólogos -->
   <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     
-    <div class="mb-3" style="display: block;"><amp-img src="images/homel.webp" width="217" height="66" alt="Tarot de Hórus" title="Tarot de Hórus" style="float: left;" class="d-none d-lg-block"></amp-img><amp-img src="images/homer.webp" width="217" height="66" alt="Tarot de Hórus" title="Tarot de Hórus" style="float: right;" class="d-none d-lg-block"></amp-img><center><i class="fas fa-star-and-crescent"></i><amp-img src="images/logotexto.webp" width="205" height="31" alt="Tarot de Hórus" title="Tarot de Hórus"></amp-img><i class="fas fa-star-and-crescent"></i></center></div>
+    <div class="mb-3" style="display: block;"><amp-img src="images/homel.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></amp-img><amp-img src="images/homer.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></amp-img><center><i class="fas fa-star-and-crescent"></i><amp-img src="images/logotexto.webp" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></amp-img><i class="fas fa-star-and-crescent"></i></center></div>
 
     <div class="row col-12">
       <center>
@@ -434,7 +434,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
 
   <!-- Top Tarólogos -->
   <div class="col-md-2 d-none d-xl-block px-0">
-    <div style="margin-bottom:15px;border: solid #000 1px;border-bottom: solid #d7ad63 5px;background-image: url('https://www.tarotdehorus.com.br/images/toptarologos.jpg');">
+    <div style="margin-bottom:15px;border: solid #000 1px;border-bottom: solid #d7ad63 5px;background-image: url('https://www.epapodetarot.com.br/images/toptarologos.jpg');">
       <div style="background: rgba(23, 23, 23, 0.74); padding:5px; margin-bottom:25px;">
         <center><p style="margin:0px;color:#fff;border-bottom: solid #d7ad63 1px;font-size:19px;"><i class="fas fa-medal"></i> TOP CONSULTORES</p></center>
       </div>
@@ -486,7 +486,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
           // Se for imagem
           if ($ext == 'jpg' OR $ext == 'jpeg' OR $ext == 'png' OR $ext == 'gif' OR $ext == 'bmp') {
             ?>
-            <a href='https://www.tarotdehorus.com.br/comprar-consulta' title='Esotéricos'>
+            <a href='https://www.epapodetarot.com.br/comprar-consulta' title='Esotéricos'>
               <img src='<?php echo $path."/".$arquivo; ?>' alt="Esotéricos" />
             </a>
             <p></p>

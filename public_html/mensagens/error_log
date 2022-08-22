@@ -1,43 +1,43 @@
-[31-Jul-2020 00:34:37 UTC] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 52
-[31-Jul-2020 00:34:46 UTC] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 52
-[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 42
-[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 48
-[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 53
-[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: sql in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 57
-[30-Jul-2020 21:36:03 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 57
-[30-Jul-2020 21:37:06 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 9
-[30-Jul-2020 21:37:06 Brazil/East] PHP Notice:  Undefined variable: sql in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 58
-[30-Jul-2020 21:37:06 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 58
-[30-Jul-2020 21:37:09 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 9
-[30-Jul-2020 21:37:09 Brazil/East] PHP Notice:  Undefined variable: sql in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 58
-[30-Jul-2020 21:37:09 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 58
-[30-Jul-2020 21:37:13 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 9
-[30-Jul-2020 21:37:13 Brazil/East] PHP Notice:  Undefined variable: sql in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 58
-[30-Jul-2020 21:37:13 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 58
-[30-Jul-2020 21:39:00 Brazil/East] PHP Warning:  require_once(/home/tarotdehoruscom/public_html/includes/funcions.php): failed to open stream: No such file or directory in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 7
-[30-Jul-2020 21:39:00 Brazil/East] PHP Fatal error:  require_once(): Failed opening required '/home/tarotdehoruscom/public_html/includes/funcions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 7
-[30-Jul-2020 21:41:11 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 11
-[30-Jul-2020 21:41:11 Brazil/East] PHP Notice:  Undefined variable: sql in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 60
-[30-Jul-2020 21:41:11 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 60
-[30-Jul-2020 21:42:29 Brazil/East] PHP Notice:  Undefined variable: pdo in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 46
-[30-Jul-2020 21:42:29 Brazil/East] PHP Fatal error:  Call to a member function query() on null in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 46
-[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 49
-[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 49
-[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 50
-[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 50
-[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 50
-[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 51
-[30-Jul-2020 21:43:59 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 127
-[30-Jul-2020 21:45:25 Brazil/East] PHP Fatal error:  Call to undefined function conexao() in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 9
-[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 49
-[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 49
-[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 50
-[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 50
-[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 50
-[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 51
-[30-Jul-2020 21:46:09 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 127
-[30-Jul-2020 21:47:36 Brazil/East] PHP Notice:  Undefined index: usuario_id in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 14
-[30-Jul-2020 21:47:36 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 128
-[30-Jul-2020 21:47:41 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 128
-[30-Jul-2020 21:48:58 Brazil/East] PHP Warning:  include(/home/tarotdehoruscom/public_html/includes/funcions.php): failed to open stream: No such file or directory in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 9
-[30-Jul-2020 21:48:58 Brazil/East] PHP Warning:  include(): Failed opening '/home/tarotdehoruscom/public_html/includes/funcions.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/tarotdehoruscom/public_html/mensagens/entrada.php on line 9
+[31-Jul-2020 00:34:37 UTC] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 52
+[31-Jul-2020 00:34:46 UTC] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 52
+[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 42
+[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 48
+[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 53
+[30-Jul-2020 21:36:03 Brazil/East] PHP Notice:  Undefined variable: sql in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 57
+[30-Jul-2020 21:36:03 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 57
+[30-Jul-2020 21:37:06 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 9
+[30-Jul-2020 21:37:06 Brazil/East] PHP Notice:  Undefined variable: sql in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 58
+[30-Jul-2020 21:37:06 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 58
+[30-Jul-2020 21:37:09 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 9
+[30-Jul-2020 21:37:09 Brazil/East] PHP Notice:  Undefined variable: sql in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 58
+[30-Jul-2020 21:37:09 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 58
+[30-Jul-2020 21:37:13 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 9
+[30-Jul-2020 21:37:13 Brazil/East] PHP Notice:  Undefined variable: sql in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 58
+[30-Jul-2020 21:37:13 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 58
+[30-Jul-2020 21:39:00 Brazil/East] PHP Warning:  require_once(/home/epapodetarotcom/public_html/includes/funcions.php): failed to open stream: No such file or directory in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 7
+[30-Jul-2020 21:39:00 Brazil/East] PHP Fatal error:  require_once(): Failed opening required '/home/epapodetarotcom/public_html/includes/funcions.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 7
+[30-Jul-2020 21:41:11 Brazil/East] PHP Notice:  Undefined index: usuario_nivel in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 11
+[30-Jul-2020 21:41:11 Brazil/East] PHP Notice:  Undefined variable: sql in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 60
+[30-Jul-2020 21:41:11 Brazil/East] PHP Fatal error:  Call to a member function rowCount() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 60
+[30-Jul-2020 21:42:29 Brazil/East] PHP Notice:  Undefined variable: pdo in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 46
+[30-Jul-2020 21:42:29 Brazil/East] PHP Fatal error:  Call to a member function query() on null in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 46
+[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 49
+[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 49
+[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 50
+[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 50
+[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 50
+[30-Jul-2020 21:43:59 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 51
+[30-Jul-2020 21:43:59 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 127
+[30-Jul-2020 21:45:25 Brazil/East] PHP Fatal error:  Call to undefined function conexao() in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 9
+[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 49
+[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 49
+[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 50
+[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 50
+[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 50
+[30-Jul-2020 21:46:09 Brazil/East] PHP Notice:  Undefined variable: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 51
+[30-Jul-2020 21:46:09 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 127
+[30-Jul-2020 21:47:36 Brazil/East] PHP Notice:  Undefined index: usuario_id in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 14
+[30-Jul-2020 21:47:36 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 128
+[30-Jul-2020 21:47:41 Brazil/East] PHP Fatal error:  Call to undefined function MsgErro() in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 128
+[30-Jul-2020 21:48:58 Brazil/East] PHP Warning:  include(/home/epapodetarotcom/public_html/includes/funcions.php): failed to open stream: No such file or directory in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 9
+[30-Jul-2020 21:48:58 Brazil/East] PHP Warning:  include(): Failed opening '/home/epapodetarotcom/public_html/includes/funcions.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/epapodetarotcom/public_html/mensagens/entrada.php on line 9

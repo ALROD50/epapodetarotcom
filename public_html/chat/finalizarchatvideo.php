@@ -6,7 +6,7 @@ session_start();
 ini_set('display_errors',1); // Força o PHP a mostrar os erros.
 ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
-include "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 ?>
 <center>
@@ -53,7 +53,7 @@ WHERE id='$id_cliente'");
 <script type="text/javascript">
     var cod_sala = "<?php echo $cod_sala; ?>";
     function CreateSocketWrapper(){
-        var conn = new WebSocket('wss://tarotdehorus.com.br/wss2/wss2/NNN');
+        var conn = new WebSocket('wss://epapodetarot.com.br/wss2/wss2/NNN');
         // Abre Conexão
         conn.onopen = function(e) {
             console.log("Connection established!!");
@@ -143,7 +143,7 @@ if ($row23 > 0) {
 
     // Redireciona tarólogo
     // echo "<script>alert('Passo 1');</script>";
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
     
 } else {
 
@@ -159,7 +159,7 @@ if ($row23 > 0) {
 
     // Redireciona tarólogo
     // echo "<script>alert('Passo 2');</script>";
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br'</script>";
 }
 
 // Testando Sessões

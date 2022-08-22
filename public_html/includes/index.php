@@ -30,7 +30,7 @@
 </style>
 <?php
 if ($row_onlinex=="offline" OR $row_onlinex=="") {
-	echo "<script>document.location.href='https://www.tarotdehorus.com.br/fazer-login'</script>";
+	echo "<script>document.location.href='https://www.epapodetarot.com.br/fazer-login'</script>";
 	exit();
 }
 

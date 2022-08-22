@@ -36,7 +36,7 @@ if(isset($_POST['envia'])){
         MsgErro ($msge);
     } else {            
         //biblioteca para o captcha
-        require_once '/home/tarotdehoruscom/public_html/scripts/recaptcha/autoload.php';
+        require_once '/home/epapodetarotcom/public_html/scripts/recaptcha/autoload.php';
         // sua chave secreta
         $secret = "6LeO7OkUAAAAAL7xRieXU8luIkFBANA7_GjnSbsT";
         // resposta vazia
@@ -65,15 +65,15 @@ if(isset($_POST['envia'])){
       $emailMailer->setLanguage('pt');
       $emailMailer->CharSet = "UTF-8";
       $emailMailer->IsHTML(true);
-      $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@tarotdehorus.com.br?subject=Unsubscribe>, <https://www.tarotdehorus.com.br>");
+      $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
       $emailMailer->Host     = "";  
       $emailMailer->SMTPAuth = false; 
       $emailMailer->Username = ""; 
       $emailMailer->Password = ""; 
-      $emailMailer->From      = 'contato@tarotdehorus.com.br'; // Remetente
-      $emailMailer->AddAddress( "contato@tarotdehorus.com.br", 'Tarot de Hórus'); // Destinatário
+      $emailMailer->From      = 'contato@epapodetarot.com.br'; // Remetente
+      $emailMailer->AddAddress( "contato@epapodetarot.com.br", 'É Papo de Tarot'); // Destinatário
       // $emailMailer->AddBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia oculta
-      $emailMailer->FromName  = 'Tarot de Hórus'; // Seu nome
+      $emailMailer->FromName  = 'É Papo de Tarot'; // Seu nome
       $emailMailer->Subject   = 'Trabalhe Conosco'; // Assunto
       $corpoMSG = '
       Uma nova mensagem foi enviada via formulário trabalhe conosco no site.<br/>
@@ -105,8 +105,8 @@ if(isset($_POST['envia'])){
       <br/>
       '.$pagamento.' <br/>
       <br/>
-      Tarot de Hórus<br/>
-      <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+      É Papo de Tarot<br/>
+      <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
       ';
       $emailMailer->MsgHTML($corpoMSG);
       // Enviando o email

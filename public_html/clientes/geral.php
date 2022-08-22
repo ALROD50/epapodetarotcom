@@ -72,7 +72,7 @@ if ($valor=="") {
   </div>
   <div class="col-md-6">
     <div class="card card-body" style="background:#fff; color:#383C3F;">
-      <p class="mb-0">Telefone: <strong><?php echo $telefone; ?></strong> - <a href="https://api.whatsapp.com/send?phone=55<?php echo $telefoneW; ?>&text=Oi <?php echo $nome; ?>, tudo bem? Sou a Patricia aqui do Tarot de Hórus, vi que é nova no site. Posso te ajudar a fazer sua consulta com nossos tarólogos?" target="_Blank"><i class="fab fa-whatsapp"></i>WhatsApp</a></br>
+      <p class="mb-0">Telefone: <strong><?php echo $telefone; ?></strong> - <a href="https://api.whatsapp.com/send?phone=55<?php echo $telefoneW; ?>&text=Oi <?php echo $nome; ?>, tudo bem? Sou a Patricia aqui do É Papo de Tarot, vi que é nova no site. Posso te ajudar a fazer sua consulta com nossos tarólogos?" target="_Blank"><i class="fab fa-whatsapp"></i>WhatsApp</a></br>
       CPF: <strong><?php echo $cpf; ?></strong></br>
       CEP: <strong><?php echo $cep; ?></strong></br>
       Endereco: <strong><?php echo $endereco; ?></strong></br>

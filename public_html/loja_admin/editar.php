@@ -1,7 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <!-- Lightbox2 -->
-<link rel="stylesheet" href="https://www.tarotdehorus.com.br/scripts/lightbox2-master/css/lightbox.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://www.epapodetarot.com.br/scripts/lightbox2-master/css/lightbox.min.css" type="text/css" media="screen" />
 <!-- Lightbox2 -->
 
 <style type="text/css">
@@ -116,13 +116,13 @@ if(isset($_POST['envia'])) {
     }
 
     // Chama o arquivo com a classe WideImage
-    include '/home/tarotdehoruscom/public_html/scripts/wideimage-11.02.19-full/lib/WideImage.php';
+    include '/home/epapodetarotcom/public_html/scripts/wideimage-11.02.19-full/lib/WideImage.php';
 
     // Verifica se foi enviado a foto de abertura
     if(!empty($_FILES['foto_abertura']['name']['0'])) {
 
         // Deleta a foto que estava lá antes.
-        $filepath = "/home/tarotdehoruscom/public_html/loja_admin/foto_abertura/".$foto_abertura_db;
+        $filepath = "/home/epapodetarotcom/public_html/loja_admin/foto_abertura/".$foto_abertura_db;
         unlink ($filepath);
 
         // Enviando nova foto
@@ -139,7 +139,7 @@ if(isset($_POST['envia'])) {
 
         //Faz o upload da imagem para o servidor
         $upload  = move_uploaded_file($tmp, $pasta.$nome_foto_abertura);
-        $pasta = '/home/tarotdehoruscom/public_html/'.$pasta.$nome_foto_abertura;
+        $pasta = '/home/epapodetarotcom/public_html/'.$pasta.$nome_foto_abertura;
 
         // Then you can load an image:
         $image = WideImage::load($pasta);
@@ -164,8 +164,8 @@ if(isset($_POST['envia'])) {
         $dir = 'loja_admin/fotos/'.$nome_da_pasta.'/';
 
         // Copia o arquivo thumb.php para a pasta das fotos
-        $thumbDir        = '/home/tarotdehoruscom/public_html/loja_admin/thumb.php';
-        $CopiathumbDir   = '/home/tarotdehoruscom/public_html/loja_admin/fotos/'.$nome_da_pasta.'/thumb.php';
+        $thumbDir        = '/home/epapodetarotcom/public_html/loja_admin/thumb.php';
+        $CopiathumbDir   = '/home/epapodetarotcom/public_html/loja_admin/fotos/'.$nome_da_pasta.'/thumb.php';
         if (!copy($thumbDir, $CopiathumbDir)) {
             $erros++;
             $fotosv = "Erro ao criar o thump.php.<br>";
@@ -221,7 +221,7 @@ if(isset($_POST['envia'])) {
         // Fotos de Abertura - Verifica se esta sendo enviado nova Foto de Abertura
         if (!empty($_FILES['foto_abertura']['name']['0'])) {
             // Deleta Foto de Abertura
-            $filepath = "/home/tarotdehoruscom/public_html/loja_admin/foto_abertura/".$nome_foto_abertura;
+            $filepath = "/home/epapodetarotcom/public_html/loja_admin/foto_abertura/".$nome_foto_abertura;
             unlink ($filepath);
             $nome_foto_abertura = null;;
         }
@@ -331,7 +331,7 @@ if(isset($_POST['envia'])) {
             <h4>Regras de Dimensões do Pacote nos Correios</h4>
         </div>
         <div class="panel-body">
-            <img src="https://www.tarotdehorus.com.br/images/frete.png" alt="">
+            <img src="https://www.epapodetarot.com.br/images/frete.png" alt="">
         </div>
     </div>
 
@@ -475,7 +475,7 @@ if(isset($_POST['envia'])) {
 </script>
 
 <!-- Lightbox2 -->
-<script src="https://www.tarotdehorus.com.br/scripts/lightbox2-master/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://www.epapodetarot.com.br/scripts/lightbox2-master/js/lightbox-plus-jquery.min.js"></script>
 <!-- Lightbox2 -->
 
 <script>

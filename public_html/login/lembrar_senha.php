@@ -64,14 +64,14 @@ if(isset($_POST['envia'])){
 
       $q = $pdo->query("UPDATE clientes SET senha = md5('$senha')  WHERE id='$id' ");
 
-      $massunto  = "Sua nova senha no Tarot de Hórus";
+      $massunto  = "Sua nova senha no É Papo de Tarot";
       $conteudo  = "<p>Uma nova senha de acesso à sua conta no site foi gerada, guarde as informações abaixo para acessar sua conta em nosso site.</p>";
       $conteudo .= "<strong>Dados de Acesso:</strong> <br />";
       $conteudo .= "<strong>Usuário:</strong> $usuario<br />";
       $conteudo .= "<strong>Nova Senha:</strong> $senha<br />";
       $conteudo .= "<br/>";
       $conteudo .= "<br/>";
-      $conteudo .= "www.tarotdehorus.com.br<br/>";
+      $conteudo .= "www.epapodetarot.com.br<br/>";
       EnviarEmail($email, $nome, $massunto, $conteudo);
 
     } else {

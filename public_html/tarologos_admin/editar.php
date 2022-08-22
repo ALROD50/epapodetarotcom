@@ -31,7 +31,7 @@ if (isset($_POST["salva"])) {
         $nome_final = $logo;
     } else {
         //deleta o logo que estava lá antes.
-        $filepath = "/home/tarotdehoruscom/public_html/tarologos_admin/fotos/".$logo;
+        $filepath = "/home/epapodetarotcom/public_html/tarologos_admin/fotos/".$logo;
         @unlink ($filepath);
         include "recebe_upload.php";
         $nome_final = $nome_final;

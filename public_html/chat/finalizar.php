@@ -6,7 +6,7 @@ session_start();
 ini_set('display_errors',0); // Força o PHP a mostrar os erros.
 ini_set('display_startup_erros',0); // Força o PHP a mostrar os erros.
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 // Recuperando informações da sessão
 $data = date('Y-m-d H:i:s');
@@ -237,7 +237,7 @@ if (!empty($_SESSION["cod_sala"])){
             if(isset($_SESSION['nome_cliente'])) {  unset($_SESSION['nome_cliente']); } else { unset($_SESSION['nome_cliente']); }
             if(isset($_SESSION['inicia_chat3'])) {  unset($_SESSION['inicia_chat3']); } else { unset($_SESSION['inicia_chat3']); }
             if(isset($_SESSION['tempo_inicial3'])) {  unset($_SESSION['tempo_inicial3']); } else { unset($_SESSION['tempo_inicial3']); }
-            echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+            echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
         }
         
     } else {
@@ -254,11 +254,11 @@ if (!empty($_SESSION["cod_sala"])){
         if ($nivel == 'CLIENTE') {
             echo "<script>document.location.href='depoimentos.php'</script>";
         } elseif ($nivel == 'TAROLOGO') {
-            echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+            echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
         }
     }
 
 } else {
 
-  echo "<script>document.location.href='https://www.tarotdehorus.com.br/index.php'</script>";
+  echo "<script>document.location.href='https://www.epapodetarot.com.br/index.php'</script>";
 }

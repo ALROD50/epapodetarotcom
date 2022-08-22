@@ -15,7 +15,7 @@ if(isset($_SESSION['id_tarologo'])) {  unset($_SESSION['id_tarologo']); } else {
 if(isset($_SESSION['id_cliente'])) {  unset($_SESSION['id_cliente']); } else { unset($_SESSION['id_cliente']); }
 if(isset($_SESSION['nome_tarologo'])) {  unset($_SESSION['nome_tarologo']); } else { unset($_SESSION['nome_tarologo']); }
 if(isset($_SESSION['nome_cliente'])) {  unset($_SESSION['nome_cliente']); } else { unset($_SESSION['nome_cliente']); }
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 if($_SERVER['REQUEST_METHOD'] == 'GET'){
 
@@ -159,12 +159,12 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 			echo "<script>alert('Desculpe, este cliente deixou a sala há alguns segundos atrás... vamos te levar de volta para o site, pois o cliente pode tentar de novo. ')</script>";
 		}
 
-		echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos'</script>";
+		echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos'</script>";
 	}
 
 } else {
 
 	//Se não existir get, sair do chat.
-	echo "<script>document.location.href='https://www.tarotdehorus.com.br/'</script>";
+	echo "<script>document.location.href='https://www.epapodetarot.com.br/'</script>";
 }
 ?>

@@ -6,9 +6,9 @@ ini_set('display_startup_erros',1);
 error_reporting(E_ALL);
 
 if (isset($_POST['online'])) {
-	// include "/home/tarotdehoruscom/public_html/includes/funcions.php";
-	include "/home/tarotdehoruscom/public_html/includes/msg.php";
-	include "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+	// include "/home/epapodetarotcom/public_html/includes/funcions.php";
+	include "/home/epapodetarotcom/public_html/includes/msg.php";
+	include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 	$pdo=conexao();
 	$row_onlinex = $_POST['online'];
 	$usuario_nivel = $_POST['usuario_nivel'];

@@ -144,13 +144,13 @@ while ($dadoss3= $executa3->fetch(PDO::FETCH_ASSOC)){
 // if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian == true): 
 //   // Se este dispositivo for portátil, faça/escreva o seguinte
 //   $texto = $dataHora." | Cliente | Celular | $cliente_nome | $yourbrowser | $version | $platform\n\n";
-//   $fp = fopen('/home/tarotdehoruscom/public_html/area_cliente/logs.txt', "a"); 
+//   $fp = fopen('/home/epapodetarotcom/public_html/area_cliente/logs.txt', "a"); 
 //   $escreve = fwrite($fp, $texto);
 //   fclose($fp);
 // else : 
 //   // Caso contrário, faça/escreva o seguinte
 //   $texto = $dataHora." | Cliente | COMPUTADOR | $cliente_nome | $yourbrowser | $version | $platform\n\n";
-//   $fp = fopen('/home/tarotdehoruscom/public_html/area_cliente/logs.txt', "a"); 
+//   $fp = fopen('/home/epapodetarotcom/public_html/area_cliente/logs.txt', "a"); 
 //   $escreve = fwrite($fp, $texto);
 //   fclose($fp);
 // endif;

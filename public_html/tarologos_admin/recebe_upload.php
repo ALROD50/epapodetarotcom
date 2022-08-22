@@ -55,7 +55,7 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_fin
 
 	// Convertendo imagem em .WEBP
 	if ($extensao == 'jpg') {
-		$dir = '/home/tarotdehoruscom/public_html/tarologos_admin/fotos/';
+		$dir = '/home/epapodetarotcom/public_html/tarologos_admin/fotos/';
 		$name = $nome_final;
 		$newName = time().'.webp';
 		$img = imagecreatefromjpeg($dir . $name);
@@ -69,7 +69,7 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_fin
         @unlink ($filepath);
         $nome_final = $newName;
 	} elseif ($extensao == 'jpeg') {
-		$dir = '/home/tarotdehoruscom/public_html/tarologos_admin/fotos/';
+		$dir = '/home/epapodetarotcom/public_html/tarologos_admin/fotos/';
 		$name = $nome_final;
 		$newName = time().'.webp';
 		$img = imagecreatefromjpeg($dir . $name);
@@ -83,7 +83,7 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_fin
         @unlink ($filepath);
         $nome_final = $newName;
 	} elseif ($extensao == 'png') {
-		$dir = '/home/tarotdehoruscom/public_html/tarologos_admin/fotos/';
+		$dir = '/home/epapodetarotcom/public_html/tarologos_admin/fotos/';
 		$name = $nome_final;
 		$newName = time().'.webp';
 		$img = imagecreatefrompng($dir . $name);
@@ -97,7 +97,7 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_fin
         @unlink ($filepath);
         $nome_final = $newName;
 	} elseif ($extensao == 'gif') {
-		$dir = '/home/tarotdehoruscom/public_html/tarologos_admin/fotos/';
+		$dir = '/home/epapodetarotcom/public_html/tarologos_admin/fotos/';
 		$name = $nome_final;
 		$newName = time().'.webp';
 		$img = imagecreatefromgif($dir . $name);
@@ -111,7 +111,7 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_fin
         @unlink ($filepath);
         $nome_final = $newName;
 	} elseif ($extensao == 'bmp') {
-		$dir = '/home/tarotdehoruscom/public_html/tarologos_admin/fotos/';
+		$dir = '/home/epapodetarotcom/public_html/tarologos_admin/fotos/';
 		$name = $nome_final;
 		$newName = time().'.webp';
 		$img = imagecreatefrombmp($dir . $name);

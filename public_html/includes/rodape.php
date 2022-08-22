@@ -14,7 +14,7 @@
     	<script>
     		window.jQuery || document.write('<script src="assets/dist/js/jquery-3.5.1.min.js"><\/script>');
     	</script>
-    	<!-- <script async src="https://www.tarotdehorus.com.br/assets/dist/js/jquery-3.5.1.min.js"></script> -->
+    	<!-- <script async src="https://www.epapodetarot.com.br/assets/dist/js/jquery-3.5.1.min.js"></script> -->
     	<script async src="assets/dist/js/bootstrap.bundle.min.js"></script>
     	<script async src="https://kit.fontawesome.com/4587a64295.js" crossorigin="anonymous"></script>
 
@@ -41,7 +41,7 @@
 
 	    <!-- whatsapp -->
 		<div id="whatsapp">
-		    <a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, pode me ajudar com uma duvida?"><img src="images/whatsapp.webp" alt=""></a>
+		    <a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?"><img src="images/whatsapp.webp" alt=""></a>
 		</div>
 
 		<!-- Subir -->
@@ -181,12 +181,12 @@
 						content_style: ".mymention{ color: gray; }",
 						contextmenu: "link image imagetools table configurepermanentpen",
 						a11y_advanced_options: true,
-  						images_upload_url: 'https://www.tarotdehorus.com.br/scripts/postAcceptor.php',
+  						images_upload_url: 'https://www.epapodetarot.com.br/scripts/postAcceptor.php',
   						images_upload_handler: function (blobInfo, success, failure, progress) {
 						    var xhr, formData;
 						    xhr = new XMLHttpRequest();
 						    xhr.withCredentials = false;
-						    xhr.open('POST', 'https://www.tarotdehorus.com.br/scripts/postAcceptor.php');
+						    xhr.open('POST', 'https://www.epapodetarot.com.br/scripts/postAcceptor.php');
 						    xhr.upload.onprogress = function (e) {
 						      progress(e.loaded / e.total * 100);
 						    };
@@ -323,7 +323,7 @@
 				}
 
 				if (errosform == 0){
-					document.location.href='https://www.tarotdehorus.com.br/loja/'+categoria;
+					document.location.href='https://www.epapodetarot.com.br/loja/'+categoria;
 				}
 				      
 				});
@@ -2198,7 +2198,7 @@
 			                // Execute the payment
 			                return actions.payment.execute().then(function () {
 			                    // Show a success page to the buyer
-			                    $.post('https://www.tarotdehorus.com.br/checkout/add_credit_paypal.php',
+			                    $.post('https://www.epapodetarot.com.br/checkout/add_credit_paypal.php',
 			                    {
 			                      usuario_id : '<?php echo $idclientesite; ?>',
 			                      ref:         '<?php echo $ref; ?>',
@@ -2218,7 +2218,7 @@
 			            // Show an error page here, when an error occurs
 			            // Call your server to execute the payment
 			            //console.log(err);
-			            $.post('https://www.tarotdehorus.com.br/checkout/add_credit_paypal.php',
+			            $.post('https://www.epapodetarot.com.br/checkout/add_credit_paypal.php',
 			            {
 			              ERRO    : 'ERRONOPAGAMENTO',
 			              ErroCod : err
@@ -2294,7 +2294,7 @@
 		if ($usuario_nivel == 'ADMIN') {
 		 	?>
 		 	<script type="text/javascript">
-            var conn = new WebSocket('wss://tarotdehorus.com.br/wss2/NNN');
+            var conn = new WebSocket('wss://epapodetarot.com.br/wss2/NNN');
             function StatusTarologoOnline() {
               $('#onlineVerificaion').removeClass('offline');
               $('#onlineVerificaion').addClass('online');
@@ -2333,7 +2333,7 @@
 				// Conecta + Status + Mostra Chamada
 				function CreateSocketWrapper(){
 					// Conexão
-					var conn = new WebSocket('wss://tarotdehorus.com.br/wss2/wss2/NNN');
+					var conn = new WebSocket('wss://epapodetarot.com.br/wss2/wss2/NNN');
 					// Abre Conexão
 					conn.onopen = function(e) {
 						console.log("Connection established!!");
@@ -2359,7 +2359,7 @@
 					if ((id_tarologo_chamada == meuid) && (tipo == 'iniciachat')) {
 						// Verificar no banco "chamada_consulta", se existir, mostra mensagem de cliente chamando
 						var intervalo = setInterval(function() {
-							$.post('https://www.tarotdehorus.com.br/area_tarologos/inicia_chat.php',
+							$.post('https://www.epapodetarot.com.br/area_tarologos/inicia_chat.php',
 							{
 								id_tarologo : meuid
 							}, function(retorno){
@@ -2372,7 +2372,7 @@
 						flashTitle("Cliente Chamando para Atendimento...", 100);
 						// Notificações via windows - titulo, icone e texto para a notificação.
 						var notificationChat = new Notification('Cliente Chamando!', {
-							icon: 'https://www.tarotdehorus.com.br/images/Logo-SiteP.webp',
+							icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
 							body: "Iniciar Atendimento!",
 							silent: true,
 						});
@@ -2382,7 +2382,7 @@
 							notification.close();
 						};
 						// Toca Música
-						myAudio =  new  Audio ( 'https://www.tarotdehorus.com.br/chat/newmsg.mp3' );  
+						myAudio =  new  Audio ( 'https://www.epapodetarot.com.br/chat/newmsg.mp3' );  
 						myAudio.addEventListener ( 'ended' ,  function ()  { 
 							this.currentTime =  0 ; 
 							this.play(); 
@@ -2410,7 +2410,7 @@
 		<?php
 		if ($AMPimage=="SIM") {
 		 	?>
-			<link rel="canonical" href="https://www.tarotdehorus.com.br">
+			<link rel="canonical" href="https://www.epapodetarot.com.br">
 		  	<script async src="https://cdn.ampproject.org/v0.js"></script>
 	  		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	  		<style amp-boilerplate>
@@ -2455,7 +2455,7 @@
 			data-cookie="CookieInfoScript"
 			data-text-align="left"
 			data-message="Usamos cookies para melhorar sua experiência. Continuando a visitar este site, você concorda com o nosso uso de cookies."
-			data-moreinfo="https://www.tarotdehorus.com.br/politica-de-privacidade-e-termos-de-uso"
+			data-moreinfo="https://www.epapodetarot.com.br/politica-de-privacidade-e-termos-de-uso"
 			data-linkmsg="Mais Informações"
 			data-close-text="Aceitar!">
 		</script>

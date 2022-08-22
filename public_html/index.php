@@ -73,7 +73,7 @@ include "scripts/PHPMailer-master5.2.22/class.smtp.php";
 		} elseif ($pagina_atual=="pagamentos") {
 			include "checkout/pagar.php";
 		} else {
-			echo "<script>document.location.href='https://www.tarotdehorus.com.br/404.php'</script>";
+			echo "<script>document.location.href='https://www.epapodetarot.com.br/404.php'</script>";
 		}
 		include "site_rodape/rodape.php";
 		include "includes/modal.php";
@@ -89,7 +89,7 @@ include "scripts/PHPMailer-master5.2.22/class.smtp.php";
 if ($usuario_nivel == 'TAROLOGO') {
 	?>
 	<video height="1" width="1" autoplay="" loop="" muted="" controls="">
-		<source src="https://www.tarotdehorus.com.br/blackvideo.mp4">
+		<source src="https://www.epapodetarot.com.br/blackvideo.mp4">
 	</video>
 	<?php
 }

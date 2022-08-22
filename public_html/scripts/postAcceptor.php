@@ -2,7 +2,7 @@
   /***************************************************
    * Only these origins are allowed to upload images *
    ***************************************************/
-  $accepted_origins = array("http://localhost", "http://192.168.1.1", "https://www.tarotdehorus.com.br");
+  $accepted_origins = array("http://localhost", "http://192.168.1.1", "https://www.epapodetarot.com.br");
 
   /*********************************************
    * Change this line to set the upload folder *
@@ -47,8 +47,8 @@
 
     // Respond to the successful upload with JSON.
     // Use a location key to specify the path to the saved image resource.
-    // { location : '/home/tarotdehoruscom/public_html/images'}
-    echo json_encode(array('location' => 'https://www.tarotdehorus.com.br/'.$filetowrite));
+    // { location : '/home/epapodetarotcom/public_html/images'}
+    echo json_encode(array('location' => 'https://www.epapodetarot.com.br/'.$filetowrite));
   } else {
     // Notify editor that the upload failed
     header("HTTP/1.1 500 Server Error");

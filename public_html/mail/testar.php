@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
-include_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+include_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 require_once('../scripts/PHPMailer-master5.2.22/class.phpmailer.php');
 require_once('../scripts/PHPMailer-master5.2.22/class.smtp.php');
 
@@ -137,20 +137,20 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
                 $PHPMailer->setLanguage('pt');
                 $PHPMailer->CharSet  = "UTF-8";
                 $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@tarotdehorus.com.br?subject=Unsubscribe>, <https://www.tarotdehorus.com.br>");
-                $PHPMailer->Host     ="mail.tarotdehorus.com.br";  
+                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+                $PHPMailer->Host     ="mail.epapodetarot.com.br";  
                 $PHPMailer->SMTPAuth =true;
                 $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-                $PHPMailer->Username ="contato@tarotdehorus.com.br"; 
+                $PHPMailer->Username ="contato@epapodetarot.com.br"; 
                 $PHPMailer->Password ="fqF7OxrWEi9x";
-                $PHPMailer->From     ="contato@tarotdehorus.com.br"; // Remetente
-                $PHPMailer->FromName ="Tarot de Hórus"; // Seu nome
-                $PHPMailer->AddReplyTo('contato@tarotdehorus.com.br', 'Tarot de Hórus'); // Remetente
+                $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+                $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
+                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
                 $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
                 //Campos abaixo são opcionais 
                 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 //$PHPMailer->AddCC('destinarario@dominio.com.br', 'Destinatario'); // Copia
-                // $PHPMailer->AddBCC('novasystems.atendimento@hotmail.com', 'Tarot de Hórus'); // Cópia oculta
+                // $PHPMailer->AddBCC('novasystems.atendimento@hotmail.com', 'É Papo de Tarot'); // Cópia oculta
                 //$PHPMailer->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
                 $PHPMailer->Subject  = $msg_assunto; // Assunto
                 $corpoMSG = $msg_msg;
@@ -230,20 +230,20 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 	                $PHPMailer->setLanguage('pt');
 	                $PHPMailer->CharSet  = "UTF-8";
 	                $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@tarotdehorus.com.br?subject=Unsubscribe>, <https://www.tarotdehorus.com.br>");
-	                $PHPMailer->Host     ="mail.tarotdehorus.com.br";  
+	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+	                $PHPMailer->Host     ="mail.epapodetarot.com.br";  
 	                $PHPMailer->SMTPAuth =true;
 	                $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-	                $PHPMailer->Username ="contato@tarotdehorus.com.br"; 
+	                $PHPMailer->Username ="contato@epapodetarot.com.br"; 
 	                $PHPMailer->Password ="fqF7OxrWEi9x";
-	                $PHPMailer->From     ="contato@tarotdehorus.com.br"; // Remetente
-	                $PHPMailer->FromName ="Tarot de Hórus"; // Seu nome
-	                $PHPMailer->AddReplyTo('contato@tarotdehorus.com.br', 'Tarot de Hórus'); // Remetente
+	                $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+	                $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
+	                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
 	                $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 	                //Campos abaixo são opcionais 
 	                //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	                //$PHPMailer->AddCC('destinarario@dominio.com.br', 'Destinatario'); // Copia
-	                //$PHPMailer->AddBCC('novasystems.atendimento@hotmail.com', 'Tarot de Hórus'); // Cópia oculta
+	                //$PHPMailer->AddBCC('novasystems.atendimento@hotmail.com', 'É Papo de Tarot'); // Cópia oculta
 	                //$PHPMailer->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
 	                $PHPMailer->Subject  = $msg_assunto; // Assunto
 	                $corpoMSG = $msg_msg;
@@ -290,20 +290,20 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 	                $PHPMailer->setLanguage('pt');
 	                $PHPMailer->CharSet  = "UTF-8";
 	                $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@tarotdehorus.com.br?subject=Unsubscribe>, <https://www.tarotdehorus.com.br>");
-	                $PHPMailer->Host     ="mail.tarotdehorus.com.br";  
+	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+	                $PHPMailer->Host     ="mail.epapodetarot.com.br";  
 	                $PHPMailer->SMTPAuth =true;
 	                $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-	                $PHPMailer->Username ="contato@tarotdehorus.com.br"; 
+	                $PHPMailer->Username ="contato@epapodetarot.com.br"; 
 	                $PHPMailer->Password ="fqF7OxrWEi9x";
-	                $PHPMailer->From     ="contato@tarotdehorus.com.br"; // Remetente
-	                $PHPMailer->FromName ="Tarot de Hórus"; // Seu nome
-	                $PHPMailer->AddReplyTo('contato@tarotdehorus.com.br', 'Tarot de Hórus'); // Remetente
+	                $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+	                $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
+	                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
 	                $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 	                //Campos abaixo são opcionais 
 	                //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	                //$PHPMailer->AddCC('destinarario@dominio.com.br', 'Destinatario'); // Copia
-	                // $PHPMailer->AddBCC('novasystems.atendimento@hotmail.com', 'Tarot de Hórus'); // Cópia oculta
+	                // $PHPMailer->AddBCC('novasystems.atendimento@hotmail.com', 'É Papo de Tarot'); // Cópia oculta
 	                //$PHPMailer->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
 	                $PHPMailer->Subject  = $msg_assunto; // Assunto
 	                $corpoMSG = $msg_msg;

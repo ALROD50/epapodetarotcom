@@ -4,7 +4,7 @@
 //
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 // echo '<div class="card card-body" style="position:absolute; font-size:42px; z-index:99999;">';
 // echo 'Pesquisando se existe chamada de atendimento: tempo '.time().'</br>'; 
@@ -69,7 +69,7 @@ if ($cliente_chamando == "cliente_chamando" AND $acesso == "") {
 				tempo2--;
 			} else {
 				// Quando o contador chegar a zero faz esta ação
-			    location.href="https://www.tarotdehorus.com.br/minha-conta";
+			    location.href="https://www.epapodetarot.com.br/minha-conta";
 			}
 		}
 		// Chama a função ao carregar a tela

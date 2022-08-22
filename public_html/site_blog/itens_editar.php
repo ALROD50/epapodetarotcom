@@ -71,13 +71,13 @@ if ( isset($_POST["editarartigo"]) ) {
 	}
 
 	// Chama o arquivo com a classe WideImage - Resize Image
-	include '/home/tarotdehoruscom/public_html/scripts/wideimage-11.02.19-full/lib/WideImage.php';
+	include '/home/epapodetarotcom/public_html/scripts/wideimage-11.02.19-full/lib/WideImage.php';
 
 	// Verifica se foi enviado a foto de abertura
 	if(!empty($_FILES['foto_abertura']['name']['0'])) {
 
 	    // Deleta a foto que estava lá antes.
-        $filepath = "/home/tarotdehoruscom/public_html/images/blog/foto_abertura/".$foto_abertura_db;
+        $filepath = "/home/epapodetarotcom/public_html/images/blog/foto_abertura/".$foto_abertura_db;
         unlink ($filepath);
 
 	    $img  = $_FILES['foto_abertura'];
@@ -88,12 +88,12 @@ if ( isset($_POST["editarartigo"]) ) {
 	    $ext = end($ext);
 	    $ext = strtolower($ext);
 
-		$pasta = '/home/tarotdehoruscom/public_html/images/blog/foto_abertura/';
+		$pasta = '/home/epapodetarotcom/public_html/images/blog/foto_abertura/';
 		$nome_foto_abertura  =  uniqid().'.'.$ext; 
 
 		//Faz o upload da imagem para o servidor
 		$upload  = move_uploaded_file($tmp, $pasta.$nome_foto_abertura);
-		$pasta = '/home/tarotdehoruscom/public_html/images/blog/foto_abertura/'.$nome_foto_abertura;
+		$pasta = '/home/epapodetarotcom/public_html/images/blog/foto_abertura/'.$nome_foto_abertura;
 
 		// Then you can load an image:
 		$image = WideImage::load($pasta);

@@ -22,7 +22,7 @@
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<title><?php echo $title; ?></title>
-		<base href="https://www.tarotdehorus.com.br"/>
+		<base href="https://www.epapodetarot.com.br"/>
 		<meta name="keywords" content="<?php echo $keywords; ?>"/>
 		<meta name="description" content="<?php echo $metadescription; ?>"/>
 		<meta name="author" content="Agência Nova Systems Marketing Digital"/>

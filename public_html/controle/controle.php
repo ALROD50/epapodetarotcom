@@ -45,7 +45,7 @@ while ($dadossx= $executax->fetch(PDO::FETCH_ASSOC)) {
     // ******* RETORNO
     ####################################################
     // $seuemail = "logs@novasystems.com.br";
-    // $assunto  = "Log Compra - Tarot de Hórus";
+    // $assunto  = "Log Compra - É Papo de Tarot";
     // /*Configuramos os cabeçalho do e-mail*/
     // $headers  = "MIME-Version: 1.0\r\n";
     // $headers .= "Content-type: text/html; charset=utf-8\r\n";
@@ -57,7 +57,7 @@ while ($dadossx= $executax->fetch(PDO::FETCH_ASSOC)) {
     // $conteudo .= "<p>O Status foi atualizado no banco de dados para: $status</p>";
     // $conteudo .= "<br>";
     // $conteudo .= "<br>";
-    // $conteudo .= "www.tarotdehorus.com.br<br/>";
+    // $conteudo .= "www.epapodetarot.com.br<br/>";
     /*Enviando o e-mail...*/
     // $enviando = mail($seuemail, $assunto, $conteudo, $headers);
     ####################################################

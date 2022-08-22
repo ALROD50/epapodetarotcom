@@ -11,7 +11,7 @@ $sql22 = $pdo->query("SELECT * FROM blog_itens WHERE id='$id' LIMIT 1");
 }
 
 // Deleta Foto de Abertura
-$filepath = "/home/tarotdehoruscom/public_html/images/blog/foto_abertura/".$foto_abertura;
+$filepath = "/home/epapodetarotcom/public_html/images/blog/foto_abertura/".$foto_abertura;
 unlink ($filepath);
 
 // Deleta Produto

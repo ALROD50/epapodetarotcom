@@ -33,7 +33,7 @@ $response    = curlExec($PAGSEGURO_API_URL."/sessions", $params, $header);
 $json        = json_decode(json_encode(simplexml_load_string($response)));
 $sessionCode = $json->id;
 if ($sessionCode=="") {
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=$cod_codificado'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod_codificado'</script>";
     exit();
 }
 // Pix
@@ -57,18 +57,18 @@ if (@$_POST['cupom']) {
                 data='$data_hoje_pix',
                 QRCODEPIX=''
             WHERE cod_pagamento='$ref'");
-            echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=".$cod_codificado."&msgs=Cupom de desconto adicionado com sucesso!'</script>";
+            echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=".$cod_codificado."&msgs=Cupom de desconto adicionado com sucesso!'</script>";
         } else {
-            echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=".$cod_codificado."&msge=Desculpe, você já adicionou um cumpom de desconto nessa compra!'</script>";
+            echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=".$cod_codificado."&msge=Desculpe, você já adicionou um cumpom de desconto nessa compra!'</script>";
         }
     } else {
-        echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=".$cod_codificado."&msge=Desculpe, este cupom não é valido!'</script>";
+        echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=".$cod_codificado."&msge=Desculpe, este cupom não é valido!'</script>";
     }
 }
 // Dados da compra
 $executa666 = $pdo->query("SELECT * FROM controle WHERE cod_pagamento='$ref'");
 if ($executa666->rowCount() != 1){
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/'</script>";
     exit();
 }
 while ($dadoss666 = $executa666->fetch(PDO::FETCH_ASSOC)) { 
@@ -118,12 +118,12 @@ while ($dadoss66 = $executa66->fetch(PDO::FETCH_ASSOC)) {
     $numerocel = substr($telefone, -9);
 }
 if($nivel == "TAROLOGO"){
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/'</script>";
     exit();
 }
 if($status == "PAGO"){
 	echo "<script>alert(\"Esta cobrança já foi paga!\");</script>";
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos'</script>";
     exit();
 }
 require 'processa.php';
@@ -212,7 +212,7 @@ require 'processa.php';
                   <a href="#" id="paypalerro"></a>
                   <div id="paypalerro" class="alert alert-danger" role="alert">
                     <button type="button" class="close" data-dismiss="alert">×</button>
-                    <h2 class="text-danger">Paypal - Compra Tarot de Hórus!</h2>
+                    <h2 class="text-danger">Paypal - Compra É Papo de Tarot!</h2>
                     <p>Erro no processamento, a compra não foi realizada :(</p>
                     <p><b>Geralmente este erro é causado por:</b></p>
                     <ul style="margin-left: 50px;">
@@ -1455,7 +1455,7 @@ require 'processa.php';
                             <p>3.  Clique no botão <b>Pagar</b>. </p>
                             <p>4.  Faça a transferência via internet ou indo até uma agência bancária, caso opte pelo depósito.</p>
                             <p>5.  Guarde seu comprovante. </p>
-                            <p>6.  Envie o comprovante no email <b><a href="mailto:contato@tarotdehorus.com.br">contato@tarotdehorus.com.br</a></b>.</p>
+                            <p>6.  Envie o comprovante no email <b><a href="mailto:contato@epapodetarot.com.br">contato@epapodetarot.com.br</a></b>.</p>
                             <p>7.  Pronto! Suas informações serão analisadas!</p>
                         </ul>
 
@@ -1847,7 +1847,7 @@ require 'processa.php';
                         <!-- VERIFICA SE O PIX FOI PAGO AUTOMATICAMENTE -->
                         <script>
                             setInterval(function() {
-                                $.post('https://www.tarotdehorus.com.br/scripts/gerencianet_pix/updatepix.php',
+                                $.post('https://www.epapodetarot.com.br/scripts/gerencianet_pix/updatepix.php',
                                 {
                                     ref : '<?php echo $ref; ?>',
                                     cod : '<?php echo $cod_codificado; ?>',
@@ -1865,7 +1865,7 @@ require 'processa.php';
 
                         <div style="font-size: 15px">
                             <center>
-                                <h5 class="azul">Depois de fazer o pagamento, clique no botão verde abaixo <b>PAGAR</b> para que o sistema do Tarot de Hórus confirme o pedido!</h5>
+                                <h5 class="azul">Depois de fazer o pagamento, clique no botão verde abaixo <b>PAGAR</b> para que o sistema do É Papo de Tarot confirme o pedido!</h5>
                                 <p><em>Clique somente após o pagamento ter sido concluído usando o QR Code ou o Código acima.</em></p>
                                 <p><small>Os dados do recebedor vão estar em nome de Alexandre Rodrigues **190.728**</small></p>
                             </center>
@@ -1888,7 +1888,7 @@ require 'processa.php';
                         </div>
                     </div>
 
-                    <center><p style="font-size:65%;"><i class="fas fa-hands-helping"></i><a href="https://www.tarotdehorus.com.br/politica-de-privacidade-e-termos-de-uso" target="_blank"> Eu <?php echo $nome; ?> li e aceito os termos de uso do Tarot de Hórus.</a></p></center>
+                    <center><p style="font-size:65%;"><i class="fas fa-hands-helping"></i><a href="https://www.epapodetarot.com.br/politica-de-privacidade-e-termos-de-uso" target="_blank"> Eu <?php echo $nome; ?> li e aceito os termos de uso do É Papo de Tarot.</a></p></center>
 
                 </div>
             </div>

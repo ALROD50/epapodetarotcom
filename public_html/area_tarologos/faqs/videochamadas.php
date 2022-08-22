@@ -20,7 +20,7 @@
 <hr>
 
 <h3><i class="fas fa-folder-open"></i> Sobre a Segurança da Videochamada</h3>
-<p>Esse é um ponto muito importante tanto para a segurança do cliente, tarólogo e do Tarot de Hórus. Todas as videochamadas são gravadas, 100%, áudio e vídeo. Elas são gravadas e armazenadas, onde somente o administrar do Tarót de Hórus pode acessar. Essas gravações são importantes para mantermos as regras de não compartilhamento de dados de contato entre cliente e tarólogo, regras de conduta durante a consulta, e regras de respeito.</p>
+<p>Esse é um ponto muito importante tanto para a segurança do cliente, tarólogo e do É Papo de Tarot. Todas as videochamadas são gravadas, 100%, áudio e vídeo. Elas são gravadas e armazenadas, onde somente o administrar do Tarót de Hórus pode acessar. Essas gravações são importantes para mantermos as regras de não compartilhamento de dados de contato entre cliente e tarólogo, regras de conduta durante a consulta, e regras de respeito.</p>
 <hr>
 
 <h3><i class="fas fa-folder-open"></i> Como finalizar a consulta?</h3>

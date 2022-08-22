@@ -72,7 +72,7 @@ if ($row > 0) {
 			  <?php
 			  if (!empty($fotos)) {
 			    /* Diretorio que deve ser lido */
-			    $path = "/home/tarotdehoruscom/public_html/loja_admin/fotos/".$fotos;
+			    $path = "/home/epapodetarotcom/public_html/loja_admin/fotos/".$fotos;
 			    $diretorio = dir($path);
 			    /* Abre o diretório */
 			    $pasta = opendir($path);
@@ -180,7 +180,7 @@ if ($row > 0) {
 
 				    	$("#retorno2").show();
 				    	var cep = $("#cep").val();
-					    $.post('https://www.tarotdehorus.com.br/loja_site/calcularfrete.php',
+					    $.post('https://www.epapodetarot.com.br/loja_site/calcularfrete.php',
 		                {
 		                  cep : cep,
 		                  altura: altura,

@@ -29,14 +29,14 @@ if ($sqlmailx->rowCount() >= 1){
 
 
     if ($telefone=="") { 
-        echo "<script>document.location.href='https://www.tarotdehorus.com.br/cartomantes/index.php?pg=page5.php&email=$email'</script>";
+        echo "<script>document.location.href='https://www.epapodetarot.com.br/cartomantes/index.php?pg=page5.php&email=$email'</script>";
         exit();
     }
     
     // o email ja esta cadastrado no sistema não cadastra de novo
     $tarologo = $_SESSION['id_tarologo'];
     $nome = $_SESSION['nome'];
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/$tarologo/chat/?msgs=Parabéns $nome, você já tem cadastro no site!<br>Vamos%20Realizar%20Sua%20Consulta!'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/$tarologo/chat/?msgs=Parabéns $nome, você já tem cadastro no site!<br>Vamos%20Realizar%20Sua%20Consulta!'</script>";
     exit();
 
 } else {
@@ -106,9 +106,9 @@ if ($sqlmailx->rowCount() >= 1){
         <strong>SENHA:</strong> $senha <br/>
         <br/>
         <br/>
-        <b>Tarot de Hórus</b> <br/>
-        contato@tarotdehorus.com.br <br/>
-        Site: www.TarotDeHorus.com.br <br/>
+        <b>É Papo de Tarot</b> <br/>
+        contato@epapodetarot.com.br <br/>
+        Site: www.epapodetarot.com.br <br/>
     ";
     EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
     ###################### EMAIL ##############################
@@ -128,7 +128,7 @@ if ($sqlmailx->rowCount() >= 1){
         '$data_hoje'
     )");
 
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/cartomantes/index.php?pg=page5.php&email=$email'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/cartomantes/index.php?pg=page5.php&email=$email'</script>";
     exit();
 
 }

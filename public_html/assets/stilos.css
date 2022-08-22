@@ -36,20 +36,20 @@ h3 {
     }
 }
 #bd.pattern7 {
-    background: #000 url('https://www.tarotdehorus.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat;
+    background: #000 url('https://www.epapodetarot.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat;
     background-size: 1920px 1169px;
 }
 /* Coloca o background em todos os tamanhos de tela - a patir de 100px*/
 @media (min-width: 100px) {
     #bd.pattern7 {
-        background: #000 url('https://www.tarotdehorus.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat;
+        background: #000 url('https://www.epapodetarot.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat;
         background-size: 1920px 1169px;
     }
 }
 /* Background Maior */
 @media (min-width: 1440px) {
     #bd.pattern7 {
-        background: #1b2933 url('https://www.tarotdehorus.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat !important;
+        background: #1b2933 url('https://www.epapodetarot.com.br/templates/sj_h2shop/images/pattern/body/pattern7.jpg') 50% 0 fixed no-repeat !important;
         background-size: cover !important;
     }
 }
@@ -65,7 +65,7 @@ h3 {
 #yt_header {
   padding: 10px;
   /*background: rgba(255, 255, 255, 0.8);*/
-  /*background-image: url('https://www.tarotdehorus.com.br/images/header.jpg');*/
+  /*background-image: url('https://www.epapodetarot.com.br/images/header.jpg');*/
   /*background-attachment: fixed;*/
   background: transparent;
 }
@@ -159,25 +159,25 @@ button, input[type='button'], input[type='submit'] {
     background: #eee;
 }
 .consultachat_icone_estilo {
-    background: url('https://www.tarotdehorus.com.br/admin/img/chat_c.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/chat_c.png');
     border: none;
     width: 38px;
     height: 38px;
 }
 .aconsultarporemail_icone_estilo {
-    background: url('https://www.tarotdehorus.com.br/admin/img/email_c.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/email_c.png');
     border: none;
     width: 38px;
     height: 38px;
 }
 .aviseme_icone_estilo {
-    background: url('https://www.tarotdehorus.com.br/admin/img/aviseme.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/aviseme.png');
     border: none;
     width: 38px;
     height: 38px;
 }
 #icones .consultachat_icone_estilo:hover {
-    background: url('https://www.tarotdehorus.com.br/admin/img/chat_c.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/chat_c.png');
     border: none;
     width: 38px;
     height: 38px;
@@ -186,7 +186,7 @@ button, input[type='button'], input[type='submit'] {
     filter: alpha(opacity=65);
 }
 #icones .aconsultarporemail_icone_estilo:hover {
-    background: url('https://www.tarotdehorus.com.br/admin/img/email_c.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/email_c.png');
     border: none;
     width: 38px;
     height: 38px;
@@ -195,7 +195,7 @@ button, input[type='button'], input[type='submit'] {
     filter: alpha(opacity=65);
 }
 #icones .aviseme_icone_estilo:hover {
-    background: url('https://www.tarotdehorus.com.br/admin/img/aviseme.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/aviseme.png');
     border: none;
     width: 38px;
     height: 38px;
@@ -213,7 +213,7 @@ button, input[type='button'], input[type='submit'] {
 }
 /*Página tarólogos*/
 #iconesT .consultachat_icone_estilo:hover {
-    background: url('https://www.tarotdehorus.com.br/admin/img/chat_c.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/chat_c.png');
     border: none;
     width: 38px;
     height: 38px;
@@ -222,7 +222,7 @@ button, input[type='button'], input[type='submit'] {
     filter: alpha(opacity=65);
 }
 #iconesT .aconsultarporemail_icone_estilo:hover {
-    background: url('https://www.tarotdehorus.com.br/admin/img/email_c.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/email_c.png');
     border: none;
     width: 38px;
     height: 38px;
@@ -231,7 +231,7 @@ button, input[type='button'], input[type='submit'] {
     filter: alpha(opacity=65);
 }
 #iconesT .aviseme_icone_estilo:hover {
-    background: url('https://www.tarotdehorus.com.br/admin/img/aviseme.png');
+    background: url('https://www.epapodetarot.com.br/admin/img/aviseme.png');
     border: none;
     width: 38px;
     height: 38px;

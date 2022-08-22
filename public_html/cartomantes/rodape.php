@@ -5,10 +5,10 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 		<?php $ano = date("Y"); ?>
 		<div class="row" style="background:rgba(9, 8, 8, 0.72);color:#ffffff;padding:20px;font-family:initial;font-size:15px;margin-right:0px;margin-left:0px;">
 			<center>
-				<p>&copy; Tarot de Hórus <?php echo $ano; ?> <i class="glyphicon glyphicon-lock"></i> Site Protegido</br>
+				<p>&copy; É Papo de Tarot <?php echo $ano; ?> <i class="glyphicon glyphicon-lock"></i> Site Protegido</br>
 				<i class="glyphicon glyphicon-earphone"></i> Suporte de Seg à Sex das 10H às 22H</br>
-				<a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, pode me ajudar com uma duvida?" style="color:#afb733;"><i class="fab fa-whatsapp"></i> (11) 94119-0306 - Suporte</a></br>
-				<i class="fas fa-envelope"></i> contato@tarotdehorus.com.br</br>
+				<a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?" style="color:#afb733;"><i class="fab fa-whatsapp"></i> (11) 94119-0306 - Suporte</a></br>
+				<i class="fas fa-envelope"></i> contato@epapodetarot.com.br</br>
 				<i class="fas fa-map-marker-alt"></i> Rua Vergueiro, 1000 - Paraíso, São Paulo - SP, 01504-000</p>
 				<i class="fas fa-user-lock"></i> Site 100% Seguro</br>
 				<i class="fab fa-facebook-square"></i>&nbsp;&nbsp;<i class="fab fa-instagram-square"></i>&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> @TarotDeHorus
@@ -23,7 +23,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 		<script async src="https://kit.fontawesome.com/4587a64295.js" crossorigin="anonymous"></script>
 
 		<!-- Mascaras -->
-		<script type="text/javascript" src="https://www.tarotdehorus.com.br/scripts/mask/jquery.mask.js"></script>
+		<script type="text/javascript" src="https://www.epapodetarot.com.br/scripts/mask/jquery.mask.js"></script>
 		<script>
 		$(document).ready(function(){
 		  $('.peso').mask('00.000');
@@ -133,7 +133,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
             }
 
             if (errosform == 0){
-            	document.location.href='https://www.tarotdehorus.com.br/cartomantes/index.php?novocliente=true&email='+emailform;
+            	document.location.href='https://www.epapodetarot.com.br/cartomantes/index.php?novocliente=true&email='+emailform;
             }
             
         });
@@ -165,7 +165,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
             }
 
             if (errosform == 0){
-            	document.location.href='https://www.tarotdehorus.com.br/cartomantes/index.php?whatsapp='+whatsapp;
+            	document.location.href='https://www.epapodetarot.com.br/cartomantes/index.php?whatsapp='+whatsapp;
             }
         });
 

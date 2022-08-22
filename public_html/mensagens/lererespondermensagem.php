@@ -116,7 +116,7 @@ if ($row > 0) {
 
 	            	<?php 
 	            	if ($valor12y < $config_preco_consulta_email AND $usuario_nivel == 'CLIENTE') {
-					  echo '<p><span style="font-size: 15px;">Você não tem minutos suficientes para esta consulta. <a href="https://www.tarotdehorus.com.br/comprar-consulta" target="_blank"><b>Por gentileza compre um plano de minutos aqui para continuar seu atendimento.</b></a></span></p>';
+					  echo '<p><span style="font-size: 15px;">Você não tem minutos suficientes para esta consulta. <a href="https://www.epapodetarot.com.br/comprar-consulta" target="_blank"><b>Por gentileza compre um plano de minutos aqui para continuar seu atendimento.</b></a></span></p>';
 					
 					} else { ?>
 						

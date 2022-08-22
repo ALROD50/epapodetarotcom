@@ -27,7 +27,7 @@
         // Conseguindo a URL da Foto do Perfil
         var userPicture = googleUser.getBasicProfile().getImageUrl();
         // Registrando no sistema
-        document.location.href='https://www.tarotdehorus.com.br/registre-se/gg/' + userName + '/' + userEmail;
+        document.location.href='https://www.epapodetarot.com.br/registre-se/gg/' + userName + '/' + userEmail;
       }, function(error) {
         //alert(JSON.stringify(error, undefined, 2));
     });
@@ -118,7 +118,7 @@ if(@$row_onlinex=="offline" OR @$row_onlinex=="") { ?>
             </div>
             <div class="form-group">
               <button class="btn btn-lg btn-success btn-block text-white" type="submit" name="enviacadastrar" id="enviacadastrar"><i class="fas fa-house-user"></i> CADASTRAR</button>
-              <center><p><small><i class="fas fa-hands-helping"></i> Eu li e aceito os <a href="https://www.tarotdehorus.com.br/politica-de-privacidade-e-termos-de-uso" target="_blank">Termos de Uso.</a></small></p></center>
+              <center><p><small><i class="fas fa-hands-helping"></i> Eu li e aceito os <a href="https://www.epapodetarot.com.br/politica-de-privacidade-e-termos-de-uso" target="_blank">Termos de Uso.</a></small></p></center>
             </div>
           </form>
         </div>

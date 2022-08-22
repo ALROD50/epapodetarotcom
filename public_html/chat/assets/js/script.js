@@ -1,5 +1,5 @@
 //WebSocket
-var conn = new WebSocket('wss://tarotdehorus.com.br/wss2/NNN'); 
+var conn = new WebSocket('wss://epapodetarot.com.br/wss2/NNN'); 
 
 ///////////////////////////////////////////////
 var form1 = document.getElementById('form1');
@@ -185,6 +185,6 @@ function EncerrarChat(resultado){
 
     // Espera 3 segundos antes de direcionar para dar tempo da mensagem ser enviada.
     setTimeout(function(){
-        document.location.href="https://www.tarotdehorus.com.br/chat/finalizar.php?tempo=" + resultado;
+        document.location.href="https://www.epapodetarot.com.br/chat/finalizar.php?tempo=" + resultado;
     }, 3000);
 };

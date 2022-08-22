@@ -3,7 +3,7 @@ if (isset($_POST['enviarcomentario'])) {
 	
 	if($row_onlinex=="offline" OR $row_onlinex=="") {
 
-		echo "<script>document.location.href='https://www.tarotdehorus.com.br/fazer-login/?msge=Ops!<br>Faça login ou cadastre abaixo para enviar seu comentário.<br>É rapidinho, leva só 1 minutinho!'</script>";
+		echo "<script>document.location.href='https://www.epapodetarot.com.br/fazer-login/?msge=Ops!<br>Faça login ou cadastre abaixo para enviar seu comentário.<br>É rapidinho, leva só 1 minutinho!'</script>";
 		exit();
 
 	} else {

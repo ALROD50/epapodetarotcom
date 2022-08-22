@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
-include_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+include_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo=conexao();
 $TinyMce="SIM";
 $habilitareditor = 'completo';
@@ -66,12 +66,12 @@ while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
 		content_style: ".mymention{ color: gray; }",
 		contextmenu: "link image imagetools table configurepermanentpen",
 		a11y_advanced_options: true,
-			images_upload_url: 'https://www.tarotdehorus.com.br/scripts/postAcceptor.php',
+			images_upload_url: 'https://www.epapodetarot.com.br/scripts/postAcceptor.php',
 			images_upload_handler: function (blobInfo, success, failure, progress) {
 		    var xhr, formData;
 		    xhr = new XMLHttpRequest();
 		    xhr.withCredentials = false;
-		    xhr.open('POST', 'https://www.tarotdehorus.com.br/scripts/postAcceptor.php');
+		    xhr.open('POST', 'https://www.epapodetarot.com.br/scripts/postAcceptor.php');
 		    xhr.upload.onprogress = function (e) {
 		      progress(e.loaded / e.total * 100);
 		    };

@@ -1,5 +1,5 @@
 <?php
-if ($usuario_nivel != 'ADMIN'){echo "<script>document.location.href='https://www.tarotdehorus.com.br'</script>"; }
+if ($usuario_nivel != 'ADMIN'){echo "<script>document.location.href='https://www.epapodetarot.com.br'</script>"; }
 ?>     
 <?php
 $id = $_GET['id']; 

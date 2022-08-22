@@ -51,33 +51,33 @@ while ($mostrarx=$sql_onlinex->fetch(PDO::FETCH_ASSOC)) {
   $nome_usuario=$mostrarx['nome'];
 }
 // Meta Tags Global
-$keywords="Tarot de Hórus, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?, Tarot on-line por minuto, Tarot por minuto, tarô cigano, baralho de marselha";
-$metadescription="Tarot de Hórus - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos";
-$metaimage="https://www.tarotdehorus.com.br/images/metapropertyimg/home.webp";
+$keywords="É Papo de Tarot, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?, Tarot on-line por minuto, Tarot por minuto, tarô cigano, baralho de marselha";
+$metadescription="É Papo de Tarot - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos";
+$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/home.webp";
 // Página Atual
 if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 	$pagina_atual="home";
-	@$title="Home - Tarot de Hórus - ".$nome_usuario;
+	@$title="Home - É Papo de Tarot - ".$nome_usuario;
 } elseif ($URLSESSAO=='minha-conta') {
 	$pagina_atual="minha-conta";
-	@$title="Minha Conta: ".$nome_usuario." - Tarot de Hórus";
+	@$title="Minha Conta: ".$nome_usuario." - É Papo de Tarot";
 } elseif ($URLSESSAO=='fazer-login') {
 	$pagina_atual="fazer-login";
-	$title="Login / Entrar - Tarot de Hórus";
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_facebook.php"; 
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_google.php";
+	$title="Login / Entrar - É Papo de Tarot";
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='quem-somos') {
 	$pagina_atual="quem-somos";
-	$title="Quem Somos - Tarot de Hórus";
+	$title="Quem Somos - É Papo de Tarot";
 } elseif ($URLSESSAO=='perguntas-frequentes') {
 	$pagina_atual="perguntas-frequentes";
-	$title="Perguntas Frequentes - Tarot de Hórus";
+	$title="Perguntas Frequentes - É Papo de Tarot";
 } elseif ($URLSESSAO=='lembrar-senha') {
 	$pagina_atual="lembrar-senha";
-	$title="Lembrar Senha - Tarot de Hórus";
+	$title="Lembrar Senha - É Papo de Tarot";
 } elseif ($URLSESSAO=='blog') {
 	$pagina_atual="blog";
-	$title="Blog - Tarot de Hórus";
+	$title="Blog - É Papo de Tarot";
 	$sql = $pdo->query("SELECT * FROM blog_categoria WHERE alias='$URLCATEGORIA'");
 	$row = $sql->rowCount();
 	if ($row > 0){
@@ -85,7 +85,7 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 			$idCategoria=$mostrar['id'];
 			$tituloCategoria=$mostrar['titulo'];
 		}
-		$title=$tituloCategoria.' - Blog - Tarot de Hórus';
+		$title=$tituloCategoria.' - Blog - É Papo de Tarot';
 		$CategoriaBlogAtiva='SIM';
 	} else {
 		$CategoriaBlogAtiva='NAO';
@@ -110,17 +110,17 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 		$title=$titulo.' - '.$categoria_nome;
 		$keywords=$meta_keywords;
 		$metadescription=$meta_descricao;
-		$metaimage="https://www.tarotdehorus.com.br/images/blog/foto_abertura/$foto_abertura";
+		$metaimage="https://www.epapodetarot.com.br/images/blog/foto_abertura/$foto_abertura";
 	} else {
 		$pagina_atual="blog-artigo";
-		$title="Página Não Encontrada - Tarot de Hórus";
+		$title="Página Não Encontrada - É Papo de Tarot";
 	}
 } elseif ($URLSESSAO=='faleconosco') {
 	$pagina_atual="faleconosco";
-	$title="Contato - Tarot de Hórus";
+	$title="Contato - É Papo de Tarot";
 } elseif ($URLSESSAO=='trabalhe-conosco') {
 	$pagina_atual="trabalhe-conosco";
-	$title="Trabalhe Conosco - Tarot de Hórus";
+	$title="Trabalhe Conosco - É Papo de Tarot";
 } elseif ($URLSESSAO=='politica-de-privacidade-e-termos-de-uso') {
 	$pagina_atual="politica-de-privacidade-e-termos-de-uso";
 	$title="Termos de Uso e Política de Privacidade";
@@ -142,10 +142,10 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 		$title='Taróloga(o) - '.$nome;
 		$keywords=$especialidades.', chat online, tarologos, tarot online, tarotcards, tarotonline, baralhocigano, tarot egipicio, horóscopo, astrologia, fengshui, runas, deusas do egito, tratamento holístico';
 		$metadescription=$nome.', '.$descricao;
-		$metaimage="https://www.tarotdehorus.com.br/tarologos_admin/fotos/$logo";
+		$metaimage="https://www.epapodetarot.com.br/tarologos_admin/fotos/$logo";
 	} else {
 		$pagina_atual="naoencontrado";
-		$title="Página Não Encontrada - Tarot de Hórus";
+		$title="Página Não Encontrada - É Papo de Tarot";
 	}
 } elseif ($URLSESSAO=='consultar') {
 	$pagina_atual="consultar";
@@ -158,22 +158,22 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 	$title="Consulta Por E-mail - Consultores Profissionais";
 } elseif ($URLSESSAO=='comprar-consulta') {
 	$pagina_atual="comprar-consulta";
-	@$title="Comprar Consulta ".$nome_usuario." - Chat, WhatsApp, E-mail, Video, Telefone - Tarot de Hórus";
-	$metaimage="https://www.tarotdehorus.com.br/images/metapropertyimg/tarotdehorus.webp";
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_facebook.php"; 
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_google.php";
+	@$title="Comprar Consulta ".$nome_usuario." - Chat, WhatsApp, E-mail, Video, Telefone - É Papo de Tarot";
+	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.webp";
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='depoimentos-tarlogos') {
 	$pagina_atual="depoimentos-tarlogos";
-	$title="Depoimentos Tarólogos - Tarot de Hórus";
+	$title="Depoimentos Tarólogos - É Papo de Tarot";
 } elseif ($URLSESSAO=='registre-se') {
 	$pagina_atual="registre-se";
-	$title="Cadastre-se - É rápido e fácil - Tarot de Hórus";
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_facebook.php"; 
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_google.php";
+	$title="Cadastre-se - É rápido e fácil - É Papo de Tarot";
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='loja') {
 	$pagina_atual="loja";
-	$title="Loja Virtual - Tarot de Hórus - Produtos Esotéricos";
-	$metaimage="https://www.tarotdehorus.com.br/images/metapropertyimg/tarotdehorus.webp";
+	$title="Loja Virtual - É Papo de Tarot - Produtos Esotéricos";
+	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.webp";
 	
 	$sql = $pdo->query("SELECT * FROM loja_categorias WHERE alias='$URLCATEGORIA'");
 	$row = $sql->rowCount();
@@ -182,7 +182,7 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 			$idCategoria=$mostrar['id'];
 			$tituloCategoria=$mostrar['titulo'];
 		}
-		$title=$tituloCategoria.' - Loja Virtual - Tarot de Hórus - Produtos Esotéricos';
+		$title=$tituloCategoria.' - Loja Virtual - É Papo de Tarot - Produtos Esotéricos';
 		$CategoriaLojaAtiva='SIM';
 	} else {
 		$CategoriaLojaAtiva='NAO';
@@ -207,16 +207,16 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 		$title=$titulo.' - '.$categoria_nome;
 		$keywords=$meta_keywords;
 		$metadescription=$meta_descricao;
-		$metaimage="https://www.tarotdehorus.com.br/loja_admin/foto_abertura/$foto_abertura";
+		$metaimage="https://www.epapodetarot.com.br/loja_admin/foto_abertura/$foto_abertura";
 		$Mask="SIM";
 		$ScriptsLoja="SIM";
 	} else {
 		$pagina_atual="loja";
-		$title="Página Não Encontrada - Tarot de Hórus";
+		$title="Página Não Encontrada - É Papo de Tarot";
 	}
 } elseif ($URLSESSAO=='pagamentos') {
 	$pagina_atual="pagamentos";
-	@$title="Pagamento ".$nome_usuario." - Tarot de Hórus";
+	@$title="Pagamento ".$nome_usuario." - É Papo de Tarot";
 	$conversaodogoogle="
 		<!-- Event snippet for Adicionar ao carrinho conversion page -->
 		<script>
@@ -226,10 +226,10 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 	$mostrarconversaogoogleads="sim";
 } elseif ($URLSESSAO=='carrinho-compras') {
 	$pagina_atual="carrinho-compras";
-	$title="Carrinho de Compras - Tarot de Hórus";
-	require_once "/home/tarotdehoruscom/public_html/login/LoginEntrar_facebook.php"; 
+	$title="Carrinho de Compras - É Papo de Tarot";
+	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
 } else {
 	$pagina_atual="naoencontrado";
-	$title="404 - Página Não Encontrada - Tarot de Hórus";
+	$title="404 - Página Não Encontrada - É Papo de Tarot";
 }
 ?>

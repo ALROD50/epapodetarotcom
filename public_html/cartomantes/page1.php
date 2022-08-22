@@ -12,9 +12,9 @@
 	</div>
 
 	<center>
-		<p><span id="iconehome"><i class="fas fa-star-and-crescent"></i></span> <img src="https://www.tarotdehorus.com.br/images/logotexto.webp" alt=""> <i id="iconehome" class="fas fa-star-and-crescent"></i></p>
+		<p><span id="iconehome"><i class="fas fa-star-and-crescent"></i></span> <img src="https://www.epapodetarot.com.br/images/logotexto.webp" alt=""> <i id="iconehome" class="fas fa-star-and-crescent"></i></p>
 		<p><img class="img-thumbnail" title="Tarot" src="../images/tarot4.jpg" alt="Tarot" style="max-width:70%; margin-top: 10px;"></p>
-		<!-- <p><em><small>Patricia - Especialista em esoterismo no Tarot de Hórus</small></em></p> -->
+		<!-- <p><em><small>Patricia - Especialista em esoterismo no É Papo de Tarot</small></em></p> -->
 		<p>Somos um portal de conhecimento e luz, temos uma equipe especializada de tarólogos e terapeutas, que trabalham online via chat, conheça!</p>
 	</center>
 	<!-- <center>

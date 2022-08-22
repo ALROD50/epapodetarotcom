@@ -9,7 +9,7 @@ $Mask       ="SIM";
     var tipo = document.getElementById('id_camp');
     // Testando a variavel tipo_servico
     //alert(tipo.value);
-    $.post('https://www.tarotdehorus.com.br/mail/msg_carrega_agendadas.php', {
+    $.post('https://www.epapodetarot.com.br/mail/msg_carrega_agendadas.php', {
       cod : tipo.value
     }, function(retorno) {
       $("#opcoes").html(retorno);

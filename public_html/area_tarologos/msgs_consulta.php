@@ -86,7 +86,7 @@
 			    
 			    } else {
 
-					echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta/?msge=Consulta%20n%C3%A3o%20encontrada'</script>";
+					echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta/?msge=Consulta%20n%C3%A3o%20encontrada'</script>";
 			    }
 			}
 			?>

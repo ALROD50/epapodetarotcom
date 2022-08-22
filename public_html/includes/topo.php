@@ -6,8 +6,8 @@ $rowQuantidade = $sql_produto->rowCount();
 <div id="header" class="row">
 
   <div id="logo" class="navbar-brand">
-    <a href="https://www.tarotdehorus.com.br/home" title="Site Tarot de Hórus" class="p-0 m-0">
-      <img id="sizelogo" src="images/Logo-Site.fw.webp" alt="Site Tarot de Hórus" title="Site Tarot de Hórus">
+    <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
+      <img id="sizelogo" src="images/Logo-Site.fw.webp" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
     </a>
   </div>
 
@@ -60,12 +60,12 @@ $rowQuantidade = $sql_produto->rowCount();
             // Este atendimento ainda não foi fechado... levando cliente de volta a sala
             if ($videochat=="SIM") {
               // Enviar para a videochamada
-              echo "<script>document.location.href='https://www.tarotdehorus.com.br/chat/chatvideo-index.php?room=$cod_sala'</script>";
+              echo "<script>document.location.href='https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=$cod_sala'</script>";
               exit();
 
             } else {
               // Enviar para o chat
-              echo "<script>document.location.href='https://www.tarotdehorus.com.br/chat/chat-index.php?room=$cod_sala'</script>";
+              echo "<script>document.location.href='https://www.epapodetarot.com.br/chat/chat-index.php?room=$cod_sala'</script>";
               exit();
             }
           }
@@ -134,7 +134,7 @@ $rowQuantidade = $sql_produto->rowCount();
                     status='PAGO',
                     metodo='PagSeguro'
                   WHERE cod_pagamento='$reference'");
-                  echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=Parabéns, seu pagamento foi aprovado<br>Escolha o seu tarólogo abaixo:'</script>";
+                  echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=Parabéns, seu pagamento foi aprovado<br>Escolha o seu tarólogo abaixo:'</script>";
                 }
               }
             }
@@ -247,13 +247,13 @@ $rowQuantidade = $sql_produto->rowCount();
             setTimeout(function() {
               // Pergunta se o tarólogo ainda esta online
               var notification = new Notification('Você esta Online?', {
-                icon: 'https://www.tarotdehorus.com.br/images/Logo-SiteP.webp',
+                icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
                 body: "Sim, estou online - Clique aqui!",
                 // Se clicar em SIM, envia para página de atualização de status, dia e hora do online.
               });
               notification.onclick = function () {
                 window.focus();
-                document.location.href='https://www.tarotdehorus.com.br/minha-conta/?tarologo_online=on';
+                document.location.href='https://www.epapodetarot.com.br/minha-conta/?tarologo_online=on';
               };
             }, 3500000);
           </script>
@@ -304,7 +304,7 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
           time='$datacompleta2'
         WHERE id='$usuario_id'");
         //Abre o Chat
-        echo "<script>document.location.href='https://www.tarotdehorus.com.br/chat/index.php?cod_sala=".$cod_sala."&id_usuario=".$usuario_id."'</script>";
+        echo "<script>document.location.href='https://www.epapodetarot.com.br/chat/index.php?cod_sala=".$cod_sala."&id_usuario=".$usuario_id."'</script>";
         exit();
       }
       // Verifica Chat ###########################################
@@ -337,7 +337,7 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
         ?>
         <script>
           setTimeout(function(){
-            document.location.href="https://www.tarotdehorus.com.br/minha-conta/?msgi=Você foi redirecionado automáticamente para a página principal onde deve aguardar os atendimentos.";
+            document.location.href="https://www.epapodetarot.com.br/minha-conta/?msgi=Você foi redirecionado automáticamente para a página principal onde deve aguardar os atendimentos.";
           }, 10000); // Executa depois 10 segundos
         </script>
         <?php

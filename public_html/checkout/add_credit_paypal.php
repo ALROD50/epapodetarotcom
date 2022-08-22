@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("Brazil/East");
 ini_set ('default_charset', 'UTF-8');
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 // echo 'Pesquisando... '.time().'</br>';
 
@@ -10,11 +10,11 @@ $ERRO     = @$_POST['ERRO'];
 $ErroCod  = @$_POST['ErroCod'];
 if (@$ERRO == "ERRONOPAGAMENTO") {
 	$seuemail = "logs@novasystems.com.br";
-    $assunto  = "Tarot de Hórus Erro Pagamento Payal";
+    $assunto  = "É Papo de Tarot Erro Pagamento Payal";
     /*Configuramos os cabe?alhos do e-mail*/
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: contato@tarotdehorus.com.br \r\n";
+    $headers .= "From: contato@epapodetarot.com.br \r\n";
     /*Configuramos o conte?do do e-mail*/
     $conteudo = "<b>Erro:</b> $ErroCod <br>";
     /*Enviando o e-mail...*/
@@ -38,19 +38,19 @@ if (@$ERRO == "ERRONOPAGAMENTO") {
         if ($tipo=="padrao") {
             // consulta via chat
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', minutos_dispo='$minutos', status='PAGO', metodo='Paypal' WHERE cod_pagamento='$ref'");
-            echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=Pagamento Aprovado<br>Escolha o taróloga abaixo e boa consulta!'</script>";
+            echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=Pagamento Aprovado<br>Escolha o taróloga abaixo e boa consulta!'</script>";
 
         } elseif ($tipo=="whatsapp") {
             // consulta via whatsapp
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', metodo='Paypal' WHERE cod_pagamento='$ref'");
             ?>
-            <p>Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a></p>
+            <p>Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a></p>
             <?php
         } elseif ($tipo=="email") {
             // consulta via e-mail
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', metodo='Paypal' WHERE cod_pagamento='$ref'");
             ?>
-            <p>Para receber instruções da consulta via e-mail, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de receber instruções da consulta via e-mail!'>CLIQUE AQUI.</a></p>
+            <p>Para receber instruções da consulta via e-mail, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de receber instruções da consulta via e-mail!'>CLIQUE AQUI.</a></p>
             <?php
         } elseif ($tipo=="loja") {
             # produto da loja

@@ -38,7 +38,7 @@
                 </div>
             </div>
             <footer class="block-copyright">
-                <div class="copyright">Copyright © Tarot de Hórus - Todos os Direitos Reservados</div>
+                <div class="copyright">Copyright © É Papo de Tarot - Todos os Direitos Reservados</div>
             </footer>
           </div>
           <div class="col-md-2"></div>

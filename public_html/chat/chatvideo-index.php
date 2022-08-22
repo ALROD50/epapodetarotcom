@@ -8,7 +8,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 
 if (!empty($_SESSION["cod_sala"])){
-    require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+    require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
     $pdo = conexao();
     include "functions.php";
     $cod_sala          = $_SESSION['cod_sala'];
@@ -32,7 +32,7 @@ if (!empty($_SESSION["cod_sala"])){
 	$asdsadsa = $pdo->query("SELECT * FROM chamada_consulta WHERE id='$cod_sala'");
     $nLinhas = $asdsadsa->rowCount();
     if ($nLinhas === 0) {
-		echo '<script>document.location.href="https://www.tarotdehorus.com.br/home/?msge=Essa consulta foi finalizada!"</script>';
+		echo '<script>document.location.href="https://www.epapodetarot.com.br/home/?msge=Essa consulta foi finalizada!"</script>';
 		exit();
 	}
 	// Estanciando dados do tarólogo.
@@ -66,7 +66,7 @@ if (!empty($_SESSION["cod_sala"])){
 	<html lang="pt-br">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>Vídeo Chamada Tarot de Hórus</title>
+		<title>Vídeo Chamada É Papo de Tarot</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="../scripts/bootstrap3/css/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="../scripts/bootstrap3/css/bootstrap-theme.min.css"/>
@@ -78,13 +78,13 @@ if (!empty($_SESSION["cod_sala"])){
 			body {
 				color: #fff;
 				font-size: 15px;
-				background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
 				background-size: cover !important;
 			}
 			#hedchat {
 				padding: 15px;
-				background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
 				background-size: cover !important;
 			}
@@ -103,7 +103,7 @@ if (!empty($_SESSION["cod_sala"])){
 				body {
 					color: #fff;
 					font-size: 15px;
-					background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
 					background-size: 1920px 1169px;
 					background-size: cover !important;
 				}
@@ -217,7 +217,7 @@ if (!empty($_SESSION["cod_sala"])){
 			}
 		</script>
 		<!-- Logomarca -->
-		<a href="https://www.tarotdehorus.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#000000;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.tarotdehorus.com.br/images/Logo-Site.fw.webp" style="width:200px;height:50px;"/></div></a>
+		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#000000;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" style="width:200px;height:50px;"/></div></a>
 		<!-- Renderiza o Chat -->
 		<div id="meet"></div>
 		<!-- Rodapé -->
@@ -259,7 +259,7 @@ if (!empty($_SESSION["cod_sala"])){
 					var cod_sala = "<?php echo $cod_sala; ?>";
 					function CreateSocketWrapper(){
 						console.log("cod_sala 1 = " + cod_sala);
-						var conn = new WebSocket('wss://tarotdehorus.com.br/wss2/wss2/NNN');
+						var conn = new WebSocket('wss://epapodetarot.com.br/wss2/wss2/NNN');
 						// Abre Conexão
 						conn.onopen = function(e) {
 							console.log("Connection established!!");
@@ -285,7 +285,7 @@ if (!empty($_SESSION["cod_sala"])){
 						// Se a videochamada tiver sido finalizada mostra a div de depoimentos e oculta a div do chat
 						if ((id_sala == cod_sala) && (tipo == 'finalizavideochat')) {
 							console.log("Redirecionando para depoimentos...");
-							document.location.href='https://www.tarotdehorus.com.br/chat/depoimentos.php/?id_tarologo=<?php echo $id_tarologo; ?>&id_cliente=<?php echo $id_cliente; ?>&id_usuario_logado=<?php echo $id_usuario_logado; ?>';
+							document.location.href='https://www.epapodetarot.com.br/chat/depoimentos.php/?id_tarologo=<?php echo $id_tarologo; ?>&id_cliente=<?php echo $id_cliente; ?>&id_usuario_logado=<?php echo $id_usuario_logado; ?>';
 						}
 					}
 					var socket = CreateSocketWrapper();
@@ -299,6 +299,6 @@ if (!empty($_SESSION["cod_sala"])){
 	<?php 
 } else {
     // Essa sala não existe
-    echo '<script>document.location.href="https://www.tarotdehorus.com.br/"</script>';
+    echo '<script>document.location.href="https://www.epapodetarot.com.br/"</script>';
 	exit();
 }

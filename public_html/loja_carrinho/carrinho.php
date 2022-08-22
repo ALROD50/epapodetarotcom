@@ -177,7 +177,7 @@ if ($row > 0) {
 					            </div>
 					            <div class="form-group">
 					              <button class="btn btn-lg btn-success btn-block text-white" type="submit" name="enviacadastrar" id="enviacadastrar"><i class="fas fa-house-user"></i> CADASTRAR</button>
-					              <center><p><small><i class="fas fa-hands-helping"></i> Eu li e aceito os <a href="https://www.tarotdehorus.com.br/politica-de-privacidade-e-termos-de-uso" target="_blank">Termos de Uso.</a></small></p></center>
+					              <center><p><small><i class="fas fa-hands-helping"></i> Eu li e aceito os <a href="https://www.epapodetarot.com.br/politica-de-privacidade-e-termos-de-uso" target="_blank">Termos de Uso.</a></small></p></center>
 					            </div>
 					          </form>
 					        </div>
@@ -412,14 +412,14 @@ if ($row > 0) {
 						<div class="row">
 				            <div class="col-2 p-0">
 				              <!-- Foto de Principal -->
-				              <a href='<?php echo "https://www.tarotdehorus.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>">
-				                <div id="efeitofoto" class='img-thumbnail' style="background-position: center; background-size: cover; height:60px; width:60px; background-image: url('<?php echo 'https://www.tarotdehorus.com.br/loja_admin/foto_abertura/'.$foto_abertura; ?>');">
+				              <a href='<?php echo "https://www.epapodetarot.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>">
+				                <div id="efeitofoto" class='img-thumbnail' style="background-position: center; background-size: cover; height:60px; width:60px; background-image: url('<?php echo 'https://www.epapodetarot.com.br/loja_admin/foto_abertura/'.$foto_abertura; ?>');">
 				                </div>
 				              </a>
 				            </div>
 				            <div class="col-10 p-0 pl-2">
 								<!-- Título -->
-								<a href='<?php echo "https://www.tarotdehorus.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>"><b><?php echo $titulo; ?></b></a><br>
+								<a href='<?php echo "https://www.epapodetarot.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>"><b><?php echo $titulo; ?></b></a><br>
 								<div class="row">
 								    <!-- Preço -->
 								    <div class="float-left mr-3">
@@ -601,7 +601,7 @@ if ($row > 0) {
     	// Grava Pedido e Mostra Conclusão
     	if ((nome != "") || (telefone != "") || (email != "") || (endereco != "") || (numero != "") || (cep != "") || (bairro != "") || (cidade != "") || (estado != "")) {
 			// Grava Pedido
-		    $.post('https://www.tarotdehorus.com.br/loja_carrinho/gravapedido.php',
+		    $.post('https://www.epapodetarot.com.br/loja_carrinho/gravapedido.php',
 	        {
 				id_cliente_carrinho: '<?php echo $id_cliente_carrinho_session; ?>',
 				totaldeitens: '<?php echo $row; ?>',

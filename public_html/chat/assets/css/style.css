@@ -8,7 +8,7 @@ html, body{
 body {
     color: #fff;
     font-size: 15px;
-    background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+    background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
     background-size: 1920px 1169px;
     background-size: cover !important;
 }
@@ -18,7 +18,7 @@ body {
 #clientes {
     overflow: hidden;
     color: #820000;
-    background: url(https://www.tarotdehorus.com.br/images/clientes.png) no-repeat;
+    background: url(https://www.epapodetarot.com.br/images/clientes.png) no-repeat;
     width: 320px;
     height: 113px;
     padding-top: 20px;
@@ -70,7 +70,7 @@ textarea.form-control {
     width: 100%;
     height: 80px;
     z-index: 1;
-    background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+    background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
     background-size: 1920px 1169px;
     background-size: cover !important;
 }

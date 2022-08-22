@@ -4,7 +4,7 @@
     var tipo = document.getElementById('tipo');
     // Testando a variavel tipo_servico
     // alert(servico.value);
-    $.post('https://www.tarotdehorus.com.br/mail/padrao_carrega_modelo.php', {
+    $.post('https://www.epapodetarot.com.br/mail/padrao_carrega_modelo.php', {
       cod : tipo.value
     }, function(retorno) {
       $("#servicodois").html(retorno);

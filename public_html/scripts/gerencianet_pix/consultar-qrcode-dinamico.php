@@ -21,7 +21,7 @@ $responsex = $obApiPixx->consultCob($refPixx);
 if(!isset($responsex['location'])){
   // echo 'Problemas ao consultar resultado Pix dinâmico';
   if ($URLSESSAO=="pagamentos") {
-    echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=$cod&repix=true'</script>";
+    echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod&repix=true'</script>";
   }
   // echo "<pre>";
   // print_r($responsex);

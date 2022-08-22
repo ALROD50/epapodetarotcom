@@ -1,7 +1,7 @@
 <?php
 if ($row_onlinex=="" OR $row_onlinex=="offline") {
 
-	require_once "/home/tarotdehoruscom/public_html/scripts/facebook/autoload.php";
+	require_once "/home/epapodetarotcom/public_html/scripts/facebook/autoload.php";
 	$fb = new \Facebook\Facebook([
 		// https://developers.facebook.com/apps/
 	    'app_id' => '286946728553917',
@@ -33,12 +33,12 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 
 	// Se não existir o token
 	if (! isset($accessToken)) {
-		$url_login = 'https://www.tarotdehorus.com.br/'.$URLSESSAO.'/';
+		$url_login = 'https://www.epapodetarot.com.br/'.$URLSESSAO.'/';
 		$loginUrl = $helper->getLoginUrl($url_login, $permissions);
 	} else {
 		// existe o token
 		// ################### CLIENTE JA DEU PERMISSÃO NO FACEBOOK ANTERIORMENTE - SÓ LOGAR
-		$url_login = 'https://www.tarotdehorus.com.br/'.$URLSESSAO.'/';
+		$url_login = 'https://www.epapodetarot.com.br/'.$URLSESSAO.'/';
 		$loginUrl = $helper->getLoginUrl($url_login, $permissions);
 		if(isset($_SESSION['face_access_token'])){
 			// Usuário ja autenticado - ele ja deu permissão ao facebook anteriormente - Faça Login Aqui
@@ -77,11 +77,11 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 				// Redireciona o visitante
 
 				if ($URLSESSAO=='carrinho-compras') {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/carrinho-compras/?msgs=Você foi logado com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/carrinho-compras/?msgs=Você foi logado com sucesso!'</script>";
 	            } elseif ($URLSESSAO=='comprar-consulta') {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/chat/?msgs=Você foi logado com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/chat/?msgs=Você foi logado com sucesso!'</script>";
 	            } else {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=Você foi logado com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=Você foi logado com sucesso!'</script>";
 	            }
 	        }
 
@@ -130,11 +130,11 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 				// Redireciona o visitante
 
 				if ($URLSESSAO=='carrinho-compras') {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/carrinho-compras/?msgs=Você foi logado com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/carrinho-compras/?msgs=Você foi logado com sucesso!'</script>";
 	            } elseif ($URLSESSAO=='comprar-consulta') {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/chat/?msgs=Você foi logado com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/chat/?msgs=Você foi logado com sucesso!'</script>";
 	            } else {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=Você foi logado com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=Você foi logado com sucesso!'</script>";
 	            }
 	        
 	        } else { 
@@ -173,8 +173,8 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 		            /*Configuramos os cabe?alhos do e-mail*/
 		            $headers  = "MIME-Version: 1.0 \r\n";
 		            $headers .= "Content-type: text/html; charset=utf-8 \r\n";
-		            $headers .= "From: contato@tarotdehorus.com.br \r\n";
-		            $headers .= "Bcc: contato@tarotdehorus.com.br \r\n";
+		            $headers .= "From: contato@epapodetarot.com.br \r\n";
+		            $headers .= "Bcc: contato@epapodetarot.com.br \r\n";
 
 		            /*Configuramos o conte?do do e-mail*/
 		            $conteudo  = "Obrigado por se registrar em nosso site, abaixo segue os seus dados de cadastro e login.<br/>";
@@ -185,7 +185,7 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 		            $conteudo .= "<strong>E-MAIL:</strong> $email<br/>";
 		            $conteudo .= "<br/>";
 		            $conteudo .= "<br/>";
-		            $conteudo .= "www.tarotdehorus.com.br<br/>";
+		            $conteudo .= "www.epapodetarot.com.br<br/>";
 
 		            /*Enviando o e-mail...*/
 		            $enviando = mail($seuemail, $assunto, $conteudo, $headers);
@@ -248,11 +248,11 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 				
 				// Redireciona o visitante
 				if ($URLSESSAO=='carrinho-compras') {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/carrinho-compras/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/carrinho-compras/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
 	            } elseif ($URLSESSAO=='comprar-consulta') {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
 	            } else {
-	                echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
+	                echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
 	            }
 	        }
 

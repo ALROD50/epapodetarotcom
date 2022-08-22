@@ -109,15 +109,15 @@ if(isset($_POST['loginsite'])){
             if ($usuario_nivel=="CLIENTE"){
 
                 if ($URLSESSAO=='carrinho-compras') {
-                    echo "<script>document.location.href='https://www.tarotdehorus.com.br/carrinho-compras/?msgs=Você foi logado com sucesso!'</script>";
+                    echo "<script>document.location.href='https://www.epapodetarot.com.br/carrinho-compras/?msgs=Você foi logado com sucesso!'</script>";
                 } elseif ($URLSESSAO=='comprar-consulta') {
-                    echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/chat/?msgs=Você foi logado com sucesso!'</script>";
+                    echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/chat/?msgs=Você foi logado com sucesso!'</script>";
                 } else {
-                    echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=Você foi logado com sucesso!'</script>";
+                    echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=Você foi logado com sucesso!'</script>";
                 }
               
             } else {
-              echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta/?msgs=Você foi logado com sucesso!'</script>";
+              echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta/?msgs=Você foi logado com sucesso!'</script>";
             }
         }
     }
@@ -214,13 +214,13 @@ if(isset($_POST['enviacadastrar'])) {
     // Se tiver mais de um erro mostra a mensagem de erro
     if($erros >= 1) {
 
-        if (!empty($nomev)) { echo "<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=Nome de usuário ou senha inválidos!'</script>"; }
-        if (!empty($emailv)) { echo "<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=E-mail vazio, por favor preencha o e-mail corretamente.'</script>"; }
-        if (!empty($emailv2)) { echo "<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=Por favor, digite seu <b>E-mail</b> corretamente.'</script>"; }
-        if (!empty($emailv3)) { echo "<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=E-mail <b>$email</b> ja existe no sistema!'</script>"; }
-        if (!empty($senhav)) { echo "<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=Senha vazio, por favor preencha a senha corretamente.'</script>"; }
-        if (!empty($whatsappv)) { echo"<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=Telefone vazio, por favor preencha o celular corretamente'</script>"; }
-        if (!empty($captchav)) { echo"<script>document.location.href='https://www.tarotdehorus.com.br/$URLSESSAO/?msge=You are not a human.'</script>"; }
+        if (!empty($nomev)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Nome de usuário ou senha inválidos!'</script>"; }
+        if (!empty($emailv)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=E-mail vazio, por favor preencha o e-mail corretamente.'</script>"; }
+        if (!empty($emailv2)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Por favor, digite seu <b>E-mail</b> corretamente.'</script>"; }
+        if (!empty($emailv3)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=E-mail <b>$email</b> ja existe no sistema!'</script>"; }
+        if (!empty($senhav)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Senha vazio, por favor preencha a senha corretamente.'</script>"; }
+        if (!empty($whatsappv)) { echo"<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Telefone vazio, por favor preencha o celular corretamente'</script>"; }
+        if (!empty($captchav)) { echo"<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=You are not a human.'</script>"; }
 
     } else {
 
@@ -259,8 +259,8 @@ if(isset($_POST['enviacadastrar'])) {
             /*Configuramos os cabe?alhos do e-mail*/
             $headers  = "MIME-Version: 1.0 \r\n";
             $headers .= "Content-type: text/html; charset=utf-8 \r\n";
-            $headers .= "From: contato@tarotdehorus.com.br \r\n";
-            $headers .= "Bcc: contato@tarotdehorus.com.br \r\n";
+            $headers .= "From: contato@epapodetarot.com.br \r\n";
+            $headers .= "Bcc: contato@epapodetarot.com.br \r\n";
 
             /*Configuramos o conte?do do e-mail*/
             $conteudo  = "Obrigado por se registrar em nosso site, abaixo segue os seus dados de cadastro e login.<br/>";
@@ -271,7 +271,7 @@ if(isset($_POST['enviacadastrar'])) {
             $conteudo .= "<strong>E-MAIL:</strong> $email<br/>";
             $conteudo .= "<br/>";
             $conteudo .= "<br/>";
-            $conteudo .= "www.tarotdehorus.com.br<br/>";
+            $conteudo .= "www.epapodetarot.com.br<br/>";
 
             /*Enviando o e-mail...*/
             //$enviando = mail($seuemail, $assunto, $conteudo, $headers);
@@ -364,11 +364,11 @@ if(isset($_POST['enviacadastrar'])) {
 
         // Redireciona o visitante
             if ($URLSESSAO=='carrinho-compras') {
-                echo "<script>document.location.href='https://www.tarotdehorus.com.br/carrinho-compras/chat/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
+                echo "<script>document.location.href='https://www.epapodetarot.com.br/carrinho-compras/chat/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
             } elseif ($URLSESSAO=='comprar-consulta') {
-                echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/chat/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
+                echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/chat/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
             } else {
-                echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
+                echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=Parabéns, sua conta foi criada com sucesso!'</script>";
             }
         }
     }

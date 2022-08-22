@@ -57,7 +57,7 @@ if(isset($_POST['notificationType']) && $_POST['notificationType'] == 'transacti
     }
 
     //Atualiza no banco de dados o status da compra
-    require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+    require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
     $pdo = conexao();
 
     $executa = $pdo->query("SELECT * FROM controle WHERE cod_pagamento='$reference' ");
@@ -99,20 +99,20 @@ if(isset($_POST['notificationType']) && $_POST['notificationType'] == 'transacti
     //Manda e-mail para o cliente avisando do status da compra
     /*Configuramos o e-mail para o qual ser?o enviadas as informa??es*/
     $seuemail = $email;/*email de destino*/
-    $assunto  = "Tarot de Hórus - Pagamentos";/*assunto padr?o do email(n?o o digitado pelo ?suario)*/
+    $assunto  = "É Papo de Tarot - Pagamentos";/*assunto padr?o do email(n?o o digitado pelo ?suario)*/
     /*Configuramos os cabe?alhos do e-mail*/
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";/*para o envio com formata??o HTML. Charset po ser utf-8 tamb?m*/
-    $headers .= "From: contato@tarotdehorus.com.br \r\n";/*Para "seu email"*/
+    $headers .= "From: contato@epapodetarot.com.br \r\n";/*Para "seu email"*/
     $headers .= "Bcc: logs@novasystems.com.br \r\n";
     /*Configuramos o conte?do do e-mail*/
-    $conteudo  = "Olá $nome, o status da sua compra no site Tarot de Hórus foi atualizado.<br>";
+    $conteudo  = "Olá $nome, o status da sua compra no site É Papo de Tarot foi atualizado.<br>";
     $conteudo .= "<b>Código de Pagamento:</b> $reference <br>";
     $conteudo .= "<b>Data da Compra:</b> $date <br>";
     $conteudo .= "<b>Status:</b> $status <br>";
     $conteudo .= "Pagamento via PagSeguro <br>";
     $conteudo .= "<br>";
-    $conteudo .= "www.tarotdehorus.com.br<br/>";
+    $conteudo .= "www.epapodetarot.com.br<br/>";
     /*Enviando o e-mail...*/
     $enviando = mail($seuemail, $assunto, $conteudo, $headers);
 }

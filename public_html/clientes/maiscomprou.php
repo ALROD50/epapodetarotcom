@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<div class="well muted">
-			<h3 class="text-success">Clientes Que Mais Compraram no Tarot de Hórus</h3>
+			<h3 class="text-success">Clientes Que Mais Compraram no É Papo de Tarot</h3>
 			<hr>
 			<?php
 			// Selecione os clientes com mais compras
@@ -21,7 +21,7 @@
 					$telefone =  remover_caracter($telefone); 
 					$telefone =  preg_replace("/_/", "", $telefone);
 					?>
-					<p>Compras: <b><?php echo $Qtde_Registros; ?></b> | <?php echo "<a href='minha-conta/?pg=clientes/view.php&id=$id_cliente' data-toggle='tooltip' title='$nome'>$nome</a>"; ?> | <a href='<?php echo "https://api.whatsapp.com/send?phone=55$telefone&text=Oi $nome, tudo bem? Gostaria de fazer uma consultinha hoje no Tarot de Hórus e ver como esta o Trabalho, Saúde, Família, Amor etc...?"; ?>' target="_Blank" class="linkClientesAdmin"><i class="fab fa-whatsapp"></i> Mandar Mensagem</a></p>
+					<p>Compras: <b><?php echo $Qtde_Registros; ?></b> | <?php echo "<a href='minha-conta/?pg=clientes/view.php&id=$id_cliente' data-toggle='tooltip' title='$nome'>$nome</a>"; ?> | <a href='<?php echo "https://api.whatsapp.com/send?phone=55$telefone&text=Oi $nome, tudo bem? Gostaria de fazer uma consultinha hoje no É Papo de Tarot e ver como esta o Trabalho, Saúde, Família, Amor etc...?"; ?>' target="_Blank" class="linkClientesAdmin"><i class="fab fa-whatsapp"></i> Mandar Mensagem</a></p>
 					<hr>
 					<?php
 				}

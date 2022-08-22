@@ -16,7 +16,7 @@ function ConfirmaExclusao($id) {
 <a class="btn btn-light" href="minha-conta/?pg=mail/msg_criar.php"><i class="fas fa-pencil-alt"></i> Nova Mensagem</a>
 <a class="btn btn-light" href="minha-conta/?pg=mail/msg_listar.php"><i class="glyphicon glyphicon-align-left"></i> Lista de Mensagens</a>
 <a class="btn btn-light" href="minha-conta/?pg=mail/padrao_listar.php"><i class="glyphicon glyphicon-bookmark"></i> Mensagem Padrão</a>
-<div class="pull-right"><a class="btn btn-danger" href="https://www.tarotdehorus.com.br/mail/cron.php" target="_blank"><i class="glyphicon glyphicon-play-circle icon-white"></i> Executar Cron</a></div>
+<div class="pull-right"><a class="btn btn-danger" href="https://www.epapodetarot.com.br/mail/cron.php" target="_blank"><i class="glyphicon glyphicon-play-circle icon-white"></i> Executar Cron</a></div>
 
 <p></p>
 

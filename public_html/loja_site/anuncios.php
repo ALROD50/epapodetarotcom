@@ -279,8 +279,8 @@
         
         <div class="col-md-4">
           <!-- Foto de Principal -->
-          <a href='<?php echo "https://www.tarotdehorus.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>">
-            <div id="" class='img-thumbnail rounded efeitodois' style="height: 168px; width: 262px; background-position: center; background-size: cover; background-image: url('<?php echo 'https://www.tarotdehorus.com.br/loja_admin/foto_abertura/'.$foto_abertura; ?>');">
+          <a href='<?php echo "https://www.epapodetarot.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>">
+            <div id="" class='img-thumbnail rounded efeitodois' style="height: 168px; width: 262px; background-position: center; background-size: cover; background-image: url('<?php echo 'https://www.epapodetarot.com.br/loja_admin/foto_abertura/'.$foto_abertura; ?>');">
             </div>
           </a>
         </div>
@@ -288,7 +288,7 @@
         <div class="col-md-8" style="padding-top: 0px;">
           
           <!-- Título -->
-          <a href='<?php echo "https://www.tarotdehorus.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>"><h3 style="margin-top: 0px;"><?php echo $titulo; ?></h3></a>
+          <a href='<?php echo "https://www.epapodetarot.com.br/loja-item/$categoria_alias/$alias"; ?>' title="<?php echo $titulo; ?>"><h3 style="margin-top: 0px;"><?php echo $titulo; ?></h3></a>
 
           <!-- Preço -->
           <h3><?php echo $preco; ?></h3>

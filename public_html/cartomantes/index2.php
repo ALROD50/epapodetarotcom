@@ -7,11 +7,11 @@ ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 // phpinfo();
 session_start();
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
-require_once "/home/tarotdehoruscom/public_html/includes/functions.php";
-require_once "/home/tarotdehoruscom/public_html/includes/functions.php";
-require_once "/home/tarotdehoruscom/public_html/scripts/PHPMailer-master5.2.22/class.phpmailer.php";
-require_once "/home/tarotdehoruscom/public_html/scripts/PHPMailer-master5.2.22/class.smtp.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/functions.php";
+require_once "/home/epapodetarotcom/public_html/includes/functions.php";
+require_once "/home/epapodetarotcom/public_html/scripts/PHPMailer-master5.2.22/class.phpmailer.php";
+require_once "/home/epapodetarotcom/public_html/scripts/PHPMailer-master5.2.22/class.smtp.php";
 $pdo = conexao();
 $ano = date("Y");
 if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
@@ -28,7 +28,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 	if ($sqlmailx->rowCount() >= 1){
 	    
 	    // o email ja esta cadastrado no sistema não cadastra de novo
-	    echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/chat/?msgs=Parabéns $nome, você já tem cadastro no site!<br>Vamos%20Realizar%20Sua%20Consulta!'</script>";
+	    echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/chat/?msgs=Parabéns $nome, você já tem cadastro no site!<br>Vamos%20Realizar%20Sua%20Consulta!'</script>";
 	    exit();
 
 	} else { 
@@ -95,7 +95,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 	    ###################### EMAIL ##############################
 		$memaildestinatario = $email;
 		$mnomedestinatario  = $nome;
-		$massunto           = "Bem Vindo ao Tarot de Hórus";
+		$massunto           = "Bem Vindo ao É Papo de Tarot";
 		$mmensagem          = "
 			<p>Obrigado por se registrar em nosso site, abaixo segue os seus dados de cadastro e login.</p>
 			<p>$nome guarde bem estes dados, pois sempre que for usar o site, vai precisar deles:</p>
@@ -105,9 +105,9 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 			<strong>SENHA:</strong> $senha<br/>
 			<br/>
 			<br/>
-			<b>Tarot de Hórus</b> <br/>
-			contato@tarotdehorus.com.br <br/>
-			Site: www.TarotDeHorus.com.br <br/>
+			<b>É Papo de Tarot</b> <br/>
+			contato@epapodetarot.com.br <br/>
+			Site: www.epapodetarot.com.br <br/>
 		";
 		EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
 		###################### EMAIL ##############################
@@ -158,7 +158,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 	    $ref    = uniqid(NULL, true);
 	    $vencimento     = date('d-m-Y', strtotime("+1 days"));
 		$cod            = Codificador::Codifica("$id_gerado, $ref");
-		$url            = 'https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod='.$cod;
+		$url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
 
 		// Transforma vencimento em dia util caso necessário
 		$vencimento = proximoDiaUtil($vencimento, $saida = 'Y-m-d');
@@ -194,7 +194,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 		###################### EMAIL ##############################
 		$memaildestinatario = $email;
 		$mnomedestinatario  = $nome;
-		$massunto           = "Nova Cobrança Gerada Tarot de Hórus";
+		$massunto           = "Nova Cobrança Gerada É Papo de Tarot";
 		$mmensagem          = "
 			<p>Olá <b>$nome</b>, </p>
 			<p>Estes são os dados para realizar sua consulta.</p>
@@ -207,18 +207,18 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 			<p>Conclua seu pagamento para realizar sua consulta.</p>
 			<p>Para mais detalhes acesse sua conta em:</p>
 			<p><b>Minha Conta:</b></p>
-			<p><a href='https://www.tarotdehorus.com.br/minha-conta/'>https://www.tarotdehorus.com.br/minha-conta</a></p>
+			<p><a href='https://www.epapodetarot.com.br/minha-conta/'>https://www.epapodetarot.com.br/minha-conta</a></p>
 			<br/>
 			<br/>
-			<b>Tarot de Hórus</b> <br/>
+			<b>É Papo de Tarot</b> <br/>
 			Departamento Financeiro <br/>
-			contato@tarotdehorus.com.br <br/>
-			Site: www.TarotDeHorus.com.br <br/>
+			contato@epapodetarot.com.br <br/>
+			Site: www.epapodetarot.com.br <br/>
 		";
 		EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
 		###################### EMAIL ##############################
 		
-		echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=$cod'</script>";
+		echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod'</script>";
 	}
 
 }
@@ -249,14 +249,14 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<title>Sensitivos Online</title>
-		<base href="https://www.tarotdehorus.com.br"/>
-		<meta name="keywords" content="Tarot de Hórus, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?, Sensitivos" />
-		<meta name="description" content="Tarot de Hórus - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos, Sensitivos" />
+		<base href="https://www.epapodetarot.com.br"/>
+		<meta name="keywords" content="É Papo de Tarot, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?, Sensitivos" />
+		<meta name="description" content="É Papo de Tarot - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos, Sensitivos" />
 		<meta name="author" content="Agência Nova Systems Marketing Digital"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="https://www.tarotdehorus.com.br/images/favicon.ico" />
-		<meta property="og:image" name="og:image" content="https://www.tarotdehorus.com.br/images/metapropertyimg/home.webp"/>
-		<link rel="stylesheet" href="https://www.tarotdehorus.com.br/assets/preloader.css"/>
+		<link rel="shortcut icon" href="https://www.epapodetarot.com.br/images/favicon.ico" />
+		<meta property="og:image" name="og:image" content="https://www.epapodetarot.com.br/images/metapropertyimg/home.webp"/>
+		<link rel="stylesheet" href="https://www.epapodetarot.com.br/assets/preloader.css"/>
 		<!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -281,7 +281,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 			<header>
 				<div id="header" class="p-4">
 					<center>
-						<img id="sizelogo" src="../images/Logo-Site.fw.webp" alt="Site Tarot de Hórus" title="Site Tarot de Hórus" style="max-width:300px;"/><br>	
+						<img id="sizelogo" src="../images/Logo-Site.fw.webp" alt="Site É Papo de Tarot" title="Site É Papo de Tarot" style="max-width:300px;"/><br>	
 						<small class="text-white">Sensitivos</small>
 					</center>
 				</div>
@@ -308,14 +308,14 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 					    <!-- <div class="embed-responsive embed-responsive-16by9">
 					      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/arTGcm1vl74" allowfullscreen frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 					    </div> -->
-					    <!-- <center><p><b><i class="fas fa-address-card"></i> Patrícia</b> é: Especialista em Esoterismo no Tarot de Hórus</p></center> -->
+					    <!-- <center><p><b><i class="fas fa-address-card"></i> Patrícia</b> é: Especialista em Esoterismo no É Papo de Tarot</p></center> -->
 					  </div>
 					  <div class="col-md-1"></div>
 					</div>
 
 					<center>
-						<p><i class="fas fa-star-and-crescent"></i><img src="https://www.tarotdehorus.com.br/images/logotexto.webp" alt="Tarot de Hórus" title="Tarot de Hórus"><i class="fas fa-star-and-crescent"></i></p>
-						<p><b><i class="fas fa-ankh"></i> Tarot de Hórus</b> é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online. Nossa equipe foi rigorosamente selecionada em cada um de seus conhecimentos e dons especiais, onde são utilizadas em consultas via chat, com a intenção de auxiliar e orientar, para que você possa tomar a melhor decisão ou o melhor caminho a seguir na questão que lhe aflige, conheça!</p>
+						<p><i class="fas fa-star-and-crescent"></i><img src="https://www.epapodetarot.com.br/images/logotexto.webp" alt="É Papo de Tarot" title="É Papo de Tarot"><i class="fas fa-star-and-crescent"></i></p>
+						<p><b><i class="fas fa-ankh"></i> É Papo de Tarot</b> é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online. Nossa equipe foi rigorosamente selecionada em cada um de seus conhecimentos e dons especiais, onde são utilizadas em consultas via chat, com a intenção de auxiliar e orientar, para que você possa tomar a melhor decisão ou o melhor caminho a seguir na questão que lhe aflige, conheça!</p>
 					</center>
 
 					<!-- <h1 class="text-dark mt-4"><i class="fas fa-question-circle"></i> O que eu posso perguntar ao Sensitivo?</h1>
@@ -694,7 +694,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 			    						<p><i class="fas fa-angle-up"></i></br>
 			    						<figure class="figure">
 									      	<!-- <img class="rounded img-fluid" title="Tarologa Patricia" src="../tarologos_admin/fotoreal/patty2.jpg" alt="Tarologa Patricia">
-									      	<p><b><i class="fas fa-address-card"></i> Patrícia</b> é: Especialista em Esoterismo no Tarot de Hórus</p> -->
+									      	<p><b><i class="fas fa-address-card"></i> Patrícia</b> é: Especialista em Esoterismo no É Papo de Tarot</p> -->
 									      	<figcaption class="figure-caption mt-2">
 												<h3 class="text-success"><i class="fas fa-om"></i> Boa Consulta, Gratidão!</h3>
 												<small><?php echo date("d/m/Y"); ?> </small>
@@ -710,7 +710,7 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 
 			        <div class="row justify-content-center my-3">
 						<center>
-							<p><i class="fab fa-expeditedssl"></i> O site Tarot de Hórus usa técnologias de última geração na segurança e proteção de dados, com criptografia e certificado SSL.</p>
+							<p><i class="fab fa-expeditedssl"></i> O site É Papo de Tarot usa técnologias de última geração na segurança e proteção de dados, com criptografia e certificado SSL.</p>
 							<p>
 								<img src="../images/sseguranca.webp" class="img-fluid d-none" alt="Site Seguro" title="Site Seguro" style="max-height: 0px;"> <img src="../images/seguranca.png" class="img-fluid" alt="Site Seguro" title="Site Seguro" style="max-height: 45px;"> <img src="../images/selo-sitechecksucuri.webp" class="img-fluid" alt="Site Seguro" title="Site Seguro" style="max-height: 30px;">
 							</p>
@@ -752,10 +752,10 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 			<footer>
 				<div style="background:rgba(9, 8, 8, 0.72);color:#ffffff;padding:20px;font-family:initial;font-size:15px;margin-right:0px;margin-left:0px;border-top:3px solid #f7b334;">
 					<center>
-						<p>&copy; Tarot de Hórus <?php echo $ano; ?> <i class="glyphicon glyphicon-lock"></i> Site Protegido</br>
+						<p>&copy; É Papo de Tarot <?php echo $ano; ?> <i class="glyphicon glyphicon-lock"></i> Site Protegido</br>
 						<i class="glyphicon glyphicon-earphone"></i> Suporte de Seg à Sex das 10H às 22H</br>
-						<a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, pode me ajudar com uma duvida?" style="color:#afb733;"><i class="fab fa-whatsapp"></i> (11) 94119-0306 - Suporte</a></br>
-						<i class="fas fa-envelope"></i> contato@tarotdehorus.com.br</br>
+						<a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?" style="color:#afb733;"><i class="fab fa-whatsapp"></i> (11) 94119-0306 - Suporte</a></br>
+						<i class="fas fa-envelope"></i> contato@epapodetarot.com.br</br>
 						<i class="fas fa-map-marker-alt"></i> Rua Vergueiro, 1000 - Paraíso, São Paulo - SP, 01504-000</p>
 						<i class="fas fa-user-lock"></i> Site 100% Seguro</br>
 						<i class="fab fa-facebook-square"></i>&nbsp;&nbsp;<i class="fab fa-instagram-square"></i>&nbsp;&nbsp;<i class="fab fa-youtube-square"></i> @TarotDeHorus
@@ -818,14 +818,14 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 			<!-- VerDepoimentos -->
 
 		</div>
-		<style><?php echo file_get_contents("https://www.tarotdehorus.com.br/assets/dist/css/bootstrap.min.css"); ?></style>
+		<style><?php echo file_get_contents("https://www.epapodetarot.com.br/assets/dist/css/bootstrap.min.css"); ?></style>
 		<style>
 			body {
 			    overflow-x: hidden;
 			    font-family: 'dumbledor_1regular';
 			    color: #000;
 			    font-size: 20px;
-			    background: #000 url('https://www.tarotdehorus.com.br/images/background.webp') 50% 0 fixed no-repeat;
+			    background: #000 url('https://www.epapodetarot.com.br/images/background.webp') 50% 0 fixed no-repeat;
 			    background-size: cover !important;
 			}
 			label, input, button, select, textarea {
@@ -889,18 +889,18 @@ if (@$_POST['Cartomantes'] == 'confirmarcompraconsulta') {
 		<style>
 		    @font-face {
 			    font-family: 'dumbledor_1regular';
-			    src: url('https://www.tarotdehorus.com.br/fonts/dum1-webfont/dum1-webfont.woff2') format('woff2'),
-			         url('https://www.tarotdehorus.com.br/fonts/dum1-webfont/dum1-webfont.woff') format('woff');
+			    src: url('https://www.epapodetarot.com.br/fonts/dum1-webfont/dum1-webfont.woff2') format('woff2'),
+			         url('https://www.epapodetarot.com.br/fonts/dum1-webfont/dum1-webfont.woff') format('woff');
 			    font-weight: normal;
 			    font-style: normal;
 			}
 		</style>
 		<script>
-			window.jQuery || document.write('<script src="https://www.tarotdehorus.com.br/assets/dist/js/jquery-3.5.1.min.js"><\/script>')
+			window.jQuery || document.write('<script src="https://www.epapodetarot.com.br/assets/dist/js/jquery-3.5.1.min.js"><\/script>')
 		</script>
-		<script async src="https://www.tarotdehorus.com.br/assets/dist/js/bootstrap.bundle.min.js"></script>
+		<script async src="https://www.epapodetarot.com.br/assets/dist/js/bootstrap.bundle.min.js"></script>
 		<script async src="https://kit.fontawesome.com/4587a64295.js" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://www.tarotdehorus.com.br/scripts/mask/jquery.mask.js"></script>
+		<script type="text/javascript" src="https://www.epapodetarot.com.br/scripts/mask/jquery.mask.js"></script>
 		<script>
 			$(document).ready(function() {
 				$('.peso').mask('00.000');

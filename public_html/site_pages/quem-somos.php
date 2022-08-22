@@ -8,13 +8,13 @@
   	<a class="btn btn-lg btn-primary mt-3" href="tarologo/Deusa-Anuket" role="button"><i class="fas fa-comments"></i> CONSULTAR COM PATRICIA</a>
   </figcaption>
 </figure>
-</div><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.webp" alt="Tarot de Hórus" title="Tarot de Hórus" class="figure mb-3 mt-3"><i class="fas fa-star-and-crescent"></i></center> <p><b>Tarot de Hórus</b> é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online.</p>
+</div><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.webp" alt="É Papo de Tarot" title="É Papo de Tarot" class="figure mb-3 mt-3"><i class="fas fa-star-and-crescent"></i></center> <p><b>É Papo de Tarot</b> é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online.</p>
 
 <p>Nossa equipe foi rigorosamente selecionada em cada um de seus conhecimentos e dons especiais, onde são utilizadas em consultas via chat, com a intenção de auxiliar e orientar, para que você possa tomar a melhor decisão ou o melhor caminho a seguir na questão que lhe aflige.</p>
 
 <p>A habilidade do especialista de sua escolha passa a ser a oportunidade de conhecimento e orientação, lhe trazendo esperança e sabedoria em suas respostas perante as dúvidas nos diversos âmbitos da vida ou em suas dores emocionais e psíquicas.</p>
 
-<p>O <b>Tarot de Hórus</b> leva muito a sério a preservação das informações de nossos clientes, por isso, oferecemos uma plataforma moderna e segura além de profissionais qualificados com experiência e idoneidade, a fim preservar a experiência de atendimento do consultante nos momentos de dor da sua vida. Seriedade, respeito e confiança são nossa marca.</p>
+<p>O <b>É Papo de Tarot</b> leva muito a sério a preservação das informações de nossos clientes, por isso, oferecemos uma plataforma moderna e segura além de profissionais qualificados com experiência e idoneidade, a fim preservar a experiência de atendimento do consultante nos momentos de dor da sua vida. Seriedade, respeito e confiança são nossa marca.</p>
 
 <div class="row my-3 mb-3 d-none">
   <div class="col-md-2"></div>

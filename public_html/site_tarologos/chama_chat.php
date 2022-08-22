@@ -4,7 +4,7 @@
 //
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 // echo '<div style="position:absolute; font-size:42px;">';
 // echo 'Pesquisando... '.time().'</br>';
@@ -30,7 +30,7 @@ if ($tarologo_entrou == "TAROLOGOENTROU" AND $acesso == "") {
   	WHERE id='$cod_sala' ");
     
 	//Abrir o Chat Automaticamente
-  	echo "<script>document.location.href='https://www.tarotdehorus.com.br/chat/index.php?cod_sala=".$cod_sala."&id_usuario=".$id_cliente."'</script>";
+  	echo "<script>document.location.href='https://www.epapodetarot.com.br/chat/index.php?cod_sala=".$cod_sala."&id_usuario=".$id_cliente."'</script>";
 
 }
 ?>

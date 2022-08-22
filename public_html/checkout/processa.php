@@ -5,8 +5,8 @@ ini_set('display_errors',0);
 ini_set('display_startup_erros',0);
 
 ###########################################################################################
-// Gerencianet - Tarot de Hórus
-require '/home/tarotdehoruscom/public_html/scripts/gerencianet2v/autoload.php'; // caminho relacionado a SDK
+// Gerencianet - É Papo de Tarot
+require '/home/epapodetarotcom/public_html/scripts/gerencianet2v/autoload.php'; // caminho relacionado a SDK
 use Gerencianet\Exception\GerencianetException;
 use Gerencianet\Gerencianet;
 ###########################################################################################
@@ -160,7 +160,7 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
     if ($row > 0){
 
         // Compra ja registrada
-        echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+        echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
 
     } else {
     // ####### Não execulta duas vezes o mesmo pedido.
@@ -227,7 +227,7 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
                 <h1><i class="fas fa-hourglass-half"></i> Seu Pagamento esta em <b>Análise</b>!</h1>
                 <h3>Status: <b>Em Análise</b></h3>
                 <hr>
-                <p style="font-size:22px;"><a href="https://www.tarotdehorus.com.br/minha-conta">Clique Aqui, para acompanhar sua compra e ver o status atualizado!</a></p>
+                <p style="font-size:22px;"><a href="https://www.epapodetarot.com.br/minha-conta">Clique Aqui, para acompanhar sua compra e ver o status atualizado!</a></p>
                 <hr>
             </div>
             <style>
@@ -248,7 +248,7 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
             } elseif ($tipo=="whatsapp") {
                 // consulta via whatsapp
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', meteodo='PagSeguro' WHERE cod_pagamento='$reference'");
-                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
+                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
             } elseif ($tipo=="email") {
                 // consulta via e-mail
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', metodo='PagSeguro' WHERE cod_pagamento='$reference'");
@@ -276,7 +276,7 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
                     // consulta via chat
                     ?>
                     <p><?php echo 'Seu saldo atual é de: '.$valor.' Minutos'; ?></p>
-                    <p><a href="https://www.tarotdehorus.com.br/tarologos">Clique aqui para escolher um tarólogo</a></p>
+                    <p><a href="https://www.epapodetarot.com.br/tarologos">Clique aqui para escolher um tarólogo</a></p>
                     <?php
                 } elseif ($tipo=="whatsapp") {
                     // consulta via whatsapp
@@ -381,7 +381,7 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
         $massunto  = 'Pagamento';
         $mmensagem = '
         Olá '.$senderName.', <br/>
-        Este é um recibo comprovante de pagamento da sua fatura no site Tarot de Hórus.<br/>
+        Este é um recibo comprovante de pagamento da sua fatura no site É Papo de Tarot.<br/>
         <br/>
         <b>Seu E-mail de Cadastro:</b> '. $senderEmail .'<br/>
         <b>Demonstrativo:</b> '. $demonstrativo .'<br/>
@@ -394,11 +394,11 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
         <p>'.@$produtoLoja.'<p/>
         <br/>
         <p>Volte ao Site:</p>
-        <p><a href=\'https://www.tarotdehorus.com.br/tarologos/\'>https://www.tarotdehorus.com.br/tarologos</a></p>
+        <p><a href=\'https://www.epapodetarot.com.br/tarologos/\'>https://www.epapodetarot.com.br/tarologos</a></p>
         <br/>
         Departamento Financeiro<br/>
-        Tarot de Hórus<br/>
-        <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+        É Papo de Tarot<br/>
+        <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
         ';
         EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
         ###################### EMAIL ##############################
@@ -493,7 +493,7 @@ if (@$_POST['Debito'] == 'enviarDebito'){
     if ($row > 0){
 
         // Compra ja registrada
-        echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+        echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
 
     } else {
     // ####### Não execulta duas vezes o mesmo pedido.
@@ -598,7 +598,7 @@ if (@$_POST['Debito'] == 'enviarDebito'){
             <br/>
             <br/>
             <b>Tarot de Horus</b> <br/>
-            Site: www.tarotdehorus.com.br <br/>
+            Site: www.epapodetarot.com.br <br/>
             ";
             EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
             ###################### EMAIL ##############################
@@ -653,7 +653,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $itemAmount2 = intval(number_format($itemAmount, 2, '', ''));
 
     ###########################################################################################
-    // Gerencianet - Tarot de Hórus
+    // Gerencianet - É Papo de Tarot
     ### Desenvolvimento 
     // $clientId = 'Client_Id_6ca5ce19058a92a12c19b3ad2ae5e5343d7ce550'; // insira seu Client_Id, conforme o ambiente (Des ou Prod)
     // $clientSecret = 'Client_Secret_12e32f9bda34e80d29ea3deed40fede3e38c0ee5'; // insira seu Client_Secret, conforme o ambiente (Des ou Prod)
@@ -665,7 +665,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
         'client_secret' => $clientSecret,
         'sandbox' => false // altere conforme o ambiente (true = desenvolvimento e false = producao)
     ];
-    $metadata = array('notification_url'=>'https://www.tarotdehorus.com.br/checkout/retorno_gn.php', 'custom_id' => $id_id_cobranca);
+    $metadata = array('notification_url'=>'https://www.epapodetarot.com.br/checkout/retorno_gn.php', 'custom_id' => $id_id_cobranca);
     $item_1 = [
         'name' => $itemDescription1, // nome do item, produto ou serviço
         'value' => (int) $itemAmount2, // valor (1000 = R$ 10,00)
@@ -751,7 +751,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
             print_r($e->getMessage());
         }
         @$paymentLink = $charge[data][link];
-        // Gerencianet - Tarot de Hórus
+        // Gerencianet - É Papo de Tarot
         ###########################################################################################
         $data_hoje = date('Y-m-d H:i:s');
         $query = $pdo->query( "UPDATE controle SET 
@@ -798,7 +798,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
         <p>$e->errorDescription</p>
         <br/>
         <br/>
-        Tarot de Hórus <br/>
+        É Papo de Tarot <br/>
         ";
         EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
         ###################### EMAIL ##############################
@@ -830,7 +830,7 @@ if (@$_POST['Deposito'] == 'enviarDeposito'){
         <button type="button" class="close" data-dismiss="alert">×</button>
         <h1>Aguardando Pagamento!</h1>
         <p style="font-size:22px; color:#000;">Você iniciou este pagamento com depósito/transferência no <b><?php echo $banco.' | Valor R$ '.$itemAmount; ?></b></p>
-        <p style="font-size:18px;">Realize o depósito, guarde o comprovante, e envie os dados do comprovante no email: <b><a href="mailto:contato@tarotdehorus.com.br">contato@tarotdehorus.com.br</a></b> para completar seu pagamento.</p>
+        <p style="font-size:18px;">Realize o depósito, guarde o comprovante, e envie os dados do comprovante no email: <b><a href="mailto:contato@epapodetarot.com.br">contato@epapodetarot.com.br</a></b> para completar seu pagamento.</p>
         <p style="font-size:18px;">Após enviar o seu comprovante, suas informações serão analisadas, se o pagamento for entre bancos iguais, identificaremos na hora, se for DOC, ou depósito, identificaremos no dia útil seguinte, você será avisado por e-mail sobre a identificação do pagamento.</p>
         <p style="font-size:18px;">Obrigado!</p>
     </div>
@@ -980,7 +980,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
     if ($row > 0){
 
         // Compra ja registrada
-        echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+        echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
 
     } else {
     // ####### Não execulta duas vezes o mesmo pedido
@@ -1024,7 +1024,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
         $items = [
            $item_1
         ];
-        $metadata = array('notification_url'=>'https://www.tarotdehorus.com.br/checkout/retorno_gn.php', 'custom_id' => $id_id_cobranca);
+        $metadata = array('notification_url'=>'https://www.epapodetarot.com.br/checkout/retorno_gn.php', 'custom_id' => $id_id_cobranca);
         $body = [
             'metadata' =>$metadata,
             'items' => $items
@@ -1090,7 +1090,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
                 <h1><i class="fas fa-hourglass-half"></i> Seu Pagamento esta em <b>Análise</b>!</h1>
                 <h3>Status: <b>Em Análise</b></h3>
                 <hr>
-                <p style="font-size:22px;"><a href="https://www.tarotdehorus.com.br/minha-conta">Clique Aqui, para acompanhar sua compra e ver o status atualizado!</a></p>
+                <p style="font-size:22px;"><a href="https://www.epapodetarot.com.br/minha-conta">Clique Aqui, para acompanhar sua compra e ver o status atualizado!</a></p>
                 <hr>
             </div>
             <?php
@@ -1104,7 +1104,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
             } elseif ($tipo=="whatsapp") {
                 // consulta via whatsapp
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
+                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
             } elseif ($tipo=="email") {
                 // consulta via e-mail
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
@@ -1132,7 +1132,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
                     // consulta via chat
                     ?>
                     <p><?php echo 'Seu saldo atual é de: '.$valor.' Minutos'; ?></p>
-                    <p><a href="https://www.tarotdehorus.com.br/tarologos">Clique aqui para escolher um tarólogo</a></p>
+                    <p><a href="https://www.epapodetarot.com.br/tarologos">Clique aqui para escolher um tarólogo</a></p>
                     <?php
                 } elseif ($tipo=="whatsapp") {
                     // consulta via whatsapp
@@ -1183,14 +1183,14 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
             <button type="button" class="close" data-dismiss="alert">×</button>
                 <h3>Erro - Desculpe o processamento do seu pagamento falhou.</h3>
                 <p>Você pode fazer uma nova tentativa, <a href="<?php echo $urldacopra; ?>">Clique Aqui.</a></p>
-                <p>Ou falar conosco no whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de ajuda com o meu pagamento.' target='_blank'>CLIQUE AQUI.</a></p>
+                <p>Ou falar conosco no whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de ajuda com o meu pagamento.' target='_blank'>CLIQUE AQUI.</a></p>
             </div>
             <?php
         }
 
         ###################################################################
         $seuemail = "logs@novasystems.com.br";
-        $assunto  = "Novo Pagamento - Tarot de Hórus ";
+        $assunto  = "Novo Pagamento - É Papo de Tarot ";
         /*Configuramos os cabe?alhos do e-mail*/
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
@@ -1203,7 +1203,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
         $conteudo .= "<br>";
         $conteudo .= @"<p>$e->errorDescription</p>";
         $conteudo .= "<br>";
-        $conteudo .= "Tarot de Hórus<br>";
+        $conteudo .= "É Papo de Tarot<br>";
         /*Enviando o e-mail...*/
         $enviando = mail($seuemail, $assunto, $conteudo, $headers);
         ###################################################################
@@ -1256,7 +1256,7 @@ if (@$_POST['Pix'] == 'enviarPix'){
             <h3>Status: <b>Em Análise</b></h3>
             <p>Se você já fez o pagamento corretamente usando o QR Code ou o Código do Pix na tela anterior, basta aguardar mais alguns segundos para que nosso sistema localize o seu pedido.</p>
             <hr>
-            <p style="font-size:22px;"><a href="https://www.tarotdehorus.com.br/minha-conta">Clique Aqui, para acompanhar sua compra e ver o status atualizado!</a></p>
+            <p style="font-size:22px;"><a href="https://www.epapodetarot.com.br/minha-conta">Clique Aqui, para acompanhar sua compra e ver o status atualizado!</a></p>
             <hr>
         </div>
         <?php
@@ -1270,7 +1270,7 @@ if (@$_POST['Pix'] == 'enviarPix'){
         } elseif ($tipo=="whatsapp") {
             // consulta via whatsapp
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
+            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
         } elseif ($tipo=="email") {
             // consulta via e-mail
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
@@ -1298,7 +1298,7 @@ if (@$_POST['Pix'] == 'enviarPix'){
                 // consulta via chat
                 ?>
                 <p><?php echo 'Seu saldo atual é de: '.$valor.' Minutos'; ?></p>
-                <p><a href="https://www.tarotdehorus.com.br/tarologos">Clique aqui para escolher um tarólogo</a></p>
+                <p><a href="https://www.epapodetarot.com.br/tarologos">Clique aqui para escolher um tarólogo</a></p>
                 <?php
             } elseif ($tipo=="whatsapp") {
                 // consulta via whatsapp
@@ -1339,7 +1339,7 @@ if (@$_POST['Pix'] == 'enviarPix'){
         <button type="button" class="close" data-dismiss="alert">×</button>
             <h3>Erro - Desculpe o processamento do seu pagamento falhou.</h3>
             <p>Você pode fazer uma nova tentativa, <a href="<?php echo $urldacopra; ?>">Clique Aqui.</a></p>
-            <p>Ou falar conosco no whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de ajuda com o meu pagamento.' target='_blank'>CLIQUE AQUI.</a></p>
+            <p>Ou falar conosco no whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de ajuda com o meu pagamento.' target='_blank'>CLIQUE AQUI.</a></p>
         </div>
         <?php
     }

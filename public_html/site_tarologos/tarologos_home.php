@@ -8,7 +8,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/slideshow/0.webp" alt="Tarot de Hórus" title="Tarot de Hórus" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/0.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">VideoChamdas Disponíveis!</h1>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/1.webp" alt="Tarot de Hórus" title="Tarot de Hórus" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/1.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TAROT DE RIDER WAITE</h1>
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/2.webp" alt="Tarot de Hórus" title="Tarot de Hórus" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/2.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">REIKI</h1>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/3.webp" alt="Tarot de Hórus" title="Tarot de Hórus" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/3.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TAROT DE MARSELHA</h1>
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/4.webp" alt="Tarot de Hórus" title="Tarot de Hórus" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/4.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TERAPIA HOLÍSTICA INTEGRATIVA PESSOAL</h1>
@@ -71,7 +71,7 @@
   </a>
 </div>
 
-<amp-img src="images/homel.webp" width="217" height="66" alt="Tarot de Hórus" title="Tarot de Hórus" style="float: left;" class="d-none d-lg-block"></amp-img><amp-img src="images/homer.webp" width="217" height="66" alt="Tarot de Hórus" title="Tarot de Hórus" style="float: right;" class="d-none d-lg-block"></amp-img><center><i class="fas fa-star-and-crescent"></i><amp-img src="images/logotexto.webp" width="205" height="31" alt="Tarot de Hórus" title="Tarot de Hórus"></amp-img><i class="fas fa-star-and-crescent"></i></center>
+<amp-img src="images/homel.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></amp-img><amp-img src="images/homer.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></amp-img><center><i class="fas fa-star-and-crescent"></i><amp-img src="images/logotexto.webp" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></amp-img><i class="fas fa-star-and-crescent"></i></center>
 
 <center>
   <h2 style="margin-top:0px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;"><i class="fas fa-comments"></i> Fale Com Um Tarólogo Online Agora!</h2>

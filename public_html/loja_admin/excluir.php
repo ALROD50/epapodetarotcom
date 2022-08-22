@@ -13,7 +13,7 @@ $filepath = "loja/foto_abertura/".$foto_abertura;
 unlink ($filepath);
 
 // Deleta Fotos - Pasta Inteira
-$uploaddir = "/home/tarotdehoruscom/public_html/loja_admin/fotos/".$fotos;
+$uploaddir = "/home/epapodetarotcom/public_html/loja_admin/fotos/".$fotos;
 @$dir_contents = scandir($uploaddir);
 if(is_dir($uploaddir)) {
     foreach($dir_contents as $content) {

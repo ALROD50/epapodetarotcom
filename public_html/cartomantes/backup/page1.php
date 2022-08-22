@@ -13,9 +13,9 @@
 
 	<div class="well">
 		<center>
-			<i class="fas fa-star-and-crescent"></i> <img src="https://www.tarotdehorus.com.br/images/logotexto.webp" alt=""> <i class="fas fa-star-and-crescent"></i>
+			<i class="fas fa-star-and-crescent"></i> <img src="https://www.epapodetarot.com.br/images/logotexto.webp" alt=""> <i class="fas fa-star-and-crescent"></i>
 			<img class="img-thumbnail" title="Tarologa Patricia" src="../tarologos_admin/fotoreal/patty2.jpg" alt="Tarologa Patricia" style="max-width:70%; margin-top: 10px;">
-			<p><em><small>Patricia - Especialista em esoterismo no Tarot de Hórus</small></em></p>
+			<p><em><small>Patricia - Especialista em esoterismo no É Papo de Tarot</small></em></p>
 		</center>
 		<p>Somos um portal de conhecimento e luz, temos uma equipe especializada de tarólogos e terapeutas, que trabalham online via chat, conheça!</p>
 		<!-- <center>

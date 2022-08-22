@@ -5,8 +5,8 @@
 ini_set ('default_charset', 'UTF8');
 date_default_timezone_set('America/Sao_Paulo');
 
-require_once('/home/tarotdehoruscom/public_html/includes/functions.php');
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once('/home/epapodetarotcom/public_html/includes/functions.php');
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 
 $cod       = $_POST["cod"];
@@ -30,7 +30,7 @@ if ($nLinhasPix > 0) {
         // Verifica quando o pix foi gerado
         $resultadoHoraPix = datediff('h', $dataCriado, $data_hoje, false);
         // Verifica Status
-        require '/home/tarotdehoruscom/public_html/scripts/gerencianet_pix/consultar-qrcode-dinamico.php';
+        require '/home/epapodetarotcom/public_html/scripts/gerencianet_pix/consultar-qrcode-dinamico.php';
         $status_compra = $responsex["status"];
         // Atualiza
         if ($resultadoHoraPix == 0) {
@@ -48,7 +48,7 @@ if ($nLinhasPix > 0) {
                     # produto da loja
                     $query = $pdo->query("UPDATE controle SET metodo='Pix', data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
                 }
-                echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=<b>Seu Pagamento Foi Localizado Com Sucesso!</b><br> Escolha o tarólogo abaixo e clique no botão Consultar Agora.<br> Se o tarólogo não estiver online, tente novamente mais tarde.'</script>";
+                echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=<b>Seu Pagamento Foi Localizado Com Sucesso!</b><br> Escolha o tarólogo abaixo e clique no botão Consultar Agora.<br> Se o tarólogo não estiver online, tente novamente mais tarde.'</script>";
             }
         }
         // Atualiza
@@ -67,7 +67,7 @@ if ($nLinhasPix > 0) {
                     # produto da loja
                     $query = $pdo->query("UPDATE controle SET metodo='Pix', data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
                 }
-                echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msgs=<b>Seu Pagamento Foi Localizado Com Sucesso!</b><br> Escolha o tarólogo abaixo e clique no botão Consultar Agora.<br> Se o tarólogo não estiver online, tente novamente mais tarde.'</script>";
+                echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msgs=<b>Seu Pagamento Foi Localizado Com Sucesso!</b><br> Escolha o tarólogo abaixo e clique no botão Consultar Agora.<br> Se o tarólogo não estiver online, tente novamente mais tarde.'</script>";
             }
         }
         // Pix expirado

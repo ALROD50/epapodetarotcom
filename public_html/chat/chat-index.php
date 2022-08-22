@@ -5,7 +5,7 @@ ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 header('Content-Type: text/html; charset=utf-8');
 if (!empty($_SESSION["cod_sala"])){
-    require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+    require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
     $pdo = conexao();
     include "functions.php";
 
@@ -157,7 +157,7 @@ if (!empty($_SESSION["cod_sala"])){
                 } else {
                     // Avisar que a sessão foi finalizada com sucesso.
                     alert(' Atenção - A consulta foi finalizada!  ');
-                    location.href="https://www.tarotdehorus.com.br/chat/finalizar.php?tempo=total";
+                    location.href="https://www.epapodetarot.com.br/chat/finalizar.php?tempo=total";
                 }
             }
             // Chama a função ao carregar a tela
@@ -192,9 +192,9 @@ if (!empty($_SESSION["cod_sala"])){
         <!-- Botão Encerrar Chat -->
         <div id="hedchat" class="" style="">
             <div style="float:right;">
-                <?php echo '<a button class="btn btn-danger" href="https://www.tarotdehorus.com.br/chat/chat-index.php?room='.$cod_sala.'&encerrar='.$cod_sala.'"><i class="glyphicon glyphicon-off icon-white"></i> Encerrar</button></a>'; ?>
+                <?php echo '<a button class="btn btn-danger" href="https://www.epapodetarot.com.br/chat/chat-index.php?room='.$cod_sala.'&encerrar='.$cod_sala.'"><i class="glyphicon glyphicon-off icon-white"></i> Encerrar</button></a>'; ?>
             </div>
-            <img id="logo" src="https://www.tarotdehorus.com.br/images/Logo-Site.fw.webp" alt="Tarot de Hórus" style="max-height: 53px;">
+            <img id="logo" src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" alt="É Papo de Tarot" style="max-height: 53px;">
         </div>
         
         <!-- Corpo do Chat -->
@@ -240,7 +240,7 @@ if (!empty($_SESSION["cod_sala"])){
 
             <!-- Digitando -->
             <div id="key" class="d-none" style="position:absolute; z-index:2; color:#fff;">
-                <p style="margin:0 0 1px;"><img src="https://www.tarotdehorus.com.br/images/crayons-01.gif" style="max-height: 21px;"> <?php echo $nome_digitando; ?> está digitando...</p>
+                <p style="margin:0 0 1px;"><img src="https://www.epapodetarot.com.br/images/crayons-01.gif" style="max-height: 21px;"> <?php echo $nome_digitando; ?> está digitando...</p>
             </div>
 
             <!-- Tempo para mobile -->
@@ -248,7 +248,7 @@ if (!empty($_SESSION["cod_sala"])){
                 <p style="margin: 0 0 5px;"> 
                     Tempo Restante:  <span id="tempoconsulta2"></span>
                     <video height="1" width="1" autoplay="" loop="" muted="" controls="">
-                      <source src="https://www.tarotdehorus.com.br/blackvideo.mp4">
+                      <source src="https://www.epapodetarot.com.br/blackvideo.mp4">
                     </video>
                 </p>
             </div>
@@ -284,7 +284,7 @@ if (!empty($_SESSION["cod_sala"])){
         <!-- Carrega histórico -->
         <script type="text/javascript">
             $(document).ready(function(){
-                $.post('https://www.tarotdehorus.com.br/chat/historico.php',
+                $.post('https://www.epapodetarot.com.br/chat/historico.php',
                 {
                     cod_sala : '<?php echo $cod_sala; ?>',
                     id_usuario_logado : '<?php echo $id_usuario_logado; ?>'
@@ -305,7 +305,7 @@ if (!empty($_SESSION["cod_sala"])){
     <?php 
 } else {
     // Essa sala não existe
-    echo '<script>document.location.href="https://www.tarotdehorus.com.br/"</script>';
+    echo '<script>document.location.href="https://www.epapodetarot.com.br/"</script>';
 }
 // Botão Encerra Chat
 if ($_GET['encerrar']) {

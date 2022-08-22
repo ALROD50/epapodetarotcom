@@ -22,13 +22,13 @@ include 'verifica_ult_consulta.php';
       console.log("Permissão de Notificações Solicitada!");
       if (result === 'granted') {
           var notification = new Notification('Permissão Autorizada', {
-            icon: 'https://www.tarotdehorus.com.br/images/Logo-SiteP.webp',
+            icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
             body: "Parabéns você deu permissão para as Notificações!",
           });
       } 
       // Recarrega a página
       var x = setTimeout(function(){
-        document.location.href="https://www.tarotdehorus.com.br/minha-conta/?pg=area_tarologos/resumo.php";
+        document.location.href="https://www.epapodetarot.com.br/minha-conta/?pg=area_tarologos/resumo.php";
       }, 5000); // Executa depois 5 segundos
     });
   }
@@ -36,7 +36,7 @@ include 'verifica_ult_consulta.php';
   function mostrarNot(){
     Notification.requestPermission().then(function(permission) {
       const notification = new showNotification('Teste Notificações', {
-        icon: 'https://www.tarotdehorus.com.br/images/Logo-SiteP.webp',
+        icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
         body: "Teste de Notificações com Sucesso!",
         silent: true,
       });
@@ -141,7 +141,7 @@ include 'verifica_ult_consulta.php';
 </div>
 
 <div class="card card-body mb-3" style="background:#fff; color:#383C3F;">
-  <p><b><i class="far fa-list-alt"></i> Mantenha sempre as 3 caixas verdes acima ativas</b> (1 - Microfone e Vídeo, 2 - Notificações do Chat, 3 - Campainha do Chat). Realize todos os testes e ajustes da caixa azul acima para ativa-las. <a type="button" class="btn btn-primary btn-sm" href="https://www.tarotdehorus.com.br/minha-conta"><i class="far fa-question-circle"></i> Recarregar e Testar!</a></p>
+  <p><b><i class="far fa-list-alt"></i> Mantenha sempre as 3 caixas verdes acima ativas</b> (1 - Microfone e Vídeo, 2 - Notificações do Chat, 3 - Campainha do Chat). Realize todos os testes e ajustes da caixa azul acima para ativa-las. <a type="button" class="btn btn-primary btn-sm" href="https://www.epapodetarot.com.br/minha-conta"><i class="far fa-question-circle"></i> Recarregar e Testar!</a></p>
   <center><p><b class="youtube"><u><h4><i class="far fa-thumbs-up"></i> Aguarde o cliente chamar sempre nessa mesma página em que esta agora.</h4></u></b></p></center>
 </div>
 
@@ -272,7 +272,7 @@ include 'verifica_ult_consulta.php';
 
 <script>
   // Verifica se Áudio e Vídeo estão ativos
-  const audio = new Audio( 'https://www.tarotdehorus.com.br/chat/newmsg.mp3' );
+  const audio = new Audio( 'https://www.epapodetarot.com.br/chat/newmsg.mp3' );
   audio.muted = true;
   const alert_elem = document.querySelector( '#permissaoaudionegada' );
   audio.play().then( () => {
@@ -300,7 +300,7 @@ include 'verifica_ult_consulta.php';
         // $('#permissaonegada').hide();
         console.log( 'Teste de áudio 3' );
         // Recarrega a página
-        document.location.href="https://www.tarotdehorus.com.br/minha-conta/?pg=area_tarologos/resumo.php";
+        document.location.href="https://www.epapodetarot.com.br/minha-conta/?pg=area_tarologos/resumo.php";
       }
     } );
     console.log( 'Teste de áudio Desativado' );

@@ -7,8 +7,8 @@ ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 // phpinfo();
 session_start();
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
-require_once "/home/tarotdehoruscom/public_html/includes/functions.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/functions.php";
 $pdo = conexao();
 if(@$_GET['novocliente']=='true'){
 	include 'novocliente.php';
@@ -34,10 +34,10 @@ if(@$_GET['validasenha']=='true'){
         time='$datacompleta2'
     WHERE email='$email'");
     $_SESSION['usuario_id'] = $usuario_id;
-	// echo "<script>document.location.href='https://www.tarotdehorus.com.br/cartomantes/index.php?pg=page5.php&email=$email'</script>";
+	// echo "<script>document.location.href='https://www.epapodetarot.com.br/cartomantes/index.php?pg=page5.php&email=$email'</script>";
 	$tarologo = $_SESSION['id_tarologo'];
 	$nome = $_SESSION['nome'];
-	echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/$tarologo/chat/?msgs=Parabéns $nome, você foi registrado no site com sucesso!<br>%C3%93tima%20Escolha!,%20Vamos%20Realizar%20Sua%20Consulta!'</script>";
+	echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/$tarologo/chat/?msgs=Parabéns $nome, você foi registrado no site com sucesso!<br>%C3%93tima%20Escolha!,%20Vamos%20Realizar%20Sua%20Consulta!'</script>";
 }
 include "head.php";
 ?> 
@@ -47,7 +47,7 @@ include "head.php";
    			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
    			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
    				<div class="row">
-					<center><img src="https://www.tarotdehorus.com.br/images/Logo-Site.fw.webp" alt="Tarot de Hórus" title="Tarot de Hórus" style="max-width:80%;" /></center>
+					<center><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" alt="É Papo de Tarot" title="É Papo de Tarot" style="max-width:80%;" /></center>
 				</div>
 				<div style="clear: both;"></div>
 				<style>
@@ -57,7 +57,7 @@ include "head.php";
 				</style>
 				<div class="row" style="border-top: 3px solid #f7b334; margin-left:0px; margin-right: 0px;">
 					<?php
-					require_once "/home/tarotdehoruscom/public_html/includes/msg.php";
+					require_once "/home/epapodetarotcom/public_html/includes/msg.php";
 					if (isset($_GET['pg']) ? $_GET['pg'] : '') {
 					   include "".$_GET['pg'];
 					} else {

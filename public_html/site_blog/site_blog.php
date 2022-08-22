@@ -52,7 +52,7 @@
       {   
         if($this->resultado() > 0) {
           
-        	echo '<h1><i class="far fa-newspaper"></i> Blog Tarot de Hórus</h1><hr>';
+        	echo '<h1><i class="far fa-newspaper"></i> Blog É Papo de Tarot</h1><hr>';
 			//echo '<p class="info_resultado_busca">';
 			//echo 'Exibindo página <b>' . $this->paginaAtual() . '</b> de <b>' . $this->paginasTotais() . '</b> disponíveis para <b style="">'.$this->resultado().'</b> resultados encontrados.</p>';
         } else {
@@ -256,11 +256,11 @@
 		?>
 		<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-3">
 			<div class="card">
-			  <img src="<?php echo 'https://www.tarotdehorus.com.br/images/blog/foto_abertura/'.$foto_abertura; ?>" class="card-img-top" alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>">
+			  <img src="<?php echo 'https://www.epapodetarot.com.br/images/blog/foto_abertura/'.$foto_abertura; ?>" class="card-img-top" alt="<?php echo $titulo; ?>" title="<?php echo $titulo; ?>">
 			  <div class="card-body">
 			    <h3 class="text-primary"><?php echo $titulo; ?></h3>
 			    <p class="card-text" style="font-size:18px;"><?php echo $textocurta; ?></p>
-			    <a href="<?php echo "https://www.tarotdehorus.com.br/blog-artigo/$categoria_alias/$alias"; ?>" class="btn btn-lg btn-warning">Ler Artigo</a>
+			    <a href="<?php echo "https://www.epapodetarot.com.br/blog-artigo/$categoria_alias/$alias"; ?>" class="btn btn-lg btn-warning">Ler Artigo</a>
 			  </div>
 			</div>
 		</div>

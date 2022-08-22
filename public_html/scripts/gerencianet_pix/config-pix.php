@@ -4,7 +4,7 @@
  */
 
 //DADOS GERAIS DO PIX (DINÂMICO E ESTÁTICO)
-@define('PIX_KEY','contato@tarotdehorus.com.br');
+@define('PIX_KEY','contato@epapodetarot.com.br');
 @define('PIX_MERCHANT_NAME','TarotdeHorus');
 @define('PIX_MERCHANT_CITY','SAOPAULO');
 

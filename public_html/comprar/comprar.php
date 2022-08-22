@@ -44,7 +44,7 @@ if (isset($_GET['pack'])) {
 	$consultamensal  = "nao";
 	if ($row2 > 0){
     	// Compra ja registrada
-		echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta'</script>";
+		echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
 
     } else {
     	// Compra não registrada
@@ -154,7 +154,7 @@ if (isset($_GET['pack'])) {
 
 			    $ref            = uniqid(NULL, true);
 			    $cod            = Codificador::Codifica("$usuario_id, $ref");
-			    $url            = 'https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod='.$cod;
+			    $url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
 
 			    if($i > 0) {
 			      // Adiciona mais 1 mês na data de vencimento conforme a quantidade de parcelas do loop
@@ -163,7 +163,7 @@ if (isset($_GET['pack'])) {
 			      $vencimento = proximoDiaUtil($vencimento, $saida = 'd-m-Y');
 			      // Atualiza URL's
 			      $cod        = Codificador::Codifica("$usuario_id, $ref");
-			      $url        = 'https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod='.$cod;
+			      $url        = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
 			    }
 
 			    //dia, mes e ano de vencimento novo separados
@@ -203,7 +203,7 @@ if (isset($_GET['pack'])) {
 			###################### EMAIL ##############################
 			$memaildestinatario = $email_usuario;
 			$mnomedestinatario  = $nome_usuario;
-			$massunto           = "Nova Cobrança Gerada Tarot de Hórus";
+			$massunto           = "Nova Cobrança Gerada É Papo de Tarot";
 			$mmensagem          = "
 				<p>Olá <b>$nome_usuario</b>, </p>
 				<p>O seu pedido foi realizado com sucesso.</p>
@@ -211,13 +211,13 @@ if (isset($_GET['pack'])) {
 				<p>Conclua seu pagamento para realizar sua consulta.</p>
 				<p>Para mais detalhes acesse sua conta em:</p>
 				<p><b>Minha Conta:</b></p>
-				<p><a href='https://www.tarotdehorus.com.br/minha-conta/'>https://www.tarotdehorus.com.br/minha-conta</a></p>
+				<p><a href='https://www.epapodetarot.com.br/minha-conta/'>https://www.epapodetarot.com.br/minha-conta</a></p>
 				<br/>
 				<br/>
-				<b>Tarot de Hórus</b> <br/>
+				<b>É Papo de Tarot</b> <br/>
 				Departamento Financeiro <br/>
-				contato@tarotdehorus.com.br <br/>
-				Site: www.TarotDeHorus.com.br <br/>
+				contato@epapodetarot.com.br <br/>
+				Site: www.epapodetarot.com.br <br/>
 			";
 			EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
 			###################### EMAIL ##############################
@@ -234,7 +234,7 @@ if (isset($_GET['pack'])) {
 
         	$vencimento     = date('d-m-Y', strtotime("+1 days"));
 			$cod            = Codificador::Codifica("$usuario_id, $ref");
-			$url            = 'https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod='.$cod;
+			$url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
 
 			// Transforma vencimento em dia util caso necessário
 			$vencimento = proximoDiaUtil($vencimento, $saida = 'Y-m-d');
@@ -270,7 +270,7 @@ if (isset($_GET['pack'])) {
 	        ###################### EMAIL ##############################
 			$memaildestinatario = $email_usuario;
 			$mnomedestinatario  = $nome_usuario;
-			$massunto           = "Nova Cobrança Gerada Tarot de Hórus";
+			$massunto           = "Nova Cobrança Gerada É Papo de Tarot";
 			$mmensagem          = "
 				<p>Olá <b>$nome_usuario</b>, </p>
 				<p>Estes são os dados para realizar sua consulta.</p>
@@ -283,19 +283,19 @@ if (isset($_GET['pack'])) {
 				<p>Conclua seu pagamento para realizar sua consulta.</p>
 				<p>Para mais detalhes acesse sua conta em:</p>
 				<p><b>Minha Conta:</b></p>
-				<p><a href='https://www.tarotdehorus.com.br/minha-conta/'>https://www.tarotdehorus.com.br/minha-conta</a></p>
+				<p><a href='https://www.epapodetarot.com.br/minha-conta/'>https://www.epapodetarot.com.br/minha-conta</a></p>
 				<br/>
 				<br/>
-				<b>Tarot de Hórus</b> <br/>
+				<b>É Papo de Tarot</b> <br/>
 				Departamento Financeiro <br/>
-				contato@tarotdehorus.com.br <br/>
-				Site: www.TarotDeHorus.com.br <br/>
+				contato@epapodetarot.com.br <br/>
+				Site: www.epapodetarot.com.br <br/>
 			";
 			EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
 			###################### EMAIL ##############################
         }
 		
-		echo "<script>document.location.href='https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod=$cod'</script>";
+		echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod'</script>";
     }
 }
 ?>

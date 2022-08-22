@@ -161,7 +161,7 @@ if(isset($_POST['envia'])) {
 
     $reference      = uniqid(NULL, true);
     $cod            = Codificador::Codifica("$id_nome_cliente, $reference");
-    $url            = 'https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod='.$cod;
+    $url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
 
     if($i > 0) {
       // Adiciona mais 1 mês na data de vencimento conforme a quantidade de parcelas do loop
@@ -170,7 +170,7 @@ if(isset($_POST['envia'])) {
       $vencimento = proximoDiaUtil($vencimento, $saida = 'd-m-Y');
       // Atualiza URL's
       $cod        = Codificador::Codifica("$id_nome_cliente, $reference");
-      $url        = 'https://www.tarotdehorus.com.br/pagamentos/pagar.php?cod='.$cod;
+      $url        = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
     }
 
     //dia, mes e ano de vencimento novo separados

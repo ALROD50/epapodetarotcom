@@ -46,7 +46,7 @@ if(isset($_POST['envia'])){
             $captchav="Clique no box <b>Não sou um robô.</b>";
         } else {            
             //biblioteca para o captcha
-            require_once '/home/tarotdehoruscom/public_html/scripts/recaptcha/autoload.php';
+            require_once '/home/epapodetarotcom/public_html/scripts/recaptcha/autoload.php';
             // sua chave secreta
             $secret = "6LeO7OkUAAAAAL7xRieXU8luIkFBANA7_GjnSbsT";
             // resposta vazia
@@ -103,19 +103,19 @@ if(isset($_POST['envia'])){
         $emailMailer->setLanguage('pt');
         $emailMailer->CharSet = "UTF-8";
         $emailMailer->IsHTML(true);
-        $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@tarotdehorus.com.br?subject=Unsubscribe>, <https://www.tarotdehorus.com.br>");
+        $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
         $emailMailer->Host     = "";  
-        $emailMailer->From     = "contato@tarotdehorus.com.br";
+        $emailMailer->From     = "contato@epapodetarot.com.br";
         $emailMailer->SMTPAuth = false; 
-        $emailMailer->Username = "contato@tarotdehorus.com.br"; 
+        $emailMailer->Username = "contato@epapodetarot.com.br"; 
         $emailMailer->Password = ""; 
-        $emailMailer->From      = 'contato@tarotdehorus.com.br'; // Remetente
-        $emailMailer->AddAddress( "contato@tarotdehorus.com.br", 'Tarot de Hórus'); // Destinatário
+        $emailMailer->From      = 'contato@epapodetarot.com.br'; // Remetente
+        $emailMailer->AddAddress( "contato@epapodetarot.com.br", 'É Papo de Tarot'); // Destinatário
         // $emailMailer->AddBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia oculta
-        $emailMailer->FromName  = 'Tarot de Hórus'; // Seu nome
+        $emailMailer->FromName  = 'É Papo de Tarot'; // Seu nome
         $emailMailer->Subject   = 'Contato'; // Assunto
         $corpoMSG = '
-        Uma nova mensagem foi enviada via formulário contato do site Tarot de Hórus.<br/>
+        Uma nova mensagem foi enviada via formulário contato do site É Papo de Tarot.<br/>
         <br/>
         Dados da mensagem: <br/>
         <strong>NOME:</strong> '.$nome.'<br/>
@@ -125,8 +125,8 @@ if(isset($_POST['envia'])){
         <strong>MENSAGEM:</strong><br/>
         '.$mensagem.'<br/>
         <br/>
-        Tarot de Hórus<br/>
-        <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+        É Papo de Tarot<br/>
+        <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
         ';
         $emailMailer->MsgHTML($corpoMSG);
         // Enviando o email
@@ -140,11 +140,11 @@ if(isset($_POST['envia'])){
 ?>
 <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <p><img src="images/logo3.webp" alt="Tarot de Hórus" style="max-width: 70%;"></p>
+        <p><img src="images/logo3.webp" alt="É Papo de Tarot" style="max-width: 70%;"></p>
         <p>Use o formulário ao lado para falar com o Tartot de Hórus.</p>
         <p style="color: #000;"><i class="far fa-clock"></i> Seg. a Sex. das 10H às 22H</p>
         <p style="color: #000; "><i class="fab fa-whatsapp"></i> (11) 9.4119-0306</p>
-        <p style="color: #000; "><i class="far fa-envelope"></i> contato@tarotdehorus.com.br</p>
+        <p style="color: #000; "><i class="far fa-envelope"></i> contato@epapodetarot.com.br</p>
         <p><i class="far fa-compass"></i> Rua Vergueiro, 1000 - Paraíso, São Paulo - SP, 01504-000</p>
     </div>
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">

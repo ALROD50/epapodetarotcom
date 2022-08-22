@@ -38,7 +38,7 @@ $executa4=$pdo->query($dadoss4);
                     <label for="">Mensagem:</label>
                     <textarea name="modelo" style="height:400px;width:100%;" class="form-control">
                         <p>Olá <?php echo $cliente_nome; ?>, como está?</p>
-                        <p>Aqui é o Tarólogo <?php echo $tarologo_nome; ?> do site Tarot de Hórus <a href="https://www.tarotdehorus.com.br">www.tarotdehorus.com.br</a></p>
+                        <p>Aqui é o Tarólogo <?php echo $tarologo_nome; ?> do site É Papo de Tarot <a href="https://www.epapodetarot.com.br">www.epapodetarot.com.br</a></p>
                         <p>... mensagem .... </p>
                         <p>... mensagem .... </p>
                         <p>... mensagem .... </p>
@@ -59,8 +59,8 @@ $executa4=$pdo->query($dadoss4);
                 $mensagem     .= '
                 <br>
                 <br>
-                <p>Tarot de Hórus</p>
-                <p>https://www.tarotdehorus.com.br/</p>
+                <p>É Papo de Tarot</p>
+                <p>https://www.epapodetarot.com.br/</p>
                 ';
 
                 ###################### EMAIL ##############################

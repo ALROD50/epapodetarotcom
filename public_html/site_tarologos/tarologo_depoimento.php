@@ -11,7 +11,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 @$usuario_nivel  = $_COOKIE["UsuarioNivel"];
 @$usuario_status = $_COOKIE["UsuarioStatus"];
 #### Recupera Cookies -----------------------------------
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 
 $id_tarologo = $_POST['id_tarologo'];

@@ -15,23 +15,23 @@ if(isset($_POST['enviaEmail'])){
 	$cliente_nome = $_POST['cliente_nome'];
 	$cliente_email = $_POST['cliente_email'];
     /* -----------------Mandando E-mail---------------------- */
-    $assunto  = "Avise-me Quando Disponível - Tarot de Hórus";
+    $assunto  = "Avise-me Quando Disponível - É Papo de Tarot";
     /*Configuramos os cabeçalho do e-mail*/
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: Tarot de Hórus contato@tarotdehorus.com.br \r\n";
-    $headers .= "Reply-To: contato@tarotdehorus.com.br \r\n";
+    $headers .= "From: É Papo de Tarot contato@epapodetarot.com.br \r\n";
+    $headers .= "Reply-To: contato@epapodetarot.com.br \r\n";
     // $headers .= "BCC: logs@novasystems.com.br";
     /*Configuramos o conte?do do e-mail*/
     $conteudo = '
     Olá <b>'.$cliente_nome.'</b>, <br/>
     O tarólogo(a) <b>'.$tarologo_nome.'</b> esta online e disponível para atender você! <br/>
-    Acesse o site <a href=\'https://www.tarotdehorus.com.br/tarologos/\'>www.tarotdehorus.com.br/tarologos</a> e encontre <b>'.$tarologo_nome.'</b>, depois clique no botão <b>Consultar</b> para iniciar seu atendimento.<br/>
+    Acesse o site <a href=\'https://www.epapodetarot.com.br/tarologos/\'>www.epapodetarot.com.br/tarologos</a> e encontre <b>'.$tarologo_nome.'</b>, depois clique no botão <b>Consultar</b> para iniciar seu atendimento.<br/>
     Caso não consiga clicar no link do site acima, tente copiar todo o endereço e colar no seu navegador de internet.
     <br/>
     <br/>
-    Tarot de Hórus<br/>
-    <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+    É Papo de Tarot<br/>
+    <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
     ';
     /*Enviando o e-mail...*/
     $enviando = mail($cliente_email, $assunto, $conteudo, $headers);

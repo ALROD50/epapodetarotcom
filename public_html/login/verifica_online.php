@@ -4,7 +4,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 ini_set('display_errors',1); // Força o PHP a mostrar os erros.
 ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 error_reporting(E_ALL); // Força o PHP a mostrar os erros.
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 // Função tempo
 function datediff($interval, $datefrom, $dateto, $using_timestamps = false) {

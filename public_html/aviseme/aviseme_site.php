@@ -109,24 +109,24 @@ if ($cliente_online == 'positivo'){
 		// Envia E-mail para o Tarólogo
 
         /* -----------------Mandando E-mail---------------------- */
-        $assunto  = "Avise-me Quando Disponível - Tarot de Hórus";
+        $assunto  = "Avise-me Quando Disponível - É Papo de Tarot";
         /*Configuramos os cabeçalho do e-mail*/
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
-        $headers .= "From: Tarot de Hórus contato@tarotdehorus.com.br \r\n";
-        $headers .= "Reply-To: contato@tarotdehorus.com.br \r\n";
+        $headers .= "From: É Papo de Tarot contato@epapodetarot.com.br \r\n";
+        $headers .= "Reply-To: contato@epapodetarot.com.br \r\n";
         // $headers .= "BCC: logs@novasystems.com.br";
         /*Configuramos o conte?do do e-mail*/
         $conteudo = '
         Olá '.$tarologo_nome.', <br/>
-        Um novo cliente acabou de usar o <b>Avise-me Quando Disponível</b>, e espera você retornar ao site Tarot de Hórus para que você possa atendê-lo. <br/>
+        Um novo cliente acabou de usar o <b>Avise-me Quando Disponível</b>, e espera você retornar ao site É Papo de Tarot para que você possa atendê-lo. <br/>
         Acesse o site, faça login, e vá até <b>Minha Conta / Avise-me</b> e clique no botão <b>Avisar</b> para que este cliente receba um e-mail de que você ja esta online, disponível no site e esperando para atendê-lo.</br> 
         <br/>
         <b>Data do Registro:</b> '. $data .'<br/>
         <b>Nome do Cliente:</b> '. $cliente_nome .'<br/>
         <br/>
-        Tarot de Hórus<br/>
-        <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+        É Papo de Tarot<br/>
+        <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
         ';
         /*Enviando o e-mail...*/
         $enviando = mail($tarologo_email, $assunto, $conteudo, $headers);

@@ -77,7 +77,7 @@ if(isset($_POST['envia'])) {
 	}
 
 	// Chama o arquivo com a classe WideImage
-	include '/home/tarotdehoruscom/public_html/scripts/wideimage-11.02.19-full/lib/WideImage.php';
+	include '/home/epapodetarotcom/public_html/scripts/wideimage-11.02.19-full/lib/WideImage.php';
 
 	// Verifica se foi enviado fotos
 	if (!empty($_FILES['fotos']['name']['0'])) {
@@ -92,8 +92,8 @@ if(isset($_POST['envia'])) {
 	    $dir         = 'loja_admin/fotos/'.$nome_da_pasta.'/';
 
 	    // Copia o arquivo thumb.php para a pasta das fotos
-	    $thumbDir        = '/home/tarotdehoruscom/public_html/loja_admin/thumb.php';
-	    $CopiathumbDir   = '/home/tarotdehoruscom/public_html/loja_admin/fotos/'.$nome_da_pasta.'/thumb.php';
+	    $thumbDir        = '/home/epapodetarotcom/public_html/loja_admin/thumb.php';
+	    $CopiathumbDir   = '/home/epapodetarotcom/public_html/loja_admin/fotos/'.$nome_da_pasta.'/thumb.php';
 	    if (!copy($thumbDir, $CopiathumbDir)) {
 	        $erros++;
 	        $fotosv = "Erro ao criar o thump.php.<br>";
@@ -149,8 +149,8 @@ if(isset($_POST['envia'])) {
 	    $fotos = date("Y.m.d-H.i.s").'_'.uniqid();
 	    mkdir(dirname(__FILE__) . "/fotos/$fotos", 0777, true);
 	    // Copia o arquivo thumb.php para a pasta das fotos
-	    $thumbDir        = '/home/tarotdehoruscom/public_html/loja_admin/thumb.php';
-	    $CopiathumbDir   = '/home/tarotdehoruscom/public_html/loja_admin/fotos/'.$fotos.'/thumb.php';
+	    $thumbDir        = '/home/epapodetarotcom/public_html/loja_admin/thumb.php';
+	    $CopiathumbDir   = '/home/epapodetarotcom/public_html/loja_admin/fotos/'.$fotos.'/thumb.php';
 	    if (!copy($thumbDir, $CopiathumbDir)) {
 	        $erros++;
 	        $fotosv = "Erro ao criar o thump.php.<br>";
@@ -173,7 +173,7 @@ if(isset($_POST['envia'])) {
 
 		//Faz o upload da imagem para o servidor
 		$upload  = move_uploaded_file($tmp, $pasta.$nome_foto_abertura);
-		$pasta = '/home/tarotdehoruscom/public_html/'.$pasta.$nome_foto_abertura;
+		$pasta = '/home/epapodetarotcom/public_html/'.$pasta.$nome_foto_abertura;
 
 		// Then you can load an image:
 		$image = WideImage::load($pasta);
@@ -197,7 +197,7 @@ if(isset($_POST['envia'])) {
 	    $nome_foto_abertura = null;
 
 	    // Deleta Fotos - Pasta Inteira
-	    $uploaddir = "/home/tarotdehoruscom/public_html/loja_admin/fotos/".$fotos;
+	    $uploaddir = "/home/epapodetarotcom/public_html/loja_admin/fotos/".$fotos;
 	    @$dir_contents = scandir($uploaddir);
 	    if(is_dir($uploaddir)) {
 	        foreach($dir_contents as $content) {
@@ -322,7 +322,7 @@ if(isset($_POST['envia'])) {
                 <h4>Regras de Dimensões do Pacote nos Correios</h4>
             </div>
             <div class="panel-body">
-                <img src="https://www.tarotdehorus.com.br/images/frete.png" alt="">
+                <img src="https://www.epapodetarot.com.br/images/frete.png" alt="">
             </div>
         </div>
 

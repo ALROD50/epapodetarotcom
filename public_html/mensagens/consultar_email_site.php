@@ -202,17 +202,17 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 		  )");
 		// Envia E-mail para o Tarólogo
         /* -----------------Mandando E-mail---------------------- */
-		$assunto  = "Nova Mensagem E-mail - Tarot de Hórus";
+		$assunto  = "Nova Mensagem E-mail - É Papo de Tarot";
         /*Configuramos os cabeçalho do e-mail*/
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
-        $headers .= "From: Tarot de Hórus contato@tarotdehorus.com.br \r\n";
-        $headers .= "Reply-To: contato@tarotdehorus.com.br \r\n";
+        $headers .= "From: É Papo de Tarot contato@epapodetarot.com.br \r\n";
+        $headers .= "Reply-To: contato@epapodetarot.com.br \r\n";
         // $headers .= "BCC: logs@novasystems.com.br";
         /*Configuramos o conte?do do e-mail*/
         $conteudo = '
         Olá '.$tarologo_nome.', <br/>
-        O cliente '.$cliente_nome.' acabou de te enviar uma nova <b>Mensagem</b>, e espera sua resposta no site Tarot de Hórus. <br/>
+        O cliente '.$cliente_nome.' acabou de te enviar uma nova <b>Mensagem</b>, e espera sua resposta no site É Papo de Tarot. <br/>
         Acesse o site, faça login, e vá até <b>Minha Conta / Mensagens</b> e clique em <b>Caixa de Entrada</b> você verá uma mensagem do cliente '.$cliente_nome.', clique em Ler e Responder Mensagem, e depois você poderá responder o cliente logo abaixo da mensagem, na mesma tela. </br>
         <b>Atenção</b>: Responda o clinete somente atravéz da <b>Minha Conta / Mensagens</b> no site.<br/>
         <br/>
@@ -220,8 +220,8 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
         <b>Assunto:</b> '. $assunto .'<br/>
         <b>Nome do Cliente:</b> '. $cliente_nome .'<br/>
         <br/>
-        Tarot de Hórus<br/>
-        <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+        É Papo de Tarot<br/>
+        <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
         ';
         /*Enviando o e-mail...*/
         $enviando = mail($tarologo_email, $assunto, $conteudo, $headers);

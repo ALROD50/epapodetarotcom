@@ -268,7 +268,7 @@ $res = $conexao->query($paginacao->sql());
         <td><?php echo $id; ?></td>
         <td><?php echo "<a href='minha-conta/?pg=clientes/view.php&id=$id' data-toggle='tooltip' title='$nome'>$nome</a>"."<a href='minha-conta/?pg=controle/add_credito.php&cliente=$id'> - <i class=\"fas fa-money-bill-alt\"></i></a>"; ?></td>
         <td><?php echo $email; ?></td>
-        <td><?php echo "<a href=\"https://api.whatsapp.com/send?phone=55$telefone&text=Oi $nome, tudo bem? Sou a Patricia aqui do Tarot de Hórus, vi que é nova no site. Posso te ajudar a fazer sua consulta com nossos tarólogos? Quer saber como funciona?\" class=\"linkClientesAdmin\" target=\"_Blank\"><i class=\"fab fa-whatsapp\"></i>$telefone</a>"; ?></td>
+        <td><?php echo "<a href=\"https://api.whatsapp.com/send?phone=55$telefone&text=Oi $nome, tudo bem? Sou a Patricia aqui do É Papo de Tarot, vi que é nova no site. Posso te ajudar a fazer sua consulta com nossos tarólogos? Quer saber como funciona?\" class=\"linkClientesAdmin\" target=\"_Blank\"><i class=\"fab fa-whatsapp\"></i>$telefone</a>"; ?></td>
         <td><?php echo $data_registro; ?></td>
         <td>
           <?php echo "<a href='javascript:;' onclick='ConfirmaExclusao($id);' data-toggle='tooltip' title='Excluir' class=\"btn btn-sm\"><i class=\"far fa-trash-alt\"></i></a>" ?>

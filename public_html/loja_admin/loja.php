@@ -12,7 +12,7 @@
     background-color: #fff;
   }
 </style>
-<h3 class="text-success"><i class="glyphicon glyphicon-blackboard"></i> Loja - Tarot de Hórus</h3>
+<h3 class="text-success"><i class="glyphicon glyphicon-blackboard"></i> Loja - É Papo de Tarot</h3>
 <hr>
 <?php $tab = isset($_GET['tab']) ? $_GET['tab'] : 'estatisticas'; ?>
 

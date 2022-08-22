@@ -8,7 +8,7 @@ switch ($page) {
 	case "page3.php": $title = "Qual o seu nome?"; break;
 	case "page4.php": $title = "Qual o seu e-mail?"; break;
 	case "page5.php": $title = "Informe seu WhatsApp"; break;
-	default: $title = "Tarot de Hórus"; break;
+	default: $title = "É Papo de Tarot"; break;
 }
 ?>
 <!DOCTYPE html>
@@ -36,13 +36,13 @@ switch ($page) {
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<title><?php echo $title; ?></title>
-		<meta name="keywords" content="Tarot de Hórus, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?" />
-		<meta name="description" content="Tarot de Hórus - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos" />
+		<meta name="keywords" content="É Papo de Tarot, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?" />
+		<meta name="description" content="É Papo de Tarot - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos" />
 		<meta name="author" content="Agência Nova Systems Marketing Digital"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="shortcut icon" href="https://www.tarotdehorus.com.br/images/favicon.ico" />
-		<link rel="stylesheet" href="https://www.tarotdehorus.com.br/fonts/dum1-webfont/stylesheet.css" type="text/css" charset="utf-8" media="all"/>
+		<link rel="shortcut icon" href="https://www.epapodetarot.com.br/images/favicon.ico" />
+		<link rel="stylesheet" href="https://www.epapodetarot.com.br/fonts/dum1-webfont/stylesheet.css" type="text/css" charset="utf-8" media="all"/>
 		<link rel="stylesheet" type="text/css" href="css/stilos.css" media="all"/>
 		<!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

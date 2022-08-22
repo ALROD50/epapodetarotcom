@@ -22,7 +22,7 @@ $cliente_credito = null;
 $cliente_entrou  = null;
 
 if ($row_onlinex == "offline" OR $row_onlinex == "") {
-  echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/$alias/chat/?msgs=Ótima Escolha!, Vamos Realizar Sua Consulta!'</script>";
+  echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/$alias/chat/?msgs=Ótima Escolha!, Vamos Realizar Sua Consulta!'</script>";
 } else {
   $cliente_online = 'positivo';
 }
@@ -35,7 +35,7 @@ $valor = $cont["soma"];
 $valor = $valor * 60;
 
 if ($valor <= 0) {
-  echo "<script>document.location.href='https://www.tarotdehorus.com.br/comprar-consulta/$alias/chat/?msge=Você não tem minutos suficientes para essa consulta.<br>Compre um pacote aqui, nesta página!'</script>";
+  echo "<script>document.location.href='https://www.epapodetarot.com.br/comprar-consulta/$alias/chat/?msge=Você não tem minutos suficientes para essa consulta.<br>Compre um pacote aqui, nesta página!'</script>";
 } else {
   $cliente_credito = 'positivo';
 }
@@ -47,11 +47,11 @@ $tarologo_online = $pdo->query("SELECT * FROM clientes WHERE id='$id_tarologo' "
 }
 
 if ($row_tarologo == "offline" OR $row_tarologo == "") {    
-  echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msge=Este tarólogo esta Offline no momento.<br>Escolha outro abaixo:'</script>";
+  echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msge=Este tarólogo esta Offline no momento.<br>Escolha outro abaixo:'</script>";
   $tarologo_online = 'negativo';
 
 } elseif ($row_tarologo == "ocupado") {
-  echo "<script>document.location.href='https://www.tarotdehorus.com.br/tarologos/?msge=Este tarólogo esta Ocupado no momento.<br>Escolha outro abaixo:'</script>";
+  echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos/?msge=Este tarólogo esta Ocupado no momento.<br>Escolha outro abaixo:'</script>";
   $tarologo_online = 'negativo';
 
 } elseif ($row_tarologo == "online") {
@@ -62,7 +62,7 @@ if ($row_tarologo == "offline" OR $row_tarologo == "") {
 $sql = $pdo->query("SELECT * FROM chamada_consulta WHERE id_cliente='$usuario_id' AND tarologo_entrou='TAROLOGOENTROU'"); 
 $row = $sql->rowCount();
 if ($row > 0){
-  echo "<script>document.location.href='https://www.tarotdehorus.com.br/minha-conta/?msge=Identificamos um atendimento anterior em andamento.<br>Por gentileza, aguarde 1 minuto até que o atendimento anterior seja fechado. Após a finalização, você poderá abrir uma nova consulta normalmente.'</script>";
+  echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta/?msge=Identificamos um atendimento anterior em andamento.<br>Por gentileza, aguarde 1 minuto até que o atendimento anterior seja fechado. Após a finalização, você poderá abrir uma nova consulta normalmente.'</script>";
   $tarologo_online = 'negativo';
   exit();
 } else {
@@ -113,17 +113,17 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo' AND $tarolo
           <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 100%;"></div>
         </div>
         <video height="1" width="1" autoplay="" loop="" muted="" controls="">
-          <source src="https://www.tarotdehorus.com.br/blackvideo.mp4">
+          <source src="https://www.epapodetarot.com.br/blackvideo.mp4">
         </video>
         <!-- Necessário para barra de progresso e funções ocultar -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="https://www.tarotdehorus.com.br/scripts/bar_progress/jquery.progresstimer.js"></script>
+        <script src="https://www.epapodetarot.com.br/scripts/bar_progress/jquery.progresstimer.js"></script>
         <script type="text/javascript">
           // ###################################    WebSocket     ####################################################
 
           // Conecta o cliente no servidor com WebSocket para fazer a chamada
-          var conn = new WebSocket('wss://tarotdehorus.com.br/wss2/NNN');
+          var conn = new WebSocket('wss://epapodetarot.com.br/wss2/NNN');
           // Abre Conexão
           conn.onopen = function(e) {
             console.log("Connection established!");
@@ -143,7 +143,7 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo' AND $tarolo
           conn.onopen = () => conn.send(msg);
 
           var intervalo = setInterval(function(){
-            $.post('https://www.tarotdehorus.com.br/site_tarologos/chama_chat.php',
+            $.post('https://www.epapodetarot.com.br/site_tarologos/chama_chat.php',
               {
                 id_tarologo: '<?php echo $id_tarologo; ?>',
                 id_cliente: '<?php echo $usuario_id; ?>',
@@ -163,7 +163,7 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo' AND $tarolo
               $("#verifica_chamada_tarologo_cliente").hide();
               $("#tarologo_nao_atendeu").show();
               // Deletar chamada do banco caso tarólogo não tenha atendido.
-              $.post('https://www.tarotdehorus.com.br/site_tarologos/deleta_chamada_n_at.php',
+              $.post('https://www.epapodetarot.com.br/site_tarologos/deleta_chamada_n_at.php',
               {
                 usuario_id : '<?php echo $usuario_id; ?>'
               }, 

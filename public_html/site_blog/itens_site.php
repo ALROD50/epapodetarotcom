@@ -47,7 +47,7 @@
 		<p><small class="text-muted"><?php echo $categoria_nome; ?></small></p>
 
 		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 px-0 py-0">
-			<img src="<?php echo 'https://www.tarotdehorus.com.br/images/blog/foto_abertura/'.$foto_abertura; ?>" class="rounded img-fluid" alt="<?php echo $titulo; ?>" title="Blog - Tarot de Hórus <?php echo $titulo; ?>">
+			<img src="<?php echo 'https://www.epapodetarot.com.br/images/blog/foto_abertura/'.$foto_abertura; ?>" class="rounded img-fluid" alt="<?php echo $titulo; ?>" title="Blog - É Papo de Tarot <?php echo $titulo; ?>">
 		</div>
 
 		<?php echo $texto; ?>

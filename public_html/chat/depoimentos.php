@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
-require_once "/home/tarotdehoruscom/public_html/includes/functions.php";
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
+require_once "/home/epapodetarotcom/public_html/includes/functions.php";
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 if (!empty($_SESSION["id_usuario_logado"])){
@@ -13,7 +13,7 @@ if (!empty($_SESSION["id_usuario_logado"])){
   $id_usuario_logado = $_GET['id_usuario_logado'];
 }
 if (empty($id_cliente)) {
-  echo '<script>document.location.href="https://www.tarotdehorus.com.br/"</script>';
+  echo '<script>document.location.href="https://www.epapodetarot.com.br/"</script>';
 }
 $pdo = conexao();
 ?>
@@ -24,9 +24,9 @@ $pdo = conexao();
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <title>Finalizando Consulta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" type="text/css" href="https://www.tarotdehorus.com.br/scripts/bootstrap3/css/bootstrap.css"/>
-  <link rel="stylesheet" type="text/css" href="https://www.tarotdehorus.com.br/scripts/bootstrap3/css/bootstrap-theme.min.css"/>
-  <link rel="shortcut icon" href="https://www.tarotdehorus.com.br/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="https://www.epapodetarot.com.br/scripts/bootstrap3/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="https://www.epapodetarot.com.br/scripts/bootstrap3/css/bootstrap-theme.min.css"/>
+  <link rel="shortcut icon" href="https://www.epapodetarot.com.br/images/favicon.ico" />
 </head>
 <style type="text/css">
     *{
@@ -36,7 +36,7 @@ $pdo = conexao();
         /*overflow:hidden;*/
     }
     body {
-        background: #1b2933 url('https://www.tarotdehorus.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+        background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
         background-size: 1920px 1169px;
         background-size: cover !important;
         color: #fff;
@@ -72,7 +72,7 @@ $pdo = conexao();
       <div class="col-md-8">
         
         <div style="margin-top: 30px; margin-bottom:30px;">
-          <img src="https://www.tarotdehorus.com.br/images/Logo-Site.fw.webp" alt="Tarot de Hórus" style="max-width: 100%;">
+          <img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" alt="É Papo de Tarot" style="max-width: 100%;">
         </div>
 
         <h1 class="title">Consulta Finalizada</h1>
@@ -95,7 +95,7 @@ $pdo = conexao();
             }
             ?>
 
-            <p><img src="https://www.tarotdehorus.com.br/tarologos_admin/fotos/<?php echo $logo; ?>" class="img-rounded" style="max-width:200px; margin: 15px 15px 15px 0px;"/></p>
+            <p><img src="https://www.epapodetarot.com.br/tarologos_admin/fotos/<?php echo $logo; ?>" class="img-rounded" style="max-width:200px; margin: 15px 15px 15px 0px;"/></p>
             <h3 class="text-success"> <?php echo $nome; ?></h3>
             <p><?php echo $especialidades; ?></br>
             <?php
@@ -104,7 +104,7 @@ $pdo = conexao();
 
           <h3 class="text-success">O que você achou da consulta com <?php echo $nome; ?>?</h3>
 
-          <form name="tarologos" method="post" action="https://www.tarotdehorus.com.br/chat/sub_depo.php" class="form-horizontal">
+          <form name="tarologos" method="post" action="https://www.epapodetarot.com.br/chat/sub_depo.php" class="form-horizontal">
 
             <input type="hidden" name="id_tarologos" value="<?php echo $id_tarologo; ?>">
             <input type="hidden" name="id_cliente" value="<?php echo $id_cliente; ?>">
@@ -131,7 +131,7 @@ $pdo = conexao();
               <label for="" class="col-sm-2 control-label"></label>
               <div class="col-sm-10">
                 <input class="btn btn-success" type="submit" name="envia" value="Enviar Mensagem"/>
-                <input class="btn btn-info" type="button" name="Cancel" value="Cancelar" onclick="window.location = 'https://www.tarotdehorus.com.br/minha-conta' " /> 
+                <input class="btn btn-info" type="button" name="Cancel" value="Cancelar" onclick="window.location = 'https://www.epapodetarot.com.br/minha-conta' " /> 
               </div>
             </div>
 

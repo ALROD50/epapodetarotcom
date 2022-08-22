@@ -5,7 +5,7 @@
 ini_set ('default_charset', 'UTF8');
 date_default_timezone_set('America/Sao_Paulo');
 
-include '/home/tarotdehoruscom/public_html/scripts/gerencianet2v/autoload.php'; // caminho relacionado a SDK
+include '/home/epapodetarotcom/public_html/scripts/gerencianet2v/autoload.php'; // caminho relacionado a SDK
 use Gerencianet\Exception\GerencianetException;
 use Gerencianet\Gerencianet;
  
@@ -23,10 +23,10 @@ $options = [
     'sandbox' => false // altere conforme o ambiente (true = desenvolvimento e false = producao)
 ];
 
-require_once('/home/tarotdehoruscom/public_html/includes/functions.php');
-require_once('/home/tarotdehoruscom/public_html/scripts/PHPMailer-master5.2.22/class.phpmailer.php');
-require_once('/home/tarotdehoruscom/public_html/scripts/PHPMailer-master5.2.22/class.smtp.php');
-require_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+require_once('/home/epapodetarotcom/public_html/includes/functions.php');
+require_once('/home/epapodetarotcom/public_html/scripts/PHPMailer-master5.2.22/class.phpmailer.php');
+require_once('/home/epapodetarotcom/public_html/scripts/PHPMailer-master5.2.22/class.smtp.php');
+require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 
 /*
@@ -151,7 +151,7 @@ if ($status_atual_da_cobranca == "PAGO") {
         } elseif ($tipo=="whatsapp") {
             // consulta via whatsapp
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', valor='$valor', status='PAGO' WHERE id='$id_cobranca'");
-            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href=\'https://api.whatsapp.com/send?phone=5511941190306&text=Olá Tarot de Hórus, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a>";
+            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href=\'https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a>";
         } elseif ($tipo=="email") {
             // consulta via e-mail
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', valor='$valor', status='PAGO' WHERE id='$id_cobranca'");
@@ -168,7 +168,7 @@ if ($status_atual_da_cobranca == "PAGO") {
         $massunto = 'Comprovante de pagamento';
         $mmensagem = '
         Parabéns! '.$cliente_nome.', <br/>
-        Este é um recibo comprovante de pagamento da sua fatura no site Tarot de Hórus.<br/>
+        Este é um recibo comprovante de pagamento da sua fatura no site É Papo de Tarot.<br/>
         <br/>
         <b>Seu E-mail de Cadastro:</b> '. $cliente_email .'<br/>
         <b>Demonstrativo:</b> '. $demonstrativo .'<br/>
@@ -181,11 +181,11 @@ if ($status_atual_da_cobranca == "PAGO") {
         <p>'. $produtoLoja.'<p/>
         <br/>
         <p>Volte ao Site:</p>
-        <p><a href=\'https://www.tarotdehorus.com.br/tarologos/\'>https://www.tarotdehorus.com.br/tarologos</a></p>
+        <p><a href=\'https://www.epapodetarot.com.br/tarologos/\'>https://www.epapodetarot.com.br/tarologos</a></p>
         <br/>
         Departamento Financeiro<br/>
-        Tarot de Hórus<br/>
-        <a href=\'https://www.tarotdehorus.com.br/\'>www.tarotdehorus.com.br</a>
+        É Papo de Tarot<br/>
+        <a href=\'https://www.epapodetarot.com.br/\'>www.epapodetarot.com.br</a>
         ';
         EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
         ###################### EMAIL ##############################
@@ -193,7 +193,7 @@ if ($status_atual_da_cobranca == "PAGO") {
 
     ###################################################################
     $seuemail = "logs@novasystems.com.br";
-    $assunto  = "Retorno Gerencianet Tarot de Hórus";
+    $assunto  = "Retorno Gerencianet É Papo de Tarot";
     /*Configuramos os cabe?alhos do e-mail*/
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
@@ -205,7 +205,7 @@ if ($status_atual_da_cobranca == "PAGO") {
     $conteudo .= "Valor Pago Gerencianet - <b>$valor_pago_gn</b><br>";
     $conteudo .= "$cliente_nome - $cliente_email<br>";
     $conteudo .= "<br>";
-    $conteudo .= "Tarot de Hórus<br>";
+    $conteudo .= "É Papo de Tarot<br>";
     /*Enviando o e-mail...*/
     $enviando = mail($seuemail, $assunto, $conteudo, $headers);
     ###################################################################

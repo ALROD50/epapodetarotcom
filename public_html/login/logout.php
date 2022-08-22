@@ -5,7 +5,7 @@ ini_set ('default_charset', 'UTF-8');
 ini_set('display_errors',0);
 ini_set('display_startup_erros',0);
 session_start();
-include "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo=conexao();
 ob_start();
 
@@ -43,4 +43,4 @@ setcookie('UsuarioNivel', null, -1, '/');
 setcookie('UsuarioStatus', null, -1, '/');
 
 //REDIRECIONA PARA A TELA DE LOGIN
-header("Location: https://www.tarotdehorus.com.br/");
+header("Location: https://www.epapodetarot.com.br/");

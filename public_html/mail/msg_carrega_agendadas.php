@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
-include_once "/home/tarotdehoruscom/public_html/includes/conexaoPdo.php";
+include_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo=conexao();
 $cod = $_POST['cod'];
 $executa66 = $pdo->query("SELECT * FROM mail_camp WHERE id='$cod'");

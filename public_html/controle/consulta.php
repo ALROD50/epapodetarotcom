@@ -92,7 +92,7 @@ $valor4 = number_format($valor44, 2, ',', '.');//Formatando para mostrar ao usua
   <tr>
     <form name="check" id="check" action="" method="post">
       <td style="width:7px;"><input type="checkbox" name="id_select[]" id="id_select" value="<?php echo $id; ?>"/><?php echo $id; ?></td>
-      <td><a href='<?php echo "https://api.whatsapp.com/send?phone=55$telefone&text=Oi $nome_cliente_compra, tudo bem? Sou a Patricia aqui do Tarot de Hórus, vi que é nova no site. Posso te ajudar a fazer sua consulta com nossos tarólogos?"; ?>' target="_Blank"><i class="fab fa-whatsapp"></i></a> <?php echo "<a href='minha-conta/?pg=clientes/view.php&id=$id_nome_cliente' data-toggle='tooltip' title='$nome_cliente_compra'>$nome_cliente_compra</a>"; ?></td>
+      <td><a href='<?php echo "https://api.whatsapp.com/send?phone=55$telefone&text=Oi $nome_cliente_compra, tudo bem? Sou a Patricia aqui do É Papo de Tarot, vi que é nova no site. Posso te ajudar a fazer sua consulta com nossos tarólogos?"; ?>' target="_Blank"><i class="fab fa-whatsapp"></i></a> <?php echo "<a href='minha-conta/?pg=clientes/view.php&id=$id_nome_cliente' data-toggle='tooltip' title='$nome_cliente_compra'>$nome_cliente_compra</a>"; ?></td>
       <td><?php echo $minutos.' Minutos'; ?></td>
       <td><?php echo $valor; ?></td>
       <td>
