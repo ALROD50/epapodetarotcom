@@ -64,8 +64,8 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 } elseif ($URLSESSAO=='fazer-login') {
 	$pagina_atual="fazer-login";
 	$title="Login / Entrar - É Papo de Tarot";
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='quem-somos') {
 	$pagina_atual="quem-somos";
 	$title="Quem Somos - É Papo de Tarot";
@@ -160,16 +160,16 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 	$pagina_atual="comprar-consulta";
 	@$title="Comprar Consulta ".$nome_usuario." - Chat, WhatsApp, E-mail, Video, Telefone - É Papo de Tarot";
 	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.webp";
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='depoimentos-tarlogos') {
 	$pagina_atual="depoimentos-tarlogos";
 	$title="Depoimentos Tarólogos - É Papo de Tarot";
 } elseif ($URLSESSAO=='registre-se') {
 	$pagina_atual="registre-se";
 	$title="Cadastre-se - É rápido e fácil - É Papo de Tarot";
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='loja') {
 	$pagina_atual="loja";
 	$title="Loja Virtual - É Papo de Tarot - Produtos Esotéricos";
@@ -220,14 +220,13 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 	$conversaodogoogle="
 		<!-- Event snippet for Adicionar ao carrinho conversion page -->
 		<script>
-		  gtag('event', 'conversion', {'send_to': 'AW-623703979/fGTaCK6Syd4BEKvvs6kC'});
 		</script>
 	";
 	$mostrarconversaogoogleads="sim";
 } elseif ($URLSESSAO=='carrinho-compras') {
 	$pagina_atual="carrinho-compras";
 	$title="Carrinho de Compras - É Papo de Tarot";
-	require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
+	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
 } else {
 	$pagina_atual="naoencontrado";
 	$title="404 - Página Não Encontrada - É Papo de Tarot";
