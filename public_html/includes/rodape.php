@@ -2294,7 +2294,7 @@
 		if ($usuario_nivel == 'ADMIN') {
 		 	?>
 		 	<script type="text/javascript">
-            var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NS');
+            var conn = new WebSocket('wss://epapodetarot.com.br/wss8787/NNN');
             function StatusTarologoOnline() {
               $('#onlineVerificaion').removeClass('offline');
               $('#onlineVerificaion').addClass('online');
