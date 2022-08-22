@@ -2,7 +2,7 @@
 function conexao () {
 $servername = "localhost";
 $username = "epapodetarotcom_sistema";
-$password = "AZ4xGDcBI,Q+";
+$password = "r5cug6wdj7offsts3t";
 $database = "epapodetarotcom_67674";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password,

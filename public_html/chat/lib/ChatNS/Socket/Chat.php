@@ -43,7 +43,7 @@
                     }
                 }
                 // Grava no banco a mensagem apenas 1 vez
-                $db = new \mysqli('localhost', 'epapodetarotcom_sistema', 'AZ4xGDcBI,Q+', 'epapodetarotcom_67674');
+                $db = new \mysqli('localhost', 'epapodetarotcom_sistema', 'r5cug6wdj7offsts3t', 'epapodetarotcom_67674');
                 # Aqui está o segredo do utf8
                 $stmt = $db->prepare("INSERT INTO chat (
                     nome,

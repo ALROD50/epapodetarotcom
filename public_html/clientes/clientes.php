@@ -23,7 +23,7 @@ include "filtro.php";
 // Por isto, preste atenção que nesta string temos o driver, o host e o banco(dbname)
 defined('DSN') or define('DSN', 'mysql:host=localhost;dbname=epapodetarotcom_sistema');
 defined('USUARIO') or define('USUARIO', 'epapodetarotcom_67674');
-defined('SENHA') or define('SENHA', 'AZ4xGDcBI,Q+');
+defined('SENHA') or define('SENHA', 'r5cug6wdj7offsts3t');
 
 /*
 * Classe para paginação em PDO
