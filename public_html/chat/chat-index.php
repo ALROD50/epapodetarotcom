@@ -77,18 +77,6 @@ if (!empty($_SESSION["cod_sala"])){
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!-- Smartsupp Live Chat script -->
-        <!-- <script type="text/javascript">
-            var _smartsupp = _smartsupp || {};
-            _smartsupp.key = 'd91a374ad4f38486598b3f199ba67bc15239def7';
-            window.smartsupp||(function(d) {
-            var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-            s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-            c.type='text/javascript';c.charset='utf-8';c.async=true;
-            c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-            })(document);
-        </script> -->
-
     </head>
     <body onLoad="document.forms['form1'].message.focus();">
 
