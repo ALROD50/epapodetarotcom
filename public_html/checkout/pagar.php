@@ -37,12 +37,12 @@ if ($sessionCode=="") {
     exit();
 }
 // Pix
-require __DIR__.'/../scripts/gerencianet_pix/vendor/autoload.php';
-require __DIR__.'/../scripts/gerencianet_pix/config-pix.php';
-use \App\Pix\Api;
-use \App\Pix\Payload;
-use Mpdf\QrCode\QrCode;
-use Mpdf\QrCode\Output;
+// require __DIR__.'/../scripts/gerencianet_pix/vendor/autoload.php';
+// require __DIR__.'/../scripts/gerencianet_pix/config-pix.php';
+// use \App\Pix\Api;
+// use \App\Pix\Payload;
+// use Mpdf\QrCode\QrCode;
+// use Mpdf\QrCode\Output;
 // Cupom de Desconto
 if (@$_POST['cupom']) {
     $cupom = trim($_POST["cupom"]);
@@ -144,7 +144,7 @@ require 'processa.php';
         </div>
 
         <!-- Cupom de Desconto -->
-        <div class="card bg-light mb-3 shadow">
+        <div class="card bg-light mb-3 shadow d-none">
             <div class="card-header"><h4 class="mb-0"><i class="fas fa-cocktail"></i> Você tem um Cupom de desconto?</h4></div>
             <div class="card-body">
                 <form class="form-inline" name="Formcupom" action="" method="POST">
@@ -232,23 +232,17 @@ require 'processa.php';
             	
                 <ul class="nav nav-tabs flex-column flex-sm-row shadow mb-2 mt-4" id="myTab" role="tablist">
                     
-                    <li class="nav-item" role="presentation">
-                        <a href="#tabPIX" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link active shadow" id="tabPIX-tab" role="tab" aria-controls="tabPIX" aria-selected="true"><img src="images/bancos/pix.png"> Pix</a>
+                    <li class="nav-item d-none" role="presentation">
+                        <a href="#tabPIX" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabPIX-tab" role="tab" aria-controls="tabPIX" aria-selected="true"><img src="images/bancos/pix.png"> Pix</a>
                     </li>
 
                     <li class="nav-item" role="presentation">
-                    	<a href="#tabCredito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link  shadow" id="tabCredito-tab" role="tab" aria-controls="tabCredito" aria-selected="true"><i class="far fa-credit-card"></i> Cartão de Crédito</a>
+                    	<a href="#tabCredito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link active shadow" id="tabCredito-tab" role="tab" aria-controls="tabCredito" aria-selected="true"><i class="far fa-credit-card"></i> Cartão de Crédito</a>
                     </li>
 
-                    <?php 
-                    if ($usuario_id=="1") {
-                        ?>
-                        <li class="nav-item" role="presentation">
-                            <a href="#tabCreditoGE" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabCreditoGE-tab" role="tab" aria-controls="tabCreditoGE" aria-selected="true"><i class="far fa-credit-card"></i> GE</a>
-                        </li>
-                        <?php
-                    }
-                    ?>
+                    <li class="nav-item d-none" role="presentation">
+                        <a href="#tabCreditoGE" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabCreditoGE-tab" role="tab" aria-controls="tabCreditoGE" aria-selected="true"><i class="far fa-credit-card"></i> GE</a>
+                    </li>
 
                     <li class="nav-item d-none" role="presentation">
                         <a href="#tabDebito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDebito-tab" role="tab" aria-controls="tabDebito" aria-selected="true"><i class="far fa-credit-card"></i> Débito</a>
@@ -262,7 +256,7 @@ require 'processa.php';
                     	<a href="#tabBoleto" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabBoleto-tab" role="tab" aria-controls="tabBoleto" aria-selected="false"><i class="fas fa-barcode"></i> Boleto</a>
                     </li>
                    
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item d-none" role="presentation">
                     	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><i class="fas fa-university"></i> Transferência</a>
                     </li>
                 </ul>
@@ -270,7 +264,7 @@ require 'processa.php';
                 <div class="card tab-content p-3 mb-4 shadow mt-2" id="myTabContent" style="border:none; margin-top: -0.5rem !important;">
 
                     <!-- Cartão de Crédito PagSeguro -->
-                    <div class="tab-pane fade show mb-2" id="tabCredito" role="tabpanel" aria-labelledby="tabCredito-tab">
+                    <div class="tab-pane fade show active mb-2" id="tabCredito" role="tabpanel" aria-labelledby="tabCredito-tab">
                     
 		                <h2 class="mb-4">Dados do Cartão de Crédito:</h2>
                         <p>Seu pagamento é identificado na hora!</p>
@@ -823,7 +817,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Gerencianet -->
-                    <div class="tab-pane fade show" id="tabCreditoGE" role="tabpanel" aria-labelledby="tabCreditoGE-tab">
+                    <div class="tab-pane fade show d-none" id="tabCreditoGE" role="tabpanel" aria-labelledby="tabCreditoGE-tab">
                         <h2 class="mb-4">Dados do Cartão de Crédito:</h2>
                         
                         <!-- Bandeiras -->
@@ -1513,7 +1507,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Pix -->
-                    <div class="tab-pane fade show active" id="tabPIX" role="tabpanel" aria-labelledby="tabPIX-tab">
+                    <div class="tab-pane fade show d-none" id="tabPIX" role="tabpanel" aria-labelledby="tabPIX-tab">
 
                         <h2 class="mb-4">Pague com o Pix!</h2>
 
