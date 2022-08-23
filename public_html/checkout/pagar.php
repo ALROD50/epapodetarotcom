@@ -4,8 +4,9 @@
 <?php
 ini_set ('default_charset', 'UTF-8');
 date_default_timezone_set('America/Sao_Paulo');
-ini_set('display_errors',0);
-ini_set('display_startup_erros',0);
+ini_set('display_errors',1);
+ini_set('display_startup_erros',1);
+error_reporting(E_ALL);
 ?>
 <link rel="stylesheet" type="text/css" href="checkout/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
