@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 		<meta property="og:image" name="og:image" content="<?php echo $metaimage; ?>"/>
-		<link rel="stylesheet" href="assets/preloader.css" media="print" onload="this.media='all'"/>
+		<!-- <link rel="stylesheet" href="assets/preloader.css" media="print" onload="this.media='all'"/> -->
 	  	<?php 
 	  	if ($mostrarconversaogoogleads=="sim") {
 	  	 	echo $conversaodogoogle;
@@ -23,7 +23,7 @@
 	<body role="document">
 
 		<!-- Preloader -->
-	    <div id="preloader">
+	    <!-- <div id="preloader">
 	        <div class="inner">
 	            <div class="bolas">
 	                <div></div>
@@ -31,4 +31,4 @@
 	                <div></div>                    
 	            </div>
 	        </div>
-	    </div>
+	    </div> -->
