@@ -127,7 +127,7 @@ if($status == "PAGO"){
     echo "<script>document.location.href='https://www.epapodetarot.com.br/tarologos'</script>";
     exit();
 }
-require 'processa.php';
+//require 'processa.php';
 ?>
 <!-- Formulário e Resumo -->
 <div id="conteudo">
