@@ -126,7 +126,7 @@ if ( isset($_POST["enviar"]) ) {
     if ($usuario_nivel == 'CLIENTE') {
     	$msgs .= "Seu saldo de minutos atualizado é de <b>".$tempo_restante." Minutos.</b>";
     }
-	echo "<script>document.location.href='index.php?pg=mensagens/inicio.php&msgs=$msgs'</script>";
+	echo "<script>document.location.href='minha-conta/?pg=mensagens/inicio.php&msgs=$msgs'</script>";
 }
 ?>
 
