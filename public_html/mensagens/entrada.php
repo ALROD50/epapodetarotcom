@@ -65,27 +65,27 @@ if($row_onlinex == 'offline' OR $row_onlinex == ''){
 
 <?php
 if ($usuario_nivel == "CLIENTE") {
-	$sql = $pdo->query("SELECT * FROM mensagens WHERE 
+	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE 
 	destinatario='$usuario_id' AND 'status'='entrada' AND exclui_cliente!='$usuario_id' AND exc_cli_defi!='$usuario_id' OR 
 	destinatario='$usuario_id' AND 'status'='enviada' AND exclui_cliente!='$usuario_id' AND exc_cli_defi!='$usuario_id'
 	ORDER BY id DESC ");
 	
 } elseif ($usuario_nivel == "TAROLOGO") {
-	$sql = $pdo->query("SELECT * FROM mensagens WHERE 
+	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE 
 	destinatario='$usuario_id' AND 'status'='entrada' AND exclui_tarologo!='$usuario_id' AND exc_tar_defi!='$usuario_id' OR 
 	destinatario='$usuario_id' AND 'status'='enviada' AND exclui_tarologo!='$usuario_id' AND exc_tar_defi!='$usuario_id'
 	ORDER BY id DESC ");
 } elseif ($usuario_nivel == "ADMIN") {
-	$sql = $pdo->query("SELECT * FROM mensagens WHERE 'status'='entrada' OR 'status' = 'enviada' ORDER BY id DESC ");
+	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE 'status'='entrada' OR 'status' = 'enviada' ORDER BY id DESC ");
 }
 
-echo $row_onlinex;
 
-$row = $sql->rowCount();
+$row = $sqlx->rowCount();
+echo $row;
 
 if ($row > 0) {
 
-	while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC)) { 
+	while ($mostrar = $sqlx->fetch(PDO::FETCH_ASSOC)) { 
 		$id=$mostrar['id'];
 		$remetente=$mostrar['remetente'];
 		$destinatario=$mostrar['destinatario'];
