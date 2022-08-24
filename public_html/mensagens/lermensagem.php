@@ -35,9 +35,6 @@ $id=$_POST['id'];
 $sql = $pdo->query("SELECT * FROM mensagens WHERE id='$id'");
 $row = $sql->rowCount();
 
-echo $id;
-exit();
-
 if ($row > 0) {
 
 	while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC)) { 
