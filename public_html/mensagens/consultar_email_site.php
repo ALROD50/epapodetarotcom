@@ -23,7 +23,7 @@ while ($mostrar_config = $sql_config->fetch(PDO::FETCH_ASSOC)){
 </div>
 
 <?php
-$id_tarologo = $_POST['id_tarologo'];
+@$id_tarologo = $_POST['id_tarologo'];
 
 if (empty($id_tarologo)) { 
 	$id_tarologo = $_POST['tarologo_id']; 
@@ -150,16 +150,16 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 		if ($valor >= $config_preco_consulta_email) {
 
 			// Atualizar os minutos disponiveis do cliente
-            $query = mysqli_query($conect, "UPDATE controle SET 
+			$query = $pdo->query("UPDATE controle SET 
                 minutos_dispo='0'
-            WHERE id_nome_cliente='$usuario_id'") or die(mysqli_error($conect));
+            WHERE id_nome_cliente='$usuario_id'");
 
 			// Atualiza o credito menos com o valor do preço da consulta.
 			$tempo_restante = $valor - $config_preco_consulta_email;
 
-			$query = mysqli_query($conect, "UPDATE controle SET 
-				minutos_dispo='$tempo_restante'
-			WHERE id_nome_cliente='$usuario_id' AND status='PAGO' ORDER BY id DESC LIMIT 1 " ) or die(mysqli_error($conect));
+			$query = $pdo->query("UPDATE controle SET 
+                minutos_dispo='$tempo_restante'
+            WHERE id_nome_cliente='$usuario_id' AND status='PAGO' ORDER BY id DESC LIMIT 1 ");
 		}
 
 		$data = date("Y-m-d H:i:s");
