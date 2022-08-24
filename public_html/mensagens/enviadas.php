@@ -126,7 +126,7 @@ if ($row > 0) {
 		<div class="row" style="margin: 5px;">
 			<div style="float:right;">
 				<?php 
-				if ($usuario_nivel != 'ADMIN') {
+				if ($usuario_nivel == 'ADMIN') {
 					echo "<a href='javascript:;' onClick='ConfirmaExclusao($id);' title='Excluir'><i class='glyphicon glyphicon-trash'></i></a>"; 
 				}
 				?>
