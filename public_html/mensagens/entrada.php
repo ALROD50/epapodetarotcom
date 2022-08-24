@@ -6,7 +6,7 @@ ini_set('display_startup_erros',1);
 error_reporting(E_ALL);
 
 if (isset($_POST['online'])) {
-	// include "/home/epapodetarotcom/public_html/includes/funcions.php";
+	include "/home/epapodetarotcom/public_html/includes/functions.php";
 	include "/home/epapodetarotcom/public_html/includes/msg.php";
 	include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 	$pdo=conexao();
@@ -110,15 +110,12 @@ if ($row > 0) {
 		<div class="row" style="margin: 5px;">
 
 			<div id="head1" style="float:left;">
+				<?php echo $data.'<br/>'; ?>
 				<?php echo 'De: <b>'.$nome_remetente.'</b><br/>'; ?>
 				<?php echo 'Para: <b>'.$nome_destinatario.'</b><br/>'; ?>
 				<?php echo 'Assunto: <b>'.$assunto.'</b>'; ?>
 			</div>
 			
-			<div id="head2" style="float:right; font-size:11px;">
-				<?php echo $data; ?>
-			</div>			
-
 		</div>
 
 		<div class="row" style="margin: 5px;">
