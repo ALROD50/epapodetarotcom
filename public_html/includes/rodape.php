@@ -1197,6 +1197,84 @@
 			            errosform++;
 			        }
 
+					// Estados
+		            if (FormCheckout.State.value.length <= 1){    
+		                $("input[name='State']").focus();
+		                $('#State').addClass('bordavermelha');
+		                $("#ErroState").show();
+		                $('#StateL').addClass('labelvermelho');
+		                errosform++;
+		            } else {
+		                $('#State').removeClass('bordavermelha');
+		                $("#ErroState").hide();
+		                $('#StateL').removeClass('labelvermelho');
+		            }
+
+		            // Cidade
+		            if (document.forms["FormCheckout"]["City"].value == ""){
+		                $("input[name='City']").focus();
+		                $('#City').addClass('bordavermelha');
+		                $("#ErroCity").show();
+		                $('#CityL').addClass('labelvermelho');
+		                errosform++;
+		            } else {
+		                $('#City').removeClass('bordavermelha');
+		                $("#ErroCity").hide();
+		                $('#CityL').removeClass('labelvermelho');
+		            }
+
+		            // Bairro
+		            if (document.forms["FormCheckout"]["District"].value == ""){
+		                $("input[name='District']").focus();
+		                $('#District').addClass('bordavermelha');
+		                $("#ErroDistrict").show();
+		                $('#DistrictL').addClass('labelvermelho');
+		                errosform++;
+		            } else {
+		                $('#District').removeClass('bordavermelha');
+		                $("#ErroDistrict").hide();
+		                $('#DistrictL').removeClass('labelvermelho');
+		            }
+
+		            // Número
+		            if (document.forms["FormCheckout"]["numBer"].value == ""){
+		                $("input[name='numBer']").focus();
+		                $('#numBer').addClass('bordavermelha');
+		                $("#ErronumBer").show();
+		                $('#NumberL').addClass('labelvermelho');
+		                errosform++;
+		            } else {
+		                $('#numBer').removeClass('bordavermelha');
+		                $("#ErronumBer").hide();
+		                $('#NumberL').removeClass('labelvermelho');
+		            }
+
+		            // Rua
+		            if (document.forms["FormCheckout"]["Street"].value == ""){
+		                $("input[name='Street']").focus();
+		                $('#Street').addClass('bordavermelha');
+		                $("#ErroStreet").show();
+		                $('#StreetL').addClass('labelvermelho');
+		                errosform++;
+		            } else {
+		                $('#Street').removeClass('bordavermelha');
+		                $("#ErroStreet").hide();
+		                $('#StreetL').removeClass('labelvermelho');
+		            }
+
+		            // CEP
+		            var cep = FormCheckout.PostalCode.value;
+		            if ((document.forms["FormCheckout"]["PostalCode"].value == "") ||
+		                (cep.length <=8)) {
+		                $("input[name='PostalCode']").focus();
+		                $('#PostalCode').addClass('bordavermelha');
+		                $("#ErroPostalCode").show();
+		                errosform++;
+		            } else {
+		                $('#PostalCode').removeClass('bordavermelha');
+		                $("#ErroPostalCode").hide();
+		            }
+
 			        if (errosform == 0){
 			            preloaderTres();
 			            var enviarBoleto = 'enviarBoleto';
