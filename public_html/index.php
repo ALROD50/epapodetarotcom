@@ -82,7 +82,7 @@ include "scripts/PHPMailer-master5.2.22/class.smtp.php";
 	</main>
 
 	<div id="copy">
-		<p>Copyright © <?php echo $data_ano; ?> Tarot de Horus - Todos os Direitos Reservados - Desenvolvimento: <a href="https://www.novasystems.com.br/" target="_blank" class="link-padraoum">Agência Nova Systems - Marketing Digital.</a></p>
+		<p>Copyright © <?php echo $data_ano; ?> É Papo de Tarot - Todos os Direitos Reservados - Desenvolvimento: <a href="https://www.novasystems.com.br/" target="_blank" class="link-padraoum">Agência Nova Systems - Marketing Digital.</a></p>
 	</div>
 </div>
 <?php 

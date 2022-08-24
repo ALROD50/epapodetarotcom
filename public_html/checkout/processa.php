@@ -588,7 +588,7 @@ if (@$_POST['Debito'] == 'enviarDebito'){
             ###################### EMAIL ##############################
             $memaildestinatario = 'logs@novasystems.com.br';
             $mnomedestinatario = 'Suporte';
-            $massunto = "Erro Débito Bancário Online Tarot de Horus";
+            $massunto = "Erro Débito Bancário Online É Papo de Tarot";
             $mmensagem = "
             Cliente $senderName <br/>
             <p>Erro no pagamento com Débito Bancário Online</b>, </p>
@@ -597,7 +597,7 @@ if (@$_POST['Debito'] == 'enviarDebito'){
             <p>$response</p>
             <br/>
             <br/>
-            <b>Tarot de Horus</b> <br/>
+            <b>É Papo de Tarot</b> <br/>
             Site: www.epapodetarot.com.br <br/>
             ";
             EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);

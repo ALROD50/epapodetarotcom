@@ -158,7 +158,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -265,7 +265,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -374,7 +374,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" width="840" height="840" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 

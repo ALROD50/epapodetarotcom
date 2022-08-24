@@ -222,7 +222,7 @@ if (!empty($_SESSION["cod_sala"])){
 		<div id="meet"></div>
 		<!-- Rodapé -->
 		<div style="margin: 15px 0px 5px 0px;">
-			<center><p>Copyright © Tarot de Horus - Todos os Direitos Reservados - Desenvolvimento: Agência Nova Systems - Marketing Digital.</p></center>
+			<center><p>Copyright © É Papo de Tarot - Todos os Direitos Reservados - Desenvolvimento: Agência Nova Systems - Marketing Digital.</p></center>
 		</div>
 		<!-- Mask -->
 		<script type="text/javascript" src="../scripts/mask/jquery.mask.js"></script>
