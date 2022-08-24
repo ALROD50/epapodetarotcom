@@ -118,14 +118,14 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 				<hr style="border-top: 1px solid #ccc;">		
 
 				<div class="row" style="margin-top: 0px; margin-bottom: 15px;">
-	                <div class="col-xs-12">
+	                <div class="col-md-12">
 	                	<p><b>Assunto:</b></p>
 	                    <input name="assunto" type="text" required class="form-control" placeholder="Assunto"  value="">
 	                </div>
 	            </div>
 
 			    <div class="row">
-	                <div class="col-xs-12">
+	                <div class="col-md-12">
 	                	<p><b>Mensagem:</b></p>
 	                    <textarea name="mensagem" required class="form-control" placeholder="Mensagem" rows="12"/></textarea>
 	                </div>
@@ -133,9 +133,9 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 			    </br>
 
 			    <div class="row">
-	                <div class="col-xs-12">
+	                <div class="col-md-12">
 	                	<div style="margin-bottom: 10px; margin-left: 17px; margin-top: 10px;">
-	                		<input class="btn" type="submit" name="enviaEmailMensagem" value="Enviar Mensagem para <?php echo $tarologo_nome; ?>"/>
+	                		<input class="btn btn-info btn-lg" type="submit" name="enviaEmailMensagem" value="Enviar Mensagem para <?php echo $tarologo_nome; ?>"/>
 	                	</div>
 	                </div>
 	            </div>
