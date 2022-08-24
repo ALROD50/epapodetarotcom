@@ -65,15 +65,13 @@ if ($row > 0) {
 
 		<div class="row" style="margin: 5px;">
 
-			<div id="head2" style="font-size:11px;">
-				<?php echo $data; ?>
-			</div>			
 			<div id="head1" style="float:left;">
+				<?php echo $data.'<br/>'; ?>
 				<?php echo 'De: <b>'.$nome_remetente.'</b><br/>'; ?>
 				<?php echo 'Para: <b>'.$nome_destinatario.'</b><br/>'; ?>
 				<?php echo 'Assunto: <b>'.$assunto.'</b>'; ?>
 			</div>
-			
+
 		</div>
 
 		<hr style="border-top: 1px solid #ccc;">
