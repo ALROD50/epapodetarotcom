@@ -17,7 +17,6 @@ $nome    = uniqid();
 $arquivo = fopen("$nome.txt","w");
 $escreve = fwrite($arquivo, $bodyReceived);
 
-
 // Recupernado variáveis
 //Converte o resultado em array
 $data = json_decode($bodyReceived, true);
@@ -36,8 +35,6 @@ $status         = $data['resource']['state'];
 
 // Atualiza no Banco
 if ($status == 'completed') {
-
-    include '/home/epapodetarotcom/public_html/includes/functions.php';
     include '/home/epapodetarotcom/public_html/includes/conexao.php';
     $pdo = conexao();
     $ref = $invoice_number;
@@ -47,58 +44,15 @@ if ($status == 'completed') {
     $nLinhasPix = $executapix->rowCount();
     if ($nLinhasPix !== 0) {
         while ($dadosspix=$executapix->fetch(PDO::FETCH_ASSOC)) { 
-            $id_nome_cliente=$dadosspix['id_nome_cliente'];
-            $demonstrativo=$dadosspix['demonstrativo'];
-            $mes=$dadosspix['mes'];
             $statusSite=$dadosspix['status'];
             $reference=$dadosspix['numero_cobranca'];
-            $valor=$dadosspix['valor_atualizado'];
-            $controle_mes_nome = MostraNomeDoMes($mes);
             if($statusSite!='PAGO'){
                 // Atualiza a fatura para pago.
-                $query = $pdo->query("UPDATE controle SET forma_pag='Paypal', data_pag='$data_hoje', valor_pago='$valor', status='PAGO' WHERE numero_cobranca='$reference'");
-                // E-mail
-                include '/home/epapodetarotcom/public_html/PHPMailer5.2.22/class.phpmailer.php';
-                include '/home/epapodetarotcom/public_html/PHPMailer5.2.22/class.smtp.php';
-                //Estacia dados de cadastro do cliente.
-                $executa3=$pdo->query("SELECT * FROM clientes WHERE id='$id_nome_cliente'");
-                while ($dadoss3=$executa3->fetch(PDO::FETCH_ASSOC)) {
-                    $cliente_nome=$dadoss3['nome'];
-                    $cliente_empresa=$dadoss3['empresa'];
-                    $cliente_email=$dadoss3['email'];
-                    $cliente_usuario=$dadoss3['usuario'];
-                }
-                ###################### EMAIL ##############################
-                    $memaildestinatario = $cliente_email;
-                    $mnomedestinatario = $cliente_nome;
-                    $massunto = 'Comprovante de pagamento '.$controle_mes_nome.'';
-                    $mmensagem = '
-                    Prezado(a) '.$cliente_nome.' '.$cliente_empresa.', <br/>
-                    Este é um recibo comprovante de pagamento oficial da sua fatura de <strong>'.$controle_mes_nome.'</strong> nº '.$reference.'. <br/>
-                    <br/>
-                    <b>Seu E-mail de Cadastro:</b> '. $cliente_email .'<br/>
-                    <b>Demonstrativo:</b> '. $demonstrativo .'<br/>
-                    <b>Data da Identificação do Pagamento:</b> '. $data_hoje.'<br/>
-                    <b>Valor Pago:</b> R$ '. $valor .'<br/>
-                    <b>Situação:</b> Pago <br/>
-                    <br/>
-                    <p>Para mais detalhes sobre o histórico de pagamentos, solicitar atualizações, alterar dados de cadastro, ver serviços contratados ou fazer pedidos de suporte, acesse o <b>Painel do Cliente</b>.</p>
-                    <p><b>Acesso ao Painel do Cliente:</b></p>
-                    <p><a href=\'https://www.novasystems.com.br/admin/\'>https://www.novasystems.com.br/admin</a></p>
-                    <strong>Seu Nome de Usuário:</strong> '.$cliente_usuario.' | <strong>Seu E-mail de Cadastro:</strong> '.$cliente_email.' | Para lembrar sua senha acesse: <a href=\'https://www.novasystems.com.br/index.php/minha-conta/lembrar-senha\'>Esqueci minha Senha</a> <br/>
-                    <br/>
-                    Departamento Financeiro<br/>
-                    Agência Nova Systems - Marketing Digital<br/>
-                    <a href=\'https://www.novasystems.com.br/\'>www.novasystems.com.br</a>
-                    ';
-                    EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
-                ###################### EMAIL ##############################
+                $query = $pdo->query("UPDATE controle SET status='PAGO' WHERE numero_cobranca='$reference'");
             }
         }
     }
 }
-
-
 
 // fclose($fp);
 
