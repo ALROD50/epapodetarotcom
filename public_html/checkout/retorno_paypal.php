@@ -38,7 +38,6 @@ if ($status == 'completed') {
     include '/home/epapodetarotcom/public_html/includes/conexao.php';
     $pdo = conexao();
     $ref = $invoice_number;
-    $data_hoje = date('Y-m-d H:i:s');
     // Verificando Pagamento
     $executapix = $pdo->query("SELECT * FROM controle WHERE numero_cobranca='$ref'");
     $nLinhasPix = $executapix->rowCount();
