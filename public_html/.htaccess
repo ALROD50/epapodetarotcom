@@ -253,6 +253,10 @@ RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
     Order Allow,Deny
     Allow from all
 </Files>
+<Files retorno_paypal.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
 
 # nega acesso ao diretório
 
