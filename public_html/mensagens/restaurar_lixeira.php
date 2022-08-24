@@ -7,7 +7,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 @$usuario_nivel  = $_COOKIE["UsuarioNivel"];
 @$usuario_status = $_COOKIE["UsuarioStatus"];
 #### Recupera Cookies -----------------------------------
-require_once "../includes/conexaoPdo.php";
+include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 //Verifica se usuario esta online
 $sql_onlinex = $pdo->query("SELECT * FROM clientes WHERE id='$usuario_id' "); 
@@ -19,9 +19,9 @@ if(empty($usuario_id) OR empty($usuario_nome) OR empty($usuario_nivel) OR empty(
    echo "Você esta offline, faça login para coninuar...";
    exit();
 }
-include_once "../includes/functions.php";
-include_once "../includes/globais.php";
-include_once "../includes/msg.php";
+include "/home/epapodetarotcom/public_html/includes/functions.php";
+include "/home/epapodetarotcom/public_html/includes/globais.php";
+include "/home/epapodetarotcom/public_html/includes/msg.php";
 
 $id=$_POST['id'];
 

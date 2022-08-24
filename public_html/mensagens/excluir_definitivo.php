@@ -3,7 +3,7 @@ date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario pa
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 
 $id=$_GET['id'];
-require_once "includes/conexaoPdo.php";
+include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 if ($usuario_nivel == "CLIENTE") {
 	
