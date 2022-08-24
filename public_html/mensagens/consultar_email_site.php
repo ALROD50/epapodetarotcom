@@ -1,9 +1,9 @@
 <?php 
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
-ini_set('display_errors',0); // Força o PHP a mostrar os erros.
-ini_set('display_startup_erros',0); // Força o PHP a mostrar os erros.
-//error_reporting(E_ALL); // Força o PHP a mostrar os erros.
+ini_set('display_errors',1); // Força o PHP a mostrar os erros.
+ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
+error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 //phpinfo();
 //Configurações de sistema
 $sql_config = $pdo->query("SELECT * FROM config WHERE id='1' ");
