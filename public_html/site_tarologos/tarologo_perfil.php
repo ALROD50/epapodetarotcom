@@ -57,7 +57,7 @@ if ($row > 0){
             <!-- Botão Consulta por Email -->
             <form name="consultarporemail" id="consultarporemail" method="post" action="consultarporemail" style="float:left; margin-right:8px;">
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo; ?>" />
-              <button type="submit" name="envia" class="btn btn-xs btn-info" alt="Consultar por E-mail" title="Consultar por E-mail"><i class="fas fa-envelope"></i> Consultar por E-mail</button>
+              <button type="submit" name="envia" class="btn btn-info btn-lg" alt="Consultar por E-mail" title="Consultar por E-mail"><i class="fas fa-envelope"></i> Consultar por E-mail</button>
             </form>
             <?php
             
