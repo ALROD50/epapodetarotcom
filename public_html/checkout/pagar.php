@@ -193,6 +193,7 @@ require 'processa.php';
                 </div>
             </div>
 
+            <!-- CEP -->
             <div id="BoxCEP" class="form-group">
                 <div class="col-md-12">                        
                     <hr style="border-top: 3px solid #eee;">
@@ -216,6 +217,7 @@ require 'processa.php';
                 </div>
             </div>
 
+            <!-- Endereço -->
             <div id="CamposEndereco">
 
                 <div class="row">
@@ -361,7 +363,7 @@ require 'processa.php';
                     	<a href="#tabBoleto" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabBoleto-tab" role="tab" aria-controls="tabBoleto" aria-selected="false"><i class="fas fa-barcode"></i> Boleto</a>
                     </li>
                    
-                    <li class="nav-item d-none" role="presentation">
+                    <li class="nav-item" role="presentation">
                     	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><i class="fas fa-university"></i> Transferência</a>
                     </li>
                 </ul>
@@ -917,7 +919,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Depósito -->
-                    <div class="tab-pane fade show d-none" id="tabDeposito" role="tabpanel" aria-labelledby="tabDeposito-tab">
+                    <div class="tab-pane fade show" id="tabDeposito" role="tabpanel" aria-labelledby="tabDeposito-tab">
 
                         <h2 class="mb-4">Transferência</h2>
 
