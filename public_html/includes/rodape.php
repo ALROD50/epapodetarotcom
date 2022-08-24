@@ -1294,17 +1294,23 @@
 			        // Banco
 			        if (document.forms["FormCheckout"]["banco"].value == ""){
 			            $("input[name='banco']").focus();
+						$('#bancozeroL').addClass('labelvermelho');
 			            $('#bancoumL').addClass('labelvermelho');
 			            $('#bancodoisL').addClass('labelvermelho');
 			            $('#bancotresL').addClass('labelvermelho');
 			            $('#bancoquatroL').addClass('labelvermelho');
+						$('#bancocincoL').addClass('labelvermelho');
+						$('#bancoseisL').addClass('labelvermelho');
 			            $("#Errobanco").show();
 			            errosform++;
 			        } else {
+						$('#bancozeroL').removeClass('labelvermelho');
 			            $('#bancoumL').removeClass('labelvermelho');
 			            $('#bancodoisL').removeClass('labelvermelho');
 			            $('#bancotresL').removeClass('labelvermelho');
 			            $('#bancoquatroL').removeClass('labelvermelho');
+						$('#bancocincoL').removeClass('labelvermelho');
+						$('#bancoseisL').removeClass('labelvermelho');
 			            $("#Errobanco").hide();
 			        }
 
