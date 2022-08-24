@@ -145,8 +145,8 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 
 		</div>
 	</div>
-<?php
-	
+
+	<?php
 	if(isset($_POST['enviaEmailMensagem'])){
 		
 		if ($valor >= $config_preco_consulta_email) {
