@@ -374,7 +374,6 @@ require 'processa.php';
                     <div class="tab-pane fade show active mb-2" id="tabCredito" role="tabpanel" aria-labelledby="tabCredito-tab">
                     
 		                <h2 class="mb-4">Dados do Cartão de Crédito:</h2>
-                        <p>Seu pagamento é identificado na hora!</p>
                         
                         <!-- Bandeiras -->
                         <div class="form-group">
@@ -806,7 +805,6 @@ require 'processa.php';
                         <h2 class="mb-4">Paypal</h2>
 
                         <p>Faça seu pagamento com cartão de crédito via <b>Paypal</b>.</p>
-                        <p>Seu pagamento é identificado na hora!</p>
 
                         <div id="retorno_sucesso_paypal"></div>
 
@@ -941,7 +939,7 @@ require 'processa.php';
 
                         <div class="form-group" >
                             <p><input type="radio" name="banco" value="Pix" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/pix.png"> <span id="bancozeroL">Pague com o PIX = Use a Chave: <b>341.190.728-27</b></span></p>
-                            <p>Com o pix seu pagamento é identificado na hora! É rápido e fácil! Transfira de qualquer banco, dia e hora sem pagar taxa.</p>
+                            <p>É rápido e fácil! Transfira de qualquer banco, dia e hora sem pagar taxa.</p>
 
                             <hr>
 
