@@ -8,6 +8,18 @@ $pdo = conexao();
 // Se ocorrer erro:
 $ERRO     = @$_POST['ERRO'];
 $ErroCod  = @$_POST['ErroCod'];
+
+// Atualiza o ID da compra
+$paymentIDRegister  = @$_POST['paymentIDRegister'];
+$paymentID          = @$_POST['paymentID'];
+if (@$paymentIDRegister == "1") {
+    $ref   = $_POST['ref'];
+    $query = $pdo->query("UPDATE controle SET 
+        paymentIDPaypal='$paymentID',
+        forma_pag='Paypal'
+    WHERE numero_cobranca='$ref'");
+}
+
 if (@$ERRO == "ERRONOPAGAMENTO") {
 	$seuemail = "logs@novasystems.com.br";
     $assunto  = "É Papo de Tarot Erro Pagamento Payal";

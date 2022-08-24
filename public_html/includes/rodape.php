@@ -2161,7 +2161,7 @@
 			        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
 			        client: {
 			            sandbox:    'AXNrc5cQ0d6YifxqoVehfDrY6TdEsoAB6Lr5we3NVv50i3OBVsxLE1cRxZ8UmL2I5PtwUpNtoY2s4frp',
-			            production: 'AZl2zoj7JccUQeTXRbsLSuVHaqjILxLXddeLwqSiS5KmQd5-9B3N5O3y8jzJuRU_YP3N3f8pD9SmFh-I'
+			            production: 'Ac_wgBlOF054zfMJ0k_epF9zKVYX1I8mQ743kbvSaK41RTVjadX-h3JIEXsq7vyiLbB3B3kGFa8ZwoX4'
 			        },
 			        locale: 'pt_BR',
 			        style: {
@@ -2193,6 +2193,20 @@
 			        },
 			        // SUCESSO
 			        onAuthorize: function (data, actions) {
+
+						// Set up the data you need to pass to your server
+						var paymentID = data.paymentID;
+						// console.log(paymentID);
+						$.post('https://www.epapodetarot.com.br/checkout/add_credit_paypal.php',
+						{
+							ref: '<?php echo $ref; ?>',
+							paymentIDRegister: '1',
+							paymentID: paymentID
+						}, 
+						function(retorno){
+							$("#retorno_sucesso_paypal").html(retorno);
+						});
+
 			            // Get the payment details
 			            return actions.payment.get().then(function (paymentDetails) {
 			                // Execute the payment
