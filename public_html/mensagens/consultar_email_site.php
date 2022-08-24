@@ -26,6 +26,10 @@ while ($mostrar_config = $sql_config->fetch(PDO::FETCH_ASSOC)){
 $id_tarologo = $_POST['id_tarologo'];
 
 if (empty($id_tarologo)) { 
+	$id_tarologo = $_GET['id_tarologo']; 
+}
+
+if (empty($id_tarologo)) { 
 	echo "<script>document.location.href='tarologos'</script>";
 }
 
