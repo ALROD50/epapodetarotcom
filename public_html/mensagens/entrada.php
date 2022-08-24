@@ -63,8 +63,6 @@ if($row_onlinex == 'offline' OR $row_onlinex == ''){
 
 <div style="height:500px; width: 100%;">
 
-123
-
 <?php
 if ($usuario_nivel == "CLIENTE") {
 	$sql = $pdo->query("SELECT * FROM mensagens WHERE 
@@ -80,6 +78,8 @@ if ($usuario_nivel == "CLIENTE") {
 } elseif ($usuario_nivel == "ADMIN") {
 	$sql = $pdo->query("SELECT * FROM mensagens WHERE 'status'='entrada' OR 'status' = 'enviada' ORDER BY id DESC ");
 }
+
+echo $usuario_id;
 
 $row = $sql->rowCount();
 
