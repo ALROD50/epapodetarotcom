@@ -19,8 +19,6 @@ if(empty($usuario_id) OR empty($usuario_nome) OR empty($usuario_nivel) OR empty(
    echo "Você esta offline, faça login para coninuar...";
    exit();
 }
-echo $usuario_id;
-exit();
 include "/home/epapodetarotcom/public_html/includes/functions.php";
 include "/home/epapodetarotcom/public_html/includes/globais.php";
 include "/home/epapodetarotcom/public_html/includes/msg.php";
@@ -33,7 +31,7 @@ include "/home/epapodetarotcom/public_html/includes/msg.php";
 
 <?php
 // Pega o ID do Post que veio do Ajax
-$id=$_GET['id'];
+$id=$_POST['id'];
 $sql = $pdo->query("SELECT * FROM mensagens WHERE id='$id'");
 $row = $sql->rowCount();
 
