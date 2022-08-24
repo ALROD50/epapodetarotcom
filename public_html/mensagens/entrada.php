@@ -66,22 +66,20 @@ if($row_onlinex == 'offline' OR $row_onlinex == ''){
 <?php
 if ($usuario_nivel == "CLIENTE") {
 	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE 
-	destinatario='$usuario_id' AND 'status'='entrada' AND exclui_cliente!='$usuario_id' AND exc_cli_defi!='$usuario_id' OR 
-	destinatario='$usuario_id' AND 'status'='enviada' AND exclui_cliente!='$usuario_id' AND exc_cli_defi!='$usuario_id'
+	destinatario='$usuario_id' AND status='entrada' AND exclui_cliente!='$usuario_id' AND exc_cli_defi!='$usuario_id' OR 
+	destinatario='$usuario_id' AND status='enviada' AND exclui_cliente!='$usuario_id' AND exc_cli_defi!='$usuario_id'
 	ORDER BY id DESC ");
 	
 } elseif ($usuario_nivel == "TAROLOGO") {
 	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE 
-	destinatario='$usuario_id' AND 'status'='entrada' AND exclui_tarologo!='$usuario_id' AND exc_tar_defi!='$usuario_id' OR 
-	destinatario='$usuario_id' AND 'status'='enviada' AND exclui_tarologo!='$usuario_id' AND exc_tar_defi!='$usuario_id'
+	destinatario='$usuario_id' AND status='entrada' AND exclui_tarologo!='$usuario_id' AND exc_tar_defi!='$usuario_id' OR 
+	destinatario='$usuario_id' AND status='enviada' AND exclui_tarologo!='$usuario_id' AND exc_tar_defi!='$usuario_id'
 	ORDER BY id DESC ");
 } elseif ($usuario_nivel == "ADMIN") {
-	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE 'status'='entrada' OR 'status' = 'enviada' ORDER BY id DESC ");
+	$sqlx = $pdo->query("SELECT * FROM mensagens WHERE status='entrada' OR status='enviada' ORDER BY id DESC ");
 }
 
-
 $row = $sqlx->rowCount();
-echo $row;
 
 if ($row > 0) {
 
