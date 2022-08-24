@@ -35,7 +35,7 @@ $id=$_GET['id'];
 $sql = $pdo->query("SELECT * FROM mensagens WHERE id='$id'");
 $row = $sql->rowCount();
 
-echo $row;
+echo $id;
 exit();
 
 if ($row > 0) {
