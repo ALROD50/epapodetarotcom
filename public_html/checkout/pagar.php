@@ -940,10 +940,11 @@ require 'processa.php';
                         <hr>
 
                         <div class="form-group" >
-                            <!-- <p><input type="radio" name="banco" value="Pix" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/pix.png"> <span id="bancozeroL">Pague com o PIX = Use a Chave: <b>341.190.728-27</b></span></p>
+                            <p><input type="radio" name="banco" value="Pix" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/pix.png"> <span id="bancozeroL">Pague com o PIX = Use a Chave: <b>341.190.728-27</b></span></p>
                             <p>Com o pix seu pagamento é identificado na hora! É rápido e fácil! Transfira de qualquer banco, dia e hora sem pagar taxa.</p>
 
-                            <hr> -->
+                            <hr>
+
                             <p><input type="radio" name="banco" value="Bradesco" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/bradesco.jpg"> <span id="bancoumL">Banco: Bradesco | Agência: 0108-2 | Conta Corrente: 0002379-5 | Favorecido: Alexandre Rodrigues | CPF: 341.190.728-27</span></p>
 
                             <hr>
@@ -960,11 +961,11 @@ require 'processa.php';
 
                             <hr>
 
-                            <p><input type="radio" name="banco" value="Pagseguro" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/PagSeguro.jpg"> <span id="bancoumL">Banco: PagSeguro | Banco: 290 | Agência: 0001 | Conta: 02408848-6 | Favorecido: Alexandre Rodrigues | CPF: 341.190.728-27</span></p>
+                            <p><input type="radio" name="banco" value="Pagseguro" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/PagSeguro.jpg"> <span id="bancocincoL">Banco: PagSeguro | Banco: 290 | Agência: 0001 | Conta: 02408848-6 | Favorecido: Alexandre Rodrigues | CPF: 341.190.728-27</span></p>
 
                             <hr>
 
-                            <p><input type="radio" name="banco" value="Mercado Pago" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/mercadopago.jpg"> <span id="bancoumL">Banco: Mercado Pago | Banco: 323 | Agência: 0001 | Conta: 4533735909-3 | Favorecido: Alexandre Rodrigues | CPF: 341.190.728-27</span></p>
+                            <p><input type="radio" name="banco" value="Mercado Pago" onchange="LimpaBordaVermelha(this.id);" /> <img src="images/bancos/mercadopago.jpg"> <span id="bancoseisL">Banco: Mercado Pago | Banco: 323 | Agência: 0001 | Conta: 4533735909-3 | Favorecido: Alexandre Rodrigues | CPF: 341.190.728-27</span></p>
                         </div>
 
                         <hr style="border-top: 3px solid #eee;">
