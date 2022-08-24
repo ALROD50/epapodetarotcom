@@ -658,8 +658,6 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $shippingAddressCity = $_POST["City"];
     $shippingAddressState = $_POST["State"];
     $shippingAddressComplement = $_POST["complemento"];
-    echo 'shippingAddressStreet: '.$shippingAddressStreet;
-    exit();
 
     // ####################################################
     $data_hoje = date('d-m-Y H:i:s');
