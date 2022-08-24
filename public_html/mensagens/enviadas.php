@@ -127,7 +127,7 @@ if ($row > 0) {
 			<div style="float:right;">
 				<?php 
 				if ($usuario_nivel == 'ADMIN') {
-					echo "<a href='javascript:;' onClick='ConfirmaExclusao($id);' title='Excluir'><i class='glyphicon glyphicon-trash'></i></a>"; 
+					echo "<a href='javascript:;' onClick='ConfirmaExclusao($id);' title='Excluir'><i class='glyphicon glyphicon-trash'></i> Excluir</a>"; 
 				}
 				?>
 			</div>
