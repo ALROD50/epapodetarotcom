@@ -19,6 +19,8 @@ if(empty($usuario_id) OR empty($usuario_nome) OR empty($usuario_nivel) OR empty(
    echo "Você esta offline, faça login para coninuar...";
    exit();
 }
+echo $usuario_id;
+exit();
 include "/home/epapodetarotcom/public_html/includes/functions.php";
 include "/home/epapodetarotcom/public_html/includes/globais.php";
 include "/home/epapodetarotcom/public_html/includes/msg.php";
