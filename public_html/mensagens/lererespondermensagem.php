@@ -104,7 +104,7 @@ if ($row > 0) {
 
 		<div class="container-fluid">
 
-		    <div class="row">
+		    <div class="">
 
 	            <form action="" method="post">
 
