@@ -1277,6 +1277,8 @@
 
 			        if (errosform == 0){
 			            preloaderTres();
+						var senderHash = PagSeguroDirectPayment.getSenderHash();
+            			$("input[name='senderHash']").val(senderHash);
 			            var enviarBoleto = 'enviarBoleto';
 			            $("input[name='Boleto']").val(enviarBoleto);
 			            document.getElementById("FormCheckout").submit();
