@@ -6,9 +6,9 @@ ini_set('display_startup_erros',0);
 
 ###########################################################################################
 // Gerencianet - É Papo de Tarot
-require '/home/epapodetarotcom/public_html/scripts/gerencianet2v/autoload.php'; // caminho relacionado a SDK
-use Gerencianet\Exception\GerencianetException;
-use Gerencianet\Gerencianet;
+// require '/home/epapodetarotcom/public_html/scripts/gerencianet2v/autoload.php'; // caminho relacionado a SDK
+// use Gerencianet\Exception\GerencianetException;
+// use Gerencianet\Gerencianet;
 ###########################################################################################
 
 // PROCESSA PAGAMENTOS - CARTÃO DE CRÉDITO - PAGSEGURO
