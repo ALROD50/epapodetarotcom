@@ -649,8 +649,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $senderPhone = trim($senderPhone);
 
     $senderEmail = $_POST["emaildocliente"];
-    echo 'email: '.$senderEmail;
-    exit();
+    
     // Endereço de envio e Valor do Frete
     $shippingAddressStreet = $_POST["Street"];
     $shippingAddressNumber = $_POST["Number"];
@@ -659,6 +658,8 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $shippingAddressCity = $_POST["City"];
     $shippingAddressState = $_POST["State"];
     $shippingAddressComplement = $_POST["complemento"];
+    echo 'shippingAddressNumber: '.$shippingAddressNumber;
+    exit();
 
     // ####################################################
     $data_hoje = date('d-m-Y H:i:s');
