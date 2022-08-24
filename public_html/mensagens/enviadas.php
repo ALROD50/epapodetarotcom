@@ -6,7 +6,7 @@ ini_set('display_startup_erros',1);
 error_reporting(E_ALL);
 
 if (isset($_POST['online'])) {
-	// include "/home/epapodetarotcom/public_html/includes/funcions.php";
+	include "/home/epapodetarotcom/public_html/includes/funcions.php";
 	include "/home/epapodetarotcom/public_html/includes/msg.php";
 	include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 	$pdo=conexao();
