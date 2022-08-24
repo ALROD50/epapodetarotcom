@@ -617,7 +617,7 @@ if (@$_POST['Debito'] == 'enviarDebito'){
     </style>
 <?php
 }
-// PROCESSA PAGAMENTOS - BOLETO - GERENCIANET
+// PROCESSA PAGAMENTOS - BOLETO - PAGSEGURO
 if (@$_POST['Boleto'] == 'enviarBoleto'){
 
     ?>
@@ -629,16 +629,15 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
 
     $pdo->query("DELETE FROM loja_carrinho WHERE id_cliente='$usuario_id'"); 
 
-    $idclientesite = $_POST["idclientesite"];
+    $senderHash = htmlspecialchars($_POST["senderHash"]);
     // Valor do Pagamento
     $itemAmount = number_format($_POST["amount"], 2, '.', '');
+    $shippingCoast = number_format($_POST["shippingCoast"], 2, '.', '');
     // Pedido
     $itemDescription1 = $_POST["itemDescription1"];
-    $itemDescription1 = utf8_encode($itemDescription1);
     $reference = $_POST["reference"];
     // Dados do cliente
     $senderName = $_POST["senderName"];
-    $senderName = utf8_encode($senderName);
     $senderCPF = $_POST['senderCPF'];
     $senderCPF = str_replace (".", "", $senderCPF);
     $senderCPF = str_replace ("-", "", $senderCPF);
@@ -649,159 +648,110 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $senderPhone = str_replace ("-", "", $senderPhone);
     $senderPhone = trim($senderPhone);
 
-    $data_vencimento = date('Y-m-d');
-    $itemAmount2 = intval(number_format($itemAmount, 2, '', ''));
+    $senderEmail = $_POST["senderEmail"];
+    // Endereço de envio e Valor do Frete
+    $shippingAddressStreet = $_POST["Street"];
+    $shippingAddressNumber = $_POST["Number"];
+    $shippingAddressDistrict = $_POST["District"];
+    $shippingAddressPostalCode = $_POST["PostalCode"];
+    $shippingAddressCity = $_POST["City"];
+    $shippingAddressState = $_POST["State"];
+    $shippingAddressComplement = $_POST["complemento"];
 
-    ###########################################################################################
-    // Gerencianet - É Papo de Tarot
-    ### Desenvolvimento 
-    // $clientId = 'Client_Id_6ca5ce19058a92a12c19b3ad2ae5e5343d7ce550'; // insira seu Client_Id, conforme o ambiente (Des ou Prod)
-    // $clientSecret = 'Client_Secret_12e32f9bda34e80d29ea3deed40fede3e38c0ee5'; // insira seu Client_Secret, conforme o ambiente (Des ou Prod)
-    ### Produção
-    $clientId = 'Client_Id_a47c179803948a92acdd1e50b8720365aef784f4';
-    $clientSecret = 'Client_Secret_f651dc0222289653f83970c4bc435895dff671ab';
-    $options = [
-        'client_id' => $clientId,
-        'client_secret' => $clientSecret,
-        'sandbox' => false // altere conforme o ambiente (true = desenvolvimento e false = producao)
-    ];
-    $metadata = array('notification_url'=>'https://www.epapodetarot.com.br/checkout/retorno_gn.php', 'custom_id' => $id_id_cobranca);
-    $item_1 = [
-        'name' => $itemDescription1, // nome do item, produto ou serviço
-        'value' => (int) $itemAmount2, // valor (1000 = R$ 10,00)
-        'amount' => (int) 1 // quantidade
-    ];
-    $items =  [
-        $item_1
-    ];
-    $body  =  [
-        'items' => $items,
-        'metadata' => $metadata
-    ];
-    try {
-        $api = new Gerencianet($options);
-        $charge = $api->createCharge([], $body);
-     
-        // print_r($charge); // resposta
-    } catch (GerencianetException $e) {
-        echo "erros 1<br>";
-        print_r($e->code).'<br>';
-        print_r($e->error).'<br>';
-        print_r($e->errorDescription).'<br>';
-    } catch (Exception $e) {
-        echo "erros 11<br>";
-        print_r($e->getMessage());
-    }
-    @$status_compra = $charge[code];
-    if ($status_compra == '200') {
-        //print $charge->data->charge_id;
-        @$charge_id = intval($charge[data][charge_id]);
-        $prefixo = strval($senderAreaCode);
-        $telefone = strval($senderPhone); // telefone do cliente
-        // $charge_id refere-se ao ID da transação gerada anteriormente
-        $params = [
-            'id' => $charge_id
-        ];
-        // Muda de acordo com pessoa juridica ou fisica
-        if (@$cliente_cnpj != "") {
-            // Pessoa Juridica
-            $cliente_cnpj = str_replace (".", "", $cliente_cnpj);
-            $cliente_cnpj = str_replace ("-", "", $cliente_cnpj);
-            $cliente_cnpj = str_replace ("/", "", $cliente_cnpj);
-            $cliente_cnpj = trim($cliente_cnpj);
-            $juridical_data = [
-              'corporate_name' => $cliente_empresa, // nome da razão social
-              'cnpj' => $cliente_cnpj // CNPJ da empresa, com 14 caracteres
-            ];
-            $customer = [
-                'name' =>  $senderName, // nome do cliente
-                'cpf' =>   $senderCPF , // cpf válido do cliente
-                'phone_number' => $prefixo . $telefone,
-                'juridical_person' => $juridical_data
-            ];
-        } else {
-            // Pessoa física
-            $customer = [
-                'name' =>  $senderName, // nome do cliente
-                'cpf' =>   $senderCPF, // cpf válido do cliente
-                'phone_number' => $prefixo . $telefone
-            ];
-        }
-        $bankingBillet = [
-            'expire_at' => $data_vencimento, // data de vencimento do boleto (formato: YYYY-MM-DD)
-            'customer' => $customer
-        ];
-        $payment = [
-            'banking_billet' => $bankingBillet // forma de pagamento (banking_billet = boleto)
-        ];
-        $body = [
-            'payment' => $payment
-        ];
-        try {
-            $api = new Gerencianet($options);
-            $charge = $api->payCharge($params, $body);
-            // print_r($charge); // resposta.
-        } catch (GerencianetException $e) {
-            echo "erros 2<br>";
-            print_r($e->code).'<br>';
-            print_r($e->error).'<br>';
-            print_r($e->errorDescription).'<br>';
-        } catch (Exception $e) {
-            echo "erros 22<br>";
-            print_r($e->getMessage());
-        }
-        @$paymentLink = $charge[data][link];
-        // Gerencianet - É Papo de Tarot
-        ###########################################################################################
-        $data_hoje = date('Y-m-d H:i:s');
-        $query = $pdo->query( "UPDATE controle SET 
-            metodo='Boleto',
-            data='$data_hoje',
-            status='Aguardando'
-        WHERE cod_pagamento='$reference'");
-        $query = $pdo->query( "UPDATE clientes SET 
-            telefone='$senderAreaCode $senderPhone',
-            endereco='$shippingAddressStreet',
-            cidade='$shippingAddressCity',
-            estado='$shippingAddressState',
-            numero='$shippingAddressNumber',
-            cep='$shippingAddressPostalCode',
-            complemento='$shippingAddressComplement',
-            bairro='$shippingAddressDistrict',
-            cpf='$senderCPF'
-        WHERE id='$idclientesite'");
-        // echo "<h1>Boleto Bancário</h1>";
-        echo "<script>document.location.href='$paymentLink'</script>";
-        // echo '<a button class="btn btn-success" href="'.$paymentLink.'" target="Blank_"> >> CLIQUE AQUI PARA ABRIR O BOLETO <i class="fas fa-barcode"></i></button></a>';
+    // ####################################################
+    $data_hoje = date('d-m-Y H:i:s');
+    $texto = "Data: $data_hoje\nReferencia: $reference\nForma de pagamento: Boleto\n$senderName\nCPF: $senderCPF\n$senderAreaCode $senderPhone\n$senderEmail\n$shippingAddressStreet\n$shippingAddressNumber\n$shippingAddressDistrict\nCEP: $shippingAddressPostalCode\n$shippingAddressCity\n$shippingAddressState\nComplemento: $shippingAddressComplement\n$itemDescription1\n $itemAmount\n\n\n\n";
+    // Cria txt e salva no servidor
+    // $caminho = "/home/fresh931/public_html/compras/";
+    // $caminho = $caminho.$data_hoje.".txt";
+    // Abre ou cria o arquivo bloco1.txt
+    // o “w” quer dizer write, que o arquivo pode ser escrito. Vai ser criado um arquivo para cada gravação. o 'a' grava no mesmo
+    // $fp = fopen($caminho, "w"); 
+    // $fp = fopen('/home/epapodetarotcom/public_html/admin/site_planos/pagseguro/vendas.txt', "a");
+    // Escreve "exemplo de escrita" no bloco1.txt
+    // $escreve = fwrite($fp, $texto);
+    // Fecha o arquivo
+    // fclose($fp);
+    // ####################################################
+
+    $params = array(
+        'email'                     => $PAGSEGURO_EMAIL,  
+        'token'                     => $PAGSEGURO_TOKEN,
+        'senderHash'                => $senderHash,
+        'receiverEmail'             => $PAGSEGURO_EMAIL,
+        'paymentMode'               => 'default', 
+        'paymentMethod'             => 'boleto', 
+        'currency'                  => 'BRL',
+
+        // Dados da Compra, Pedido
+        'extraAmount'               => '0.00',
+        'itemId1'                   => '0001',
+        'itemDescription1'          => $itemDescription1,  
+        'itemAmount1'               => $itemAmount,  
+        'itemQuantity1'             => 1,
+        'reference'                 => $reference,
+
+        // Dados do cliente
+        'senderName'                => $senderName,
+        'senderCPF'                 => $senderCPF,
+        'senderAreaCode'            => $senderAreaCode,
+        'senderPhone'               => $senderPhone,
+        'senderEmail'               => $senderEmail,
+
+        // Endereço de envio e Valor do Frete
+        'shippingAddressStreet'     => $shippingAddressStreet,
+        'shippingAddressNumber'     => $shippingAddressNumber,
+        'shippingAddressDistrict'   => $shippingAddressDistrict,
+        'shippingAddressPostalCode' => $shippingAddressPostalCode,
+        'shippingAddressCity'       => $shippingAddressCity,
+        'shippingAddressState'      => $shippingAddressState,
+        'shippingAddressCountry'    => 'BRA',
+        'shippingType'              => 1,
+        'shippingCost'              => $shippingCoast,
+        'shippingAddressComplement' => $shippingAddressComplement
+    );
+
+    $header = array('Content-Type' => 'application/json; charset=UTF-8;');
+    $response = curlExec($PAGSEGURO_API_URL."/transactions", $params, $header);
+    $json = json_decode(json_encode(simplexml_load_string($response)));
+    $code = $json->code;
+    $status_compra = $json->status;
+    ?>
+
+    <h1>Boleto Bancário</h1>
+
+    <?php
+    if ($status_compra == '1') {
+
+        ?>
+        <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+            
+            <h3>Clique no botão abaixo para pagar o seu boleto</h3>
+
+            <div class="row">
+            <div class="col-md-12">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <center>
+            <br>
+                <a button href="<?php echo $json->paymentLink;?>" class="btn btn-success btn-lg btn-block" target='_blank'><i class="glyphicon glyphicon-ok"></i> Visualizar Boleto</button></a>
+            </center>
+            </div>
+            <div class="col-md-4"></div>
+            </div>  
+            </div>
+        </div>
+        <?php
 
     } else {
-        
-        echo"<br><br><br><p style='font-size:19px;'>Desculpe, ocorreu um erro com este pagamento... Por gentileza, para sua segurança envie este erro ao suporte, antes de tentar novamente.</p>";
-        echo "Código do Erro:";
-        echo "<br>";
-        echo "<p>$e->errorDescription</p>";
-        echo "<br>";
-        print_r($e->getMessage());
-        echo "<br>";
-        print_r($e->code);
-        echo "<br>";
-        print_r($e->error);
-        // Enviando erro para a administração
-        ###################### EMAIL ##############################
-        $memaildestinatario = 'logs@novasystems.com.br';
-        $mnomedestinatario = 'Suporte';
-        $massunto = "Erro BOLETO";
-        $mmensagem = "
-        Cliente $senderName <br/>
-        <p>Erro no pagamento com BOLETO</b>, </p>
-        <br/>
-        <p>$e->errorDescription</p>
-        <br/>
-        <br/>
-        É Papo de Tarot <br/>
-        ";
-        EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
-        ###################### EMAIL ##############################
+        ?>
+        <div class="alert alert-danger" role="alert">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+            <p>Erro ao gerar o boleto, envie o código abaixo ao suporte técnico do site.</p>
+            <p>Response: <?php print_r($json);  ?></p>
+        </div>
+        <?php
     }
     ?>
     <style>
