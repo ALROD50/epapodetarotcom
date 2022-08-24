@@ -131,7 +131,7 @@ if ($row > 0) {
 
 		<div class="row" style="margin: 5px;">
 			<div style="float:right;">
-				<?php echo "<a href='javascript:;' onClick='ConfirmaExclusaoDefinitiva($id);' title='Excluir Definitivamente'><i class='glyphicon glyphicon-trash'></i></a> "; ?>
+				<?php echo "<a href='javascript:;' onClick='ConfirmaExclusaoDefinitiva($id);' title='Excluir Definitivamente'><i class='far fa-trash-alt'></i></a> "; ?>
 				<?php echo "<a href='javascript:;' onClick='RestaurarLixeira($id);' title='Restaurar Mensagem da Lixeira'><i class='glyphicon glyphicon-repeat'></i></a>"; ?>
 			</div>
 		</div>
