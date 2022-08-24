@@ -648,7 +648,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $senderPhone = str_replace ("-", "", $senderPhone);
     $senderPhone = trim($senderPhone);
 
-    $senderEmail = $_POST["senderEmail"];
+    $senderEmail = $_POST["emaildocliente"];
     echo 'email: '.$senderEmail;
     exit();
     // Endereço de envio e Valor do Frete
