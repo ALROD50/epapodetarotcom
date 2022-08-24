@@ -652,13 +652,13 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     
     // Endereço de envio e Valor do Frete
     $shippingAddressStreet = $_POST["Street"];
-    $shippingAddressNumber = $_POST["Number"];
+    $shippingAddressNumber = $_POST["numBer"];
     $shippingAddressDistrict = $_POST["District"];
     $shippingAddressPostalCode = $_POST["PostalCode"];
     $shippingAddressCity = $_POST["City"];
     $shippingAddressState = $_POST["State"];
     $shippingAddressComplement = $_POST["complemento"];
-    echo 'shippingAddressNumber: '.$shippingAddressNumber;
+    echo 'shippingAddressStreet: '.$shippingAddressStreet;
     exit();
 
     // ####################################################
