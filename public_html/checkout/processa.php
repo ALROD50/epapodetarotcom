@@ -621,7 +621,7 @@ if (@$_POST['Debito'] == 'enviarDebito'){
 if (@$_POST['Boleto'] == 'enviarBoleto'){
 
     ?>
-    <div class="text-center mt-3">
+    <div id="preloadboleto" class="text-center mt-3">
       <div class="spinner-border" role="status" aria-hidden="true"></div>
       <span><h1>Carregando...</h1></span>
     </div>
@@ -756,7 +756,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     }
     ?>
     <style>
-        #conteudo {
+        #conteudo, #preloadboleto {
             display: none;
         }
     </style>
