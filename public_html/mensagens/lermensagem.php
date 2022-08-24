@@ -23,9 +23,6 @@ include "/home/epapodetarotcom/public_html/includes/functions.php";
 include "/home/epapodetarotcom/public_html/includes/globais.php";
 include "/home/epapodetarotcom/public_html/includes/msg.php";
 ?>
-<!-- caixa de verificação de exclusão -->
-<script language='Javascript' type='text/javascript'>
-</script>
 
 <div style="width: 100%; margin:5px;">
 

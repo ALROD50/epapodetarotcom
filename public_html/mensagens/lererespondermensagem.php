@@ -7,7 +7,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 @$usuario_nivel  = $_COOKIE["UsuarioNivel"];
 @$usuario_status = $_COOKIE["UsuarioStatus"];
 #### Recupera Cookies -----------------------------------
-require_once "../includes/conexaoPdo.php";
+include "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 //Verifica se usuario esta online
 $sql_onlinex = $pdo->query("SELECT * FROM clientes WHERE id='$usuario_id' "); 
@@ -19,9 +19,9 @@ if(empty($usuario_id) OR empty($usuario_nome) OR empty($usuario_nivel) OR empty(
    echo "Você esta offline, faça login para coninuar...";
    exit();
 }
-include "../includes/functions.php";
-include "../includes/globais.php";
-include "../includes/msg.php";
+include "/home/epapodetarotcom/public_html/includes/functions.php";
+include "/home/epapodetarotcom/public_html/includes/globais.php";
+include "/home/epapodetarotcom/public_html/includes/msg.php";
 ?>
 
 <div style="width: 100%; margin:5px;">
@@ -121,21 +121,21 @@ if ($row > 0) {
 					} else { ?>
 						
 		                <div class="row" style="margin-top: 0px; margin-bottom: 15px;">
-		                    <div class="col-xs-12">
+		                    <div class="col-md-12">
 		                    	<p><b>Assunto:</b></p>
 		                        <input name="assunto" type="text" required class="form-control" placeholder="Assunto"  value="<? echo 'RE: '.$assunto; ?>">
 		                    </div>
 		                </div>
 
 		                <div class="row">
-		                    <div class="col-xs-12">
+		                    <div class="col-md-12">
 		                    	<p><b>Mensagem:</b></p>
 		                        <textarea name="mensagem" required class="form-control" placeholder="mensagem" rows="12"/></textarea><br>
 		                    </div>
 		                </div>
 
 		                <div class="row" style="margin-bottom: 15px;">
-		                    <div class="col-xs-3">
+		                    <div class="col-md-3">
 		                        <input name="enviar" id="submit" type="submit" value="Enviar Resposta para <?php echo $nome_remetente; ?>" title="Enviar Resposta para <?php echo $nome_remetente; ?>" class="btn btn-success btn-large">
 		                    </div>
 		                </div>
