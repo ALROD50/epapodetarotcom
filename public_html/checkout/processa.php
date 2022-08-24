@@ -749,7 +749,7 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
         ?>
         <div class="alert alert-danger" role="alert">
         <button type="button" class="close" data-dismiss="alert">×</button>
-            <p>Erro ao gerar o boleto, envie o código abaixo ao suporte técnico do site.</p>
+            <h3>Erro ao gerar o boleto, envie o código abaixo ao suporte técnico do site.</h3>
             <p>Response: <?php print_r($json);  ?></p>
         </div>
         <?php
