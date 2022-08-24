@@ -649,6 +649,8 @@ if (@$_POST['Boleto'] == 'enviarBoleto'){
     $senderPhone = trim($senderPhone);
 
     $senderEmail = $_POST["senderEmail"];
+    echo 'email: '.$senderEmail;
+    exit();
     // Endereço de envio e Valor do Frete
     $shippingAddressStreet = $_POST["Street"];
     $shippingAddressNumber = $_POST["Number"];
