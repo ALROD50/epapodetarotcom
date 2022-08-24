@@ -79,7 +79,7 @@ if ($usuario_nivel == "CLIENTE") {
 	$sql = $pdo->query("SELECT * FROM mensagens WHERE 'status'='entrada' OR 'status' = 'enviada' ORDER BY id DESC ");
 }
 
-echo $usuario_id;
+echo $usuario_nivel;
 
 $row = $sql->rowCount();
 
