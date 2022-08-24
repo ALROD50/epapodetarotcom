@@ -88,7 +88,7 @@ if ( isset($_POST["enviar"]) ) {
 		} else {
 			$msge = "Erro! Você não tem minutos o suficiente para enviar essa mensagem.<br/>";
 			$msge .= "Adquira mais minutos e tente novamente.";
-			echo "<script>document.location.href='index.php?pg=mensagens/inicio.php&msge=$msge'</script>";
+			echo "<script>document.location.href='minha-conta/?pg=mensagens/inicio.php&msge=$msge'</script>";
 			exit();
 		}
 	}

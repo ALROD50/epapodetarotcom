@@ -33,7 +33,7 @@ if ($usuario_nivel == "CLIENTE") {
 
 	$msgs="Mensagem Restaurada para Caixa de Entrada Com Sucesso!";
 	echo "<script>alert('Mensagem Restaurada para Caixa de Entrada Com Sucesso!')</script>";
-	echo "<script>document.location.href='index.php?pg=mensagens/inicio.php&msgs=$msgs'</script>";
+	echo "<script>document.location.href='minha-conta/?pg=mensagens/inicio.php&msgs=$msgs'</script>";
 	
 } elseif ($usuario_nivel == "TAROLOGO") {
 
@@ -43,7 +43,7 @@ if ($usuario_nivel == "CLIENTE") {
 
 	$msgs="Mensagem Restaurada para Caixa de Entrada Com Sucesso!";
 	echo "<script>alert('Mensagem Restaurada para Caixa de Entrada Com Sucesso!')</script>";
-	echo "<script>document.location.href='index.php?pg=mensagens/inicio.php&msgs=$msgs'</script>";
+	echo "<script>document.location.href='minha-conta/?pg=mensagens/inicio.php&msgs=$msgs'</script>";
 
 } elseif ($usuario_nivel == "ADMIN") {
 
@@ -56,6 +56,6 @@ if ($usuario_nivel == "CLIENTE") {
 
 	$msgs="Mensagem Restaurada Com Sucesso!";
 	echo "<script>alert('Mensagem Restaurada Com Sucesso!')</script>";
-	echo "<script>document.location.href='index.php?pg=mensagens/inicio.php&msgs=$msgs'</script>";
+	echo "<script>document.location.href='minha-conta/?pg=mensagens/inicio.php&msgs=$msgs'</script>";
 }
 ?>
