@@ -91,7 +91,7 @@ if(@$row_onlinex=="offline" OR @$row_onlinex=="") { ?>
           <center>
             <h5 class="card-title">Ainda não tem uma conta?</h5>
             <p class="card-text mb-3"><i class="fas fa-laugh"></i> É muito fácil, vamos Lá!</p>
-            <!-- <a button href="<?php echo $loginUrl; ?>" id="xface" class="btn btn-lg btn-primary btn-block bot_cadastro_facebook" type="submit" title="Cadastrar Via Facebook" alt="Cadastrar Via Facebook" name="cadastro_facebook"><i class="fab fa-facebook"></i> Registrar Com Facebook</button></a>
+            <!-- <a button href="<?php //echo $loginUrl; ?>" id="xface" class="btn btn-lg btn-primary btn-block bot_cadastro_facebook" type="submit" title="Cadastrar Via Facebook" alt="Cadastrar Via Facebook" name="cadastro_facebook"><i class="fab fa-facebook"></i> Registrar Com Facebook</button></a>
             <div id="customBtn2" class="customGPlusSignIn mt-2">
               <button class="btn btn-lg btn-danger btn-block" title="Registrar Via Google" alt="Registrar Via Google"><span class="text-white"><i class="fab fa-google"></i> Registrar Com Google</span></button>
             </div>
