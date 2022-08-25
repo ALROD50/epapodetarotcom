@@ -11,14 +11,13 @@ body {
 
 
 /*  Cores padrão do site  */
-
 .corpadrao1 {
-    color: #c69e88 !important;
-    background: #6c1010 !important;
-} 
-.corpadrao2 {
     color: #6c1010 !important;
     background: #c69e88 !important;
+} 
+.corpadrao2 {
+    color: #c69e88 !important;
+    background: #6c1010 !important;
 }
 
 @media (max-width: 426px) {
