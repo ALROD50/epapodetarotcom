@@ -339,6 +339,14 @@ body::-webkit-scrollbar-thumb:hover {
     text-shadow: 0px 2px 4px #da8345;
 }
 
+a {
+    color: #6c1010;
+}
+
+a:hover {
+    color: #0e0c0c !important;
+}
+
 a.link-padraoum {
     text-decoration: none;
     color: #c69e88;
