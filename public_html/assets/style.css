@@ -399,7 +399,7 @@ a.linkClientesAdmin:active {
 
 @media (max-width: 992px) {
     #header {
-        background: #2090bcd9 !important;
+        background: #6c1010 !important;
     }
 
     a.link-padraoum {
@@ -439,7 +439,7 @@ a.linkClientesAdmin:active {
 /* Menu */
 .navbar {
     font-size: 18px;
-    border-bottom: 3px solid #f7b334;
+    border-bottom: 3px solid #c69e88;
 }
 
 @media (max-width: 992px) {
@@ -449,17 +449,17 @@ a.linkClientesAdmin:active {
 }
 
 .estilomenu {
-    background-color: #2090bcd9;
+    background-color: #6c1010;
 }
 
 a.menulink {
-    color: #fff !important;
+    color: #c69e88 !important;
 }
 
 a.menulink:hover {
-    color: #000 !important;
-    background: #f7b334;
-    border-bottom: 3px solid #e8cf8e;
+    color: #fff !important;
+    background: #c69e88;
+    border-radius: 10px;
 }
 
 a.menulink:active {
