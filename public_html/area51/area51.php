@@ -47,7 +47,9 @@ if ($execulta=="sim") {
                     if (!file_exists($dir.$name)) {
                         echo "File does not exists <br>";
                         // File does not exists
-                    } elseif (exif_imagetype($name) === IMAGETYPE_WEBP) {
+                    }
+                    exit();
+                    if ($ext == '.webp') {
                         echo "convertendo <br>";
                         @$newName = strtolower(reset(explode(".", $arquivo)));
                         @$newName = $newName.'.png';
