@@ -102,7 +102,7 @@ $data_registro = date("Y-m-d H:i:s");
 
 exit();
  
-$q = $pdo->query("INSERT INTO clientes (
+    $q = $pdo->query("INSERT INTO clientes (
     nome,
     alias,
     data_registro,
