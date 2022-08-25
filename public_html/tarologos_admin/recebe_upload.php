@@ -48,6 +48,7 @@ $nome_final = time().'.jpg';
 // Mantém o nome original do arquivo
 $nome_final = $_FILES['arquivo']['name'];
 }
+echo $nome_final;
 exit();
 // Depois verifica se é possível mover o arquivo para a pasta escolhida
 if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_final)) {
