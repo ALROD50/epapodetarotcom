@@ -412,16 +412,6 @@ a.linkClientesAdmin:active {
     #header {
         background: #ffffff !important;
     }
-
-    a.link-padraoum {
-        text-decoration: none;
-        color: #c69e88;
-    }
-
-    a.link-padraoum:hover {
-        text-decoration: none;
-        color: #6c1010 !important;
-    }
 }
 
 #usuariobox {
