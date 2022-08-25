@@ -43,12 +43,12 @@ if ($execulta=="sim") {
                     $name = $arquivo;
                     echo "path $path <br>";
                     echo "arquivo $arquivo <br>";
+                    echo "ext $ext <br>";
                     // Garante que a imagem é do tipo .WEBP
                     if (!file_exists($dir.$name)) {
                         echo "File does not exists <br>";
                         // File does not exists
                     }
-                    exit();
                     if ($ext == '.webp') {
                         echo "convertendo <br>";
                         @$newName = strtolower(reset(explode(".", $arquivo)));
