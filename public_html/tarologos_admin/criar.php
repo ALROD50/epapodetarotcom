@@ -98,10 +98,8 @@ if($erros >= 1) {
 // fim da validação
 // se não tiver encontrado erros o cadastro é realizado normalmente.
 
-$data_registro = date("Y-m-d H:i:s");
+    $data_registro = date("Y-m-d H:i:s");
 
-exit();
- 
     $q = $pdo->query("INSERT INTO clientes (
     nome,
     alias,
