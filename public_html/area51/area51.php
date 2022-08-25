@@ -41,6 +41,8 @@ if ($execulta=="sim") {
                     echo "Convertendo .WEBP para .JPG <br>";
                     $dir = $path;
                     $name = $arquivo;
+                    echo "path $path <br>";
+                    echo "arquivo $arquivo <br>";
                     // Garante que a imagem é do tipo .WEBP
                     if (!file_exists($name)) {
                         echo "File does not exists <br>";
