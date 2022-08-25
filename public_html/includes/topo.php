@@ -210,7 +210,7 @@ $rowQuantidade = $sql_produto->rowCount();
           <div class="d-xl-block d-lg-block d-none">
             <?php 
             echo '<p margin-bottom:0px;">Olá '.$usuario_nome.'</br>';
-            echo 'Saldo: <span style="color:#61f235;"><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> | <i class="fas fa-home"></i> <a href="/minha-conta" style="color:#007bff;">MINHA CONTA</a></br>';
+            echo 'Saldo: <span><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> | <i class="fas fa-home"></i> <a href="/minha-conta" style="color:#007bff;">MINHA CONTA</a></br>';
             echo '<i class="fas fa-shopping-cart"></i> <a href="/carrinho-compras" style="color:#007bff;"> <span class="badge badge-pill badge-warning">'.$rowQuantidade.'</span> CARRINHO</a></p>';
             ?>
           </div>
@@ -219,7 +219,7 @@ $rowQuantidade = $sql_produto->rowCount();
           <div class="d-xl-none d-lg-none pt-2">
             <?php
             $usuario_nome=limita_caracteres($usuario_nome, '10', $quebra = true);
-            echo '<p class="mb-2">Saldo: <span style="color:#61f235;"><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> <a href="/minha-conta"><i class="fas fa-user-circle"></i> Olá '.$usuario_nome.'</a>  <a href="/carrinho-compras"><i class="fas fa-shopping-cart ml-1"></i> <span class="badge badge-pill badge-warning">'.$rowQuantidade.'</span> </a></p>';
+            echo '<p class="mb-2">Saldo: <span><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> <a href="/minha-conta"><i class="fas fa-user-circle"></i> Olá '.$usuario_nome.'</a>  <a href="/carrinho-compras"><i class="fas fa-shopping-cart ml-1"></i> <span class="badge badge-pill badge-warning">'.$rowQuantidade.'</span> </a></p>';
             ?>
           </div>
           <?php
