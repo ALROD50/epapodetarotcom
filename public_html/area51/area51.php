@@ -44,7 +44,7 @@ if ($execulta=="sim") {
                     echo "path $path <br>";
                     echo "arquivo $arquivo <br>";
                     // Garante que a imagem é do tipo .WEBP
-                    if (!file_exists($name)) {
+                    if (!file_exists($dir.$name)) {
                         echo "File does not exists <br>";
                         // File does not exists
                     } elseif (exif_imagetype($name) === IMAGETYPE_WEBP) {
