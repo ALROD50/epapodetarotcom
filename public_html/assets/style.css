@@ -3,7 +3,7 @@ body {
     font-family: 'dumbledor_1regular';
     color: #000;
     font-size: 22px;
-    background-image: url('images/background.png');
+    background-image: url('/home/epapodetarotcom/public_html/images/background.png');
     background-size: 1920px 1169px;
     background-repeat: no-repeat;
     background-attachment: fixed;
