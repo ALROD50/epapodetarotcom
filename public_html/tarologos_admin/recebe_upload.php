@@ -27,9 +27,7 @@ exit; // Para a execução do script
 // Faz a verificação da extensão do arquivo
 $extensao = strtolower(end(explode('.', $_FILES['arquivo']['name'])));
 $TesteExtensao = array_search($extensao, $_UP['extensoes']);
-echo $TesteExtensao;
-exit();
-if (array_search($extensao, $_UP['extensoes']) === false) {
+if ($TesteExtensao === false) {
 $msge = "Por favor, envie arquivos com as seguintes extensões: jpg, jpeg, png, bmp ou gif";
 echo "<script>document.location.href='minha-conta/?pg=tarologos_admin/tarologos.php&msge=$msge'</script>";
 exit;
@@ -50,6 +48,7 @@ $nome_final = time().'.jpg';
 // Mantém o nome original do arquivo
 $nome_final = $_FILES['arquivo']['name'];
 }
+exit();
 // Depois verifica se é possível mover o arquivo para a pasta escolhida
 if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta'] . $nome_final)) {
 // Upload efetuado com sucesso, exibe uma mensagem e um link para o arquivo
