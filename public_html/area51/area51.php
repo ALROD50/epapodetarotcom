@@ -23,7 +23,7 @@ if ($execulta=="sim") {
     } else {
         echo "Especifico não <br>";
         /* Diretorio que deve ser lido */
-        $path = '/home/epapodetarotcom/public_html/images/pagamento/';
+        $path = '/home/epapodetarotcom/public_html/images/metapropertyimg/';
         /* Abre o diretório */
         
         // webp PARA jpg ?
