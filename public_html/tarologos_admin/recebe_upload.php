@@ -26,6 +26,7 @@ exit; // Para a execução do script
 // Caso script chegue a esse ponto, não houve erro com o upload e o PHP pode continuar
 // Faz a verificação da extensão do arquivo
 $extensao = strtolower(end(explode('.', $_FILES['arquivo']['name'])));
+echo $extensao;
 if (array_search($extensao, $_UP['extensoes']) === false) {
 $msge = "Por favor, envie arquivos com as seguintes extensões: jpg, jpeg, png, bmp ou gif";
 echo "<script>document.location.href='minha-conta/?pg=tarologos_admin/tarologos.php&msge=$msge'</script>";
