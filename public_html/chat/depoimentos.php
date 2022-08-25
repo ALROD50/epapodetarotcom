@@ -36,7 +36,7 @@ $pdo = conexao();
         /*overflow:hidden;*/
     }
     body {
-        background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+        background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
         background-size: 1920px 1169px;
         background-size: cover !important;
         color: #fff;
@@ -72,7 +72,7 @@ $pdo = conexao();
       <div class="col-md-8">
         
         <div style="margin-top: 30px; margin-bottom:30px;">
-          <img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" alt="É Papo de Tarot" style="max-width: 100%;">
+          <img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" alt="É Papo de Tarot" style="max-width: 100%;">
         </div>
 
         <h1 class="title">Consulta Finalizada</h1>

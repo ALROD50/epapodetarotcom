@@ -6,7 +6,7 @@
   <h3 style="margin-top:0px;color: #636f03;text-shadow: 0px 2px 4px #da8345;">Os atendimentos ocorrem via Chat, E-mail ou WhatsApp, em texto. A consulta é SIGILOSA, você não aparece e poderá ficar mais à vontade para fazer as suas perguntas.</h3>
 </center>
 
-<div class="col-md-12" style="padding: 30px; background: #000 url('images/bgbanner.webp') 50% 0 fixed repeat; background-size:1150px 1115px; margin:10px;border: solid #cb6a1d; color:#fff;">
+<div class="col-md-12" style="padding: 30px; background: #000 url('images/bgbanner.png') 50% 0 fixed repeat; background-size:1150px 1115px; margin:10px;border: solid #cb6a1d; color:#fff;">
   <center><h2>Como funciona?</h2></center>
   <div class="row">
     <div class="col-md-4">

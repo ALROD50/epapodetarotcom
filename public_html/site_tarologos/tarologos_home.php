@@ -8,7 +8,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/slideshow/0.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/0.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">VideoChamdas Disponíveis!</h1>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/1.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/1.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TAROT DE RIDER WAITE</h1>
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/2.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/2.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">REIKI</h1>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/3.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/3.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TAROT DE MARSELHA</h1>
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/4.webp" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/4.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TERAPIA HOLÍSTICA INTEGRATIVA PESSOAL</h1>
@@ -71,7 +71,7 @@
   </a>
 </div>
 
-<img src="images/homel.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></img><img src="images/homer.webp" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></img><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.webp" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></img><i class="fas fa-star-and-crescent"></i></center>
+<img src="images/homel.png" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></img><img src="images/homer.png" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></img><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.png" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></img><i class="fas fa-star-and-crescent"></i></center>
 
 <center>
   <h2 style="margin-top:0px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;"><i class="fas fa-comments"></i> Fale Com Um Tarólogo Online Agora!</h2>
@@ -79,7 +79,7 @@
   <h3 style="margin-top:0px;color: #636f03;text-shadow: 0px 2px 4px #da8345;">A consulta é SIGILOSA!</h3>
 </center>
 
-<div style="padding: 30px; background-image: url('images/bgbanner.webp');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center; margin:10px;border: solid #cb6a1d; color:#fff;">
+<div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center; margin:10px;border: solid #cb6a1d; color:#fff;">
   <center><h2>Como funciona?</h2></center>
   <div class="row">
     <div class="col-md-4">
@@ -145,7 +145,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 shadow" style="margin-bottom:15px;">
       
       <!-- Foto, nome e oraculos -->
-      <div style="background-image: url('images/bg_tarologo.webp');">
+      <div style="background-image: url('images/bg_tarologo.png');">
         
         <div id="nome" class="" style="padding-top: 45px;">
           <center>
@@ -252,7 +252,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 shadow" style="margin-bottom:15px;">
       
       <!-- Foto, nome e oraculos -->
-      <div style="background-image: url('images/bg_tarologo.webp');">
+      <div style="background-image: url('images/bg_tarologo.png');">
         
         <div id="nome" class="" style="padding-top: 45px;">
           <center>
@@ -361,7 +361,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 shadow" style="margin-bottom:15px;">
       
       <!-- Foto, nome e oraculos -->
-      <div style="background-image: url('images/bg_tarologo.webp');">
+      <div style="background-image: url('images/bg_tarologo.png');">
         
         <div id="nome" class="" style="padding-top: 45px;">
           <center>

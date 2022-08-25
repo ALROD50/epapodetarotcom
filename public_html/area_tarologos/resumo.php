@@ -22,7 +22,7 @@ include 'verifica_ult_consulta.php';
       console.log("Permissão de Notificações Solicitada!");
       if (result === 'granted') {
           var notification = new Notification('Permissão Autorizada', {
-            icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
+            icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.png',
             body: "Parabéns você deu permissão para as Notificações!",
           });
       } 
@@ -36,7 +36,7 @@ include 'verifica_ult_consulta.php';
   function mostrarNot(){
     Notification.requestPermission().then(function(permission) {
       const notification = new showNotification('Teste Notificações', {
-        icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
+        icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.png',
         body: "Teste de Notificações com Sucesso!",
         silent: true,
       });

@@ -41,7 +41,7 @@
 
 	    <!-- whatsapp -->
 		<div id="whatsapp">
-		    <a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?"><img src="images/whatsapp.webp" alt=""></a>
+		    <a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?"><img src="images/whatsapp.png" alt=""></a>
 		</div>
 
 		<!-- Subir -->
@@ -2472,7 +2472,7 @@
 						flashTitle("Cliente Chamando para Atendimento...", 100);
 						// Notificações via windows - titulo, icone e texto para a notificação.
 						var notificationChat = new Notification('Cliente Chamando!', {
-							icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
+							icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.png',
 							body: "Iniciar Atendimento!",
 							silent: true,
 						});

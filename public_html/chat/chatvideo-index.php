@@ -78,13 +78,13 @@ if (!empty($_SESSION["cod_sala"])){
 			body {
 				color: #fff;
 				font-size: 15px;
-				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
 				background-size: cover !important;
 			}
 			#hedchat {
 				padding: 15px;
-				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
 				background-size: cover !important;
 			}
@@ -103,7 +103,7 @@ if (!empty($_SESSION["cod_sala"])){
 				body {
 					color: #fff;
 					font-size: 15px;
-					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 					background-size: 1920px 1169px;
 					background-size: cover !important;
 				}
@@ -217,7 +217,7 @@ if (!empty($_SESSION["cod_sala"])){
 			}
 		</script>
 		<!-- Logomarca -->
-		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#000000;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" style="width:200px;height:50px;"/></div></a>
+		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#000000;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width:200px;height:50px;"/></div></a>
 		<!-- Renderiza o Chat -->
 		<div id="meet"></div>
 		<!-- Rodapé -->

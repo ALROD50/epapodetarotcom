@@ -7,7 +7,7 @@ $rowQuantidade = $sql_produto->rowCount();
 
   <div id="logo" class="navbar-brand">
     <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
-      <img id="sizelogo" src="images/Logo-Site.fw.webp" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
+      <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
     </a>
   </div>
 
@@ -247,7 +247,7 @@ $rowQuantidade = $sql_produto->rowCount();
             setTimeout(function() {
               // Pergunta se o tarólogo ainda esta online
               var notification = new Notification('Você esta Online?', {
-                icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.webp',
+                icon: 'https://www.epapodetarot.com.br/images/Logo-SiteP.png',
                 body: "Sim, estou online - Clique aqui!",
                 // Se clicar em SIM, envia para página de atualização de status, dia e hora do online.
               });

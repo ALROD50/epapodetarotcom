@@ -53,7 +53,7 @@ while ($mostrarx=$sql_onlinex->fetch(PDO::FETCH_ASSOC)) {
 // Meta Tags Global
 $keywords="É Papo de Tarot, Consultas de Tarot Online, Tarot, Buzios, Baralho Cigano, Tarô, Consultas via Chat, Taro, Cartomancia, Taro, Búzios, Runas, Numerologia, Reiki, Umbanda, Candomblé, Trabalhos Espirituais, Consultas Espirituais, Consultas Espirituais a distância, Jogo de Búzios a distância, Jogo de Baralho Cigano Online, Consultas Espirituais Online, Cartomancia, Sensitivos, Videntes, Consultas Esotéricas, Magia, Leitura de Baralho Cigano, Leitura Cartas de Tarot, Leitura Tarô do Amor, Jogar Cartas Online, Ele Me Ama, Ele Me Trai?, Tarot on-line por minuto, Tarot por minuto, tarô cigano, baralho de marselha";
 $metadescription="É Papo de Tarot - Consultas de Tarot Online: Tarot, Buzios, Baralho Cigano, Tarô Consultas via Chat, Conselhos Videntes ao Vivo, Consultas Tarô, Faça seu cadastro e compre seus créditos";
-$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/home.webp";
+$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/home.png";
 // Página Atual
 if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 	$pagina_atual="home";
@@ -159,7 +159,7 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 } elseif ($URLSESSAO=='comprar-consulta') {
 	$pagina_atual="comprar-consulta";
 	@$title="Comprar Consulta ".$nome_usuario." - Chat, WhatsApp, E-mail, Video, Telefone - É Papo de Tarot";
-	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.webp";
+	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.png";
 	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_facebook.php"; 
 	// require_once "/home/epapodetarotcom/public_html/login/LoginEntrar_google.php";
 } elseif ($URLSESSAO=='depoimentos-tarlogos') {
@@ -173,7 +173,7 @@ if ($URLSESSAO=='' OR $URLSESSAO=='home' OR $URLSESSAO=='index.php') {
 } elseif ($URLSESSAO=='loja') {
 	$pagina_atual="loja";
 	$title="Loja Virtual - É Papo de Tarot - Produtos Esotéricos";
-	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.webp";
+	$metaimage="https://www.epapodetarot.com.br/images/metapropertyimg/tarotdehorus.png";
 	
 	$sql = $pdo->query("SELECT * FROM loja_categorias WHERE alias='$URLCATEGORIA'");
 	$row = $sql->rowCount();

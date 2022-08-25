@@ -8,7 +8,7 @@
   	<a class="btn btn-lg btn-primary mt-3" href="tarologo/Deusa-Anuket" role="button"><i class="fas fa-comments"></i> CONSULTAR COM PATRICIA</a>
   </figcaption>
 </figure>
-</div><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.webp" alt="É Papo de Tarot" title="É Papo de Tarot" class="figure mb-3 mt-3"><i class="fas fa-star-and-crescent"></i></center> <p><b>É Papo de Tarot</b> é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online.</p>
+</div><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.png" alt="É Papo de Tarot" title="É Papo de Tarot" class="figure mb-3 mt-3"><i class="fas fa-star-and-crescent"></i></center> <p><b>É Papo de Tarot</b> é um portal de conhecimento e luz, temos uma equipe especializada na leitura dos oráculos, que trabalham utilizando o tarot, runas, baralhos e diversos métodos como forma de autoconhecimento, aprendizagem e reflexão do ser e espírito, tudo através de consultas online.</p>
 
 <p>Nossa equipe foi rigorosamente selecionada em cada um de seus conhecimentos e dons especiais, onde são utilizadas em consultas via chat, com a intenção de auxiliar e orientar, para que você possa tomar a melhor decisão ou o melhor caminho a seguir na questão que lhe aflige.</p>
 

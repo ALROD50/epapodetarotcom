@@ -140,7 +140,7 @@ if(isset($_POST['envia'])){
 ?>
 <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <p><img src="images/logo3.webp" alt="É Papo de Tarot" style="max-width: 70%;"></p>
+        <p><img src="images/logo3.png" alt="É Papo de Tarot" style="max-width: 70%;"></p>
         <p>Use o formulário ao lado para falar com o Tartot de Hórus.</p>
         <p style="color: #000;"><i class="far fa-clock"></i> Seg. a Sex. das 10H às 22H</p>
         <p style="color: #000; "><i class="fab fa-whatsapp"></i> (11) 9.4119-0306</p>

@@ -182,7 +182,7 @@ if (!empty($_SESSION["cod_sala"])){
             <div style="float:right;">
                 <?php echo '<a button class="btn btn-danger" href="https://www.epapodetarot.com.br/chat/chat-index.php?room='.$cod_sala.'&encerrar='.$cod_sala.'"><i class="glyphicon glyphicon-off icon-white"></i> Encerrar</button></a>'; ?>
             </div>
-            <img id="logo" src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" alt="É Papo de Tarot" style="max-height: 53px;">
+            <img id="logo" src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" alt="É Papo de Tarot" style="max-height: 53px;">
         </div>
         
         <!-- Corpo do Chat -->
