@@ -4,7 +4,9 @@ $execulta="sim";
 $especifico="nao";
 $webpPARAjpg="sim";
 if ($execulta=="sim") {
+    echo "Entrou em execulta <br>";
     if ($especifico=="sim") {
+        echo "Especifico sim <br>";
         // Arquivo Especifico
         $dir = '/home/epapodetarotcom/public_html/images/';
         $name = 'whatsapp.webp';
@@ -19,6 +21,7 @@ if ($execulta=="sim") {
         // imagecreatefromgif
         // imagecreatefrombmp
     } else {
+        echo "Especifico não <br>";
         /* Diretorio que deve ser lido */
         $path = '/home/epapodetarotcom/public_html/images/';
         /* Abre o diretório */
@@ -27,30 +30,38 @@ if ($execulta=="sim") {
         $pasta=opendir($path);
         
         if ($webpPARAjpg=="sim") {
+            echo "webpPARAjpg sim<br>";
             /* Loop para ler os arquivos do diretorio */
             while ($arquivo = readdir($pasta)) {
+                echo "Loop para ler os arquivos do diretorio<br>";
                 /* Verificacao para exibir apenas os arquivos e nao os caminhos para diretorios superiores */
                 @$ext = strtolower(end(explode(".", $arquivo)));
                 if ($arquivo != '.' && $arquivo != '..' && $ext != 'zip' && $ext != 'php' && $ext != 'html' && $arquivo != 'error_log') {
                     // Convertendo .WEBP para .JPG
+                    echo "Convertendo .WEBP para .JPG <br>";
                     $dir = $path;
                     $name = $arquivo;
                     // Garante que a imagem é do tipo .WEBP
                     if (!file_exists($name)) {
+                        echo "File does not exists <br>";
                         // File does not exists
                     } elseif (exif_imagetype($name) === IMAGETYPE_WEBP) {
+                        echo "convertendo <br>";
                         @$newName = strtolower(reset(explode(".", $arquivo)));
                         @$newName = $newName.'.png';
                         $img = imagecreatefromwebp($dir . $name);
                         imagejpeg($img, $dir . $newName, 80); //qualidade
                         imagedestroy($img);
+                        echo "newName $newName <br>";
                         // deleta a imagem anterior
                         $filepath = $dir.$arquivo;
+                        echo "deleta a imagem anterior $filepath <br>";
                         @unlink ($filepath);
                     }
                 }
             }
-        } else {        
+        } else {  
+            echo "webpPARAjpg nao<br>";      
             /* Loop para ler os arquivos do diretorio */
             while ($arquivo = readdir($pasta)) {
                 /* Verificacao para exibir apenas os arquivos e nao os caminhos para diretorios superiores */
