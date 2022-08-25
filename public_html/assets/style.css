@@ -1,8 +1,3 @@
-/* 
-Cores padrão do site
-color: #c69e88;
-color: #6c1010;
- */
 body {
     overflow-x: hidden;
     font-family: 'dumbledor_1regular';
@@ -12,6 +7,16 @@ body {
     background-size: 1920px 1169px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+/*  Cores padrão do site  */
+
+.corpadrao1 {
+    color: #c69e88 !important;
+} 
+.corpadrao2 {
+    color: #6c1010 !important;
 }
 
 @media (max-width: 426px) {
