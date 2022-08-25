@@ -1,10 +1,8 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin:-15px; margin-bottom: 20px;">
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -36,27 +34,6 @@
           <h1 class="text-white sombratexto">CRISTAIS E RUNAS</h1>
           <h3 class="text-white sombratexto">Abra os seus caminhos para um novo amor ou melhore o seu relacionamento, através das previsões dos oráculos.</h3>
           <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/slideshow/3.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
-      <div class="container">
-        <div class="carousel-caption text-left" style="right:5%;left:5%">
-          <h1 class="text-white sombratexto">TAROT DE MARSELHA</h1>
-          <h1 class="text-white sombratexto">BARALHO CIGANO</h1>
-          <h3 class="text-white sombratexto">Encontre as repostas para as suas perguntas sobre a sua vida amorosa, profissional e familiar.</h3>
-          <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/slideshow/4.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
-      <div class="container">
-        <div class="carousel-caption text-left" style="right:5%;left:5%">
-          <h1 class="text-white sombratexto">TERAPIA HOLÍSTICA INTEGRATIVA PESSOAL</h1>
-          <h3 class="text-white sombratexto">Saia da escuridão da inconsciência e trilhe o seu caminho com maior sabedoria e assertividade.</h3>
-          <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> SAIBA MAIS</a></p>
         </div>
       </div>
     </div>
