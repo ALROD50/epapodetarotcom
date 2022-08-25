@@ -49,7 +49,7 @@ if ($execulta=="sim") {
                         echo "File does not exists <br>";
                         // File does not exists
                     }
-                    if ($ext == '.webp') {
+                    if ($ext == 'webp') {
                         echo "convertendo <br>";
                         @$newName = strtolower(reset(explode(".", $arquivo)));
                         @$newName = $newName.'.png';
