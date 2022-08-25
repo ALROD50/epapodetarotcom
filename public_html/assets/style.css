@@ -1,3 +1,8 @@
+/* 
+Cores padrão do site
+color: #c69e88;
+color: #6c1010;
+ */
 body {
     overflow-x: hidden;
     font-family: 'dumbledor_1regular';
@@ -330,12 +335,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 a.link-padraoum {
     text-decoration: none;
-    color: #7bdaff;
+    color: #c69e88;
 }
 
 a.link-padraoum:hover {
     text-decoration: none;
-    color: #ffffff;
+    color: #6c1010 !important;
 }
 
 a.link-padraodois {

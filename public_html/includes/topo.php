@@ -210,8 +210,8 @@ $rowQuantidade = $sql_produto->rowCount();
           <div class="d-xl-block d-lg-block d-none">
             <?php 
             echo '<p style="color:#fff; margin-bottom:0px;">Olá '.$usuario_nome.'</br>';
-            echo 'Saldo: <span style="color:#61f235;"><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> | <i class="fas fa-home"></i> <a href="/minha-conta" style="color:#93dbf7;">MINHA CONTA</a></br>';
-            echo '<i class="fas fa-shopping-cart"></i> <a href="/carrinho-compras" style="color:#93dbf7;"> <span class="badge badge-pill badge-warning">'.$rowQuantidade.'</span> CARRINHO</a></p>';
+            echo 'Saldo: <span style="color:#61f235;"><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> | <i class="fas fa-home"></i> <a href="/minha-conta" style="color:#007bff;">MINHA CONTA</a></br>';
+            echo '<i class="fas fa-shopping-cart"></i> <a href="/carrinho-compras" style="color:#007bff;"> <span class="badge badge-pill badge-warning">'.$rowQuantidade.'</span> CARRINHO</a></p>';
             ?>
           </div>
           
@@ -235,7 +235,7 @@ $rowQuantidade = $sql_produto->rowCount();
           ?>
           <div class="pt-2" style="font-size:16px;">
             <?php 
-            echo '<p class="mb-2 text-white" style="color:#fff;"><div id="onlineVerificaion" class="" style="display: contents;"><i class="fas fa-plug"></i></div> Olá '.$usuario_nome.', <a href="login/logout.php" style="color:#93dbf7;">Sair</a> | <i class="fas fa-cogs"></i> <a href="/minha-conta" style="color:#93dbf7;">MINHA CONTA</a>';
+            echo '<p class="mb-2 text-white" style="color:#fff;"><div id="onlineVerificaion" class="" style="display: contents;"><i class="fas fa-plug"></i></div> Olá '.$usuario_nome.', <a href="login/logout.php" style="color:#007bff;">Sair</a> | <i class="fas fa-cogs"></i> <a href="/minha-conta" style="color:#007bff;">MINHA CONTA</a>';
             ?>
           </div>
           <?php
@@ -271,7 +271,7 @@ $rowQuantidade = $sql_produto->rowCount();
           ?>
           <div class="pt-2" style="font-size:17px;">
             <?php 
-            echo '<p class="mb-2 text-white" style="color:#fff;"><div id="onlineVerificaion" class="" style="display: contents;"><i class="fas fa-plug"></i></div> Olá, <a href="login/logout.php" style="color:#93dbf7;">Sair</a> | <i class="fas fa-cogs"></i> <a href="/minha-conta" style="color:#93dbf7;">ADMINISTRAÇÃO</a>';
+            echo '<p class="mb-2 text-white" style="color:#fff;"><div id="onlineVerificaion" class="" style="display: contents;"><i class="fas fa-plug"></i></div> Olá, <a href="login/logout.php" style="color:#007bff;">Sair</a> | <i class="fas fa-cogs"></i> <a href="/minha-conta" style="color:#007bff;">ADMINISTRAÇÃO</a>';
             ?>
           </div>
           <?php
