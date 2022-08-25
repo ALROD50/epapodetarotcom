@@ -1,8 +1,8 @@
 <?php
 // Converte imagem em WEBP, a partir de um diretório, ou arquivo especifico
-$execulta="sim";
+$execulta="nao";
 $especifico="nao";
-$webpPARAjpg="sim";
+$webpPARAjpg="nao";
 if ($execulta=="sim") {
     echo "Entrou em execulta <br>";
     if ($especifico=="sim") {
