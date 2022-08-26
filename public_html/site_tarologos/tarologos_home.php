@@ -9,9 +9,9 @@
       <img src="images/slideshow/1.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
-          <h1 class="text-white sombratexto">VideoChamdas Disponíveis!</h1>
-          <h3 class="text-white sombratexto">Disponibilizamos videochamadas no site, aproveite e tenha novas experiências na sua consulta.</h3>
-          <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p>
+          <h1 class="text-white sombratexto">TAROT</h1>
+          <!-- <h3 class="text-white sombratexto">Disponibilizamos videochamadas no site, aproveite e tenha novas experiências na sua consulta.</h3> -->
+          <!-- <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p> -->
         </div>
       </div>
     </div>
@@ -19,10 +19,9 @@
       <img src="images/slideshow/2.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
-          <h1 class="text-white sombratexto">TAROT DE RIDER WAITE</h1>
-          <h1 class="text-white sombratexto">BÚZIOS</h1>
-          <h3 class="text-white sombratexto">Amplie o seu autoconhecimento no processo da sua vida, atinja o bem estar biopsiquisocial e espiritual.</h3>
-          <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p>
+          <h1 class="text-white sombratexto">BARALHO CIGANO</h1>
+          <!-- <h3 class="text-white sombratexto">Amplie o seu autoconhecimento no processo da sua vida, atinja o bem estar biopsiquisocial e espiritual.</h3> -->
+          <!-- <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p> -->
         </div>
       </div>
     </div>
@@ -30,10 +29,9 @@
       <img src="images/slideshow/3.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
-          <h1 class="text-white sombratexto">REIKI</h1>
-          <h1 class="text-white sombratexto">CRISTAIS E RUNAS</h1>
-          <h3 class="text-white sombratexto">Abra os seus caminhos para um novo amor ou melhore o seu relacionamento, através das previsões dos oráculos.</h3>
-          <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p>
+          <h1 class="text-white sombratexto">TAROT DE MARSELHA</h1>
+          <!-- <h3 class="text-white sombratexto">Abra os seus caminhos para um novo amor ou melhore o seu relacionamento, através das previsões dos oráculos.</h3> -->
+          <!-- <p><a class="btn btn-lg btn-primary" href="tarologos" role="button"><i class="fas fa-angle-double-right"></i> CLIQUE AQUI</a></p> -->
         </div>
       </div>
     </div>
