@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContentAdmin">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link menulink" href="home"><i class="fas fa-home text-white"></i> VOLTAR AO SITE</a>
+        <a class="nav-link menulink" href="home">VOLTAR AO SITE</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link menulink" href="minha-conta/?pg=area_cliente/resumo.php">RESUMO<span class="sr-only"></span></a>
