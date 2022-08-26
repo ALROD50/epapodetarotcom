@@ -58,7 +58,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
 
           <p class="mb-1"><small class="text-muted"><em><?php echo $mensagem; ?></em></small></p>
           
-          <p class="mt-1"><span style="color:#FEB90A; font-size: 19px;"><i class="fas fa-ankh"></i> <?php echo @$tarologo_nome; ?></span></p>
+          <p class="mt-1"><span style="color:#FEB90A; font-size: 19px;"><?php echo @$tarologo_nome; ?></span></p>
           <hr>
           <?php 
         }
@@ -140,7 +140,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <i class="fas fa-ankh"></i> <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight:800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight:800;text-shadow: 0px 2px 4px #da8345;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -148,7 +148,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             
             <div id="foto" class="" style="display:block;">
               <center>
-                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodoisdois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
               </center>
             </div>
             <div id="oraculos" style="margin: 0px;font-size:19px;padding: 10px 10px 0 10px;color: #000000;height:188px;background: #ffffff91;">
@@ -245,7 +245,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <i class="fas fa-ankh"></i> <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -253,7 +253,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             
             <div id="foto" class="" style="display:block;">
               <center>
-                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodoisdois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
               </center>
             </div>
             <div id="oraculos" style="margin: 0px;font-size:19px;padding: 10px 10px 0 10px;color: #000000;height:188px;background: #ffffff91;">
@@ -349,7 +349,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <i class="fas fa-ankh"></i> <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -357,7 +357,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             
             <div id="foto" class="" style="display:block;">
               <center>
-                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodoisdois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
               </center>
             </div>
             <div id="oraculos" style="margin: 0px;font-size:19px;padding: 10px 10px 0 10px;color: #000000;height:188px;background: #ffffff91;">
