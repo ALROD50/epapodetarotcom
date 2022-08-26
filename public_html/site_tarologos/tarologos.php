@@ -179,7 +179,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
               <!-- Botão Avise-me Quando Disponível -->
               <div class="mb-2">
                 <form method="post" action="aviseme-quando-disponivel" name="aviseme_envia" id="aviseme_envia">
-                  <button type="submit" class="btn btn-info btn-lg btn-block" name="envia" id="envia"><i class="fas fa-clock"></i> Avise-Me!</button>
+                  <button type="submit" class="btn btn-info btn-lg btn-block corpadrao2" name="envia" id="envia"><i class="fas fa-clock"></i> Avise-Me!</button>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </div>
@@ -284,7 +284,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
               <!-- Botão Avise-me Quando Disponível -->
               <div class="mb-2">
                 <form method="post" action="aviseme-quando-disponivel" name="aviseme_envia" id="aviseme_envia">
-                  <button type="submit" class="btn btn-info btn-lg btn-block" name="envia" id="envia"><i class="fas fa-clock"></i> Avise-Me!</button>
+                  <button type="submit" class="btn btn-info btn-lg btn-block corpadrao2" name="envia" id="envia"><i class="fas fa-clock"></i> Avise-Me!</button>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </div>
@@ -388,7 +388,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
               <!-- Botão Avise-me Quando Disponível -->
               <div class="mb-2">
                 <form method="post" action="aviseme-quando-disponivel" name="aviseme_envia" id="aviseme_envia">
-                  <button type="submit" class="btn btn-info btn-lg btn-block" name="envia" id="envia"><i class="fas fa-clock"></i> Avise-Me!</button>
+                  <button type="submit" class="btn btn-info btn-lg btn-block corpadrao2" name="envia" id="envia"><i class="fas fa-clock"></i> Avise-Me!</button>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </div>
