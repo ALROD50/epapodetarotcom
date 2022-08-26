@@ -9,7 +9,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 
 	<div class="mt-5" style="clear:both;"></div>
 
-	<div class="row" style="font-size:17px;">
+	<div class="row" style="">
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
 			<h2 class="vinho">Quem Somos</h2>
 			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="" style="" /></center>
