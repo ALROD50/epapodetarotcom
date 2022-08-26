@@ -140,7 +140,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight:800;text-shadow: 0px 2px 4px #da8345;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -245,7 +245,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -349,7 +349,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
