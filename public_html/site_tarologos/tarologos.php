@@ -68,7 +68,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
   </div>
   
   <!-- Tarólogos -->
-  <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     
     <center>
       <h2 style="margin-top:0px;" class="vinho">Fale Com Um Tarólogo Online!</h2>
@@ -425,69 +425,4 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     <div style="clear:both;"></div>
   </div>
 
-  <!-- Top Tarólogos -->
-  <div class="col-md-2 d-none d-xl-block px-0">
-    <div style="margin-bottom:15px;border: solid #000 1px;border-bottom: solid #d7ad63 5px;background-image: url('https://www.epapodetarot.com.br/images/toptarologos.jpg');">
-      <div style="background: rgba(23, 23, 23, 0.74); padding:5px; margin-bottom:25px;">
-        <center><p style="margin:0px;color:#fff;border-bottom: solid #d7ad63 1px;font-size:19px;"><i class="fas fa-medal"></i> TOP CONSULTORES</p></center>
-      </div>
-      <?php 
-      $numero = 1;
-      // Selecione os 5 tarologos com mais atendimentos em ordem descercente.
-      $resultxx = $pdo->query("SELECT count(id_tarologo)Qtde_Registros, id_tarologo from atendimento group by id_tarologo order by Qtde_Registros DESC LIMIT 10");
-      while ($mostrar22x = $resultxx->fetch(PDO::FETCH_ASSOC)) {
-        
-        $id_tarologo22x=$mostrar22x['id_tarologo'];
-        $Qtde_Registros=$mostrar22x['Qtde_Registros'];
-        // Selecione o tarólogo
-        $resultx = $pdo->query("SELECT * FROM clientes WHERE id='$id_tarologo22x'");
-        while ($mostrar22 = $resultx->fetch(PDO::FETCH_ASSOC)) {
-          
-          $id_tarologo22=$mostrar22['id'];
-          $nome22=$mostrar22['nome'];
-          $alias22=$mostrar22['alias'];
-          ?>
-          <div style="background:#269bca;padding:5px;margin-bottom:20px;">
-            <div style="border-radius:50%;background:#000;color:#fff;float:left;padding: 0px 12px 0px 12px;margin: 0px 10px 0px 0px;">
-              <?php echo $numero; ?>
-            </div>
-            <form method="post" action="tarologo/<?php echo $alias22; ?>">
-              <input style="background:transparent;border:none;font-size:19px;color:#fff;margin:0px;padding:0px;" class="efeito" type="submit" name="envia" alt="<?php echo $nome22;?>" title="<?php echo $nome22;?>" value="<?php echo $nome22; ?>"/>
-              <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo22; ?>" />
-            </form>
-          </div>
-          <?php
-          $numero = $numero + 1;
-        }
-      }
-      ?>
-    </div>
-    
-    <!-- Banners -->
-    <div>
-      <?php 
-      /* Diretorio que deve ser lido */
-      $path = "images/banners";
-      /* Abre o diretório */
-      @$pasta= opendir($path);
-      /* Loop para ler os arquivos do diretorio */
-      while (@$arquivo = readdir($pasta)) {
-        /* Verificacao para exibir apenas os arquivos e nao os caminhos para diretorios superiores */
-        @$ext = strtolower(end(explode(".", $arquivo)));
-        if ($arquivo != '.' && $arquivo != '..' && $ext != 'zip' && $ext != 'php' && $ext != 'html' && $arquivo != 'error_log') {
-          //$arquivox = limita_caracteres($arquivo, 10, true);
-          // Se for imagem
-          if ($ext == 'jpg' OR $ext == 'jpeg' OR $ext == 'png' OR $ext == 'gif' OR $ext == 'bmp') {
-            ?>
-            <a href='https://www.epapodetarot.com.br/comprar-consulta' title='Esotéricos'>
-              <img src='<?php echo $path."/".$arquivo; ?>' alt="Esotéricos" />
-            </a>
-            <p></p>
-            <?php
-          }
-        }
-      }
-      ?>
-    </div>
-  </div>
 </div>
