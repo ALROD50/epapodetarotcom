@@ -199,9 +199,9 @@ if (!empty($_SESSION["cod_sala"])){
                <center>
                     <img id="imagem_tarologo" src="../tarologos_admin/fotos/<?php echo $logo;?>" class="img-rounded" alt="<?php echo $nome_tarologo;?>" title="<?php echo $nome_tarologo;?>" style="max-height:173px; margin-top:10px;">
 
-                    <h1 style="font-size: 27px; color:#f0cd4e;"><?php echo $nome_tarologo;?></h1>
+                    <h1 style="font-size: 27px; color:#6c1010;"><?php echo $nome_tarologo;?></h1>
 
-                    <p style="font-size: 13px; color:#3ac5e4; padding:3px;"><?php echo $especialidade_taro;?></p>
+                    <p style="font-size: 13px; color:#000; padding:3px;"><?php echo $especialidade_taro;?></p>
 
                     <p style="color:#000; margin: 0 0 0px;"><b>Tempo de Consulta:</b></p>
                     <div id="clock1" style="color:#000;"></div>
@@ -212,7 +212,7 @@ if (!empty($_SESSION["cod_sala"])){
 
                     <?php if ($nivel == 'TAROLOGO') { ?>
                         <div id="clientes">
-                            <center style="color:#820000;">Dados do Cliente</center>
+                            <center style="color:#6c1010;">Dados do Cliente</center>
                             Nome: <b><?php  echo $nome_cliente; ?></b><br>
                             Data de Nascimento: <b><?php  echo $data_nascimento; ?></b>
                         </div>
