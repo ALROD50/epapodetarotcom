@@ -1,15 +1,4 @@
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<style type="text/css">
-    /* Recaptcha */
-    @media (max-width: 480px) {
-        #rc-imageselect, .g-recaptcha {
-            transform:scale(0.77);
-            -webkit-transform:scale(0.77);
-            transform-origin:0 0;
-            -webkit-transform-origin:0 0;
-        }
-    }
-</style>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw"></script>
 
 <h1><i class="fas fa-headset"></i> Central de Atendimento</h1>
 <hr>
@@ -37,32 +26,31 @@ if(isset($_POST['envia'])){
     $assunto2    = trim(addslashes($_POST['assunto']));
     @$mensagem  = $_POST['mensagem'];
     // Captcha ###############################################################
-        if (isset($_POST['g-recaptcha-response'])) {
-            $captcha_data = $_POST['g-recaptcha-response'];
-        }
-        // Se nenhum valor foi recebido, o usuário não realizou o captcha
-        if (!$captcha_data) {
-            $erros++; 
-            $captchav="Clique no box <b>Não sou um robô.</b>";
-        } else {            
-            //biblioteca para o captcha
-            require_once '/home/epapodetarotcom/public_html/scripts/recaptcha/autoload.php';
-            // sua chave secreta
-            $secret = "6LeO7OkUAAAAAL7xRieXU8luIkFBANA7_GjnSbsT";
-            // resposta vazia
-            $response = null;
-            // verifique a chave secreta
-            $reCaptcha = new \ReCaptcha\ReCaptcha($secret);
-            // se submetido, verifique a resposta
-            if ($_POST["g-recaptcha-response"]) {
-                $response = $reCaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-            }
-            if ($response != null && $response->isSuccess()) {
-                $captchav = null;
-            } else {
-                $erros++;
-                $captchav="A mensagem não foi enviada.";
-            }
+        $url = "https://www.google.com/recaptcha/api/siteverify";
+        $data = [
+        'secret' => "6LfIKpwhAAAAANDvMK29MCEGmhSDJ3s7RAxHCERj",
+        'response' => $_POST['token'],
+        // 'remoteip' => $_SERVER['REMOTE_ADDR']
+        ];
+
+        $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data)
+        )
+        );
+
+        $context  = stream_context_create($options);
+        $response = file_get_contents($url, false, $context);
+        $res = json_decode($response, true);
+
+        if($res['success'] == true) {
+        // OK, Your inquiry successfully submitted
+        $captchav = null;
+        } else {
+        $erros++;
+        $captchav="You are not a human.";
         }
     // Captcha ###############################################################
     // validação
@@ -150,6 +138,7 @@ if(isset($_POST['envia'])){
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <span class="small">(*) Preenchimento obrigatório.</span>
         <form name="contato" method="post" action="" class="form-horizontal">
+            <input type="hidden" id="token" name="token">
             <div class="form-group">
                 <label>*Seu Nome:</label>
                 <input type="text" class="form-control"  name="nome" value="<?php echo $nome = isset($_POST['nome']) ? $_POST['nome'] : ''; ?>" required autofocus />
@@ -178,3 +167,12 @@ if(isset($_POST['envia'])){
         </form>
     </div>
 </div>
+
+<script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw', {action: 'homepage'}).then(function(token) {
+        // console.log(token);
+        document.getElementById("token").value = token;
+      });
+  });
+</script>
