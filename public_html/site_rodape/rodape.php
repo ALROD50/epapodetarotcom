@@ -11,12 +11,12 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 
 	<div class="row" style="font-size:17px;">
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-			<h2 class="branco">Quem Somos</h2>
+			<h2 class="vinho">Quem Somos</h2>
 			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="img-fluid" style="max-height: 80px;" /></center>
 			<p>Quem é a idealizadora do É Papo de Tarot? Prazer, meu nome é Aline A. Peres, tenho 45 anos, sou publicitária e terapeuta, sou mãe de um casal de gatos lindos e fofos...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-			<h2 class="branco">Institucional</h2>
+			<h2 class="vinho">Institucional</h2>
 			<p><a href="quem-somos" class=""> Quem Somos</a></p>
 			<p><a href="lembrar-senha" class=""> Lembrar-Senha</a></p>
 			<p><a href="politica-de-privacidade-e-termos-de-uso" class=""> Termos de Uso</a></p>
@@ -25,13 +25,13 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 			<p><a href="blog" class=""> Blog</a></p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-			<h2 class="branco">Atendimento</h2>
+			<h2 class="vinho">Atendimento</h2>
 			<p><i class="far fa-clock "></i> Segunda a sábado: 9 às 22h, Domingos e feriados: 10 às 18h</p>
 			<p><i class="fab fa-whatsapp "></i> (11) 99424-5002</p>
 			<p><i class="far fa-envelope "></i> epapodetarot@gmail.com</p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-			<h2 class="branco">Redes Sociais</h2>
+			<h2 class="vinho">Redes Sociais</h2>
 			<p><a href="https://www.facebook.com/epapodetarot/" target="_blank" title="Facebook É Papo de Tarot"><i class="fab fa-facebook-square fa-4x azul efeitodois"></i></a>
 			<a href="https://www.instagram.com/epapodetarot/" target="_blank" title="Instagram É Papo de Tarot"><i class="fab fa-instagram-square fa-4x instagram efeitodois"></i></a>
 			<!-- <a href="https://www.youtube.com/channel/UCAoHI95gpjGH3UiewFaiU-A?view_as=subscriber" target="_blank" title="Youtube É Papo de Tarot"><i class="fab fa-youtube-square fa-4x vermelho efeitodois"></i></a> -->
