@@ -18,6 +18,7 @@ body {
 .corpadrao2 {
     color: #c69e88 !important;
     background: #6c1010 !important;
+    border: none;
 }
 
 @media (max-width: 426px) {
