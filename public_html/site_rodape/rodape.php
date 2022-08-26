@@ -20,10 +20,10 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 			<p><a href="quem-somos" class=""> Quem Somos</a></p>
 			<p><a href="blog" class=""> Blog</a></p>
 			<p><a href="lembrar-senha" class=""> Lembrar-Senha</a></p>
-			<p><a href="politica-de-privacidade-e-termos-de-uso" class=""> Termos de Uso</a></p>
 			<p><a href="trabalhe-conosco" class=""> Trabalhe Conosco</a></p>
-			<p><a href="perguntas-frequentes" class=""> Perguntas Frequentes</a></p>
 			<p><a href="faleconosco" class=""> Fale Conosco</a></p>
+			<p><a href="perguntas-frequentes" class=""> Perguntas Frequentes</a></p>
+			<p><a href="politica-de-privacidade-e-termos-de-uso" class=""> Termos de Uso</a></p>
 		</div>
 		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-3">
 			<h2 class="vinho">Redes Sociais</h2>
