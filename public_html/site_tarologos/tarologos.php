@@ -70,18 +70,11 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
   <!-- Tarólogos -->
   <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     
-    <div class="mb-3" style="display: block;"><img src="images/homel.png" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: left;" class="d-none d-lg-block"></img><img src="images/homer.png" width="217" height="66" alt="É Papo de Tarot" title="É Papo de Tarot" style="float: right;" class="d-none d-lg-block"></img><center><i class="fas fa-star-and-crescent"></i><img src="images/logotexto.png" width="205" height="31" alt="É Papo de Tarot" title="É Papo de Tarot"></img><i class="fas fa-star-and-crescent"></i></center></div>
+    <center>
+      <h2 style="margin-top:0px;" class="vinho">Fale Com Um Tarólogo Online!</h2>
+    </center>
 
-    <div class="row col-12">
-      <center>
-        <h2 style="margin-top:0px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;"><i class="fas fa-comments"></i> Fale Com Um Tarólogo Online Agora!</h2>
-        <h3 style="margin-top:0px;color: #963f10;text-shadow: 0px 2px 4px #da8345;">Acalme o seu coração e pergunte sobre a sua VIDA AMOROSA. Está a procura de um EMPREGO ou quer mudar de PROFISSÃO? Como anda a sua Saúde? Sua FAMÍLIA, como está?</h3>
-        <h3 style="margin-top:0px;color: #636f03;text-shadow: 0px 2px 4px #da8345;">A consulta é SIGILOSA!</h3>
-      </center>
-    </div>
-    
-    <!-- Passo a Passo -->
-    <div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center; margin:10px;border: solid #cb6a1d; color:#fff;">
+    <div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center;border: none; color:#fff;">
       <center><h2>Como funciona?</h2></center>
       <div class="row">
         <div class="col-md-4">
@@ -108,10 +101,10 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     <hr>
 
     <center>
-      <h2 style="margin-top:15px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;"><i class="fas fa-gem"></i> Nossa Equipe de Profissionais:</h2>
-      <p>Escolha um TARÓLOGO e faça todas as perguntas com total sigilo e privacidade, nossa plataforma é de total segurança, fique tranquilo para perguntar sobre Amor, Trabalho, Saúde e tudo o mais que aflige o seu coração.</p>
+      <h2 style="margin-top:0px;" class="vinho">Profissionais</h2>
+      <p>Nossas consultas são feitas online e temos diversos especialistas na sua área. Pode ser útil para você não ter que aguardar para agendar.</p>
     </center>
-    
+
     <hr>
 
     <div class="row" style="padding:0px;margin:0px;">
