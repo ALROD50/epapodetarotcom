@@ -8,7 +8,7 @@ html, body{
 body {
     color: #fff;
     font-size: 15px;
-    /*background: #1b2933 url('https://www.temploqsara.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;*/
+    background: #1b2933 url('https://www.temploqsara.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;
     background: #d9dcdc;
     background-size: 1920px 1169px;
     background-size: cover !important;
@@ -138,7 +138,7 @@ h1 {
 }
 #frm-msg label textarea{
     width:750px;
-    height: 0px
+    height: 0px;
     border:1px solid #ccc;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
