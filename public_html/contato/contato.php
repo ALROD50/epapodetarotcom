@@ -1,6 +1,6 @@
 <script src="https://www.google.com/recaptcha/api.js?render=6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw"></script>
 
-<h1>Central de Atendimento</h1>
+<h1>Central de Suporte</h1>
 <hr>
 
 <?php 
