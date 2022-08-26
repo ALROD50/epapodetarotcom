@@ -58,7 +58,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
 
           <p class="mb-1"><small class="text-muted"><em><?php echo $mensagem; ?></em></small></p>
           
-          <p class="mt-1"><span class="c69e88" style="color:#FEB90A; font-size: 19px;"><?php echo @$tarologo_nome; ?></span></p>
+          <p class="mt-1"><span class="rosaclaro" style="font-size: 19px;"><?php echo @$tarologo_nome; ?></span></p>
           <hr>
           <?php 
         }
