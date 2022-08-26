@@ -333,13 +333,22 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
       // Sim - Estou Online! ---------------------------------------------------------
       // Volta o tarólogo automáticamente para a página de aguardando chamadas
       // Recarrega a página quando o tarólgo estiver fora da página minha-conta
-      if ($URLSESSAO!='minha-conta' OR $URLSUBCATEGORIA!='resumo.php') {
+      if ($URLSESSAO!='minha-conta') {
         ?>
         <script>
           setTimeout(function(){
             document.location.href="https://www.epapodetarot.com.br/minha-conta/?msgi=Você foi redirecionado automáticamente para a página principal onde deve aguardar os atendimentos.";
           }, 10000); // Executa depois 10 segundos
         </script>
+        <?php
+      }
+      if ($URLSUBCATEGORIA!='resumo.php') {
+        ?>
+        <div class="alert alert-danger" role="alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <h2>Informação!</h2>
+          <p>Não esqueça de voltar para a página <a href="minha-conta/?pg=area_tarologos/resumo.php"><b>Resumo</b></a> para aguardar atendimentos...</p>
+        </div>
         <?php
       }
   }
