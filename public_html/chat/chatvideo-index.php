@@ -4,9 +4,6 @@ ini_set('display_errors',1); // Força o PHP a mostrar os erros.
 ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 header('Content-Type: text/html; charset=utf-8');
-
-
-
 if (!empty($_SESSION["cod_sala"])){
     require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
     $pdo = conexao();

@@ -182,16 +182,6 @@ if (isset($_POST["salva"])) {
 </div>
 
 <div style="margin:10px; display:inline-block;">
-    Nome Fantasia:&nbsp;&nbsp;
-    <input type="text" name="nome2" value="<?php echo $nome2; ?>" class="form-control"/>
-</div>
-
-<div style="margin:10px; display:inline-block;">
-    Foto Real:&nbsp;&nbsp;
-    <input type="text" name="fotoreal" value="<?php echo $fotoreal; ?>" class="form-control"/>
-</div>
-
-<div style="margin:10px; display:inline-block;">
     Habilitar VídeoChamadas:&nbsp;&nbsp;
     <select name="videochamada" class="form-control">&nbsp;&nbsp;
         <option value="<?php echo $videochamada; ?>"><?php echo $videochamada; ?></option> 
@@ -220,12 +210,12 @@ if (isset($_POST["salva"])) {
 
 <div style="clear:both;"></div>
 
-<p>Descrição:</p>
+<p>Perfil tarólogo:</p>
 <div class="row col-md-12 my-3">
     <textarea name="infos" class="form-control" style="width:100%;"><?php echo $infos; ?></textarea>
 </div>
 
-<p>Perfil Tarólogo:</p>
+<p>Texto básico de apresentação:</p>
 <div class="row col-md-12 my-3">
     <textarea name="infos2" class="form-control" style="width:100%;"><?php echo $infos2; ?></textarea>
 </div>
