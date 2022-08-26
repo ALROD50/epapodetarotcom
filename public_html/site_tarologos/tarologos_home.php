@@ -121,7 +121,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         <div id="nome" class="" style="padding-top: 45px;">
           <center>
             <form method="post" action="tarologo/<?php echo $alias; ?>">
-              <i class="fas fa-ankh"></i> <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight:800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+              <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight:800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
             </form>
           </center>
@@ -129,7 +129,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="efeitodoisefeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -228,7 +228,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         <div id="nome" class="" style="padding-top: 45px;">
           <center>
             <form method="post" action="tarologo/<?php echo $alias; ?>">
-              <i class="fas fa-ankh"></i> <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+              <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
             </form>
           </center>
@@ -236,7 +236,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="efeitodoisefeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -337,7 +337,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         <div id="nome" class="" style="padding-top: 45px;">
           <center>
             <form method="post" action="tarologo/<?php echo $alias; ?>">
-              <i class="fas fa-ankh"></i> <input style="background: transparent;border: none;font-size:30px;color: #0e0c0c;font-weight: 800;text-shadow: 0px 2px 4px #da8345;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+              <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeito" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
             </form>
           </center>
@@ -345,7 +345,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         
         <div id="foto" class="" style="display:block;">
           <center>
-            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+            <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="efeitodoisefeitodois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
           </center>
         </div>
 
@@ -469,7 +469,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
               <h2 class="text-white">'.$mensagem.'</h2>
               <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Enviado em: '.$data.'</small></p>
               <p><img src="tarologos_admin/fotos/min/'.$logo.'" alt="'.$tarologo_nome.'" title="'.$tarologo_nome.'" class="rounded-circle" width="140" height="140"/></p>
-              <h3 class="text-white"><span style="font-weight:bold;"><i class="fas fa-ankh"></i> '.$tarologo_nome.'</span></h3>
+              <h3 class="text-white"><span style="font-weight:bold;">'.$tarologo_nome.'</span></h3>
               <p><a class="btn btn-md btn-light" href="tarologo/'.$alias.'" role="button"><i class="fas fa-search"></i> Ver Perfil</a></p>
             </div>
           </div>
