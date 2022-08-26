@@ -23,6 +23,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 			<p><a href="trabalhe-conosco" class=""> Trabalhe Conosco</a></p>
 			<p><a href="perguntas-frequentes" class=""> FAQ</a></p>
 			<p><a href="blog" class=""> Blog</a></p>
+			<p><a href="faleconosco" class=""> Fale Conosco</a></p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
 			<h2 class="vinho">Atendimento</h2>

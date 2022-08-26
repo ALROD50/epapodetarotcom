@@ -47,6 +47,9 @@
       <li class="nav-item">
         <a class="nav-link menulink" href="blog">BLOG</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link menulink" href="faleconosco">FALE CONOSCO</a>
+      </li>
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle menulink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           CATEGORIAS
