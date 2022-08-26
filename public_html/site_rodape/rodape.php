@@ -12,17 +12,17 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 	<div class="row" style="font-size:17px;">
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
 			<h2 class="vinho">Quem Somos</h2>
-			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="img-fluid" style="max-height: 80px;" /></center>
+			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="" style="" /></center>
 			<p>Quem é a idealizadora do É Papo de Tarot? Prazer, meu nome é Aline A. Peres, tenho 45 anos, sou publicitária e terapeuta, sou mãe de um casal de gatos lindos e fofos...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
 			<h2 class="vinho">Institucional</h2>
 			<p><a href="quem-somos" class=""> Quem Somos</a></p>
+			<p><a href="blog" class=""> Blog</a></p>
 			<p><a href="lembrar-senha" class=""> Lembrar-Senha</a></p>
 			<p><a href="politica-de-privacidade-e-termos-de-uso" class=""> Termos de Uso</a></p>
 			<p><a href="trabalhe-conosco" class=""> Trabalhe Conosco</a></p>
-			<p><a href="perguntas-frequentes" class=""> FAQ</a></p>
-			<p><a href="blog" class=""> Blog</a></p>
+			<p><a href="perguntas-frequentes" class=""> Perguntas Frequentes</a></p>
 			<p><a href="faleconosco" class=""> Fale Conosco</a></p>
 		</div>
 		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-3">
