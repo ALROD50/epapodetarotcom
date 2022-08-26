@@ -10,12 +10,12 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 	<div class="mt-5" style="clear:both;"></div>
 
 	<div class="row" style="">
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
 			<h2 class="vinho">Quem Somos</h2>
 			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="" style="" /></center>
 			<p>É Papo de Tarot é um sonho ultimamente, e movido por uma grande inspiração. Vontade de uma pessoa que já foi consulente e agora está em um papel de Taróloga. Nas minhas consultas...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
 		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
 			<h2 class="vinho">Institucional</h2>
 			<p><a href="quem-somos" class=""> Quem Somos</a></p>
 			<p><a href="blog" class=""> Blog</a></p>
@@ -25,7 +25,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 			<p><a href="perguntas-frequentes" class=""> Perguntas Frequentes</a></p>
 			<p><a href="politica-de-privacidade-e-termos-de-uso" class=""> Termos de Uso</a></p>
 		</div>
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
 			<h2 class="vinho">Redes Sociais</h2>
 			<p><a href="https://www.facebook.com/epapodetarot/" target="_blank" title="Facebook É Papo de Tarot"><i class="fab fa-facebook-square fa-4x azul efeitodois"></i></a>
 			<a href="https://www.instagram.com/epapodetarot/" target="_blank" title="Instagram É Papo de Tarot"><i class="fab fa-instagram-square fa-4x instagram efeitodois"></i></a>
