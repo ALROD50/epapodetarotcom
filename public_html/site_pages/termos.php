@@ -1,59 +1,62 @@
 <h1><i class="fas fa-file-signature"></i> Termos de Uso e Política de Privacidade</h1>
 <hr>
 
-<ol>
-	<li>O É Papo de Tarot respeita a privacidade de nossos clientes e nos esforçamos por manter a maior qualidade possível no serviço. Isto inclui sua privacidade.</li>
-	<li>Toda informação coletada por este site é mantida estritamente para contato e administração dos serviços prestados a nossos clientes.</li>
-	<li>De maneira alguma, a exceção de uma ordem judicial, seus dados serão fornecidos a terceiros.</li>
-	<li>Eventualmente, o&nbsp;É Papo de Tarot&nbsp;envia mensagens a seus clientes informando novidades no serviço, mudanças de estrutura/política de serviço e oferecendo ofertas de serviço.</li>
-	<li>Endereços de e-mail informados através de contato pessoal, através do site ou por qualquer outro meio servem apenas para comunicação com o É Papo de Tarot, e não são fornecidos a terceiros.</li>
-	<li>Todos os dados fornecidos e registrados pelos clientes, são armazenados no banco de dados do próprio site, e são acessados somente pelo É Papo de Tarot.</li>
-	<li>Os Tarólogos que passarem informações pessoais como e-mail ou redes sociais, serão desligadas do site, sem aviso prévio. Pois é considerado antiético, bem como utilização do nome usado no site em outro. O É Papo de Tarot alerta também aos Consulentes que os mesmos que passarem redes sociais, telefone ou e-mail ficará com seu cadastro bloqueado por período indeterminado. Por quebra de sigilo no atendimento.</li>
-	<li>Todas as consultas realizadas no É Papo de Tarot, são pagas virtualmente, online, através de meios de pagamento online.</li>
-	<li>Consultas esotéricas definem-se como: a leitura e interpretação de oráculos, que proporcionam aconselhamento esotérico mediante pagamento de créditos que serão cedidos em minutos, através de sistema de chat por contagem de tempo.</li>
-	<li>O Cliente está ciente que para ter um atendimento satisfatório, é necessária uma internet com a melhor conexão possível, preferencialmente banda larga. Também orientamos a utilização de computadores atualizados, com softwares e programas atualizados. Não nos responsabilizamos por falhas no atendimento caso o cliente utilize computadores desatualizados, ou com baixa conexão a internet. O atendimento via chat via celular também pode não ter qualidade satisfatória, nessas condições a falha no atendimento e a perda de minutos podem ocorrer, e o cliente está ciente que nós não nos responsabilizamos nesses casos.</li>
-	<li>A equipe É Papo de Tarot tem como crença o livre arbítrio. Visto isso, as previsões, simpatias ou consultas não são passíveis de total infalibilidade, pois os oráculos apontam tendências e caminhos que podem ser modificadas conforme as decisões e atitudes tanto do cliente como de terceiros.</li>
-	<li>O cliente está ciente que sob sua responsabilidade, decidiu fazer consultas com os Tarólogos, e que as orientações e previsões feitas não possuem comprovação científica, nem garantias.</li>
-	<li>O É Papo de Tarot não atua com a realização de rituais de amarração ou de magia, respeitando tanto o livre arbítrio de seus clientes como o de terceiros. Cabe ao consultor e cliente, sua forma de trabalho, se realizado com cunho religioso ou não.</li>
-	<li>O É Papo de Tarot não garante a não interrupção de serviços, nenhum serviço prestado por este site é a prova de erros, falhas ou indisponibilidade. Podem ocorrer atrasos, omissões e interrupções na disponibilidade dos serviços prestados a qualquer momento, sem prévio aviso. O cliente está ciente que o site não lhe dá nenhuma garantia de 100% de operacionalidade em seus serviços.</li>
-	<li>É Papo de Tarot não tem responsabilidades ou obrigações com relação a exclusões, danos ou falhas referentes ao armazenamento de qualquer tipo, mensagem ou outro conteúdo, mantidos ou transmitidos pelo serviço.</li>
-	<li>O cliente fica ciente que usará este site sob sua própria responsabilidade e risco. Qualquer instabilidade que ocorra no site não é de responsabilidade do proprietário e o cliente, ao aceitar e ler este contrato, aceita esta cláusula.</li>
-	<li>É de extrema importância que o cliente esteja ciente que o prazo de compensação, em caso de pagamento via boleto, é de até 03 (três) dias úteis. Com isso, os créditos somente serão inseridos ao sistema, após compensação do pagamento. Pedimos a compreensão pela espera caso o processo referente seja uma opção do cliente.</li>
-	<li>Os horários mencionados no perfil de cada profissional são estimativas de quando estarão disponíveis, estando livres para cumprirem os horários de acordo com disponibilidade e tempo.</li>
-	<li>Os profissionais prestam serviços de atendimento esotérico e são comissionados por cada consulta realizada.</li>
-	<li>Qualquer terapia alternativa indicado por nossos Consultores visando o bem-estar e melhora do cliente, não substitui acompanhamento médico. É de inteira responsabilidade do cliente a escolha pelo abandono de medicamentos ao realizar consulta através de nosso sistema.</li>
-	<li>O cliente está ciente que qualquer comunicação com a administração do site é feita via texto, está ciente que não oferecemos telefones para suporte ou orientação de uso no site, toda a interação sobre qualquer assunto deverá ser feita via texto no formulário da página de contato.</li>
-	<li>Os Termos de Uso podem ser modificados a qualquer momento para seguir com cumprimento de legislação pátria vigente.</li>
-	<li>As Terapias Holísticas e Integrativas são complementares à medicina alopática, e não devem substituir nenhuma consulta e/ou tratamento médico.</li>
-	<li>Atenção: este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida.</li>
-	<li>Em caso de crise, ligue para 188 (CVV) ou acesse o site www.cvv.org.br. Em caso de emergência, procure atendimento em um hospital mais próximo.</li>
-	<li>O cliente está ciente que no caso de consultas via videochamadas, o tarólogo e cliente não são obrigados a mostrarem o seu rosto, e que não é permitido a troca de contatos pessoais durante a videochamada nem durante a consulta via chat. As videochamadas são gravas para segurança do cliente e tarólogo, nenhum dado gravado é divulgado a terceiros sendo. O cliente está ciente de que não poderá ter acesso a essas gravações por motivos de segurança do site.</li>
-</ol>
-<div>
-
-<h1><img src="/images/codigo-de-etica-do-tarot-300x300.png" alt="codigo de etica do tarot 300x300" width="197" height="197"></h1>
-
-<h1><i class="fas fa-shield-alt"></i> Código de ética do tarot</h1>
-
-<h2><i class="fas fa-dove"></i> Nós orientamos, os clientes decidem</h2>
-
-<p>Existe um Código de Ética do Tarot, cuja versão original foi apresentada no 2° Congresso de Tarot, realizado em Barcelona (Espanha), no dia 9 de março de 2013. A versão em português foi autorizada pela organização do congresso em fevereiro de 2015.</p>
-
-<p>Segue um resumo:</p>
-
-<p>A Ética no Tarot</p>
-
+<p>&nbsp;</p>
+<h1>Termos e condi&ccedil;&otilde;es de uso do site ou blog</h1>
+<p>Seja bem-vindo ao nosso site. Leia com bastante aten&ccedil;&atilde;o todos os termos abaixo.</p>
+<p>Este documento, e todo o conte&uacute;do do site &eacute; oferecido por &Eacute; papo de Tarot, neste termo representado apenas por &ldquo;EMPRESA&rdquo;, que regulamenta todos os direitos e obriga&ccedil;&otilde;es com todos que acessam o site, denominado neste termo como &ldquo;VISITANTE&rdquo;, reguardado todos os direitos previstos na legisla&ccedil;&atilde;o, trazem as cl&aacute;usulas abaixo como requisito para acesso e visita do mesmo, situado no endere&ccedil;o http://www.epapodetarot.com.br.</p>
+<p>A perman&ecirc;ncia no website implica-se automaticamente na leitura e aceita&ccedil;&atilde;o t&aacute;cita do presente termos de uso a seguir. Este termo foi atualizado pela &uacute;ltima vez em 14 de setembro de 2021.</p>
+<h2>1. DA FUN&Ccedil;&Atilde;O DO SITE</h2>
+<p>Este site foi criado e desenvolvido com a fun&ccedil;&atilde;o de trazer conte&uacute;do informativo de alta qualidade, a venda de produtos f&iacute;sicos, digitais e a divulga&ccedil;&atilde;o de presta&ccedil;&atilde;o de servi&ccedil;o. A EMPRESA busca atrav&eacute;s da cria&ccedil;&atilde;o de conte&uacute;do de alta qualidade, desenvolvido por profissionais da &aacute;rea, trazer o conhecimento ao alcance de todos, assim como a divulga&ccedil;&atilde;o dos pr&oacute;prios servi&ccedil;os.</p>
+<p>Nesta plataforma, poder&aacute; ser realizado tanto a divulga&ccedil;&atilde;o de material original de alta qualidade, assim como a divulga&ccedil;&atilde;o de produtos de e-commerce.</p>
+<p>Todo o conte&uacute;do presente neste site foi desenvolvido buscando fontes e materiais de confiabilidade, assim como s&atilde;o baseados em estudos s&eacute;rios e respeitados, atrav&eacute;s de pesquisa de alta n&iacute;vel.</p>
+<p>Todo o conte&uacute;do &eacute; atualizado periodicamente, por&eacute;m, pode conter em algum artigo, v&iacute;deo ou imagem, alguma informa&ccedil;&atilde;o que n&atilde;o reflita a verdade atual, n&atilde;o podendo a EMPRESA ser responsabilizada de nenhuma forma ou meio por qualquer conte&uacute;do que n&atilde;o esteja devidamente atualizado.</p>
+<p>&Eacute; de responsabilidade do usu&aacute;rio de usar todas as informa&ccedil;&otilde;es presentes no site com senso cr&iacute;tico, utilizando apenas como fonte de informa&ccedil;&atilde;o, e sempre buscando especialistas da &aacute;rea para a solu&ccedil;&atilde;o concreta do seu conflito.</p>
+<h2>2.&nbsp;DO ACEITE DOS TERMOS</h2>
+<p>Este documento, chamado &ldquo;Termos de Uso&rdquo;, aplic&aacute;veis a todos os visitantes do site, foi desenvolvido por&nbsp;<a href="https://diegocastro.adv.br/">Diego Castro</a>&nbsp;Advogado &ndash; OAB/PI 15.613, modificado com permiss&atilde;o para este site.</p>
+<p>Este termo especifica e exige que todo usu&aacute;rio ao acessar o site da EMPRESA, leia e compreenda todas as cl&aacute;usulas do mesmo, visto que ele estabelece entre a EMPRESA e o VISITANTE direitos e obriga&ccedil;&otilde;es entre ambas as partes, aceitos expressamente pelo VISITANTE a permanecer navegando no site da EMPRESA.</p>
+<p>Ao continuar acessando o site, o VISITANTE expressa que aceita e entende todas as cl&aacute;usulas, assim como concorda integralmente com cada uma delas, sendo este aceite imprescind&iacute;vel para a perman&ecirc;ncia na mesma. Caso o VISITANTE discorde de alguma cl&aacute;usula ou termo deste contrato, o mesmo deve imediatamente interromper sua navega&ccedil;&atilde;o de todas as formas e meios.</p>
+<p>Este termo pode e ir&aacute; ser atualizado periodicamente pela EMPRESA, que se resguarda no direito de altera&ccedil;&atilde;o, sem qualquer tipo de aviso pr&eacute;vio e comunica&ccedil;&atilde;o. &Eacute; importante que o VISITANTE confira sempre se houve movimenta&ccedil;&atilde;o e qual foi a &uacute;ltima atualiza&ccedil;&atilde;o do mesmo no come&ccedil;o da p&aacute;gina.</p>
+<h2>3. DO GLOSS&Aacute;RIO</h2>
+<p>Este termo pode conter algumas palavras espec&iacute;ficas que podem n&atilde;o se de conhecimento geral. Entre elas:</p>
 <ul>
-	<li>Em qualquer área de nossa vida devemos ser éticos, e no Tarot não é diferente. Embora nossa profissão não seja regulamentada, temos um conjunto de princípios morais que seguimos para melhor desempenhar nossa função.<br>Indicamos opções para o consulente, mas a decisão final é dele. Lembre-se que as cartas orientam, mas não determinam. Somente a decisão do consulente pode mudar seu próprio futuro.</li>
-	<li>Não julgamos o consulente em hipótese alguma. Não sabemos suas razões e não somos melhores ou piores que ninguém.<br>Devemos tentar ajudar o consulente a enfrentar e solucionar seus problemas. Não existem cartas “boas” ou “más”, elas apenas refletem estados interiores. Temos sempre que dar esperança e ajudar ao consulente a ver o lado positivo de cada situação.</li>
-	<li>Tudo o que é dito pelo consulente ou pelas cartas é confidencial. Em hipótese alguma devemos comentar, com quem quer que seja, a situação de um cliente. Em uma analogia, atuamos como um confessionário.</li>
-	<li>Devemos ajudar nosso cliente a fazer as perguntas da forma mais clara possível, lembrando que o Tarot é um Oráculo, e quanto mais concreta a pergunta, maior as chances de se obter a resposta.</li>
-	<li>Graças ao Tarot podemos identificar os fatores que afetam o destino do consulente, ou seja, as lições que ele precisa realizar ao longo de sua vida. O futuro é consequência de nossos atos. O Tarot nos ajuda a compreender nosso presente, para criarmos nosso próprio futuro.</li>
-	<li>O Tarot marca eventos e não datas. Podemos tentar interpretar uma data aproximada, mas também temos que alertar nosso consulente que os acontecimentos dependem das suas ações, tanto para aproximar, quanto para afastar as situações mostradas.</li>
-	<li>O Tarot não foi criado para responder a perguntas como: “Vou ganhar na loteria? ”, “Quando morrerá tal pessoa? ”, “ Quantos anos viverei? ”. Ele é, antes, uma ferramenta que permite vislumbrar novas e diferentes possibilidades.</li>
-	<li>A primeira motivação do tarólogo deve ser a de prestar um serviço de ajuda através do Tarot e não usá-lo prioritariamente como forma de ganhar dinheiro. Ainda assim, é lícito termos uma retribuição pelas consultas, pois investimos nosso tempo, estudos, preparação e materiais.</li>
-	<li>Nas perguntas sobre relacionamentos afetivos, em vez de falar sobre traições, infidelidades ou colocar a culpa em outras pessoas, concentre-se em ver o que não funciona na relação e se isso tem solução. Se a pessoa fizer a pergunta: “Fulano(a) me trai? ” Deve-se ter muito cuidado com a resposta, principalmente se for uma pessoa que você não conhece.</li>
-	<li>Não devemos diagnosticar doenças através do Tarot, pois isso fica a cargo exclusivo dos médicos. Caso o Tarot avise sobre algum problema, sugerimos que o consulente procure um médico.</li>
-	<li>Se o consulente perguntar por uma terceira pessoa, não devemos realizar a consulta sem a permissão da mesma. Podemos, sim, perguntar acerca da relação do consulente com ela e como suas ações o afetam, seja de forma direta ou indireta.</li>
-	<li>Ficarão expressamente fora de nosso trabalho atos tais como: realizar trabalhos de magia, amarração, separação ou união de casal, etc.</li>
+<li>VISITANTE:&nbsp;Todo e qualquer usu&aacute;rio do site, de qualquer forma e meio, que acesse atrav&eacute;s de computador, notebook, tablet, celular ou quaisquer outros meios, o website ou plataforma da empresa.</li>
+<li>NAVEGA&Ccedil;&Atilde;O:&nbsp;O ato de visitar p&aacute;ginas e conte&uacute;do do website ou plataforma da empresa.</li>
+<li>COOKIES:&nbsp;Pequenos arquivos de textos gerados automaticamente pelo site e transmitido para o navegador do visitante, que servem para melhorar a usabilidade do visitante.</li>
+<li>LOGIN:&nbsp;Dados de acesso do visitante ao realizar o cadastro junto a EMPRESA, dividido entre usu&aacute;rio e senha, que d&aacute; acesso a fun&ccedil;&otilde;es restritas do site.</li>
+<li>HIPERLINKS:&nbsp;S&atilde;o links clic&aacute;veis que podem aparecer pelo site ou no conte&uacute;do, que levam para outra p&aacute;gina da EMPRESA ou site externo.</li>
+<li>OFFLINE:&nbsp;Quando o site ou plataforma se encontra indispon&iacute;vel, n&atilde;o podendo ser acessado externamente por nenhum usu&aacute;rio.</li>
 </ul>
+<p>Em caso de d&uacute;vidas sobre qualquer palavra utilizada neste termo, o VISITANTE dever&aacute; entrar em contato com a EMPRESA atrav&eacute;s dos canais de comunica&ccedil;&atilde;o encontradas no site.</p>
+<h2>4. DO ACESSO AO SITE</h2>
+<p>O Site e plataforma funcionam normalmente 24 (vinte e quatro) horas por dia, por&eacute;m podem ocorrer pequenas interrup&ccedil;&otilde;es de forma tempor&aacute;ria para ajustes, manuten&ccedil;&atilde;o, mudan&ccedil;a de servidores, falhas t&eacute;cnicas ou por ordem de for&ccedil;a maior, que podem deixar o site indispon&iacute;vel por tempo limitado.</p>
+<p>A EMPRESA n&atilde;o se responsabiliza por nenhuma perda de oportunidade ou preju&iacute;zos que esta indisponibilidade tempor&aacute;ria possa gerar aos usu&aacute;rios.</p>
+<p>Em caso de manuten&ccedil;&atilde;o que exigirem um tempo maior, a EMPRESA ir&aacute; informar previamente aos clientes da necessidade e do tempo previsto em que o site ou plataforma ficar&aacute; offline.</p>
+<p>O acesso ao site s&oacute; &eacute; permitido a maiores de 18 anos de idade ou que possu&iacute;rem capacidade civil plena. Para acesso de menores de idade, &eacute; necess&aacute;ria a expressa autoriza&ccedil;&atilde;o dos pais ou tutores, ficando o mesmo respons&aacute;veis sobre qualquer compra ou acesso efetuados pelo mesmo.</p>
+<p>Caso seja necess&aacute;rio realizar um cadastro junto a plataforma, onde o VISITANTE dever&aacute; preencher um formul&aacute;rio com seus dados e informa&ccedil;&otilde;es, para ter acesso a alguma parte restrita, ou realizar alguma compra.</p>
+<p>Todos os dados est&atilde;o protegidos conforme a Lei Geral de Prote&ccedil;&atilde;o de Dados, e ao realizar o cadastro junto ao site, o VISITANTE concorda integralmente com a coleta de dados conforme a Lei e com a Pol&iacute;tica de Privacidade da EMPRESA.</p>
+<h2>5.&nbsp;DA LICEN&Ccedil;A DE USO E C&Oacute;PIA</h2>
+<p>O visitante poder&aacute; acessar todo o conte&uacute;do do website, como artigos, v&iacute;deos, imagens, produtos e servi&ccedil;os, n&atilde;o significando nenhum tipo de cess&atilde;o de direito ou permiss&atilde;o de uso, ou de c&oacute;pia dos mesmo.</p>
+<p>Todos os direitos s&atilde;o preservados, conforme a legisla&ccedil;&atilde;o brasileira, principalmente na Lei de Direitos Autorais (regulamentada na&nbsp;<a href="http://www.planalto.gov.br/ccivil_03/leis/l9610.htm">Lei n&ordm; 9.610/18</a>), assim como no C&oacute;digo Civil brasileiro (regulamentada na&nbsp;<a href="http://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm">Lei n&ordm; 10.406/02</a>), ou quaisquer outras legisla&ccedil;&otilde;es aplic&aacute;veis.</p>
+<p>Todo o conte&uacute;do do site &eacute; protegido por direitos autorais, e seu uso, c&oacute;pia, transmiss&atilde;o, venda, cess&atilde;o ou revenda, deve seguir a lei brasileira, tendo a EMPRESA todos os seus direitos reservados, e n&atilde;o permitindo a c&oacute;pia ou utiliza&ccedil;&atilde;o de nenhuma forma e meio, sem autoriza&ccedil;&atilde;o expressa e por escrita da mesma.</p>
+<p>A EMPRESA poder&aacute; em casos concretos permitir pontualmente exce&ccedil;&otilde;es a este direito, que ser&atilde;o claramente destacados no mesmo, com a forma e permiss&atilde;o de uso do conte&uacute;do protegido. Este direito &eacute; revog&aacute;vel e limitado as especifica&ccedil;&otilde;es de cada caso.</p>
+<h2>6.&nbsp;DAS OBRIGA&Ccedil;&Otilde;ES</h2>
+<p>O VISITANTE ao utilizar o website da EMPRESA, concorda integralmente em:</p>
+<ul>
+<li>De nenhuma forma ou meio realizar qualquer tipo de a&ccedil;&atilde;o que tente invadir, hacker, destruir ou prejudicar a estrutura do site, plataforma da EMPRESA ou de seus parceiros comerciais. Incluindo-se, mas n&atilde;o se limitando, ao envio de v&iacute;rus de computador, de ataques de DDOS, de acesso indevido por falhas da mesma ou quaisquer outras forma e meio.</li>
+<li>De n&atilde;o realizar divulga&ccedil;&atilde;o indevida nos coment&aacute;rios do site de conte&uacute;do de SPAM, empresas concorrentes, v&iacute;rus, conte&uacute;do que n&atilde;o possua direitos autorais ou quaisquer outros que n&atilde;o seja pertinente a discuss&atilde;o daquele texto, v&iacute;deo ou imagem.</li>
+<li>Da proibi&ccedil;&atilde;o em reproduzir qualquer conte&uacute;do do site ou plataforma sem autoriza&ccedil;&atilde;o expressa, podendo responder civil e criminalmente pelo mesmo.</li>
+<li>Com a Pol&iacute;tica de Privacidade do site, assim como tratamos os dados referentes ao cadastro e visita no site, podendo a qualquer momento e forma, requerer a exclus&atilde;o dos mesmos, atrav&eacute;s do formul&aacute;rio de contato.</li>
+</ul>
+<h2>7. DA MONETIZA&Ccedil;&Atilde;O E PUBLICIDADE</h2>
+<p>A EMPRESA pode alugar ou vender espa&ccedil;os publicit&aacute;rios na plataforma, ou no site, diretamente aos anunciantes, ou atrav&eacute;s de empresas especializadas com o Adsense (<a href="https://www.google.com/">Google</a>), Taboola ou outras plataformas especializadas como o&nbsp;<a href="https://eletrocriticas.com/">Eletro Cr&iacute;ticas.</a></p>
+<p>Essas publicidades n&atilde;o significam nenhuma forma de endosso ou responsabilidade pelos mesmos, ficando o VISITANTE respons&aacute;vel pelas compras, visitas, acessos ou quaisquer a&ccedil;&otilde;es referentes as estas empresas.</p>
+<p>Todas as propagandas no site ou plataforma ser&atilde;o claramente destacadas como publicidade, como forma de disclaimer da EMPRESA e de conhecimento do VISITANTE.</p>
+<p>Em casos de compra de produtos ou servi&ccedil;os, ser&aacute; poss&iacute;vel a devolu&ccedil;&atilde;o em at&eacute; 07 (sete) dias, conforme o C&oacute;digo de Defesa do Consumidor.</p>
+<p>Estes an&uacute;ncios podem ser selecionados pela empresa de publicidade automaticamente, conforme as visitas recentes do VISITANTE, assim como baseado no seu hist&oacute;rico de busca, conforme as pol&iacute;ticas de acesso da plataforma.</p>
+<h2>8.&nbsp;DOS TERMOS GERAIS</h2>
+<p>O Site ir&aacute; apresentar hiperlinks durante toda a sua navega&ccedil;&atilde;o, que podem levar diretamente para outra p&aacute;gina da EMPRESA ou para sites externos.</p>
+<p>Apesar da EMPRESA apenas criar links para sites externos de extrema confian&ccedil;a, caso o usu&aacute;rio acesse um site externo, a EMPRESA n&atilde;o tem nenhuma responsabilidade pelo meio, sendo uma mera indica&ccedil;&atilde;o de complementa&ccedil;&atilde;o de conte&uacute;do, ficando o mesmo respons&aacute;vel pelo acesso, assim como sobre quaisquer a&ccedil;&otilde;es que venham a realizar neste site.</p>
+<p>Em caso que ocorra eventuais conflitos judiciais entre o VISITANTE e a EMPRESA, o foro elegido para a devida a&ccedil;&atilde;o ser&aacute; o da comarca da Empresa, mesmo que haja outro mais privilegiado.</p>
+<p>Este Termo de uso &eacute; valido a partir de 30 de Junho de 2022.</p>
+<p>&nbsp;</p>
