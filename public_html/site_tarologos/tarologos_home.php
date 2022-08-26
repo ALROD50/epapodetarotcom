@@ -50,7 +50,7 @@
   <h2 style="margin-top:0px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;">Fale Com Um Tarólogo Online!</h2>
 </center>
 
-<div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center; margin:10px;border: solid #cb6a1d; color:#fff;">
+<div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center;border: none; color:#fff;">
   <center><h2>Como funciona?</h2></center>
   <div class="row">
     <div class="col-md-4">
