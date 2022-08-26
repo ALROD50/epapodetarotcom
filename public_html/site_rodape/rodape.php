@@ -47,12 +47,9 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 		</center>
 	</div>
 	
-	<hr>
-	
 	<div class="row" style="margin-bottom:0px;">
 		<center>
 			<img src="images/rodape/seguro.png" class="img-fluid"> <img src="images/rodape/seguro2.png" style="margin-right: 10px;" class="img-fluid"> <a href="https://www.sslshopper.com/ssl-checker.html#hostname=www.epapodetarot.com.br" target="_blank"><img src="images/rodape/seguranca.png" alt="" style="width: 276px;" class="img-fluid"></a> <a href="https://sitecheck.sucuri.net/results/www.epapodetarot.com.br" target="_blank"><img src="images/rodape/selo-sitechecksucuri.png" alt="" style="height: 50px;" class="img-fluid"></a>
-			<p style="color:#847a7a; margin-top:10px;">Desperte Sua Essência e Seja Feliz!</p>
 		</center>
 	</div>
 </footer>
