@@ -99,7 +99,7 @@ if(isset($_POST['envia'])){
         $emailMailer->Password = ""; 
         $emailMailer->From      = 'epapodetarot@gmail.com'; // Remetente
         $emailMailer->AddAddress( "epapodetarot@gmail.com", 'É Papo de Tarot'); // Destinatário
-        $emailMailer->AddBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia oculta
+        // $emailMailer->AddBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia oculta
         $emailMailer->FromName  = 'É Papo de Tarot'; // Seu nome
         $emailMailer->Subject   = 'Contato'; // Assunto
         $corpoMSG = '
