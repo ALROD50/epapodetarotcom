@@ -13,7 +13,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
 			<h2 class="vinho">Quem Somos</h2>
 			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="" style="" /></center>
-			<p>Quem é a idealizadora do É Papo de Tarot? Prazer, meu nome é Aline A. Peres, tenho 45 anos, sou publicitária e terapeuta, sou mãe de um casal de gatos lindos e fofos...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
+			<p>É Papo de Tarot é um sonho ultimamente, e movido por uma grande inspiração. Vontade de uma pessoa que já foi consulente e agora está em um papel de Taróloga. Nas minhas consultas...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
 		</div>
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
 			<h2 class="vinho">Institucional</h2>
