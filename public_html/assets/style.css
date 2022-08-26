@@ -335,6 +335,10 @@ body::-webkit-scrollbar-thumb:hover {
     color: #ea7a19;
 }
 
+.rosaclaro {
+    color: #c69e88 !important;
+}
+
 .sombratexto {
     text-shadow: 0px 2px 2px #000;
 }

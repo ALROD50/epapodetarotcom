@@ -24,7 +24,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
   <div class="col-md-2 d-none d-xl-block px-0">
     <div class="card">
       <div class="card-body px-2">
-        <h4 class="preto"><i class="fas fa-gem"></i> Comentários</h4>
+        <h4 class="preto">Comentários</h4>
         <hr>
         <?php
         //Estanciando dados dos depoimentos
@@ -54,11 +54,11 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
           $row = $executa33->rowCount();
           if ($row == 0) { $cliente_nome=""; }
           ?>
-          <h4 class="text-success mb-1 mt-1"><i class="far fa-star"></i> <?php echo $pontuacao; ?></h4>
+          <h4 class="text-success mb-1 mt-1"><i class="far fa-star vinho"></i> <?php echo $pontuacao; ?></h4>
 
           <p class="mb-1"><small class="text-muted"><em><?php echo $mensagem; ?></em></small></p>
           
-          <p class="mt-1"><span style="color:#FEB90A; font-size: 19px;"><?php echo @$tarologo_nome; ?></span></p>
+          <p class="mt-1"><span class="c69e88" style="color:#FEB90A; font-size: 19px;"><?php echo @$tarologo_nome; ?></span></p>
           <hr>
           <?php 
         }
