@@ -8,7 +8,8 @@ html, body{
 body {
     color: #fff;
     font-size: 15px;
-    background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
+    /*background: #1b2933 url('https://www.temploqsara.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;*/
+    background: #d9dcdc;
     background-size: 1920px 1169px;
     background-size: cover !important;
 }
@@ -17,8 +18,9 @@ body {
 }
 #clientes {
     overflow: hidden;
-    color: #820000;
-    background: url(https://www.epapodetarot.com.br/images/clientes.png) no-repeat;
+    color: #000;
+    /*background: url(https://www.temploqsara.com.br/images/clientes.png) no-repeat;*/
+    background: #ccc;
     width: 320px;
     height: 113px;
     padding-top: 20px;
@@ -64,13 +66,14 @@ textarea.form-control {
     height: 40px;
 }
 #hedchat {
-    padding: 20px;
+    padding: 10px;
     position: fixed; 
     top: 0px;
     width: 100%;
     height: 80px;
     z-index: 1;
-    background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
+    /*background: #1b2933 url('https://www.temploqsara.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;*/
+    background: #d9dcdc;
     background-size: 1920px 1169px;
     background-size: cover !important;
 }
@@ -135,7 +138,7 @@ h1 {
 }
 #frm-msg label textarea{
     width:750px;
-    height: 0px;
+    height: 0px
     border:1px solid #ccc;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
@@ -164,7 +167,7 @@ h1 {
     bottom: 70px;
     overflow: scroll;
     overflow-x: hidden;
-    background: rgba(0, 0, 0, 0.2);
+    background: #fff;
     color: #fff;
     height: 100%;
 }
@@ -174,15 +177,15 @@ h1 {
 }
 .me {
     text-align: left;
-    background: #2090BC;
-    color: #fff;
+    background: #d9e4e4;
+    color: #000;
     border-radius: 4px;
     display: table;
     margin-top: 5px;
 }
 .other {
     text-align: left;
-    background: #BF9328;
+    background: #5e78a7ba;
     color: #fff;
     border-radius: 4px;
     display: table;
@@ -204,7 +207,7 @@ h1 {
 }*/
 footer {
     /*background: #E8E8E8;*/
-    background: transparent;
+    background: #d9dcdc;
     position: absolute; 
     bottom: 0px;
     width: 100%;
