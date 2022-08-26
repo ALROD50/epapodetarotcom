@@ -72,7 +72,7 @@ textarea.form-control {
     width: 100%;
     height: 80px;
     z-index: 1;
-    /*background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;*/
+    background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
     background: #d9dcdc;
     background-size: 1920px 1169px;
     background-size: cover !important;
