@@ -44,11 +44,6 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 	<div class="row justify-content-center" style="margin-bottom:15px;">
 		<center>
 			<p><i class="fab fa-expeditedssl"></i> O site É Papo de Tarot usa técnologias de última geração na segurança e proteção de dados, com certificado SSL.</p>
-		</center>
-	</div>
-	
-	<div class="row justify-content-center" style="margin-bottom:0px;">
-		<center>
 			<p class="text-center"><img src="images/rodape/seguro.png" class="img-fluid"> <img src="images/rodape/seguro2.png" style="margin-right: 10px;" class="img-fluid"> <a href="https://www.sslshopper.com/ssl-checker.html#hostname=www.epapodetarot.com.br" target="_blank"><img src="images/rodape/seguranca.png" alt="" style="width: 276px;" class="img-fluid"></a> <a href="https://sitecheck.sucuri.net/results/www.epapodetarot.com.br" target="_blank"><img src="images/rodape/selo-sitechecksucuri.png" alt="" style="height: 50px;" class="img-fluid"></a></p>
 		</center>
 	</div>
