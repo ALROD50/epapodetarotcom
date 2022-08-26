@@ -132,7 +132,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         $sql = $pdo->query("SELECT * FROM atendimento WHERE id_tarologo='$id_tarologo2'");
         $numero_consultas = $sql->rowCount();
         ?>
-        <div id="tarologoshomeresultado" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 shadow" style="margin-bottom:15px;">
+        <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;">
           
           <!-- Foto, nome e oraculos -->
           <div style="background-image: url('images/bg_tarologo.png');">
@@ -237,7 +237,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         $sql = $pdo->query("SELECT * FROM atendimento WHERE id_tarologo='$id_tarologo2'");
         $numero_consultas = $sql->rowCount();
         ?>
-        <div id="tarologoshomeresultado" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 shadow" style="margin-bottom:15px;">
+        <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;">
           
           <!-- Foto, nome e oraculos -->
           <div style="background-image: url('images/bg_tarologo.png');">
@@ -341,7 +341,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         $sql = $pdo->query("SELECT * FROM atendimento WHERE id_tarologo='$id_tarologo2'");
         $numero_consultas = $sql->rowCount();
         ?>
-        <div id="tarologoshomeresultado" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 shadow" style="margin-bottom:15px;">
+        <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;">
           
           <!-- Foto, nome e oraculos -->
           <div style="background-image: url('images/bg_tarologo.png');">
