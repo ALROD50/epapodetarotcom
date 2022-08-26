@@ -154,22 +154,22 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 		                $PHPMailer->setLanguage('pt');
 		                $PHPMailer->CharSet  = "UTF-8";
 		                $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-		                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+		                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
 		                $PHPMailer->Host     = "mail.epapodetarot.com.br";  
 		                $PHPMailer->SMTPAuth = true;
 		                $PHPMailer->Port     = 587; // Usar 587 porta SMTP
-		                $PHPMailer->Username = "contato@epapodetarot.com.br"; 
+		                $PHPMailer->Username = "epapodetarot@gmail.com"; 
 		                $PHPMailer->Password = "AG!eo{wOQRHA";
-		                $PHPMailer->From     = "contato@epapodetarot.com.br"; // Remetente
+		                $PHPMailer->From     = "epapodetarot@gmail.com"; // Remetente
 		                $PHPMailer->FromName = "É Papo de Tarot"; // Seu nome
-		                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
+		                $PHPMailer->AddReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
 		                $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 		                // $PHPMailer->DKIM_domain = 'epapodetarot.com.br';
 						// $PHPMailer->DKIM_private = '/home/epapodetarotcom/public_html/area51/.htkeyprivate';
 						// $PHPMailer->DKIM_selector = '1484161502.novasystems'; //Prefix for the DKIM selector
 						// $PHPMailer->DKIM_passphrase = ''; //leave blank if no Passphrase
-						// $PHPMailer->DKIM_identity = "contato@epapodetarot.com.br";
-						$PHPMailer->AddBCC('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Cópia Oculta
+						// $PHPMailer->DKIM_identity = "epapodetarot@gmail.com";
+						$PHPMailer->AddBCC('epapodetarot@gmail.com', 'É Papo de Tarot'); // Cópia Oculta
 		                $PHPMailer->Subject = $msg_assunto; // Assunto
 		                $corpoMSG = $msg_msg;
 		                $PHPMailer->MsgHTML($corpoMSG);
@@ -250,21 +250,21 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 		            $PHPMailer->setLanguage('pt');
 		            $PHPMailer->CharSet  = "UTF-8";
 		            $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-		            $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+		            $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
 		            $PHPMailer->Host     ="mail.epapodetarot.com.br";  
 		            $PHPMailer->SMTPAuth =true;
 		            $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-		            $PHPMailer->Username ="contato@epapodetarot.com.br"; 
+		            $PHPMailer->Username ="epapodetarot@gmail.com"; 
 		            $PHPMailer->Password ="AG!eo{wOQRHA";
-		            $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+		            $PHPMailer->From     ="epapodetarot@gmail.com"; // Remetente
 		            $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
-		            $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
+		            $PHPMailer->AddReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
 		            $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 		            $PHPMailer->DKIM_domain = 'epapodetarot.com.br';
 					$PHPMailer->DKIM_private = '/home/epapodetarotcom/public_html/area51/.htkeyprivate';
 					$PHPMailer->DKIM_selector = '1484161502.novasystems'; //Prefix for the DKIM selector
 					$PHPMailer->DKIM_passphrase = ''; //leave blank if no Passphrase
-					$PHPMailer->DKIM_identity = "contato@epapodetarot.com.br";
+					$PHPMailer->DKIM_identity = "epapodetarot@gmail.com";
 		            $PHPMailer->Subject  = $msg_assunto; // Assunto
 		            $corpoMSG = $msg_msg;
 		            $PHPMailer->MsgHTML($corpoMSG);
@@ -342,21 +342,21 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 			            $PHPMailer->setLanguage('pt');
 			            $PHPMailer->CharSet  = "UTF-8";
 			            $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-			            $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+			            $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
 			            $PHPMailer->Host     ="mail.epapodetarot.com.br";  
 			            $PHPMailer->SMTPAuth =true;
 			            $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-			            $PHPMailer->Username ="contato@epapodetarot.com.br"; 
+			            $PHPMailer->Username ="epapodetarot@gmail.com"; 
 			            $PHPMailer->Password ="AG!eo{wOQRHA";
-			            $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+			            $PHPMailer->From     ="epapodetarot@gmail.com"; // Remetente
 			            $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
-			            $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
+			            $PHPMailer->AddReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
 			            $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 			            // $PHPMailer->DKIM_domain = 'epapodetarot.com.br';
 						// $PHPMailer->DKIM_private = '/home/epapodetarotcom/public_html/area51/.htkeyprivate';
 						// $PHPMailer->DKIM_selector = '1484161502.novasystems'; //Prefix for the DKIM selector
 						// $PHPMailer->DKIM_passphrase = ''; //leave blank if no Passphrase
-						// $PHPMailer->DKIM_identity = "contato@epapodetarot.com.br";
+						// $PHPMailer->DKIM_identity = "epapodetarot@gmail.com";
 			            $PHPMailer->Subject  = $msg_assunto; // Assunto
 			            $corpoMSG = $msg_msg;
 			            $PHPMailer->MsgHTML($corpoMSG);

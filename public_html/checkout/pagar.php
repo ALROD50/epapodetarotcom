@@ -931,7 +931,7 @@ require 'processa.php';
                             <p>3.  Clique no botão <b>Pagar</b>. </p>
                             <p>4.  Faça a transferência via internet ou indo até uma agência bancária, caso opte pelo depósito.</p>
                             <p>5.  Guarde seu comprovante. </p>
-                            <p>6.  Envie o comprovante no email <b><a href="mailto:contato@epapodetarot.com.br">contato@epapodetarot.com.br</a></b>.</p>
+                            <p>6.  Envie o comprovante no email <b><a href="mailto:epapodetarot@gmail.com">epapodetarot@gmail.com</a></b>.</p>
                             <p>7.  Pronto! Suas informações serão analisadas!</p>
                         </ul>
 

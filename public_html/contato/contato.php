@@ -91,14 +91,14 @@ if(isset($_POST['envia'])){
         $emailMailer->setLanguage('pt');
         $emailMailer->CharSet = "UTF-8";
         $emailMailer->IsHTML(true);
-        $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+        $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
         $emailMailer->Host     = "";  
-        $emailMailer->From     = "contato@epapodetarot.com.br";
+        $emailMailer->From     = "epapodetarot@gmail.com";
         $emailMailer->SMTPAuth = false; 
-        $emailMailer->Username = "contato@epapodetarot.com.br"; 
+        $emailMailer->Username = "epapodetarot@gmail.com"; 
         $emailMailer->Password = ""; 
-        $emailMailer->From      = 'contato@epapodetarot.com.br'; // Remetente
-        $emailMailer->AddAddress( "contato@epapodetarot.com.br", 'É Papo de Tarot'); // Destinatário
+        $emailMailer->From      = 'epapodetarot@gmail.com'; // Remetente
+        $emailMailer->AddAddress( "epapodetarot@gmail.com", 'É Papo de Tarot'); // Destinatário
         // $emailMailer->AddBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia oculta
         $emailMailer->FromName  = 'É Papo de Tarot'; // Seu nome
         $emailMailer->Subject   = 'Contato'; // Assunto
@@ -129,11 +129,11 @@ if(isset($_POST['envia'])){
 <div class="row">
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <p><img src="images/logo3.png" alt="É Papo de Tarot" style="max-width: 70%;"></p>
-        <p>Use o formulário ao lado para falar com o Tartot de Hórus.</p>
-        <p style="color: #000;"><i class="far fa-clock"></i> Seg. a Sex. das 10H às 22H</p>
-        <p style="color: #000; "><i class="fab fa-whatsapp"></i> (11) 9.4119-0306</p>
-        <p style="color: #000; "><i class="far fa-envelope"></i> contato@epapodetarot.com.br</p>
-        <p><i class="far fa-compass"></i> Rua Vergueiro, 1000 - Paraíso, São Paulo - SP, 01504-000</p>
+        <p>Use o formulário ao lado para falar conosco.</p>
+        <!-- <p style="color: #000;"><i class="far fa-clock"></i> Seg. a Sex. das 10H às 22H</p> -->
+        <!-- <p style="color: #000; "><i class="fab fa-whatsapp"></i> (11) 9.4119-0306</p> -->
+        <p style="color: #000; "><i class="far fa-envelope"></i> epapodetarot@gmail.com</p>
+        <!-- <p><i class="far fa-compass"></i> Rua Vergueiro, 1000 - Paraíso, São Paulo - SP, 01504-000</p> -->
     </div>
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <span class="small">(*) Preenchimento obrigatório.</span>
@@ -160,7 +160,6 @@ if(isset($_POST['envia'])){
                 <textarea name="mensagem" class="form-control"/></textarea>
             </div>
             <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="6LeO7OkUAAAAAHEfPoGmvH6VaNJa-RhLIGK4uVbA"></div>
                 <br>
                 <input class="btn btn-success" type="submit" name="envia" value="Enviar Mensagem"/>
             </div>

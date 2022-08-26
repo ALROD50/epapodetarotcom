@@ -781,7 +781,7 @@ if (@$_POST['Deposito'] == 'enviarDeposito'){
         <button type="button" class="close" data-dismiss="alert">×</button>
         <h1>Aguardando Pagamento!</h1>
         <p style="font-size:22px; color:#000;">Você iniciou este pagamento com depósito/transferência no <b><?php echo $banco.' | Valor R$ '.$itemAmount; ?></b></p>
-        <p style="font-size:18px;">Realize o depósito, guarde o comprovante, e envie os dados do comprovante no email: <b><a href="mailto:contato@epapodetarot.com.br">contato@epapodetarot.com.br</a></b> para completar seu pagamento.</p>
+        <p style="font-size:18px;">Realize o depósito, guarde o comprovante, e envie os dados do comprovante no email: <b><a href="mailto:epapodetarot@gmail.com">epapodetarot@gmail.com</a></b> para completar seu pagamento.</p>
         <p style="font-size:18px;">Após enviar o seu comprovante, suas informações serão analisadas, se o pagamento for entre bancos iguais, identificaremos na hora, se for DOC, ou depósito, identificaremos no dia útil seguinte, você será avisado por e-mail sobre a identificação do pagamento.</p>
         <p style="font-size:18px;">Obrigado!</p>
     </div>

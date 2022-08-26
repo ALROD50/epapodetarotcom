@@ -216,7 +216,7 @@ if (isset($_GET['pack'])) {
 				<br/>
 				<b>É Papo de Tarot</b> <br/>
 				Departamento Financeiro <br/>
-				contato@epapodetarot.com.br <br/>
+				epapodetarot@gmail.com <br/>
 				Site: www.epapodetarot.com.br <br/>
 			";
 			EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
@@ -288,7 +288,7 @@ if (isset($_GET['pack'])) {
 				<br/>
 				<b>É Papo de Tarot</b> <br/>
 				Departamento Financeiro <br/>
-				contato@epapodetarot.com.br <br/>
+				epapodetarot@gmail.com <br/>
 				Site: www.epapodetarot.com.br <br/>
 			";
 			EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);

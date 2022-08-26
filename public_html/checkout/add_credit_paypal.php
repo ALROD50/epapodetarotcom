@@ -26,7 +26,7 @@ if (@$ERRO == "ERRONOPAGAMENTO") {
     /*Configuramos os cabe?alhos do e-mail*/
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: contato@epapodetarot.com.br \r\n";
+    $headers .= "From: epapodetarot@gmail.com \r\n";
     /*Configuramos o conte?do do e-mail*/
     $conteudo = "<b>Erro:</b> $ErroCod <br>";
     /*Enviando o e-mail...*/

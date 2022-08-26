@@ -103,7 +103,7 @@ if(isset($_POST['notificationType']) && $_POST['notificationType'] == 'transacti
     /*Configuramos os cabe?alhos do e-mail*/
     $headers  = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";/*para o envio com formata??o HTML. Charset po ser utf-8 tamb?m*/
-    $headers .= "From: contato@epapodetarot.com.br \r\n";/*Para "seu email"*/
+    $headers .= "From: epapodetarot@gmail.com \r\n";/*Para "seu email"*/
     $headers .= "Bcc: logs@novasystems.com.br \r\n";
     /*Configuramos o conte?do do e-mail*/
     $conteudo  = "Olá $nome, o status da sua compra no site É Papo de Tarot foi atualizado.<br>";

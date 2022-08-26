@@ -137,15 +137,15 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
                 $PHPMailer->setLanguage('pt');
                 $PHPMailer->CharSet  = "UTF-8";
                 $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
                 $PHPMailer->Host     ="mail.epapodetarot.com.br";  
                 $PHPMailer->SMTPAuth =true;
                 $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-                $PHPMailer->Username ="contato@epapodetarot.com.br"; 
+                $PHPMailer->Username ="epapodetarot@gmail.com"; 
                 $PHPMailer->Password ="AG!eo{wOQRHA";
-                $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+                $PHPMailer->From     ="epapodetarot@gmail.com"; // Remetente
                 $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
-                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
+                $PHPMailer->AddReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
                 $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
                 //Campos abaixo são opcionais 
                 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -230,15 +230,15 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 	                $PHPMailer->setLanguage('pt');
 	                $PHPMailer->CharSet  = "UTF-8";
 	                $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
 	                $PHPMailer->Host     ="mail.epapodetarot.com.br";  
 	                $PHPMailer->SMTPAuth =true;
 	                $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-	                $PHPMailer->Username ="contato@epapodetarot.com.br"; 
+	                $PHPMailer->Username ="epapodetarot@gmail.com"; 
 	                $PHPMailer->Password ="AG!eo{wOQRHA";
-	                $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+	                $PHPMailer->From     ="epapodetarot@gmail.com"; // Remetente
 	                $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
-	                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
+	                $PHPMailer->AddReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
 	                $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 	                //Campos abaixo são opcionais 
 	                //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -290,15 +290,15 @@ while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC))
 	                $PHPMailer->setLanguage('pt');
 	                $PHPMailer->CharSet  = "UTF-8";
 	                $PHPMailer->IsHTML(true); // Define que o e-mail será enviado como HTML
-	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+	                $PHPMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
 	                $PHPMailer->Host     ="mail.epapodetarot.com.br";  
 	                $PHPMailer->SMTPAuth =true;
 	                $PHPMailer->Port     =587; //  Usar 587 porta SMTP
-	                $PHPMailer->Username ="contato@epapodetarot.com.br"; 
+	                $PHPMailer->Username ="epapodetarot@gmail.com"; 
 	                $PHPMailer->Password ="AG!eo{wOQRHA";
-	                $PHPMailer->From     ="contato@epapodetarot.com.br"; // Remetente
+	                $PHPMailer->From     ="epapodetarot@gmail.com"; // Remetente
 	                $PHPMailer->FromName ="É Papo de Tarot"; // Seu nome
-	                $PHPMailer->AddReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
+	                $PHPMailer->AddReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
 	                $PHPMailer->AddAddress($email_email, $email_nome); // Destinatário
 	                //Campos abaixo são opcionais 
 	                //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

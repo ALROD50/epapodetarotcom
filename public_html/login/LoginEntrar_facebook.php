@@ -173,8 +173,8 @@ if ($row_onlinex=="" OR $row_onlinex=="offline") {
 		            /*Configuramos os cabe?alhos do e-mail*/
 		            $headers  = "MIME-Version: 1.0 \r\n";
 		            $headers .= "Content-type: text/html; charset=utf-8 \r\n";
-		            $headers .= "From: contato@epapodetarot.com.br \r\n";
-		            $headers .= "Bcc: contato@epapodetarot.com.br \r\n";
+		            $headers .= "From: epapodetarot@gmail.com \r\n";
+		            $headers .= "Bcc: epapodetarot@gmail.com \r\n";
 
 		            /*Configuramos o conte?do do e-mail*/
 		            $conteudo  = "Obrigado por se registrar em nosso site, abaixo segue os seus dados de cadastro e login.<br/>";

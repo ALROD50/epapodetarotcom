@@ -65,13 +65,13 @@ if(isset($_POST['envia'])){
       $emailMailer->setLanguage('pt');
       $emailMailer->CharSet = "UTF-8";
       $emailMailer->IsHTML(true);
-      $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+      $emailMailer->AddCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
       $emailMailer->Host     = "";  
       $emailMailer->SMTPAuth = false; 
       $emailMailer->Username = ""; 
       $emailMailer->Password = ""; 
-      $emailMailer->From      = 'contato@epapodetarot.com.br'; // Remetente
-      $emailMailer->AddAddress( "contato@epapodetarot.com.br", 'É Papo de Tarot'); // Destinatário
+      $emailMailer->From      = 'epapodetarot@gmail.com'; // Remetente
+      $emailMailer->AddAddress( "epapodetarot@gmail.com", 'É Papo de Tarot'); // Destinatário
       // $emailMailer->AddBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia oculta
       $emailMailer->FromName  = 'É Papo de Tarot'; // Seu nome
       $emailMailer->Subject   = 'Trabalhe Conosco'; // Assunto
