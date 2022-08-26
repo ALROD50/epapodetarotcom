@@ -1,4 +1,4 @@
-<h1><i class="fas fa-ankh"></i> Quem Somos</h1>
+<h1>Quem Somos</h1>
 <hr>
 
 <p><b>É Papo de Tarot</b> é um sonho ultimamente, e movido por uma grande inspiração. Vontade de uma pessoa que já foi consulente e agora está em um papel de Taróloga.</p>
