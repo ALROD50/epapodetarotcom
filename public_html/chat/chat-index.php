@@ -203,12 +203,12 @@ if (!empty($_SESSION["cod_sala"])){
 
                     <p style="font-size: 13px; color:#3ac5e4; padding:3px;"><?php echo $especialidade_taro;?></p>
 
-                    <p style="color:#fff; margin: 0 0 0px;"><b>Tempo de Consulta:</b></p>
-                    <div id="clock1" style="color:#fff;"></div>
+                    <p style="color:#000; margin: 0 0 0px;"><b>Tempo de Consulta:</b></p>
+                    <div id="clock1" style="color:#000;"></div>
                     <script>setTimeout('getSecs()',1000);</script>
 
-                    <p style="color:#fff; margin: 0 0 0px;"><b>Tempo Restante:</b> 
-                    <div style="color:#fff;" id="tempoconsulta"></div></p>
+                    <p style="color:#000; margin: 0 0 0px;"><b>Tempo Restante:</b> 
+                    <div style="color:#000;" id="tempoconsulta"></div></p>
 
                     <?php if ($nivel == 'TAROLOGO') { ?>
                         <div id="clientes">
@@ -227,12 +227,12 @@ if (!empty($_SESSION["cod_sala"])){
         <footer class="" style="">
 
             <!-- Digitando -->
-            <div id="key" class="d-none" style="position:absolute; z-index:2; color:#fff;">
+            <div id="key" class="d-none" style="position:absolute; z-index:2; color:#000;">
                 <p style="margin:0 0 1px;"><img src="https://www.epapodetarot.com.br/images/crayons-01.gif" style="max-height: 21px;"> <?php echo $nome_digitando; ?> está digitando...</p>
             </div>
 
             <!-- Tempo para mobile -->
-            <div id="tempo_mobile" style="color:#fff;">
+            <div id="tempo_mobile" style="color:#000;">
                 <p style="margin: 0 0 5px;"> 
                     Tempo Restante:  <span id="tempoconsulta2"></span>
                     <video height="1" width="1" autoplay="" loop="" muted="" controls="">
@@ -251,7 +251,7 @@ if (!empty($_SESSION["cod_sala"])){
                 <input type="hidden" name="escreveu" id="escreveu" value="<?php echo $id_usuario_logado; ?>">
 
                 <div id="mensagem_texto" style="float:left; width:127px; padding-left: 15px; padding-top:6px;">
-                    <span style="margin-left:10px; color:#fff;">Mensagem</span>
+                    <span style="margin-left:10px; color:#000;">Mensagem</span>
                 </div>
 
                 <div  id="mensagem_textarea" style="width:50%; float:left; margin-right:20px;">
