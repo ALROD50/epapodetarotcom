@@ -25,13 +25,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 			<p><a href="blog" class=""> Blog</a></p>
 			<p><a href="faleconosco" class=""> Fale Conosco</a></p>
 		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-			<h2 class="vinho">Atendimento</h2>
-			<p><i class="far fa-clock "></i> Segunda a sábado: 9 às 22h, Domingos e feriados: 10 às 18h</p>
-			<p><i class="fab fa-whatsapp "></i> (11) 99424-5002</p>
-			<p><i class="far fa-envelope "></i> epapodetarot@gmail.com</p>
-		</div>
-		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-3">
 			<h2 class="vinho">Redes Sociais</h2>
 			<p><a href="https://www.facebook.com/epapodetarot/" target="_blank" title="Facebook É Papo de Tarot"><i class="fab fa-facebook-square fa-4x azul efeitodois"></i></a>
 			<a href="https://www.instagram.com/epapodetarot/" target="_blank" title="Instagram É Papo de Tarot"><i class="fab fa-instagram-square fa-4x instagram efeitodois"></i></a>
