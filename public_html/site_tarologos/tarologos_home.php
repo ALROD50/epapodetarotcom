@@ -415,5 +415,3 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
   }
   ?>
 </div>
-
-<div style="clear:both;"></div>
