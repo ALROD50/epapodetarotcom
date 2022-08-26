@@ -31,7 +31,7 @@ if ($row > 0){
   
   <div class="addthis_inline_share_toolbox" class="col-md-6"></div>
 
-  <h1 class="azul"><i class="fas fa-ankh"></i> <?php echo $nome; ?></h1>
+  <h1 class="vinho"><?php echo $nome; ?></h1>
 
   <p><span style="color: #753a4a; font-weight: bold;">Status:</span> <?php echo $online; ?></p>
 
@@ -51,13 +51,13 @@ if ($row > 0){
             <!-- Botão Avise-me Quando Disponível -->
             <form name="aviseme_envia" id="aviseme_envia" method="post" action="aviseme-quando-disponivel" style="margin-top:5px;">
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo; ?>" />
-              <button type="submit" name="envia" class="btn btn-info btn-lg" alt="Avise-me Quando Disponível" title="Avise-me Quando Disponível"><i class="fas fa-clock"></i> Avise-me Quando Disponível</button>
+              <button type="submit" name="envia" class="btn corpadrao2 btn-lg" alt="Avise-me Quando Disponível" title="Avise-me Quando Disponível"><i class="fas fa-clock"></i> Avise-me Quando Disponível</button>
               <p>Este tarólogo não está online no momento, clique no botão acima <b>Avise-me Quando Disponível</b> para ser avisado quando este tarólog voltar online. Desta forma quando tarólogo voltar ao trabalho você será avisado por e-mail e poderá fazer sua consulta com ele.</p>
             </form>
             <!-- Botão Consulta por Email -->
             <form name="consultarporemail" id="consultarporemail" method="post" action="consultarporemail" style="float:left; margin-right:8px;">
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo; ?>" />
-              <button type="submit" name="envia" class="btn btn-info btn-lg" alt="Consultar por E-mail" title="Consultar por E-mail"><i class="fas fa-envelope"></i> Consultar por E-mail</button>
+              <button type="submit" name="envia" class="btn corpadrao2 btn-lg" alt="Consultar por E-mail" title="Consultar por E-mail"><i class="fas fa-envelope"></i> Consultar por E-mail</button>
             </form>
             <?php
             
@@ -102,11 +102,9 @@ if ($row > 0){
     </figure>
   </div>
 
-  <p><i class="fas fa-address-card"></i> <?php echo $nome; ?> é representada(o) por:</p>
-
   <?php echo $infos; ?>
 
-  <p style="font-size:30px; color: #9e3434;"><b><i class="fas fa-star-and-crescent"></i> ORÁCULOS</b>:</p>
+  <p style="font-size:30px; color: #9e3434;"><b>ORÁCULOS</b>:</p>
   
   <p><?php echo $especialidades;?></p>
 
@@ -119,7 +117,7 @@ if ($row > 0){
 
   <hr style="border: 1px solid #ccc;">
 
-    <h1 class="text-success">DEPOIMENTOS DE CLIENTES</h1>
+    <h1 class="rosaclaro">DEPOIMENTOS DE CLIENTES</h1>
 
     <?php
 
