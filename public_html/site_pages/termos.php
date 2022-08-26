@@ -1,8 +1,6 @@
 <h1><i class="fas fa-file-signature"></i> Termos de Uso e Política de Privacidade</h1>
 <hr>
 
-<p>&nbsp;</p>
-<h1>Termos e condi&ccedil;&otilde;es de uso do site ou blog</h1>
 <p>Seja bem-vindo ao nosso site. Leia com bastante aten&ccedil;&atilde;o todos os termos abaixo.</p>
 <p>Este documento, e todo o conte&uacute;do do site &eacute; oferecido por &Eacute; papo de Tarot, neste termo representado apenas por &ldquo;EMPRESA&rdquo;, que regulamenta todos os direitos e obriga&ccedil;&otilde;es com todos que acessam o site, denominado neste termo como &ldquo;VISITANTE&rdquo;, reguardado todos os direitos previstos na legisla&ccedil;&atilde;o, trazem as cl&aacute;usulas abaixo como requisito para acesso e visita do mesmo, situado no endere&ccedil;o http://www.epapodetarot.com.br.</p>
 <p>A perman&ecirc;ncia no website implica-se automaticamente na leitura e aceita&ccedil;&atilde;o t&aacute;cita do presente termos de uso a seguir. Este termo foi atualizado pela &uacute;ltima vez em 14 de setembro de 2021.</p>
