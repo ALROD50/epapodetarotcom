@@ -214,7 +214,7 @@ if (!empty($_SESSION["cod_sala"])){
 			}
 		</script>
 		<!-- Logomarca -->
-		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#000000;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width:200px;height:50px;"/></div></a>
+		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#fff;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width:200px;height:50px;"/></div></a>
 		<!-- Renderiza o Chat -->
 		<div id="meet"></div>
 		<!-- Rodapé -->
