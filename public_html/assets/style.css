@@ -547,11 +547,11 @@ main {
     z-index: 99999;
     margin: 10px;
     font-size: 40px;
-    color: #2090BC;
+    color: #6c1010;
 }
 
 #subir :hover {
-    color: #6c1010;
+    color: #fff;
     cursor: pointer;
 }
 
