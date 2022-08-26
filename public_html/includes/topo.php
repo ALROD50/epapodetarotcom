@@ -333,6 +333,7 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
       // Sim - Estou Online! ---------------------------------------------------------
       // Volta o tarólogo automáticamente para a página de aguardando chamadas
       // Recarrega a página quando o tarólgo estiver fora da página minha-conta
+      echo $URLCATEGORIA;
       if ($URLSESSAO!='minha-conta') {
         ?>
         <script>
