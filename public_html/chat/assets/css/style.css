@@ -8,7 +8,7 @@ html, body{
 body {
     color: #fff;
     font-size: 15px;
-    background: #1b2933 url('https://www.temploqsara.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;
+    background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;
     background: #d9dcdc;
     background-size: 1920px 1169px;
     background-size: cover !important;
@@ -19,7 +19,7 @@ body {
 #clientes {
     overflow: hidden;
     color: #000;
-    /*background: url(https://www.temploqsara.com.br/images/clientes.png) no-repeat;*/
+    /*background: url(https://www.epapodetarot.com.br/images/clientes.png) no-repeat;*/
     background: #ccc;
     width: 320px;
     height: 113px;
@@ -72,7 +72,7 @@ textarea.form-control {
     width: 100%;
     height: 80px;
     z-index: 1;
-    /*background: #1b2933 url('https://www.temploqsara.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;*/
+    /*background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.jpg') 50% 0 fixed no-repeat !important;*/
     background: #d9dcdc;
     background-size: 1920px 1169px;
     background-size: cover !important;
