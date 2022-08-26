@@ -47,7 +47,7 @@
 </div>
 
 <center>
-  <h2 style="margin-top:0px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;">Fale Com Um Tarólogo Online!</h2>
+  <h2 style="margin-top:0px;" class="vinho">Fale Com Um Tarólogo Online!</h2>
 </center>
 
 <div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center;border: none; color:#fff;">
@@ -77,7 +77,7 @@
 <hr>
 
 <center>
-  <h2 style="margin-top:15px;color: #0e0c0c;text-shadow: 0px 2px 4px #da8345;">Profissionais</h2>
+  <h2 style="margin-top:0px;" class="vinho">Profissionais</h2>
   <p>Nossas consultas são feitas online e temos diversos especialistas na sua área. Pode ser útil para você não ter que aguardar para agendar.</p>
 </center>
 
