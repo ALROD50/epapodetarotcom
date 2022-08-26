@@ -32,7 +32,7 @@
       <li class="nav-item">
         <a class="nav-link menulink" href="comprar-consulta">COMPRAR</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link menulink" href="loja">LOJA</a>
       </li>
       <li class="nav-item">
@@ -43,11 +43,11 @@
       </li>
       <li class="nav-item">
         <a class="nav-link menulink" href="loja-item/reiki/reiki">REIKI</a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link menulink" href="blog">BLOG</a>
       </li>
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle menulink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           CATEGORIAS
         </a>
@@ -57,7 +57,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">ASTROLOGIA</a>
         </div>
-      </li>
+      </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0 d-none">
         <input class="form-control mr-sm-2 d-none d-xl-block col-xl-12" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
