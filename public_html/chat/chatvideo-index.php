@@ -73,7 +73,7 @@ if (!empty($_SESSION["cod_sala"])){
 		<style>
 			/* Pc */
 			body {
-				color: #fff;
+				color: #000;
 				font-size: 15px;
 				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
@@ -89,7 +89,7 @@ if (!empty($_SESSION["cod_sala"])){
 				height: 800px; 
 			}
 			.title {
-				color: #fff;
+				color: #000;
 				text-shadow: 0 0 6px rgba(255,144,0,0.5);
 			}
 			.text-success {
@@ -98,7 +98,7 @@ if (!empty($_SESSION["cod_sala"])){
 			/* Celular */
 			@media (max-width: 999px) {
 				body {
-					color: #fff;
+					color: #000;
 					font-size: 15px;
 					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 					background-size: 1920px 1169px;
@@ -106,11 +106,11 @@ if (!empty($_SESSION["cod_sala"])){
 				}
 				#hedchat {
 					padding: 5px;
-					background: #ffffff; /* Old browsers */
-					background: -moz-linear-gradient(top, #ffffff 0%, #e8e8e8 57%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(top, #ffffff 0%,#e8e8e8 57%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(to bottom, #ffffff 0%,#e8e8e8 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+					background: #000000; /* Old browsers */
+					background: -moz-linear-gradient(top, #000000 0%, #e8e8e8 57%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top, #000000 0%,#e8e8e8 57%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom, #000000 0%,#e8e8e8 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
 				}
 			}
 			@media (max-width: 1025px) { 
