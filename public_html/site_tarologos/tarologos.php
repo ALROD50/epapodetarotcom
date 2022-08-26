@@ -160,7 +160,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <!-- Botão Ver Perfil -->
             <div class="mb-2">
               <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
-              <div class="card badge-dark">
+              <div class="card badge-dark corpadrao2 corpadrao2">
                 <center>
                   <h3 class="pt-2">
                     <?php if ($videochamada=="SIM") { ?>
@@ -265,7 +265,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <!-- Botão Ver Perfil -->
             <div class="mb-2">
               <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
-              <div class="card badge-dark">
+              <div class="card badge-dark corpadrao2 corpadrao2">
                 <center>
                   <h3 class="pt-2">
                     <?php if ($videochamada=="SIM") { ?>
@@ -369,7 +369,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <!-- Botão Ver Perfil -->
             <div class="mb-2">
               <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
-              <div class="card badge-dark">
+              <div class="card badge-dark corpadrao2 corpadrao2">
                 <center>
                   <h3 class="pt-2">
                     <?php if ($videochamada=="SIM") { ?>
