@@ -138,7 +138,7 @@ if($erros >= 1) {
 <form name="tarologos" method="post" action="" class="form-inline" enctype="multipart/form-data">
 
 <div style="margin:10px; display:inline-block;">
-    Foto:&nbsp;&nbsp;
+    Foto (ideal 840x840):&nbsp;&nbsp;
     <input type="file" name="arquivo" class="form-control"/>
 </div>
 

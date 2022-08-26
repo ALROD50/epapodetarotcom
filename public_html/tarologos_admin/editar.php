@@ -147,7 +147,7 @@ if (isset($_POST["salva"])) {
 <input type="hidden" name="id" value="<?php echo $id; ?>"/>
 
 <div style="margin:10px; display:inline-block;">
-    Enviar foto:&nbsp;&nbsp;
+    Enviar foto (ideal 840x840):&nbsp;&nbsp;
     <input type="file" name="arquivo" class="form-control"/>
 </div>
 
