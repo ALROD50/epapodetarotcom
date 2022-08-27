@@ -82,7 +82,7 @@ if(isset($_POST['envia'])){
 }
 ?>
 
-<h1><i class="fas fa-key"></i> Lembrar Senha</h1>
+<h1>Lembrar Senha</h1>
 <hr>
 
 <form name="Lembrar_senha" method="post" action="" class="form-horizontal">
