@@ -6,9 +6,9 @@ date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario pa
 ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
-// echo '<div class="card card-body" style="position:absolute; font-size:42px; z-index:99999;">';
-// echo 'Pesquisando se existe chamada de atendimento: tempo '.time().'</br>'; 
-// echo '</div>';
+echo '<div class="card card-body" style="position:absolute; font-size:42px; z-index:99999;">';
+echo 'Pesquisando se existe chamada de atendimento: tempo '.time().'</br>'; 
+echo '</div>';
 $id_tarologo = $_POST['id_tarologo'];
 
 //Verificar no banco "chamada_consulta" a última chamada do cliente.

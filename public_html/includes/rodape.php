@@ -2452,7 +2452,6 @@
 				}
 				function MostraAviso(data) {
 					// Recebe o retorno da escuta
-					console.log('MostraAviso');
 					data = JSON.parse(data);
 					var id_tarologo_chamada = data.id_tarologo;
 					var tipo = data.tipo;
