@@ -57,7 +57,7 @@ if (!empty($_SESSION["cod_sala"])){
 		$nome_chat = $nome_tarologo;
 	}
 	// Token gen DropBox
-	// require __DIR__ . '/dropbox/helper.php';
+	require __DIR__ . '/dropbox/helper.php';
     ?>
 	<!DOCTYPE html>
 	<html lang="pt-br">
@@ -175,17 +175,42 @@ if (!empty($_SESSION["cod_sala"])){
 				const options = {
 					roomName: '<?= $cod_sala; ?>',
 					lang: 'pt-BR',
-					
+					configOverwrite: { 
+						startWithAudioMuted: false,
+						startWithVideoMuted: false,
+						disableDeepLinking: true,
+						rejoinPageEnabled: false,
+						prejoinPageEnabled: false,
+						requireDisplayName: false,
+						displayName: false,
+						disableProfile: false,
+						// meetingPasswordEnabled: false,
+					},
+					interfaceConfigOverwrite: { 
+						SHOW_WATERMARK_FOR_GUESTS: false,
+						SHOW_JITSI_WATERMARK: false,
+						SHOW_BRAND_WATERMARK: false,
+						HIDE_DEEP_LINKING_LOGO: true,
+						SHOW_DEEP_LINKING_IMAGE: false,
+						// SHOW_POWERED_BY: false,
+						SHOW_PROMOTIONAL_CLOSE_PAGE: false,
+						DEFAULT_REMOTE_DISPLAY_NAME: '<?=$nome_chat; ?>',
+						FILM_STRIP_MAX_HEIGHT: 2,
+						TOOLBAR_BUTTONS: [ 
+							'microphone', 'camera', 'videoquality', 'tileview',
+							//'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen', 'fodeviceselection', 'hangup', 'profile', 'recording', 'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand', 'videoquality', 'filmstrip', 'feedback', 'stats', 'shortcuts', 'tileview'
+						],
+					},
 					parentNode: document.querySelector('#meet')
 				};
 				const api = new JitsiMeetExternalAPI(domain, options);
 				// Inicia a gração automática do videochamada
-				// api.addListener('videoConferenceJoined', (e) => {
-				// 	api.startRecording({
-				// 		mode: 'file',
-				// 		dropboxToken: '<?= get_dropbox_token() ?>',
-				// 	});
-				// });
+				api.addListener('videoConferenceJoined', (e) => {
+					api.startRecording({
+						mode: 'file',
+						dropboxToken: '<?= get_dropbox_token() ?>',
+					});
+				});
 			}
 		</script>
 		<!-- Logomarca -->
