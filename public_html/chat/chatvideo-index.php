@@ -4,9 +4,6 @@ ini_set('display_errors',1); // Força o PHP a mostrar os erros.
 ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
 header('Content-Type: text/html; charset=utf-8');
-
-
-
 if (!empty($_SESSION["cod_sala"])){
     require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
     $pdo = conexao();
@@ -60,13 +57,13 @@ if (!empty($_SESSION["cod_sala"])){
 		$nome_chat = $nome_tarologo;
 	}
 	// Token gen DropBox
-	// require __DIR__ . '/dropbox/helper.php';
+	require __DIR__ . '/dropbox/helper.php';
     ?>
 	<!DOCTYPE html>
 	<html lang="pt-br">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>Vídeo Chamada Tarot de Hórus</title>
+		<title>Vídeo Chamada É Papo de Tarot</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="../scripts/bootstrap3/css/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="../scripts/bootstrap3/css/bootstrap-theme.min.css"/>
@@ -78,13 +75,13 @@ if (!empty($_SESSION["cod_sala"])){
 			body {
 				color: #fff;
 				font-size: 15px;
-				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
 				background-size: cover !important;
 			}
 			#hedchat {
 				padding: 15px;
-				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+				background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
 				background-size: cover !important;
 			}
@@ -103,7 +100,7 @@ if (!empty($_SESSION["cod_sala"])){
 				body {
 					color: #fff;
 					font-size: 15px;
-					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.webp') 50% 0 fixed no-repeat !important;
+					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 					background-size: 1920px 1169px;
 					background-size: cover !important;
 				}
@@ -208,21 +205,21 @@ if (!empty($_SESSION["cod_sala"])){
 				};
 				const api = new JitsiMeetExternalAPI(domain, options);
 				// Inicia a gração automática do videochamada
-				// api.addListener('videoConferenceJoined', (e) => {
-				// 	api.startRecording({
-				// 		mode: 'file',
-				// 		dropboxToken: '',
-				// 	});
-				// });
+				api.addListener('videoConferenceJoined', (e) => {
+					api.startRecording({
+						mode: 'file',
+						dropboxToken: '<?= get_dropbox_token() ?>',
+					});
+				});
 			}
 		</script>
 		<!-- Logomarca -->
-		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#000000;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.webp" style="width:200px;height:50px;"/></div></a>
+		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#fff;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width:200px;height:50px;"/></div></a>
 		<!-- Renderiza o Chat -->
 		<div id="meet"></div>
 		<!-- Rodapé -->
 		<div style="margin: 15px 0px 5px 0px;">
-			<center><p>Copyright © Tarot de Horus - Todos os Direitos Reservados - Desenvolvimento: Agência Nova Systems - Marketing Digital.</p></center>
+			<center><p>Copyright © É Papo de Tarot - Todos os Direitos Reservados - Desenvolvimento: Agência Nova Systems - Marketing Digital.</p></center>
 		</div>
 		<!-- Mask -->
 		<script type="text/javascript" src="../scripts/mask/jquery.mask.js"></script>
@@ -259,7 +256,7 @@ if (!empty($_SESSION["cod_sala"])){
 					var cod_sala = "<?php echo $cod_sala; ?>";
 					function CreateSocketWrapper(){
 						console.log("cod_sala 1 = " + cod_sala);
-						var conn = new WebSocket('wss://epapodetarot.com.br/wss2/wss2/NNN');
+						var conn = new WebSocket('wss://epapodetarot.com.br/wss87/NS');
 						// Abre Conexão
 						conn.onopen = function(e) {
 							console.log("Connection established!!");
