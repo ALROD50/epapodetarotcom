@@ -60,7 +60,7 @@ if (!empty($_SESSION["cod_sala"])){
 		$nome_chat = $nome_tarologo;
 	}
 	// Token gen DropBox
-	require __DIR__ . '/dropbox/helper.php';
+	// require __DIR__ . '/dropbox/helper.php';
     ?>
 	<!DOCTYPE html>
 	<html lang="pt-br">
@@ -208,12 +208,12 @@ if (!empty($_SESSION["cod_sala"])){
 				};
 				const api = new JitsiMeetExternalAPI(domain, options);
 				// Inicia a gração automática do videochamada
-				api.addListener('videoConferenceJoined', (e) => {
-					api.startRecording({
-						mode: 'file',
-						dropboxToken: '<?= get_dropbox_token() ?>',
-					});
-				});
+				// api.addListener('videoConferenceJoined', (e) => {
+				// 	api.startRecording({
+				// 		mode: 'file',
+				// 		dropboxToken: '<?= get_dropbox_token() ?>',
+				// 	});
+				// });
 			}
 		</script>
 		<!-- Logomarca -->
