@@ -38,7 +38,7 @@ if ($URLCATEGORIA!="") {
 if (isset($_GET['pack'])) {
 	
 	$pacote = $_GET['pack'];
-	$ref    = uniqid(NULL, true);
+	$ref    = uniqid("", true);
 	$verificaDuploRegistro = $pdo->query("SELECT * FROM controle WHERE cod_pagamento='$ref' ");
 	$row2 = $verificaDuploRegistro->rowCount();
 	$consultamensal  = "nao";
