@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<div class="well muted">
-			<h3 class="text-success">Clientes Que Mais Compraram no Templo Qsara</h3>
+			<h3 class="text-success">Clientes Que Mais Compraram no Site</h3>
 			<hr>
 			<p>Abra um chamado no departamento de Atualizações da Nova Systems para saber como adiquerir este recurso.</p>
 			<?php
