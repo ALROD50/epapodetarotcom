@@ -26,3 +26,4 @@ const api = new JitsiMeetExternalAPI(domain, options);
 		// });
 	}
 </script>
+<div id="meet"></div>
