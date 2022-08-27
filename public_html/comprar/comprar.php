@@ -1,5 +1,5 @@
 <div class="card card-body pb-0 pt-2">
-	<h2 class="text-success "><span class="preto">Comprar Consulta</span></h2>
+	<h2 class="text-success "><i class="fas fa-shopping-basket"></i> <span class="preto">Comprar Consulta</span></h2>
 </div>
 <hr>
 
@@ -24,7 +24,7 @@ if ($URLCATEGORIA!="") {
 			    	<img src="tarologos_admin/fotos/<?php echo $logo; ?>"  class="rounded img-fluid" alt="<?php echo $nome;?>" title="<?php echo $nome;?>"/>
 				</div>	
 				<h2 class="card-title preto">Consulta Com o tarólogo: </h2>
-		    	<h3 class="card-title azul"><i class="fas fa-ankh"></i> <?php echo $nome; ?></h3>
+		    	<h3 class="card-title azul"><?php echo $nome; ?></h3>
 				<p><?php echo $especialidades; ?></br>
 				<?php echo $descricaocurta; ?></p>
 			</div>
