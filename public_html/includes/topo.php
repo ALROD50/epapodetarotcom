@@ -344,11 +344,11 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
       }
       if ($URLSUBCATEGORIA!='resumo.php') {
         ?>
-        <div class="alert alert-danger" role="alert">
+        <!-- <div class="alert alert-danger" role="alert">
           <button type="button" class="close" data-dismiss="alert">×</button>
           <h2>Informação!</h2>
           <p>Não esqueça de voltar para a página <a href="minha-conta/?pg=area_tarologos/resumo.php"><b>Resumo</b></a> para aguardar atendimentos... Lá é o local correto para aguardar chamadas.</p>
-        </div>
+        </div> -->
         <?php
       }
   }
