@@ -69,7 +69,7 @@ if (!empty($_SESSION["cod_sala"])){
 		<link rel="stylesheet" type="text/css" href="../scripts/bootstrap3/css/bootstrap-theme.min.css"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src='assets/js/jitsi_api.js'></script>
+		<script src='https://www.epapodetarot.com.br/area51/external_api.js'></script>
 		<style>
 			/* Pc */
 			body {
@@ -175,7 +175,6 @@ if (!empty($_SESSION["cod_sala"])){
 				const options = {
 					roomName: '<?= $cod_sala; ?>',
 					lang: 'pt-BR',
-					
 					parentNode: document.querySelector('#meet')
 				};
 				const api = new JitsiMeetExternalAPI(domain, options);
