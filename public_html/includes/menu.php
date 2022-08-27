@@ -14,8 +14,8 @@
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				<a class="dropdown-item"href="minha-conta/?pg=config/edit.php">CONFIG</a>
 				<hr>
-				<a class="dropdown-item"href="minha-conta/?pg=area51/area51.php">AREA 51</a>
-				<a class="dropdown-item"href="minha-conta/?pg=area51/hangar18.php">HANGAR 18</a>
+				<!-- <a class="dropdown-item"href="minha-conta/?pg=area51/area51.php">AREA 51</a>
+				<a class="dropdown-item"href="minha-conta/?pg=area51/hangar18.php">HANGAR 18</a> -->
 			</div>
 		</li>
 		<li class="nav-item">
