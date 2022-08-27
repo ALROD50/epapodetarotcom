@@ -549,7 +549,7 @@ if ($row > 0) {
 			<center><p><i class="fas fa-cat"></i> Ops...</p></center>
 			<center><b>Nenhum produto foi adicionado no carrinho ainda...</b></center>
 			<br>
-			<a button href='loja' name="ContinuarComprando" class="btn btn-lg btn-block btn-success"><i class="fas fa-store"></i> CONTINUAR COMPRANDO</button></a>
+			<a button disabled href='loja' name="ContinuarComprando" class="btn btn-lg btn-block btn-success"><i class="fas fa-store"></i> CONTINUAR COMPRANDO</button></a>
 		</div>
 	</div>
 	<?php 
