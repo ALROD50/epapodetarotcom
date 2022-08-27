@@ -1,4 +1,4 @@
-<h1><i class="fas fa-file-signature"></i> Termos de Uso e Política de Privacidade</h1>
+<h1>Termos de Uso e Política de Privacidade</h1>
 <hr>
 
 <p>Seja bem-vindo ao nosso site. Leia com bastante aten&ccedil;&atilde;o todos os termos abaixo.</p>

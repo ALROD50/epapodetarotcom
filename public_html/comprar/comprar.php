@@ -307,7 +307,6 @@ if (isset($_GET['pack'])) {
   <b><i class="fas fa-mouse-pointer"></i> Como deseja fazer sua consulta?</b>
 </div>
 
-<img src="images/Arrows_down_animated.gif" style="max-width: 55px;">
 <h3><span id="escolhaumaopcao">Escolha uma opção:</span></h3>
 
 <form action="" id="FormComprarConsulta" nome="FormComprarConsulta" class="needs-validation" novalidate>
