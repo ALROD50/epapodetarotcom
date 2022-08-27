@@ -478,13 +478,11 @@ if($row_onlinex=="offline" OR $row_onlinex=="") {
 	    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 offset-xl-4 offset-lg-4">
 	        <center>
 	        	<p><?php echo $usuario_nome; ?>, clique no botão abaixo:</p>
-	        	<img src="images/Arrows_down_animated.gif" style="max-width: 55px;">
 	        	<button onclick='confirmacao();' type="button" class="btn btn-lg btn-success btn-block text-white shadow" name="confirmarcompraconsulta" id="confirmarcompraconsulta"><i class="fas fa-check-circle"></i> PAGAR E CONSULTAR</button>
 	    		<p><i class="fas fa-angle-up"></i></br>
 			    <figure class="figure">
 			      	<!-- <a href="tarologo/Deusa-Anuket"><img class="rounded img-fluid" title="Tarologa Patricia" src="../tarologos_admin/fotoreal/patty2.jpg" alt="Tarologa Patricia"></a> -->
 			      	<figcaption class="figure-caption mt-2">
-						<h3 class="text-black"><i class="fas fa-om"></i> Boa Consulta, Gratidão!</h3>
 			      	</figcaption>
 			    </figure>
 	        </center>
