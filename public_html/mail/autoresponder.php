@@ -10,14 +10,15 @@ function ConfirmaExclusao($id) {
 </script>
 
 <h3 class="text-success">Autoresponder - Campanhas</h3>
+<hr>
+<p>Abra um chamado no departamento de Atualizações da Nova Systems para saber como adiquerir este recurso.</p>
 
-<a class="btn btn-light" href="minha-conta/?pg=mail/camp_criar.php"><i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Nova Campanha</a>
-<a class="btn btn-light" href="minha-conta/?pg=mail/email_add.php"><i class="fas fa-envelope"></i> Adicionar E-mail</a>
-<a class="btn btn-light" href="minha-conta/?pg=mail/msg_criar.php"><i class="fas fa-pencil-alt"></i> Nova Mensagem</a>
-<a class="btn btn-light" href="minha-conta/?pg=mail/msg_listar.php"><i class="glyphicon glyphicon-align-left"></i> Lista de Mensagens</a>
-<a class="btn btn-light" href="minha-conta/?pg=mail/padrao_listar.php"><i class="glyphicon glyphicon-bookmark"></i> Mensagem Padrão</a>
-<div class="pull-right"><a class="btn btn-danger" href="https://www.epapodetarot.com.br/mail/cron.php" target="_blank"><i class="glyphicon glyphicon-play-circle icon-white"></i> Executar Cron</a></div>
-
+<button class="btn btn-light" disabled="" href="minha-conta/?pg=mail/camp_criar.php"><i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Nova Campanha</button>
+<button class="btn btn-light" disabled="" href="minha-conta/?pg=mail/email_add.php"><i class="fas fa-envelope"></i> Adicionar E-mail</button>
+<button class="btn btn-light" disabled="" href="minha-conta/?pg=mail/msg_criar.php"><i class="fas fa-pencil-alt"></i> Nova Mensagem</button>
+<button class="btn btn-light" disabled="" href="minha-conta/?pg=mail/msg_listar.php"><i class="glyphicon glyphicon-align-left"></i> Lista de Mensagens</button>
+<button class="btn btn-light" disabled="" href="minha-conta/?pg=mail/padrao_listar.php"><i class="glyphicon glyphicon-bookmark"></i> Mensagem Padrão</button>
+<div class="pull-right"><button class="btn btn-danger" disabled="" href="https://www.temploqsara.com.br/mail/cron.php" target="_blank"><i class="glyphicon glyphicon-play-circle icon-white"></i> Executar Cron</button></div>
 <p></p>
 
 <p><b>Progressivo</b> - Não repete a mensagem enviada. Envia uma mensagem de cada vez na ordem do ciclo.</p>
