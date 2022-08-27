@@ -339,6 +339,14 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
           setTimeout(function(){
             document.location.href="https://www.epapodetarot.com.br/minha-conta/?msgi=Você foi redirecionado automáticamente para a página principal onde deve aguardar os atendimentos.";
           }, 10000); // Executa depois 10 segundos
+
+
+          $.post('https://www.epapodetarot.com.br/area_tarologos/inicia_chat.php',
+          {
+            id_tarologo : 'meuid'
+          }, function(retorno){
+            $("#verifica_chamada_cliente_tarologo").html(retorno);
+          });
         </script>
         <?php
       }
