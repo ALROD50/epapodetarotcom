@@ -1,9 +1,0 @@
-{
-    "require": {
-        "stevenmaguire/oauth2-dropbox": "^3.1",
-        "bcosca/fatfree-core": "^3.8"
-    },
-    "autoload": {
-        "files": ["helpers.php"]
-    }
-}
