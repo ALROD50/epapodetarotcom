@@ -9,14 +9,8 @@
         <li class="nav-item ">
 			<a class="nav-link menulink" href="minha-conta"><i class="fas fa-home text-white"></i><span class="sr-only"></span></a>
 		</li>
-		<li class="nav-item dropdown active">
-			<a class="nav-link dropdown-toggle menulink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONFIG</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item"href="minha-conta/?pg=config/edit.php">CONFIG</a>
-				<hr>
-				<!-- <a class="dropdown-item"href="minha-conta/?pg=area51/area51.php">AREA 51</a>
-				<a class="dropdown-item"href="minha-conta/?pg=area51/hangar18.php">HANGAR 18</a> -->
-			</div>
+		<li class="nav-item">
+			<a class="nav-link menulink" href="minha-conta/?pg=config/edit.php">CONFIG</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link menulink" href="minha-conta/?pg=usuarios/usuarios.php">ADMIN</a>
