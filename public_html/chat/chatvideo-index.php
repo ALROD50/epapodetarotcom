@@ -179,13 +179,7 @@ if (!empty($_SESSION["cod_sala"])){
 					parentNode: document.querySelector('#meet')
 				};
 				const api = new JitsiMeetExternalAPI(domain, options);
-				// Inicia a gração automática do videochamada
-				// api.addListener('videoConferenceJoined', (e) => {
-				// 	api.startRecording({
-				// 		mode: 'file',
-				// 		dropboxToken: '',
-				// 	});
-				// });
+
 			}
 		</script>
 		<!-- Logomarca -->
