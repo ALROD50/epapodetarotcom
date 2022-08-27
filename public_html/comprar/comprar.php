@@ -152,7 +152,7 @@ if (isset($_GET['pack'])) {
         	
         	for ($i = 0; $i < 12; $i++) {
 
-			    $ref            = uniqid(NULL, true);
+			    $ref            = uniqid("", true);
 			    $cod            = Codificador::Codifica("$usuario_id, $ref");
 			    $url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
 
