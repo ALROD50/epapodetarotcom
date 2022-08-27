@@ -1,5 +1,5 @@
 <div class="card card-body pb-0 pt-2">
-	<h2 class="text-success "><i class="fas fa-shopping-basket"></i> <span class="preto">Comprar Consulta</span></h2>
+	<h2 class="text-success "><span class="preto">Comprar Consulta</span></h2>
 </div>
 <hr>
 
