@@ -2,7 +2,7 @@
 $nomeDaSala = "23455";
 // $nomeDaSala = "789";
 ?>
-<script src='https://www.epapodetarot.com.br/area51/external_api.js'></script>
+<script src='assets/js/jitsi_api.js'></script>
 <style>html, body, #meet { height: 800px;}</style>
 <script type="text/javascript">
 	window.onload = () => {
