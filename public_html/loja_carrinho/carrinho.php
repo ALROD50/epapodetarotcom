@@ -152,11 +152,10 @@ if ($row > 0) {
 					    </div>
 
 					    <div class="card bg-light mb-3 mt-3 shadow col-md-12">
-					        <div class="card-header"><h2 class="mb-0 titlecriarnovaconta"><i class="fas fa-user-plus"></i> Criar Nova Conta</h2></div>
+					        <div class="card-header"><h2 class="mb-0 titlecriarnovaconta">Criar Nova Conta</h2></div>
 					        <div class="card-body">
 					          <center>
 					            <h5 class="card-title">Ainda não tem uma conta?</h5>
-					            <p class="card-text mb-3"><i class="fas fa-laugh"></i> É muito fácil, vamos Lá!</p>
 					          </center>
 					          <form name="CadastroForm" id="CadastroForm" method="post" action="" class="form-horizontal" autocomplete="off">
 					            <input type="hidden" id="token" name="token">
