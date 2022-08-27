@@ -2452,14 +2452,10 @@
 				}
 				function MostraAviso(data) {
 					// Recebe o retorno da escuta
-					console.log('MostraAviso');
 					data = JSON.parse(data);
 					var id_tarologo_chamada = data.id_tarologo;
 					var tipo = data.tipo;
 					// Se tiver chamada para o meu ID, mostra o aviso ao tarólogo
-					console.log(id_tarologo_chamada);
-					console.log(meuid);
-					console.log(tipo);
 					if ((id_tarologo_chamada == meuid) && (tipo == 'iniciachat')) {
 						// Verificar no banco "chamada_consulta", se existir, mostra mensagem de cliente chamando
 						var intervalo = setInterval(function() {
