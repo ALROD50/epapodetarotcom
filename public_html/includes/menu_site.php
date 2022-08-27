@@ -30,10 +30,10 @@
         <a class="nav-link menulink" href="perguntas-frequentes">COMO FUNCIONA?</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link menulink" href="comprar-consulta">COMPRAR</a>
+        <a class="nav-link menulink" href="registre-se">CADASTRE-SE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link menulink" href="registre-se">CADASTRE-SE</a>
+        <a class="nav-link menulink" href="comprar-consulta">COMPRAR</a>
       </li>
       <li class="nav-item">
         <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
