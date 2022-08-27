@@ -354,11 +354,3 @@ if($row_onlinex!="offline" OR $row_onlinex!="") {
   }
 }
 ?>
-<script>
-  $.post('https://www.epapodetarot.com.br/area_tarologos/inicia_chat.php',
-  {
-    id_tarologo : 'meuid'
-  }, function(retorno){
-    $("#verifica_chamada_cliente_tarologo").html(retorno);
-  });
-</script>
