@@ -211,7 +211,7 @@ if (!empty($_SESSION["cod_sala"])){
 				// api.addListener('videoConferenceJoined', (e) => {
 				// 	api.startRecording({
 				// 		mode: 'file',
-				// 		dropboxToken: '<?= get_dropbox_token() ?>',
+				// 		dropboxToken: '<?= //get_dropbox_token() ?>',
 				// 	});
 				// });
 			}
