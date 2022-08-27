@@ -26,6 +26,4 @@ $nomeDaSala = "23455";
 		// });
 	}
 </script>
-<a href="https://www.epapodetarot.com.br/minha-conta/?pg=area51/area51.php"><div id="logojitsi" style="background:#000000;width: 205px;height: 55px;position: relative;top: 74px; border-radius: 6px 6px 6px 6px;padding: 2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width: 200px;height: 50px;"/></div></a>
 <div id="meet"></div>
-<!-- 'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen', 'fodeviceselection', 'hangup', 'profile', 'recording', 'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand', 'videoquality', 'filmstrip', 'feedback', 'stats', 'shortcuts', 'tileview' -->
