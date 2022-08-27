@@ -11,31 +11,6 @@ $nomeDaSala = "23455";
 		const options = {
 			roomName: '<?= $nomeDaSala; ?>',
 			lang: 'pt-BR',
-			configOverwrite: { 
-				startWithAudioMuted: false,
-				startWithVideoMuted: false,
-				disableDeepLinking: true,
-				rejoinPageEnabled: false,
-				prejoinPageEnabled: false,
-				requireDisplayName: false,
-				displayName: false,
-				disableProfile: false,
-				// meetingPasswordEnabled: false,
-			},
-			interfaceConfigOverwrite: { 
-				SHOW_WATERMARK_FOR_GUESTS: false,
-				SHOW_JITSI_WATERMARK: false,
-				SHOW_BRAND_WATERMARK: false,
-				HIDE_DEEP_LINKING_LOGO: true,
-				SHOW_DEEP_LINKING_IMAGE: false,
-				// SHOW_POWERED_BY: false,
-				SHOW_PROMOTIONAL_CLOSE_PAGE: false,
-				DEFAULT_REMOTE_DISPLAY_NAME: 'Tarólogo',
-				FILM_STRIP_MAX_HEIGHT: 2,
-				TOOLBAR_BUTTONS: [ 
-					'microphone', 'camera', 'videoquality', 'tileview'
-				],
-			},
 			parentNode: document.querySelector('#meet')
 		};
 		const api = new JitsiMeetExternalAPI(domain, options);
