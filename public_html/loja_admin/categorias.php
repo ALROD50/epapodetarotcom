@@ -10,7 +10,9 @@ function ConfirmaExclusao($id) {
 </script>
 <h3 class="text-success">Categorias da Loja</h3>
 <hr>
-<a button class="btn btn-primary" href="minha-conta/?pg=loja_admin/categoria_criar.php"><i class="fas fa-user-plus"></i> Criar Nova Categoria</button></a>
+<p>Abra um chamado no departamento de Atualizações da Nova Systems para saber como adiquerir este recurso.</p>
+
+<button class="btn btn-primary" disabled="" href="minha-conta/?pg=loja_admin/categoria_criar.php"><i class="fas fa-user-plus"></i> Criar Nova Categoria</button>
 
 <?php
 $sql = $pdo->query("SELECT * FROM loja_categorias"); 
@@ -47,8 +49,8 @@ if ($row > 0) {
   </div>             
 <?php
 
-}else{
+} else {
   $msge="Nenhum resultado encontrado...";
   MsgErro ($msge);
-  }
+}
 ?>
