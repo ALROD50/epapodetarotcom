@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #sizelogo {
-    width: 300px;
+    width: 380px;
 }
 
 @media (max-width: 1025px) {

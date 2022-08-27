@@ -30,6 +30,18 @@
         <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link menulink" href="comprar-consulta">COMPRAR</a>
       </li>
       <!-- <li class="nav-item">
