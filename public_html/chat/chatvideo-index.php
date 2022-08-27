@@ -6,14 +6,14 @@ $nomeDaSala = "23455";
 <style>html, body, #meet { height: 800px;}</style>
 <script type="text/javascript">
 	window.onload = () => {
-		// const domain = 'meet.jit.si/someroomname#config.subject="CodigoNomeDaSala"';
 		const domain = 'meet.jit.si';
-		const options = {
-			roomName: '<?= $nomeDaSala; ?>',
-			lang: 'pt-BR',
-			parentNode: document.querySelector('#meet')
-		};
-		const api = new JitsiMeetExternalAPI(domain, options);
+const options = {
+    roomName: 'PickAnAppropriateMeetingNameHere',
+    width: 700,
+    height: 700,
+    parentNode: document.querySelector('#meet')
+};
+const api = new JitsiMeetExternalAPI(domain, options);
 		
 		// api.addEventListener('videoConferenceStart', () => {
 		// 	api.executeCommand('startRecording', {
