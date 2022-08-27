@@ -10,7 +10,9 @@ function ConfirmaExclusao($id) {
 </script>
 <h3 class="text-success">Produtos</h3>
 <hr>
-<a button class="btn btn-primary" style="" href="minha-conta/?pg=loja_admin/cadastrar_produtos.php"><i class="glyphicon glyphicon-plus"></i> Cadastrar Novo Produto</button></a>
+<p>Abra um chamado no departamento de Atualizações da Nova Systems para saber como adiquerir este recurso.</p>
+
+<button class="btn btn-primary" disabled="" style="" href="minha-conta/?pg=loja_admin/cadastrar_produtos.php"><i class="glyphicon glyphicon-plus"></i> Cadastrar Novo Produto</button>
 
 <?php include "filtro.php"; ?>
 
