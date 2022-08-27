@@ -3,4 +3,4 @@
 
 <p>Essa sessão foi desenvolvida com a intenção de fornecer informações importantes sobre o uso do site, para manter nossa equipe sempre o mais atualizada possível, sinta-se a vontade para consultar essa página sempre que necessário.</p>
 
-<p><a href="minha-conta/?pg=area_tarologos/faqs/videochamadas.php"><i class="far fa-arrow-alt-circle-right"></i> <b>Novidade!</b> Instruções sobre o uso das Videochamadas.</a></p>
+<p><a href="minha-conta/?pg=area_tarologos/faqs/videochamadas.php"><i class="far fa-arrow-alt-circle-right"></i> Instruções sobre o uso das Videochamadas.</a></p>
