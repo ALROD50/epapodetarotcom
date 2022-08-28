@@ -11,8 +11,8 @@ use League\OAuth2\Client\Token\AccessToken;
 
 class DropboxService
 {
-    const APP_ID = 'mt3k5g56doxytwn';
-    const APP_SECRET = '3mbf682luybopke';
+    const APP_ID = 'hmr3ysx6fjpubja';
+    const APP_SECRET = 'v0nf722avhftkmg';
     const APP_FILE = DROPBOXBASEPATH . '/files/dropbox-oauth.json';
     protected $accessToken;
 
