@@ -126,17 +126,17 @@ if (!empty($_SESSION["cod_sala"])){
 			}
 			@media (max-width: 426px) { 
 				#logovideo {
-					top: 124px !important;
+					top: 89px !important;
 				}
 			}
 			@media (max-width: 376px) { 
 				#logovideo {
-					top: 124px !important;
+					top: 89px !important;
 				}
 			}
 			@media (max-width: 321px) { 
 				#logovideo {
-					top: 124px !important;
+					top: 89px !important;
 				}
 			}
 		</style>
@@ -215,7 +215,7 @@ if (!empty($_SESSION["cod_sala"])){
 			}
 		</script>
 		<!-- Logomarca -->
-		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#fff;width:205px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width:200px;height:50px;"/></div></a>
+		<a href="https://www.epapodetarot.com.br/chat/chatvideo-index.php?room=<?=$cod_sala?>"><div id="logovideo" style="background:#fff;width:106px;height:53px;position:absolute;top:88px; border-radius:6px 6px 6px 6px;padding:2px;padding-left: 14px;"><img src="https://www.epapodetarot.com.br/images/Logo-Site.fw.png" style="width:200px;height:50px;"/></div></a>
 		<!-- Renderiza o Chat -->
 		<div id="meet"></div>
 		<!-- Rodapé -->
