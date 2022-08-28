@@ -9,7 +9,7 @@ require __DIR__ . '/vendor/autoload.php';
 $f3 = \Base::instance();
 
 ###     START CONFIG    ###
-$f3->set('ENV.APP_URL', 'https://dropbox.local');
+$f3->set('ENV.APP_URL', '/home/epapodetarotcom/public_html/chat/dropbox/dropbox-login/');
 $f3->set('UI', 'app/views/');
 $f3->set('LOGS', 'logs/');
 $f3->set('DEBUG', 3);
