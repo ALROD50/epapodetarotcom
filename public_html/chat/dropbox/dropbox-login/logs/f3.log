@@ -1,0 +1,864 @@
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] League\OAuth2\Client\Provider\Exception\IdentityProviderException Object
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [message:protected] => invalid_client: Invalid client_id or client_secret
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [string:Exception:private] =>
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [code:protected] => 400
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file:protected] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/stevenmaguire/oauth2-dropbox/src/Provider/Dropbox.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line:protected] => 77
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [trace:Exception:private] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line] => 628
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [function] => checkResponse
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [class] => Stevenmaguire\OAuth2\Client\Provider\Dropbox
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [1] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line] => 537
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [function] => getParsedResponse
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [2] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/app/controllers/AuthController.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line] => 52
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [function] => getAccessToken
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [3] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line] => 1984
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [function] => processGenerate
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [class] => AuthController
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [4] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line] => 1783
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [function] => call
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [5] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/index.php
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [line] => 28
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [function] => run
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [previous:Exception:private] =>
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [response:protected] => GuzzleHttp\Psr7\Response Object
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [reasonPhrase:GuzzleHttp\Psr7\Response:private] => Bad Request
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [statusCode:GuzzleHttp\Psr7\Response:private] => 400
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [headers:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [Content-Security-Policy] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => sandbox allow-forms allow-scripts
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [Content-Type] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => application/json
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [Accept-Encoding] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => identity,gzip
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [Date] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => Sat, 27 Aug 2022 18:56:57 GMT
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [Server] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => envoy
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [Content-Length] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => 63
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [X-Dropbox-Response-Origin] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => far_remote
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [X-Dropbox-Request-Id] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [0] => 110cdd46223c48b9b80785d28b22b226
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [headerNames:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [content-security-policy] => Content-Security-Policy
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [content-type] => Content-Type
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [accept-encoding] => Accept-Encoding
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [date] => Date
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [server] => Server
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [content-length] => Content-Length
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [x-dropbox-response-origin] => X-Dropbox-Response-Origin
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [x-dropbox-request-id] => X-Dropbox-Request-Id
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [protocol:GuzzleHttp\Psr7\Response:private] => 1.1
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Response:private] => GuzzleHttp\Psr7\Stream Object
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #8
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [size:GuzzleHttp\Psr7\Stream:private] => 63
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [readable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [writable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:56:57 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] League\OAuth2\Client\Provider\Exception\IdentityProviderException Object
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [message:protected] => invalid_client: Invalid client_id or client_secret
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [string:Exception:private] =>
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [code:protected] => 400
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file:protected] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/stevenmaguire/oauth2-dropbox/src/Provider/Dropbox.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line:protected] => 77
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [trace:Exception:private] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line] => 628
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [function] => checkResponse
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [class] => Stevenmaguire\OAuth2\Client\Provider\Dropbox
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [1] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line] => 537
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [function] => getParsedResponse
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [2] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/app/controllers/AuthController.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line] => 52
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [function] => getAccessToken
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [3] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line] => 1984
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [function] => processGenerate
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [class] => AuthController
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [4] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line] => 1783
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [function] => call
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [5] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/index.php
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [line] => 28
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [function] => run
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [previous:Exception:private] =>
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [response:protected] => GuzzleHttp\Psr7\Response Object
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [reasonPhrase:GuzzleHttp\Psr7\Response:private] => Bad Request
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [statusCode:GuzzleHttp\Psr7\Response:private] => 400
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [headers:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [Content-Security-Policy] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => sandbox allow-forms allow-scripts
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [Content-Type] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => application/json
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [Accept-Encoding] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => identity,gzip
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [Date] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => Sat, 27 Aug 2022 18:58:04 GMT
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [Server] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => envoy
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [Content-Length] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => 63
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [X-Dropbox-Response-Origin] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => far_remote
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [X-Dropbox-Request-Id] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [0] => 35c412d9e4ae4e01aa2f03e27aaed9f7
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [headerNames:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [content-security-policy] => Content-Security-Policy
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [content-type] => Content-Type
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [accept-encoding] => Accept-Encoding
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [date] => Date
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [server] => Server
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [content-length] => Content-Length
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [x-dropbox-response-origin] => X-Dropbox-Response-Origin
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [x-dropbox-request-id] => X-Dropbox-Request-Id
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [protocol:GuzzleHttp\Psr7\Response:private] => 1.1
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Response:private] => GuzzleHttp\Psr7\Stream Object
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #7
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [size:GuzzleHttp\Psr7\Stream:private] => 63
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [readable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [writable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:58:05 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] League\OAuth2\Client\Provider\Exception\IdentityProviderException Object
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [message:protected] => invalid_client: Invalid client_id or client_secret
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [string:Exception:private] =>
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [code:protected] => 400
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file:protected] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/stevenmaguire/oauth2-dropbox/src/Provider/Dropbox.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line:protected] => 77
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [trace:Exception:private] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line] => 628
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [function] => checkResponse
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [class] => Stevenmaguire\OAuth2\Client\Provider\Dropbox
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [1] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line] => 537
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [function] => getParsedResponse
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [2] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/app/controllers/AuthController.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line] => 52
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [function] => getAccessToken
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [3] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line] => 1984
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [function] => processGenerate
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [class] => AuthController
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [4] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line] => 1783
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [function] => call
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [5] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/index.php
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [line] => 28
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [function] => run
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [previous:Exception:private] =>
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [response:protected] => GuzzleHttp\Psr7\Response Object
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [reasonPhrase:GuzzleHttp\Psr7\Response:private] => Bad Request
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [statusCode:GuzzleHttp\Psr7\Response:private] => 400
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [headers:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [Content-Security-Policy] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => sandbox allow-forms allow-scripts
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [Content-Type] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => application/json
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [Accept-Encoding] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => identity,gzip
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [Date] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => Sat, 27 Aug 2022 18:59:45 GMT
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [Server] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => envoy
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [Content-Length] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => 63
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [X-Dropbox-Response-Origin] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => far_remote
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [X-Dropbox-Request-Id] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [0] => 42dd75e8decd41149f712e7f350e7a5c
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [headerNames:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [content-security-policy] => Content-Security-Policy
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [content-type] => Content-Type
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [accept-encoding] => Accept-Encoding
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [date] => Date
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [server] => Server
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [content-length] => Content-Length
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [x-dropbox-response-origin] => X-Dropbox-Response-Origin
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [x-dropbox-request-id] => X-Dropbox-Request-Id
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [protocol:GuzzleHttp\Psr7\Response:private] => 1.1
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Response:private] => GuzzleHttp\Psr7\Stream Object
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #7
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [size:GuzzleHttp\Psr7\Stream:private] => 63
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [readable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [writable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:45 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] League\OAuth2\Client\Provider\Exception\IdentityProviderException Object
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [message:protected] => invalid_client: Invalid client_id or client_secret
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [string:Exception:private] =>
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [code:protected] => 400
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file:protected] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/stevenmaguire/oauth2-dropbox/src/Provider/Dropbox.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line:protected] => 77
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [trace:Exception:private] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line] => 628
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [function] => checkResponse
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [class] => Stevenmaguire\OAuth2\Client\Provider\Dropbox
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [1] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line] => 537
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [function] => getParsedResponse
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [2] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/app/controllers/AuthController.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line] => 52
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [function] => getAccessToken
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [3] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line] => 1984
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [function] => processGenerate
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [class] => AuthController
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [4] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line] => 1783
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [function] => call
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [5] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/index.php
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [line] => 28
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [function] => run
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [previous:Exception:private] =>
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [response:protected] => GuzzleHttp\Psr7\Response Object
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [reasonPhrase:GuzzleHttp\Psr7\Response:private] => Bad Request
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [statusCode:GuzzleHttp\Psr7\Response:private] => 400
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [headers:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [Content-Security-Policy] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => sandbox allow-forms allow-scripts
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [Content-Type] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => application/json
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [Accept-Encoding] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => identity,gzip
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [Date] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => Sat, 27 Aug 2022 18:59:49 GMT
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [Server] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => envoy
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [Content-Length] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => 63
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [X-Dropbox-Response-Origin] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => far_remote
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [X-Dropbox-Request-Id] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [0] => c205220ff9504d00a246ca7ab81432fc
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [headerNames:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [content-security-policy] => Content-Security-Policy
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [content-type] => Content-Type
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [accept-encoding] => Accept-Encoding
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [date] => Date
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [server] => Server
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [content-length] => Content-Length
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [x-dropbox-response-origin] => X-Dropbox-Response-Origin
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [x-dropbox-request-id] => X-Dropbox-Request-Id
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [protocol:GuzzleHttp\Psr7\Response:private] => 1.1
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Response:private] => GuzzleHttp\Psr7\Stream Object
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #7
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [size:GuzzleHttp\Psr7\Stream:private] => 63
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [readable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [writable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 15:59:50 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] League\OAuth2\Client\Provider\Exception\IdentityProviderException Object
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [message:protected] => invalid_client: Invalid client_id or client_secret
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [string:Exception:private] =>
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [code:protected] => 400
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file:protected] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/stevenmaguire/oauth2-dropbox/src/Provider/Dropbox.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line:protected] => 77
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [trace:Exception:private] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line] => 628
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [function] => checkResponse
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [class] => Stevenmaguire\OAuth2\Client\Provider\Dropbox
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [1] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line] => 537
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [function] => getParsedResponse
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [2] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/app/controllers/AuthController.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line] => 52
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [function] => getAccessToken
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [3] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line] => 1984
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [function] => processGenerate
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [class] => AuthController
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [4] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line] => 1783
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [function] => call
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [5] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/index.php
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [line] => 28
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [function] => run
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [previous:Exception:private] =>
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [response:protected] => GuzzleHttp\Psr7\Response Object
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [reasonPhrase:GuzzleHttp\Psr7\Response:private] => Bad Request
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [statusCode:GuzzleHttp\Psr7\Response:private] => 400
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [headers:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [Content-Security-Policy] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => sandbox allow-forms allow-scripts
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [Content-Type] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => application/json
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [Accept-Encoding] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => identity,gzip
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [Date] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => Sat, 27 Aug 2022 19:01:03 GMT
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [Server] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => envoy
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [Content-Length] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => 63
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [X-Dropbox-Response-Origin] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => far_remote
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [X-Dropbox-Request-Id] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [0] => 0d6778d097a24e6b9d9a79dda8ee3759
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [headerNames:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [content-security-policy] => Content-Security-Policy
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [content-type] => Content-Type
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [accept-encoding] => Accept-Encoding
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [date] => Date
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [server] => Server
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [content-length] => Content-Length
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [x-dropbox-response-origin] => X-Dropbox-Response-Origin
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [x-dropbox-request-id] => X-Dropbox-Request-Id
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [protocol:GuzzleHttp\Psr7\Response:private] => 1.1
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Response:private] => GuzzleHttp\Psr7\Stream Object
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #8
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [size:GuzzleHttp\Psr7\Stream:private] => 63
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [readable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [writable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:01:04 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] League\OAuth2\Client\Provider\Exception\IdentityProviderException Object
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [message:protected] => invalid_client: Invalid client_id or client_secret
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [string:Exception:private] =>
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [code:protected] => 400
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file:protected] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/stevenmaguire/oauth2-dropbox/src/Provider/Dropbox.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line:protected] => 77
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [trace:Exception:private] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line] => 628
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [function] => checkResponse
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [class] => Stevenmaguire\OAuth2\Client\Provider\Dropbox
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [1] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/league/oauth2-client/src/Provider/AbstractProvider.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line] => 537
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [function] => getParsedResponse
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [2] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/app/controllers/AuthController.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line] => 52
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [function] => getAccessToken
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [class] => League\OAuth2\Client\Provider\AbstractProvider
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [3] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line] => 1984
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [function] => processGenerate
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [class] => AuthController
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [4] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/vendor/bcosca/fatfree-core/base.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line] => 1783
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [function] => call
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [5] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [file] => /home/wesley/Projetos/alexandre-rodrigues/dropbox-login/index.php
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [line] => 28
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [function] => run
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [class] => Base
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [type] => ->
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [previous:Exception:private] =>
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [response:protected] => GuzzleHttp\Psr7\Response Object
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [reasonPhrase:GuzzleHttp\Psr7\Response:private] => Bad Request
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [statusCode:GuzzleHttp\Psr7\Response:private] => 400
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [headers:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [Content-Security-Policy] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => sandbox allow-forms allow-scripts
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [Content-Type] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => application/json
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [Accept-Encoding] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => identity,gzip
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [Date] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => Sat, 27 Aug 2022 19:03:42 GMT
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [Server] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => envoy
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [Content-Length] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => 63
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [X-Dropbox-Response-Origin] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => far_remote
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [X-Dropbox-Request-Id] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [0] => f0fb3d6be3b344b3a1785421302e24ce
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [headerNames:GuzzleHttp\Psr7\Response:private] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [content-security-policy] => Content-Security-Policy
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [content-type] => Content-Type
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [accept-encoding] => Accept-Encoding
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [date] => Date
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [server] => Server
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [content-length] => Content-Length
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [x-dropbox-response-origin] => X-Dropbox-Response-Origin
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [x-dropbox-request-id] => X-Dropbox-Request-Id
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [protocol:GuzzleHttp\Psr7\Response:private] => 1.1
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Response:private] => GuzzleHttp\Psr7\Stream Object
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #8
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [size:GuzzleHttp\Psr7\Stream:private] => 63
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [readable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [writable:GuzzleHttp\Psr7\Stream:private] => 1
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] (
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] 
+Sat, 27 Aug 2022 16:03:42 -0300 [127.0.0.1] )
