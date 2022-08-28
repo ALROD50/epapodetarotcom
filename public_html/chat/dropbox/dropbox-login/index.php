@@ -24,5 +24,4 @@ $f3->route('POST @generate: /generate', 'AuthController->processGenerate');
 
 
 ###     END CONFIG    ###
-
 $f3->run();
