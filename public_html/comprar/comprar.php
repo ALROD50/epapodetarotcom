@@ -365,16 +365,6 @@ if (isset($_GET['pack'])) {
 			  <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input" value="6">
 			  <label class="custom-control-label" for="customRadio6" id="focuCompra6"><i class="fas fa-clock"></i> 150 Minutos = R$ 225,00</label>
 			</div>
-			<?php
-			if ($usuario_nivel=="ADMIN") {
-				?>
-				<div class="custom-control custom-radio">
-					<input type="radio" id="customRadio50" name="customRadio" class="custom-control-input" value="50">
-					<label class="custom-control-label" for="customRadio50" id="focuCompra50"><i class="fas fa-clock"></i> 1 Minuto = R$ 00,01</label>
-				</div>
-				<?php
-			}
-			?>
 		</div>
 		<div class="tab-pane fade show <?php if ($URLCATEGORIA=='chatmensal'){echo 'active';}?>" id="chatmensal" role="tabpanel" aria-labelledby="chatmensal-tab">
 	  		<p>Valor da Consulta via Chat: R$ 1,50 o Minuto.</br>
