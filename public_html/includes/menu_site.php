@@ -57,6 +57,9 @@
         <a class="nav-link menulink" href="blog">BLOG</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link menulink" href="https://dottovip.com.br/epapodetarot/">AGENDAMENTO</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link menulink" href="faleconosco">FALE CONOSCO</a>
       </li>
       <!-- <li class="nav-item dropdown">
