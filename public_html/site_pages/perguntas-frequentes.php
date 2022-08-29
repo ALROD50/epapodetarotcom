@@ -17,7 +17,7 @@
 
 <h3 class="vinho">Quais formas de Pagamento são aceitas?</h3>
 
-<p>Trabalhamos com Pix, Boletos e Cartão de Crédito, aceitamos várias bandeiras.</p>
+<p>Trabalhamos com Boletos e Cartão de Crédito, aceitamos várias bandeiras.</p>
 
 <h3 class="vinho">É seguro realizar um pagamento?</h3>
 
