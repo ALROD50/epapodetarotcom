@@ -4,8 +4,8 @@ $executax = $pdo->query("SELECT * FROM controle WHERE status='Em análise' AND m
 while ($dadossx= $executax->fetch(PDO::FETCH_ASSOC)) { 
       
     $reference=$dadossx['cod_pagamento'];
-    $email = 'senhorxssj58@hotmail.com';
-    $token = 'E01DC7CA3B454E6C9D081B165D8A9412';
+    $email = 'epapodetarot@gmail.com';
+    $token = 'a6cd16a0-d451-41e7-8833-135eba83283393f726d44f12bb84fa9d253499f058b8d9a1-8336-4660-afe4-3b8faa3c4f44';
     $reference = $reference;
     $curl = 'https://ws.pagseguro.uol.com.br/v2/transactions?email='.$email.'&token='.$token.'&reference='.$reference;
 

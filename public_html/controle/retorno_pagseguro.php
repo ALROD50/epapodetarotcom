@@ -3,13 +3,13 @@ if(isset($_POST['notificationType']) && $_POST['notificationType'] == 'transacti
     //Todo resto do código iremos inserir aqui.
 
     //Produção
-    $email = 'senhorxssj58@hotmail.com';
-    $token = 'E01DC7CA3B454E6C9D081B165D8A9412';
+    $email = 'epapodetarot@gmail.com';
+    $token = 'a6cd16a0-d451-41e7-8833-135eba83283393f726d44f12bb84fa9d253499f058b8d9a1-8336-4660-afe4-3b8faa3c4f44';
     $transactionCod = $_POST['notificationCode'];
     $url = 'https://ws.pagseguro.uol.com.br/v3/transactions/notifications/' . $transactionCod . '?email=' . $email . '&token=' . $token;
 
     //Teste
-    // $email = 'senhorxssj58@hotmail.com';
+    // $email = 'epapodetarot@gmail.com';
     // $token = 'F5D7DB75D6DD4D6C99D46B365D7E8C84';
     // $transactionCod = $_POST['notificationCode'];
     // $url = 'https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/notifications/' . $transactionCod . '?email=' . $email . '&token=' . $token;
