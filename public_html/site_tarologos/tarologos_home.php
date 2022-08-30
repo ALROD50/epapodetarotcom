@@ -55,20 +55,20 @@
   <div class="row">
     <div class="col-md-4">
       <center>
-        <p><a href="/registre-se" style="color:#fff;"><span class="badge badge-primary" style="font-size:20px; font-weight:normal;">1ª Passo:</span></a><br>
-        <i class="fas fa-user-plus"></i> <a href="/registre-se" style="color:#fff;">Cadastre-se </a></p>
+        <p><a href="/registre-se" style="color:#c69e88;"><span class="badge badge-primary" style="font-size:20px; font-weight:normal;">1ª Passo:</span></a><br>
+        <i class="fas fa-user-plus"></i> <a href="/registre-se" style="color:#c69e88;">Cadastre-se </a></p>
       </center>
     </div>
     <div class="col-md-4">
       <center>
-        <p><a href="/comprar-consulta" style="color:#fff;"><span class="badge badge-warning" style="font-size:20px; font-weight:normal;">2ª Passo:</span></a><br>
-        <i class="fas fa-credit-card"></i> <a href="/comprar-consulta" style="color:#fff;">Compre Minutos </a></p>
+        <p><a href="/comprar-consulta" style="color:#c69e88;"><span class="badge badge-warning" style="font-size:20px; font-weight:normal;">2ª Passo:</span></a><br>
+        <i class="fas fa-credit-card"></i> <a href="/comprar-consulta" style="color:#c69e88;">Compre Minutos </a></p>
       </center>
     </div>
     <div class="col-md-4">
       <center>
-        <p><a href="/tarologos" style="color:#fff;"><span class="badge badge-success" style="font-size:20px; font-weight:normal;">3ª Passo:</span></a><br>
-        <i class="fas fa-comment-dots"></i> <a href="/tarologos" style="color:#fff;">Escolha o Tarólogo </a></p>
+        <p><a href="/tarologos" style="color:#c69e88;"><span class="badge badge-success" style="font-size:20px; font-weight:normal;">3ª Passo:</span></a><br>
+        <i class="fas fa-comment-dots"></i> <a href="/tarologos" style="color:#c69e88;">Escolha o Tarólogo </a></p>
       </center>
     </div>
   </div>
