@@ -498,6 +498,14 @@ a.menulink:active {
     margin: 0px !important;
 }
 
+.navbar-nav {
+    margin-top: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-top: 15px;
+}
+
 /* SlideSHhow */
 .bd-placeholder-img {
     font-size: 1.125rem;
