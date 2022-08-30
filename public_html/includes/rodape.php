@@ -1293,7 +1293,12 @@
 
 			        // Banco
 					var banco = FormCheckout.banco.value;
-					alert(banco);
+					if ((document.forms["FormCheckout"]["PostalCode"].class == "checked")){
+						alert("sim");
+					} else {
+						alert("não");
+					}
+					
 			        if (banco == ""){
 			            $("input[name='banco']").focus();
 						$('#bancozeroL').addClass('labelvermelho');
