@@ -1321,6 +1321,8 @@
 			            $("#Errobanco").hide();
 			        }
 
+					errosform++;
+
 			        // Email
 			        usuario = FormCheckout.senderEmail.value.substring(0, FormCheckout.senderEmail.value.indexOf("@"));
 			        dominio = FormCheckout.senderEmail.value.substring(FormCheckout.senderEmail.value.indexOf("@") + 1, FormCheckout.senderEmail.value.length);
