@@ -118,7 +118,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
       <!-- Foto, nome e oraculos -->
       <div style="background-image: url('images/bg_tarologo.png');border-radius:25px;box-shadow: 0 .5rem 1rem rgba(0,0,0,.55)!important;" class="shadow">
         
-        <div id="nome" class="" style="padding-top: 45px;">
+        <div id="nome" class="" style="padding-top: 15px;">
           <center>
             <form method="post" action="tarologo/<?php echo $alias; ?>">
               <input style="background: transparent;border: none;font-size: 35px;color: #bf7452; class="" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
@@ -225,7 +225,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
       <!-- Foto, nome e oraculos -->
       <div style="background-image: url('images/bg_tarologo.png');border-radius:25px;box-shadow: 0 .5rem 1rem rgba(0,0,0,.55)!important;" class="shadow">
         
-        <div id="nome" class="" style="padding-top: 45px;">
+        <div id="nome" class="" style="padding-top: 15px;">
           <center>
             <form method="post" action="tarologo/<?php echo $alias; ?>">
               <input style="background: transparent;border: none;font-size: 35px;color: #bf7452; class="" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
@@ -334,7 +334,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
       <!-- Foto, nome e oraculos -->
       <div style="background-image: url('images/bg_tarologo.png');border-radius:25px;box-shadow: 0 .5rem 1rem rgba(0,0,0,.55)!important;" class="shadow">
         
-        <div id="nome" class="" style="padding-top: 45px;">
+        <div id="nome" class="" style="padding-top: 15px;">
           <center>
             <form method="post" action="tarologo/<?php echo $alias; ?>">
               <input style="background: transparent;border: none;font-size: 35px;color: #bf7452; class="" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
