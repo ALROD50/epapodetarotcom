@@ -423,6 +423,7 @@ a.linkClientesAdmin:active {
 #header {
     background: #ffffff;
     color: #c69e88;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 992px) {
