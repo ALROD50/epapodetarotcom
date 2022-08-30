@@ -1292,17 +1292,17 @@
 			        var errosform = 0;
 
 			        // Banco
-
-
-
-
 					if($("input[name='banco']:checked").length){
-						alert("Marque M ou F");
-      				}
-
-					
-			        if (banco == ""){
-			            $("input[name='banco']").focus();
+						$('#bancozeroL').removeClass('labelvermelho');
+			            $('#bancoumL').removeClass('labelvermelho');
+			            $('#bancodoisL').removeClass('labelvermelho');
+			            $('#bancotresL').removeClass('labelvermelho');
+			            $('#bancoquatroL').removeClass('labelvermelho');
+						$('#bancocincoL').removeClass('labelvermelho');
+						$('#bancoseisL').removeClass('labelvermelho');
+			            $("#Errobanco").hide();
+      				} else {
+						$("input[name='banco']").focus();
 						$('#bancozeroL').addClass('labelvermelho');
 			            $('#bancoumL').addClass('labelvermelho');
 			            $('#bancodoisL').addClass('labelvermelho');
@@ -1312,18 +1312,7 @@
 						$('#bancoseisL').addClass('labelvermelho');
 			            $("#Errobanco").show();
 			            errosform++;
-			        } else {
-						$('#bancozeroL').removeClass('labelvermelho');
-			            $('#bancoumL').removeClass('labelvermelho');
-			            $('#bancodoisL').removeClass('labelvermelho');
-			            $('#bancotresL').removeClass('labelvermelho');
-			            $('#bancoquatroL').removeClass('labelvermelho');
-						$('#bancocincoL').removeClass('labelvermelho');
-						$('#bancoseisL').removeClass('labelvermelho');
-			            $("#Errobanco").hide();
-			        }
-
-					errosform++;
+					}
 
 			        // Email
 			        usuario = FormCheckout.senderEmail.value.substring(0, FormCheckout.senderEmail.value.indexOf("@"));
