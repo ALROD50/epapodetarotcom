@@ -16,7 +16,7 @@
 		<!-- <link rel="stylesheet" href="assets/preloader.css" media="print" onload="this.media='all'"/> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap" rel="stylesheet">
 	  	<?php 
 	  	if ($mostrarconversaogoogleads=="sim") {
 	  	 	echo $conversaodogoogle;
