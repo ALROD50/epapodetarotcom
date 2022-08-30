@@ -19,6 +19,7 @@ body {
     color: #c69e88 !important;
     background: #fff1e9 !important;
     border: none;
+    padding-top: 6px;
 }
 
 @media (max-width: 426px) {
