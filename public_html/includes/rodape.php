@@ -1296,7 +1296,7 @@
 
 
 
-					if(!$("input[name='banco']:checked").length){
+					if($("input[name='banco']:checked").length){
 						alert("Marque M ou F");
       				}
 
