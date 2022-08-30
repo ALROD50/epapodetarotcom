@@ -146,9 +146,9 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <center>
               <h3 class="pt-2">
                 <?php if ($videochamada=="SIM") { ?>
-                  <i class="fas fa-video laranja"></i> VideoChamada
+                  <i class="fas fa-video corpadrao2"></i> VideoChamada
                   <?php } ?>
-                  <i class="fas fa-comments verdao"></i> Chat 
+                  <i class="fas fa-comments corpadrao2"></i> Chat 
               </h3>
             </center>
           </div>
@@ -253,9 +253,9 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <center>
               <h3 class="pt-2">
                 <?php if ($videochamada=="SIM") { ?>
-                  <i class="fas fa-video laranja"></i> VideoChamada
+                  <i class="fas fa-video corpadrao2"></i> VideoChamada
                   <?php } ?>
-                  <i class="fas fa-comments verdao"></i> Chat 
+                  <i class="fas fa-comments corpadrao2"></i> Chat 
               </h3>
             </center>
           </div>
@@ -362,9 +362,9 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <center>
               <h3 class="pt-2">
                 <?php if ($videochamada=="SIM") { ?>
-                  <i class="fas fa-video laranja"></i> VideoChamada
+                  <i class="fas fa-video corpadrao2"></i> VideoChamada
                   <?php } ?>
-                  <i class="fas fa-comments verdao"></i> Chat 
+                  <i class="fas fa-comments corpadrao2"></i> Chat 
               </h3>
             </center>
           </div>
