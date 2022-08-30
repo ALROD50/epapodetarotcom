@@ -359,11 +359,11 @@ require 'processa.php';
                     	<a href="#tabPaypal" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabPaypal-tab" role="tab" aria-controls="tabPaypal" aria-selected="false"><i class="fab fa-cc-paypal"></i> Paypal</a>
                     </li>
                               
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item d-none" role="presentation">
                     	<a href="#tabBoleto" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabBoleto-tab" role="tab" aria-controls="tabBoleto" aria-selected="false"><i class="fas fa-barcode"></i> Boleto</a>
                     </li>
                    
-                    <li class="nav-item d-none" role="presentation">
+                    <li class="nav-item" role="presentation">
                     	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><i class="fas fa-university"></i> Transferência</a>
                     </li>
                 </ul>
@@ -825,7 +825,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Boleto -->
-                    <div class="tab-pane fade show" id="tabBoleto" role="tabpanel" aria-labelledby="tabBoleto-tab">
+                    <div class="tab-pane fade show d-none" id="tabBoleto" role="tabpanel" aria-labelledby="tabBoleto-tab">
 
                         <h2 class="mb-4">Boleto</h2>
                         <p><small>Atenção! - A compensão pode levar 2 dias úteis.</small></p>
@@ -917,7 +917,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Depósito -->
-                    <div class="tab-pane fade show d-none" id="tabDeposito" role="tabpanel" aria-labelledby="tabDeposito-tab">
+                    <div class="tab-pane fade show" id="tabDeposito" role="tabpanel" aria-labelledby="tabDeposito-tab">
 
                         <h2 class="mb-4">Transferência</h2>
 
