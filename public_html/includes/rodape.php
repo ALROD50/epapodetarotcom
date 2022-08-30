@@ -1292,7 +1292,9 @@
 			        var errosform = 0;
 
 			        // Banco
-			        if (document.forms["FormCheckout"]["banco"].value == ""){
+					var banco = FormCheckout.banco.value;
+					alert(banco);
+			        if (banco == ""){
 			            $("input[name='banco']").focus();
 						$('#bancozeroL').addClass('labelvermelho');
 			            $('#bancoumL').addClass('labelvermelho');
