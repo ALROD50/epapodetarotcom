@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    font-family: 'dumbledor_1regular';
+    font-family: 'Anek Telugu', sans-serif;
     color: #000;
     font-size: 22px;
     background-image: url('https://www.epapodetarot.com.br/images/background.png');
@@ -24,7 +24,7 @@ body {
 @media (max-width: 426px) {
     body {
         overflow-x: hidden;
-        font-family: 'dumbledor_1regular';
+        font-family: 'Anek Telugu', sans-serif;
         color: #000;
         font-size: 22px;
         background-image: url('https://www.epapodetarot.com.br/images/bgcel.png');

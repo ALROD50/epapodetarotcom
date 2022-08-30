@@ -1,13 +1,13 @@
 	    <style><?php echo file_get_contents("assets/dist/css/bootstrap.min.css"); ?></style>
 		<style><?php echo file_get_contents("assets/style.css"); ?></style>
 		<style>
-		    @font-face {
+		    /* @font-face {
 			    font-family: 'dumbledor_1regular';
 			    src: url('fonts/dum1-webfont/dum1-webfont.woff2') format('woff2'),
 			         url('fonts/dum1-webfont/dum1-webfont.woff') format('woff');
 			    font-weight: normal;
 			    font-style: normal;
-			}
+			} */
 		</style>
 		<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
