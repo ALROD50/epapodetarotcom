@@ -467,12 +467,12 @@ a.linkClientesAdmin:active {
 
 @media (max-width: 992px) {
     .estilomenu {
-        background-color: #ffffffd9 !important
+        background-color: #fff1e9 !important
     }
 }
 
 .estilomenu {
-    background-color: #6c1010;
+    background-color: #fff1e9;
 }
 
 a.menulink {
