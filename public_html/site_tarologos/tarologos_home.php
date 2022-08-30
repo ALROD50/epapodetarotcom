@@ -6,7 +6,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/slideshow/1.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/1.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 100%;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TAROT</h1>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/2.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/2.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 100%;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">BARALHO CIGANO</h1>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/slideshow/3.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 0.6;"/>
+      <img src="images/slideshow/3.png" alt="É Papo de Tarot" title="É Papo de Tarot" width="1110" height="512" style="opacity: 100%;"/>
       <div class="container">
         <div class="carousel-caption text-left" style="right:5%;left:5%">
           <h1 class="text-white sombratexto">TAROT DE MARSELHA</h1>
