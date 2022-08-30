@@ -1292,12 +1292,15 @@
 			        var errosform = 0;
 
 			        // Banco
-					var banco = FormCheckout.banco.value;
-					if ((document.forms["FormCheckout"]["banco"].class == "checked")){
+					// var banco = FormCheckout.banco.value;
+			
+
+					checkboxes = document.getElementsByName('banco[]');
+					for(var i=0, n=checkboxes.length;i<n;i++) {
+						checkboxes[i].checked = source.checked;
 						alert("sim");
-					} else {
-						alert("não");
 					}
+
 					
 			        if (banco == ""){
 			            $("input[name='banco']").focus();
