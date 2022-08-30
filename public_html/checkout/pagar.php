@@ -364,7 +364,7 @@ require 'processa.php';
                     </li>
                    
                     <li class="nav-item" role="presentation">
-                    	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><i class="fas fa-university"></i> Transferência</a>
+                    	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><img src="images/bancos/pix.png"> Pix</a>
                     </li>
                 </ul>
 
