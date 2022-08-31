@@ -15,7 +15,7 @@ body {
     color: #fff !important;
     background: #c69e88 !important;
     padding-bottom: 0px;
-} 
+}
 .corpadrao2 {
     color: #c69e88 !important;
     background: #fff1e9 !important;
@@ -425,7 +425,6 @@ a.linkClientesAdmin:active {
 #header {
     background: #ffffff;
     color: #c69e88;
-    margin-bottom: 10px;
 }
 
 @media (max-width: 992px) {
