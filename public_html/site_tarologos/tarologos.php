@@ -135,12 +135,12 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;">
           
           <!-- Foto, nome e oraculos -->
-          <div style="background-image: url('images/bg_tarologo.png');">
+          <div style="background-image: url('images/bg_tarologo.png');border-radius:25px;" class="shadow">
             
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size: 35px;color: #bf7452;" class="" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -148,7 +148,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             
             <div id="foto" class="" style="display:block;">
               <center>
-                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodoisdois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
               </center>
             </div>
             <div id="oraculos" style="margin: 0px;font-size:19px;padding: 10px 10px 0 10px;color: #000000;height:188px;background: #ffffff91;">
@@ -160,13 +160,13 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <!-- Botão Ver Perfil -->
             <div class="mb-2">
               <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
-              <div class="card badge-dark corpadrao2 corpadrao2">
+              <div class="card badge-dark corpadrao2">
                 <center>
                   <h3 class="pt-2">
                     <?php if ($videochamada=="SIM") { ?>
-                      <i class="fas fa-video laranja"></i> VideoChamada
+                      <i class="fas fa-video corpadrao2"></i> VideoChamada
                       <?php } ?>
-                      <i class="fas fa-comments verdao"></i> Chat 
+                      <i class="fas fa-comments corpadrao2"></i> Chat 
                   </h3>
                 </center>
               </div>
@@ -240,12 +240,12 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;">
           
           <!-- Foto, nome e oraculos -->
-          <div style="background-image: url('images/bg_tarologo.png');">
+          <div style="background-image: url('images/bg_tarologo.png');border-radius:25px;" class="shadow">
             
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size: 35px;color: #bf7452;" class="" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -253,7 +253,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             
             <div id="foto" class="" style="display:block;">
               <center>
-                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodoisdois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
               </center>
             </div>
             <div id="oraculos" style="margin: 0px;font-size:19px;padding: 10px 10px 0 10px;color: #000000;height:188px;background: #ffffff91;">
@@ -265,13 +265,13 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <!-- Botão Ver Perfil -->
             <div class="mb-2">
               <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
-              <div class="card badge-dark corpadrao2 corpadrao2">
+              <div class="card badge-dark corpadrao2">
                 <center>
                   <h3 class="pt-2">
                     <?php if ($videochamada=="SIM") { ?>
-                      <i class="fas fa-video laranja"></i> VideoChamada
+                      <i class="fas fa-video corpadrao2"></i> VideoChamada
                       <?php } ?>
-                      <i class="fas fa-comments verdao"></i> Chat 
+                      <i class="fas fa-comments corpadrao2"></i> Chat 
                   </h3>
                 </center>
               </div>
@@ -295,11 +295,14 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
               ?>
               <!-- Botão Consultar Agora -->
               <div class="mb-2">
-                <form method="post" action="consultar" id="consultachat<?php echo $id_tarologo2; ?>">
-                  <button type="submit" class="btn btn-success btn-lg btn-block" name="envia" id="envia"><i class="fas fa-comments"></i> Consultar Agora</button>
-                  <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
-                </form>
+                <a href="tarologo/<?php echo $alias; ?>" button class="btn btn-success btn-lg btn-block"><i class="fas fa-comments"></i> Consultar Agora</a>
               </div>
+              <!-- <div class="mb-2">
+                <form method="post" action="consultar" id="consultachat<?php //echo $id_tarologo2; ?>">
+                  <button type="submit" class="btn btn-success btn-lg btn-block" name="envia" id="envia"><i class="fas fa-comments"></i> Consultar Agora</button>
+                  <input type="hidden" name="id_tarologo" value="<?php //echo $id_tarologo2; ?>" />
+                </form>
+              </div> -->
               <?php
               
             } elseif ($row_online2 == "ocupado") {
@@ -344,12 +347,12 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
         <div id="tarologoshomeresultado" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:15px;">
           
           <!-- Foto, nome e oraculos -->
-          <div style="background-image: url('images/bg_tarologo.png');">
+          <div style="background-image: url('images/bg_tarologo.png');border-radius:25px;" class="shadow">
             
             <div id="nome" class="" style="padding-top: 45px;">
               <center>
                 <form method="post" action="tarologo/<?php echo $alias; ?>">
-                  <input style="background: transparent;border: none;font-size: 35px;color: #ffffff;" class="efeitodois" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
+                  <input style="background: transparent;border: none;font-size: 35px;color: #bf7452;" class="" type="submit" name="envia" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>" value="<?php echo $nome2; ?>"/>
                   <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
                 </form>
               </center>
@@ -357,7 +360,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             
             <div id="foto" class="" style="display:block;">
               <center>
-                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="rounded efeitodoisdois" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
+                <a href="tarologo/<?php echo $alias; ?>"><img src="tarologos_admin/fotos/<?php echo $logo2; ?>" style="max-width:100%" layout="responsive" class="" alt="<?php echo $nome2;?>" title="<?php echo $nome2;?>"></img></a>
               </center>
             </div>
             <div id="oraculos" style="margin: 0px;font-size:19px;padding: 10px 10px 0 10px;color: #000000;height:188px;background: #ffffff91;">
@@ -369,13 +372,13 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
             <!-- Botão Ver Perfil -->
             <div class="mb-2">
               <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
-              <div class="card badge-dark corpadrao2 corpadrao2">
+              <div class="card badge-dark corpadrao2">
                 <center>
                   <h3 class="pt-2">
                     <?php if ($videochamada=="SIM") { ?>
-                      <i class="fas fa-video laranja"></i> VideoChamada
+                      <i class="fas fa-video corpadrao2"></i> VideoChamada
                       <?php } ?>
-                      <i class="fas fa-comments verdao"></i> Chat 
+                      <i class="fas fa-comments corpadrao2"></i> Chat 
                   </h3>
                 </center>
               </div>
@@ -399,11 +402,14 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
               ?>
               <!-- Botão Consultar Agora -->
               <div class="mb-2">
-                <form method="post" action="consultar" id="consultachat<?php echo $id_tarologo2; ?>">
-                  <button type="submit" class="btn btn-success btn-lg btn-block" name="envia" id="envia"><i class="fas fa-comments"></i> Consultar Agora</button>
-                  <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo2; ?>" />
-                </form>
+                <a href="tarologo/<?php echo $alias; ?>" button class="btn btn-success btn-lg btn-block"><i class="fas fa-comments"></i> Consultar Agora</a>
               </div>
+              <!-- <div class="mb-2">
+                <form method="post" action="consultar" id="consultachat<?php //echo $id_tarologo2; ?>">
+                  <button type="submit" class="btn btn-success btn-lg btn-block" name="envia" id="envia"><i class="fas fa-comments"></i> Consultar Agora</button>
+                  <input type="hidden" name="id_tarologo" value="<?php //echo $id_tarologo2; ?>" />
+                </form>
+              </div> -->
               <?php
               
             } elseif ($row_online2 == "ocupado") {
