@@ -144,12 +144,12 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
           <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
           <div class="card badge-dark corpadrao2">
             <center>
-              <h3 class="pt-2">
+              <h5 class="pt-2">
                 <?php if ($videochamada=="SIM") { ?>
                   <i class="fas fa-video corpadrao2"></i> VideoChamada
                   <?php } ?>
                   <i class="fas fa-comments corpadrao2"></i> Chat 
-              </h3>
+              </h5>
             </center>
           </div>
         </div>
@@ -251,12 +251,12 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
           <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
           <div class="card badge-dark corpadrao2">
             <center>
-              <h3 class="pt-2">
+              <h5 class="pt-2">
                 <?php if ($videochamada=="SIM") { ?>
                   <i class="fas fa-video corpadrao2"></i> VideoChamada
                   <?php } ?>
                   <i class="fas fa-comments corpadrao2"></i> Chat 
-              </h3>
+              </h5>
             </center>
           </div>
         </div>  
@@ -360,12 +360,12 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
           <!-- <a href="tarologo/<?php //echo $alias; ?>" button class="btn btn-dark btn-lg btn-block"><i class="far fa-address-card"></i> Ver Perfil</a> -->
           <div class="card badge-dark corpadrao2">
             <center>
-              <h3 class="pt-2">
+              <h5 class="pt-2">
                 <?php if ($videochamada=="SIM") { ?>
                   <i class="fas fa-video corpadrao2"></i> VideoChamada
                   <?php } ?>
                   <i class="fas fa-comments corpadrao2"></i> Chat 
-              </h3>
+              </h5>
             </center>
           </div>
         </div>  
