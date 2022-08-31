@@ -52,7 +52,7 @@ if ($row > 0){
             <form name="aviseme_envia" id="aviseme_envia" method="post" action="aviseme-quando-disponivel" style="margin-top:5px;">
               <input type="hidden" name="id_tarologo" value="<?php echo $id_tarologo; ?>" />
               <button type="submit" name="envia" class="btn corpadrao2 btn-lg" alt="Avise-me Quando Disponível" title="Avise-me Quando Disponível"><i class="fas fa-clock"></i> Avise-me Quando Disponível</button>
-              <p class="mt-2">Este tarólogo não está online no momento, clique no botão acima <b>Avise-me Quando Disponível</b> para ser avisado quando este tarólog voltar online. Desta forma quando tarólogo voltar ao trabalho você será avisado por e-mail e poderá fazer sua consulta com ele.</p>
+              <p class="mt-3">Este tarólogo não está online no momento, clique no botão acima <b>Avise-me Quando Disponível</b> para ser avisado quando este tarólog voltar online. Desta forma quando tarólogo voltar ao trabalho você será avisado por e-mail e poderá fazer sua consulta com ele.</p>
             </form>
             <!-- Botão Consulta por Email -->
             <form name="consultarporemail" id="consultarporemail" method="post" action="consultarporemail" style="float:left; margin-right:8px;">
