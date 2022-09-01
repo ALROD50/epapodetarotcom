@@ -729,14 +729,6 @@ main {
 }
 
 /* Menu centralizado */
-/* .navbar-expand-lg .navbar-collapse {
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    justify-content: center!important;
-} */
-
 #navbarSupportedContent {
     justify-content: center!important;
 }
@@ -745,4 +737,9 @@ main {
 .nav-link {
     display: block;
     padding: 15px 10px 10px 10px;
+}
+
+/* Espaçamento submenu celular */
+#navbarDropdown {
+    padding-left: 15px;
 }
