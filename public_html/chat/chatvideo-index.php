@@ -101,9 +101,7 @@ if (!empty($_SESSION["cod_sala"])){
 				body {
 					color: #000;
 					font-size: 15px;
-					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
-					background-size: 1920px 1169px;
-					background-size: cover !important;
+					background: #fff;
 				}
 				#hedchat {
 					padding: 5px;
