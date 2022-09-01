@@ -2521,9 +2521,9 @@
 		<!-- https://cookieinfoscript.com/ -->
 		<script async type="text/javascript" id="cookieinfo"
 			src="//cookieinfoscript.com/js/cookieinfo.min.js"
-			data-bg="#000"
-			data-fg="#FFFFFF"
-			data-link="#F1D600"
+			data-bg="#fff1e9"
+			data-fg="#c69e88"
+			data-link="#000"
 			data-cookie="CookieInfoScript"
 			data-text-align="left"
 			data-message="Usamos cookies para melhorar sua experiência. Continuando a visitar este site, você concorda com o nosso uso de cookies."
