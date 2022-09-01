@@ -5,7 +5,8 @@ $rowQuantidade = $sql_produto->rowCount();
 ?>
 <div id="header" class="row">
 
-  <div id="logo" class="navbar-brand">
+  <!-- somente pc -->
+  <div id="logo" class="navbar-brand d-xl-block d-lg-block d-none">
     <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
       <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
     </a>
