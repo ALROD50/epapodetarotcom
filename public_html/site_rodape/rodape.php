@@ -7,6 +7,8 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 ?>
 <footer>
 
+	<hr>
+
 	<div class="mt-5" style="clear:both;"></div>
 
 	<div class="row" style="">
