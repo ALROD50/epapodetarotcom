@@ -6,6 +6,7 @@ ini_set('display_startup_erros',1); // Força o PHP a mostrar os erros.
 error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 ?>
 <footer>
+	<div class="mt-5" style="clear:both;"></div>
 
 	<hr>
 
