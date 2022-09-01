@@ -10,11 +10,9 @@
 <body>
 
 
-<div class="container">
 	<div class="row justify-content-center">
 		Teste adsaads asd asdsad asd aasdasds
 	</div>
-</div>
 
 	
 
