@@ -104,18 +104,18 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* LOGO */
 #logo {
-    width: 300px;
+    width: 215;
     margin-left: 15px;
     margin-right: 145px;
 }
 
 #sizelogo {
-    width: 380px;
+    width: 215;
 }
 
 @media (max-width: 1025px) {
     #logo {
-        width: 300px;
+        width: 215;
         margin-left: 15px;
         margin-right: 95px;
     }
