@@ -729,13 +729,13 @@ main {
 }
 
 /* Menu centralizado */
-.navbar-expand-lg .navbar-collapse {
+/* .navbar-expand-lg .navbar-collapse {
     display: -ms-flexbox!important;
     display: flex!important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     justify-content: center!important;
-}
+} */
 
 /* Espaçamentos links de menu */
 .nav-link {
