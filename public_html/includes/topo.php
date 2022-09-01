@@ -210,7 +210,7 @@ $rowQuantidade = $sql_produto->rowCount();
           <!-- somente pc -->
           <div class="d-xl-block d-lg-block d-none">
             <?php 
-            echo '<p>Olá '.$usuario_nome.'</br>';
+            echo '<p style="margin-top: 11px;margin-bottom:0rem;}">Olá '.$usuario_nome.'</br>';
             echo 'Saldo: <span><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> | <i class="fas fa-home"></i> <a href="/minha-conta">MINHA CONTA</a></br>';
             echo '<i class="fas fa-shopping-cart"></i> <a href="/carrinho-compras"> <span class="badge badge-pill  corpadrao1">'.$rowQuantidade.'</span> CARRINHO</a></p>';
             ?>
