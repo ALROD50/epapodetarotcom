@@ -27,7 +27,7 @@ $rowQuantidade = $sql_produto->rowCount();
       
       <!-- somente cel -->
       <div class="d-xl-none d-lg-none pt-2" style="font-size:17px;">
-          <p class="mb-2"><i class="fas fa-home"></i> <a href="fazer-login" class="link-padraoum" title="Minha Conta">Entrar / Login</a> <i class="fas fa-shopping-cart"></i> <a href="carrinho-compras" class="link-padraoum" title="Meu Carrinho">Carrinho</a> <span class="badge badge-pill corpadrao1 mt-0"><?php echo $rowQuantidade; ?></span></p>
+          <p class="mb-2"><i class="fas fa-home"></i> <a href="fazer-login" class="link-padraoum" title="Minha Conta">Entrar</a> <i class="fas fa-shopping-cart"></i> <a href="carrinho-compras" class="link-padraoum" title="Meu Carrinho">Carrinho</a> <span class="badge badge-pill corpadrao1 mt-0"><?php echo $rowQuantidade; ?></span></p>
       </div>
       <?php
     } else {
