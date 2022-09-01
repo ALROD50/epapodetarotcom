@@ -462,7 +462,7 @@ if($row_onlinex=="offline" OR $row_onlinex=="") {
 	<div class="alert alert-primary mt-2" role="alert">
 	  <b><i class="fas fa-money-check"></i> Pagamento</b> - Clique no botão verde abaixo.
 	</div>
-	<p><b><?php echo $usuario_nome; ?></b>, ao clicar no botão verde CONSULTAR abaixo, você será levada(o) a página de pagamento da consulta. Disponibilizamos várias formas de pagamento como, <b>Pix, Cartão de Crédito, Boleto, PagSeguro, PayPal</b>. Você pode escolher qualquer uma delas.</p>
+	<p><b><?php echo $usuario_nome; ?></b>, ao clicar no botão verde CONSULTAR abaixo, você será levada(o) a página de pagamento da consulta. Disponibilizamos várias formas de pagamento como, <b>Pix, Cartão de Crédito, PagSeguro, PayPal</b>. Você pode escolher qualquer uma delas.</p>
 	<p>Após o pagamento você será levada(o) para a página de inicio da consulta com o tarólogo!</p>
 	<div class="row py-4">
 	    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 offset-xl-4 offset-lg-4">
