@@ -43,7 +43,7 @@ $pdo = conexao();
         font-size: 18px;
     }
     #corpo {
-        background: rgba(0, 0, 0, 0.4); 
+        background: rgb(255 241 233); 
         padding: 20px;
         color:#000;
         border: none;
@@ -55,10 +55,9 @@ $pdo = conexao();
     }
     .title {
         color: #000;
-        text-shadow: 0 0 6px rgba(255,144,0,0.5);
     }
     .text-success {
-        color: #f8b334;
+        color:#c31200;
     }
 </style>
 <body>
