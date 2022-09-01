@@ -90,16 +90,16 @@ if (!empty($_SESSION["cod_sala"])){
 				height: 800px; 
 			}
 			.title {
-				color: #fff;
+				color: #000;
 				text-shadow: 0 0 6px rgba(255,144,0,0.5);
 			}
 			.text-success {
-				color: #f8b334;
+				color: #000;
 			}
 			/* Celular */
 			@media (max-width: 999px) {
 				body {
-					color: #fff;
+					color: #000;
 					font-size: 15px;
 					background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
 					background-size: 1920px 1169px;
