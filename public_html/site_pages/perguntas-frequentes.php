@@ -13,7 +13,7 @@
 
 <p>É muito fácil para se consultar,</p>
 
-<p style="padding-left: 20px;">1 - Você precisa primeiramente&nbsp;<a href="registre-se">Cadastrar-se</a>&nbsp;em nosso site.<br>2 - Em seguida, você deve&nbsp;<a href="comprar-consulta">Comprar seus Créditos</a>&nbsp;de acordo com o pacote de minutos desejado.<br>3 - E finalmente, escolha&nbsp;um&nbsp;<a href="tarologos">Especialista</a>&nbsp;para iniciar sua consulta online.</p>
+<p style="padding-left: 20px;">1 - Você precisa primeiramente&nbsp;<a href="registre-se"><b>Cadastrar-se</b></a>&nbsp;em nosso site.<br>2 - Em seguida, você deve&nbsp;<a href="comprar-consulta"><b>Comprar seus Créditos</b></a>&nbsp;de acordo com o pacote de minutos desejado.<br>3 - E finalmente, escolha&nbsp;um&nbsp;<a href="tarologos"><b>Especialista</b></a>&nbsp;para iniciar sua consulta online.</p>
 
 <h3 class="vinho">Quais formas de Pagamento são aceitas?</h3>
 
