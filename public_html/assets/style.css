@@ -736,3 +736,9 @@ main {
     flex-basis: auto;
     justify-content: center!important;
 }
+
+/* Espaçamentos links de menu */
+.nav-link {
+    display: block;
+    padding: 15px 10px 10px 10px;
+}
