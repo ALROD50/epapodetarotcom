@@ -87,7 +87,7 @@
 <div id="logocelular" class="d-xl-none d-lg-none">
   <div class="row justify-content-center">
     <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" >
-      <img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot" style="width: 300px !important;">
+      <img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot" style="width:200px !important;">
     </a>
   </div>
 </div>
