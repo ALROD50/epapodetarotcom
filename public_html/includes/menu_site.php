@@ -5,8 +5,8 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="row justify-content-center">
     <ul class="navbar-nav mr-auto">
-      <div class="row justify-content-center">
         <!-- <ul id="submenuce" class="nav justify-content-center"> -->
         <li class="nav-item active">
           <a class="nav-link menulink" href="home">HOME<span class="sr-only"></span></a>
@@ -74,8 +74,8 @@
             <a class="dropdown-item" href="#">ASTROLOGIA</a>
           </div>
         </li> -->
-      </div>
-    </ul>
+      </ul>
+    </div>
     <form class="form-inline my-2 my-lg-0 d-none">
         <input class="form-control mr-sm-2 d-none d-xl-block col-xl-12" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
         <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button> -->
