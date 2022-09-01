@@ -39,22 +39,22 @@ $pdo = conexao();
         background: #1b2933 url('https://www.epapodetarot.com.br/images/crop.png') 50% 0 fixed no-repeat !important;
         background-size: 1920px 1169px;
         background-size: cover !important;
-        color: #fff;
+        color: #000;
         font-size: 18px;
     }
     #corpo {
         background: rgba(0, 0, 0, 0.4); 
         padding: 20px;
-        color:#fff;
+        color:#000;
         border: none;
     }
     #carregando {
         margin-left: 50%;
         margin-top: 20%;
-        color: #fff;
+        color: #000;
     }
     .title {
-        color: #fff;
+        color: #000;
         text-shadow: 0 0 6px rgba(255,144,0,0.5);
     }
     .text-success {
