@@ -5,7 +5,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto justify-content-center">
     <!-- <ul class="nav justify-content-center"> -->
       <li class="nav-item active">
         <a class="nav-link menulink" href="home">HOME<span class="sr-only"></span></a>
