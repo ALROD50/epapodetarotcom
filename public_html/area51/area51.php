@@ -11,9 +11,9 @@
 
 
 <div class="container justify-content-center">
-	<center>
-	Teste adsaads asd asdsad asd aasdasds
-</center>
+	<div class="row justify-content-center">
+		Teste adsaads asd asdsad asd aasdasds
+	</div>
 </div>
 
 	
