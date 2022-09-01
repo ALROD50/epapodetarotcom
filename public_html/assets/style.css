@@ -737,6 +737,10 @@ main {
     justify-content: center!important;
 } */
 
+#navbarSupportedContent {
+    justify-content: center!important;
+}
+
 /* Espaçamentos links de menu */
 .nav-link {
     display: block;
