@@ -26,7 +26,7 @@ $rowQuantidade = $sql_produto->rowCount();
       </div>
       
       <!-- somente cel -->
-      <div class="d-xl-none d-lg-none pt-3" style="font-size:17px;">
+      <div class="d-xl-none d-lg-none pt-3 pl-2" style="font-size:17px;">
           <p class="mb-2"><i class="fas fa-home"></i> <a href="fazer-login" class="link-padraoum" title="Minha Conta">Entrar</a> <i class="fas fa-shopping-cart"></i> <a href="carrinho-compras" class="link-padraoum" title="Meu Carrinho">Carrinho</a> <span class="badge badge-pill corpadrao1 mt-0"><?php echo $rowQuantidade; ?></span></p>
       </div>
       <?php
@@ -217,7 +217,7 @@ $rowQuantidade = $sql_produto->rowCount();
           </div>
           
           <!-- somente cel -->
-          <div class="d-xl-none d-lg-none pt-3">
+          <div class="d-xl-none d-lg-none pt-3 pl-2">
             <?php
             $usuario_nome=limita_caracteres($usuario_nome, '10', $quebra = true);
             echo '<p class="mb-2">Saldo: <span><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> <a href="/minha-conta"><i class="fas fa-user-circle"></i> Olá '.$usuario_nome.'</a>  <a href="/carrinho-compras"><i class="fas fa-shopping-cart ml-1"></i> <span class="badge badge-pill  corpadrao1">'.$rowQuantidade.'</span> </a></p>';
