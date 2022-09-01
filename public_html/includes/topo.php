@@ -19,7 +19,7 @@ $rowQuantidade = $sql_produto->rowCount();
       <!-- somente pc -->
       <div class="d-xl-block d-lg-block d-none">
         <div id="usuariobox">
-          <p><i class="fas fa-user-circle"></i> <a href="registre-se" class="link-padraoum" title="Cadastre-Se">Cadastre-Se</a> <i class="fas fa-sign-in-alt"></i> <a href="fazer-login" class="link-padraoum" title="Entrar/Login">Entrar</a> <i class="fas fa-home"></i> <a href="minha-conta" class="link-padraoum" title="Minha Conta">Minha Conta</a> <i class="fas fa-shopping-cart center"></i> <a href="carrinho-compras" class="link-padraoum" title="Meu Carrinho"> <span class="badge badge-pill corpadrao1 mt-0"><?php echo $rowQuantidade; ?></span> Meu Carrinho</a></p>
+          <p><i class="fas fa-user-circle"></i> <a href="registre-se" class="link-padraoum" title="Cadastre-Se">Cadastre-Se</a> <i class="fas fa-sign-in-alt"></i> <a href="fazer-login" class="link-padraoum" title="Entrar/Login">Entrar</a> <i class="fas fa-home"></i> <a href="minha-conta" class="link-padraoum" title="Minha Conta">Minha Conta</a> <i class="fas fa-shopping-cart center"></i> <a href="carrinho-compras" class="link-padraoum" title="Meu Carrinho">Meu Carrinho</a> <span class="badge badge-pill corpadrao1 mt-0"><?php echo $rowQuantidade; ?></span></p>
           <p></p>
         </div>
       </div>
