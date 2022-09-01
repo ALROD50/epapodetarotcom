@@ -1,15 +1,4 @@
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<style type="text/css">
-    /* Recaptcha */
-    @media (max-width: 480px) {
-        #rc-imageselect, .g-recaptcha {
-            transform:scale(0.77);
-            -webkit-transform:scale(0.77);
-            transform-origin:0 0;
-            -webkit-transform-origin:0 0;
-        }
-    }
-</style>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw"></script>
 <?php
 if(isset($_POST['envia'])){
   $email = trim(addslashes(strip_tags($_POST['email'])));
@@ -25,35 +14,32 @@ if(isset($_POST['envia'])){
   $perfil = trim(addslashes(strip_tags($_POST['perfil'])));
   $pagamento = trim(addslashes(strip_tags($_POST['pagamento'])));
   $erros = null;
-  // Captcha ###############################################################
-    if (isset($_POST['g-recaptcha-response'])) {
-        $captcha_data = $_POST['g-recaptcha-response'];
-    }
-    // Se nenhum valor foi recebido, o usuário não realizou o captcha
-    if (!$captcha_data) {
-        $erros++; 
-        $msge="Clique no box <b>Não sou um robô.</b>";
-        MsgErro ($msge);
-    } else {            
-        //biblioteca para o captcha
-        require_once '/home/epapodetarotcom/public_html/scripts/recaptcha/autoload.php';
-        // sua chave secreta
-        $secret = "6LeO7OkUAAAAAL7xRieXU8luIkFBANA7_GjnSbsT";
-        // resposta vazia
-        $response = null;
-        // verifique a chave secreta
-        $reCaptcha = new \ReCaptcha\ReCaptcha($secret);
-        // se submetido, verifique a resposta
-        if ($_POST["g-recaptcha-response"]) {
-            $response = $reCaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-        }
-        if ($response != null && $response->isSuccess()) {
-            $captchav = null;
-        } else {
-            $erros++;
-            $msge="A mensagem não foi enviada.";
-            MsgErro ($msge);
-        }
+    // Captcha ###############################################################
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = [
+      'secret' => "6LfIKpwhAAAAANDvMK29MCEGmhSDJ3s7RAxHCERj",
+      'response' => $_POST['token'],
+      // 'remoteip' => $_SERVER['REMOTE_ADDR']
+    ];
+
+    $options = array(
+      'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data)
+      )
+    );
+
+    $context  = stream_context_create($options);
+    $response = file_get_contents($url, false, $context);
+    $res = json_decode($response, true);
+
+    if($res['success'] == true) {
+      // OK, Your inquiry successfully submitted
+      $captchav = null;
+    } else {
+      $erros++;
+      $msge="You are not a human.";
     }
   // Captcha ###############################################################
   if ($erros >= 1) {
@@ -122,6 +108,8 @@ if(isset($_POST['envia'])){
 <hr>
 
 <form name="trabalhe_conosco" method="post" action="" class="form-horizontal" accept-charset="UTF-8" >
+
+<input type="hidden" id="token" name="token">
 
 <div class="row">
     <div class="col-md-6">
@@ -213,8 +201,6 @@ if(isset($_POST['envia'])){
       </div>
       
       <div class="form-group">
-        <div class="g-recaptcha" data-sitekey="6LeO7OkUAAAAAHEfPoGmvH6VaNJa-RhLIGK4uVbA"></div>
-        <br>
         <input class="btn btn-primary" type="submit" name="envia" value="Enviar Dados"/>
       </div>
     </div>
@@ -222,5 +208,11 @@ if(isset($_POST['envia'])){
 
 </form>
 
-
-
+<script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LfIKpwhAAAAALRzObk_GNN_kB60S8px5S9XZgkw', {action: 'homepage'}).then(function(token) {
+        // console.log(token);
+        document.getElementById("token").value = token;
+      });
+  });
+</script>
