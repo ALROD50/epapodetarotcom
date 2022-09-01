@@ -74,7 +74,7 @@ if (!empty($_SESSION["cod_sala"])){
 		<style>
 			/* Pc */
 			body {
-				color: #fff;
+				color: #000;
 				font-size: 15px;
 				background: #1b2933 url('https://www.epapodetarot.com.br/images/background.png') 50% 0 fixed no-repeat !important;
 				background-size: 1920px 1169px;
