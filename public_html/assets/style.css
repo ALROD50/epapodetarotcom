@@ -769,3 +769,8 @@ main {
     color: rgba(0,0,0,.5);
     border-color: rgb(255 255 255 / 10%);
 }
+
+#logocelular {
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+}
