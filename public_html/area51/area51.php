@@ -10,7 +10,7 @@
 <body>
 
 
-<div class="container">
+<div class="container justify-content-center">
 	<div class="justify-content-center">
 		Teste adsaads asd asdsad asd aasdasds
 	</div>
