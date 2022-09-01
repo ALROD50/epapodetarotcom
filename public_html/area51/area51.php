@@ -10,8 +10,8 @@
 <body>
 
 
-<div class="container justify-content-center">
-	<div class="row justify-content-center">
+<div class="container">
+	<div class="justify-content-center">
 		Teste adsaads asd asdsad asd aasdasds
 	</div>
 </div>
