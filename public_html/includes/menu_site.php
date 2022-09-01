@@ -84,10 +84,10 @@
 </nav>
 
 <!-- somente cel -->
-<div id="logocelular" class="d-xl-none d-lg-none pt-2">
+<div id="logocelular" class="d-xl-none d-lg-none">
   <div class="row justify-content-center">
-    <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
-      <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
+    <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" >
+      <img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot" style="width: 300px !important;">
     </a>
   </div>
 </div>
