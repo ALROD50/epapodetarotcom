@@ -9,38 +9,28 @@
       <li class="nav-item active">
         <a class="nav-link menulink" href="home">HOME<span class="sr-only"></span></a>
       </li>
-      <!-- <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle menulink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          CONSULTAR
+          CONSULTA
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="comprar-consulta/chat">CONSULTAR</a>
-          <a class="dropdown-item" href="comprar-consulta/whatsapp">CONSULTA POR WHATSAPP</a>
-          <a class="dropdown-item" href="comprar-consulta/email">CONSULTA POR E-MAIL</a>
-          <a class="dropdown-item" href="comprar-consulta/telefone">CONSULTA POR TELEFONE</a>
-          <a class="dropdown-item" href="comprar-consulta/video">CONSULTA POR VIDEO</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="comprar-consulta">COMPRE MINUTOS</a>
-          <a class="dropdown-item" href="depoimentos-tarlogos">DEPOIMENTOS</a>
-          <a class="dropdown-item" href="perguntas-frequentes">COMO FUNCIONA?</a>
           <a class="dropdown-item" href="registre-se">CADASTRE-SE</a>
+          <a class="dropdown-item" href="comprar-consulta">COMPRAR</a>
+          <a class="dropdown-item" href="tarologos">TARÓLOGOS</a>
         </div>
-      </li> -->
+      </li>
       <li class="nav-item">
         <a class="nav-link menulink" href="perguntas-frequentes">COMO FUNCIONA?</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link menulink" href="registre-se">CADASTRE-SE</a>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <a class="nav-link menulink" href="comprar-consulta">COMPRAR</a>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <a class="nav-link menulink" href="tarologos">TARÓLOGOS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link menulink" href="depoimentos-tarlogos">DEPOIMENTOS</a>
-      </li>
+      </li> -->
       <!-- <li class="nav-item">
         <a class="nav-link menulink" href="loja">LOJA</a>
       </li>
@@ -56,12 +46,22 @@
       <li class="nav-item">
         <a class="nav-link menulink" href="blog">BLOG</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle menulink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          OUTROS ASSUNTOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="faleconosco">FALE CONOSCO</a>
+          <a class="dropdown-item" href="https://dottovip.com.br/agendamentosdeconsultas/">AGENDAMENTO</a>
+          <a class="dropdown-item" href="tarologos">TARÓLOGOS</a>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
         <a class="nav-link menulink" href="https://dottovip.com.br/agendamentosdeconsultas/">AGENDAMENTO</a>
       </li>
       <li class="nav-item">
         <a class="nav-link menulink" href="faleconosco">FALE CONOSCO</a>
-      </li>
+      </li> -->
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle menulink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           CATEGORIAS
