@@ -53,7 +53,6 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="faleconosco">FALE CONOSCO</a>
           <a class="dropdown-item" href="https://dottovip.com.br/agendamentosdeconsultas/">AGENDAMENTO</a>
-          <a class="dropdown-item" href="tarologos">TARÓLOGOS</a>
         </div>
       </li>
       <!-- <li class="nav-item">
