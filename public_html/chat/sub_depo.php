@@ -1,15 +1,15 @@
 <?php
 session_start();
 // DELETANDO O COOKIE E A SESSION
-unset($_SESSION[cod_sala]);
-unset($_SESSION[nome]);
-unset($_SESSION[id_usuario_logado]);
-unset($_SESSION[user_nivel]);
-unset($_SESSION[credito]);
-unset($_SESSION[id_tarologo]);
-unset($_SESSION[id_cliente]);
-unset($_SESSION[nome_tarologo]);
-unset($_SESSION[nome_cliente]);
+unset($_SESSION['cod_sala']);
+unset($_SESSION['nome']);
+unset($_SESSION['id_usuario_logado']);
+unset($_SESSION['user_nivel']);
+unset($_SESSION['credito']);
+unset($_SESSION['id_tarologo']);
+unset($_SESSION['id_cliente']);
+unset($_SESSION['nome_tarologo']);
+unset($_SESSION['nome_cliente']);
 require_once "/home/epapodetarotcom/public_html/includes/conexaoPdo.php";
 $pdo = conexao();
 date_default_timezone_set("Brazil/East"); // seta configurações fusuhorario para Brasil
