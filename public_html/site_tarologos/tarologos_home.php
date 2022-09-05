@@ -79,7 +79,7 @@
 
 <center>
   <h2 style="margin-top:0px;" class="vinho">Profissionais</h2>
-  <p>Nossas consultas são feitas online e temos diversos especialistas na sua área. Pode ser útil para você não ter que aguardar para agendar.</p>
+  <p>Nossas consultas são feitas online e temos diversas tarólogos disponíveis para lhe auxiliar e direcionar em todas as áreas da sua vida. Pode ser útil para você não ter que aguardar para agendar.</p>
 </center>
 
 <hr>
