@@ -44,7 +44,7 @@ if ($row > 0){
     </figure>
   </div>
 
-  <div class="row card p-2 mt-5 mb-1">
+  <div class="card p-2 mt-5 mb-1">
     <p><u><i class="fas fa-arrow-right"></i> Atendimentos Disponíveis:</u></p>
     <figcaption class="figure-caption">
 
@@ -104,7 +104,9 @@ if ($row > 0){
     </figcaption>
   </div>
 
-  <?php echo $infos; ?>
+  <div class="row">
+    <?php echo $infos; ?>
+  </div>
 
   <p style="font-size:30px; color: #9e3434;"><b>ORÁCULOS</b>:</p>
   
