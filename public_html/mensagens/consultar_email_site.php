@@ -56,7 +56,7 @@ while ($mostrar = $sql_online->fetch(PDO::FETCH_ASSOC)) {
 	$row_online=$mostrar['online'];
 }
 
-if ($row_online == "offline" OR $row_online == "") {
+if (@$row_online == "offline" OR $row_online == "") {
 	echo '<p>Você está desconectado. <a href="fazer-login">Você precisa estar conectado para usar este recurso, clique aqui para entrar ou criar uma conta.</a></p>';
 	$cliente_online = 'negado';
 } else {
