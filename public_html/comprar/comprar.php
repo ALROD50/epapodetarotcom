@@ -333,12 +333,14 @@ if (isset($_GET['pack'])) {
 	</ul>
 	<div class="card tab-content p-3 mb-4 shadow" id="myTabContent" style="border:none;">
 		<div class="tab-pane fade show <?php if ($URLCATEGORIA=='chat'){echo 'active';}elseif($URLCATEGORIA==''){echo 'active';}elseif($URLSUBCATEGORIA!=''){echo 'active';} ?>" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+			<p>Nossas consultas são realizadas exclusivamente ao vivo e através de minutagem, ou seja, você compra a quantidade de minutos que desejar e faz as perguntas que desejar nesse período. ATENÇÃO: se você precisar fazer várias perguntas diferentes, você precisa adquirir um tempo maior de consulta, ok?</p>
+			<p><b>Bora para o passo a passo!</b></p>
 			<ul>
-				<li>Valor da Consulta: apenas R$ 1,50 o Minuto!</li>
+				<li>Valor da Consulta: apenas R$ 1,50 por minuto!</li>
 				<li>Consulta AO VIVO!</li>
 				<li>Faça sua consulta via <i class="fas fa-comments"></i> Chat - Texto ao vivo.</li>
-				<li>Faça sua consulta via <i class="fas fa-video"></i> Vídeo Chamada - Com audio e video ao vivo.</li>
-				<li>Clique no seu tarólogo para saber qual tipo de consulta esta disponível.</li>
+				<li>Faça sua consulta via <i class="fas fa-video"></i> Vídeo Chamada - Com áudio e vídeo ao vivo.</li>
+				<li>Clique no seu tarólogo para saber qual tipo de consulta está disponível.</li>
 			</ul>
 	  		<p><b class="text-success">Escolha o tempo:</b></p>
 	  		<div class="custom-control custom-radio">
