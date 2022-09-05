@@ -7,9 +7,9 @@ $rowQuantidade = $sql_produto->rowCount();
 
   <!-- somente pc -->
   <div class="row col-md-12 justify-content-center">
-    <div id="logo" class="d-xl-block d-lg-block d-none">
+    <div id="" class="d-xl-block d-lg-block d-none">
       <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
-        <center><img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot"></center>
+        <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
       </a>
     </div>
   </div>
