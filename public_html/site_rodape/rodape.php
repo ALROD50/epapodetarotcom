@@ -16,7 +16,7 @@ error_reporting(E_ALL); // Força o PHP a mostrar os erros.
 		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
 			<h2 class="vinho">Quem Somos</h2>
 			<center><img src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="É Papo de Tarot" class="" style="" /></center>
-			<p>Prazer, sou Monique. Tudo bem? Sou a idealizadora do portal É Papo de Tarot. E gostaria de me apresentar para você. Assim a gente se conhece um pouquinho mais. Para começar, sou apaixonada...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
+			<p>Prazer, sou Monique. Tudo bem? Sou a idealizadora do portal É Papo de Tarot. E gostaria de me apresentar para você. Assim a gente se conhece um pouquinho mais. Para começar, sou apaixonada por doces e...</p><a href="quem-somos" class="link-padraodois">Leia mais aqui.</a></p>
 		</div>
 		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
 			<h2 class="vinho">Institucional</h2>
