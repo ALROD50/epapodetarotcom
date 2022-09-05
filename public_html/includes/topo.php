@@ -6,13 +6,13 @@ $rowQuantidade = $sql_produto->rowCount();
 <div id="header" class="row">
 
   <!-- somente pc -->
-  <div id="logo" class="navbar-brand d-xl-block d-lg-block d-none">
+  <div id="logo" class="row justify-content-center d-xl-block d-lg-block d-none">
     <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
       <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
     </a>
   </div>
 
-  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 pr-1 pl-1">
+  <div class="col-md-12 pr-1 pl-1">
     <?php
     if($row_onlinex=="offline" OR $row_onlinex==""){
       //Não esta
