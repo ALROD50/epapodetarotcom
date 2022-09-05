@@ -6,12 +6,12 @@ $rowQuantidade = $sql_produto->rowCount();
 <div id="header" class="row">
 
   <!-- somente pc -->
-  <div class="row justify-content-center d-xl-block d-lg-block d-none mr-auto">
- 
-
+  <div class="row justify-content-center">
+    <div id="logo" class="d-xl-block d-lg-block d-none">
+      <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
         <center><img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot"></center>
-      
-  
+      </a>
+    </div>
   </div>
 
   <div class="col-md-12 pr-1 pl-1">
