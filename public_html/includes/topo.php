@@ -6,7 +6,7 @@ $rowQuantidade = $sql_produto->rowCount();
 <div id="header" class="row">
 
   <!-- somente pc -->
-  <div class="row justify-content-center d-xl-block d-lg-block d-none">
+  <div class="row justify-content-center d-xl-block d-lg-block d-none mr-auto">
  
 
         <center><img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot"></center>
