@@ -88,9 +88,9 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 		<h2 class="text-success">Envie sua mensagem aqui</h2>
 
 		<img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded mr-2 mb-3" alt="<?php echo $tarologo_nome;?>" title="<?php echo $tarologo_nome;?>" style="max-width:200px; float: left;">
-		<figcaption class="figure-caption">
+		<h3>
 			<?php echo $tarologo_nome; ?>
-		</figcaption>
+		</h3>
 				<p><b><?php echo $cliente_nome; ?></b>, você gostaria de enviar uma mensagem para o(a) tarólogo(a) <b><?php echo $tarologo_nome; ?></b>?</p>
 		<p>Não esqueça de mencionar o nome completo e data de nascimento seu e das pessoas envolvidas ou de quem queira saber informações em sua mensagem. Use o formulário abaixo.</p>
 
