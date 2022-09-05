@@ -104,7 +104,7 @@ if ($row > 0){
     </div>
   </div>
 
-  <div class="row">
+  <div class="row mt-3">
     <?php echo $infos; ?>
   </div>
 
