@@ -5,15 +5,7 @@ $rowQuantidade = $sql_produto->rowCount();
 ?>
 <div id="header" class="row">
 
-  <!-- somente pc -->
-  <div class="row col-md-12 justify-content-center">
-    <div id="" class="d-xl-block d-lg-block d-none">
-      <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
-        <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
-      </a>
-    </div>
-  </div>
-
+  <!-- Área de Login -->
   <div class="col-md-12 pr-1 pl-1">
     <?php
     if($row_onlinex=="offline" OR $row_onlinex==""){
@@ -285,6 +277,16 @@ $rowQuantidade = $sql_produto->rowCount();
     }
     ?>
   </div>
+
+  <!-- Logomarca Somente PC -->
+  <div class="row col-md-12 justify-content-center">
+    <div id="" class="d-xl-block d-lg-block d-none">
+      <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
+        <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
+      </a>
+    </div>
+  </div>
+  
 </div>
 <?php 
 // Quando o tarólogo clica em iniciar atendimento da chamada, cai aqui e pega os dados na URL e manda pra sala.
