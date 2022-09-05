@@ -37,7 +37,7 @@ if ($row > 0){
 
   <div style="clear:both;"></div>
     
-  <div style="float:left; margin: 15px 15px 15px 0px;" class="col-md-3">
+  <div style="margin: 15px 15px 15px 0px;" class="col-md-3">
     <figure class="figure">
       <img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded img-fluid" alt="<?php echo $nome;?>" title="<?php echo $nome;?>">
     </figure>
