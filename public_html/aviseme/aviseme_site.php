@@ -4,7 +4,7 @@ ini_set ('default_charset', 'UTF-8'); // seta o php em UTF 8
 ini_set('display_errors',0); // Força o PHP a mostrar os erros.
 ini_set('display_startup_erros',0); // Força o PHP a mostrar os erros.
 ?>
-<h1 class="azul mt-2"><i class="far fa-clock"></i> Avise-me Quando Disponível</h1>
+<h1><i class="far fa-clock"></i> Avise-me Quando Disponível</h1>
 <hr>
 <!-- Necessário para funcionar a função de ocultar o formulário assim que for submetido. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
