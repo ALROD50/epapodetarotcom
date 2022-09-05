@@ -39,7 +39,7 @@ if ($row > 0){
 
   <div class="row">
     <div class="col-md-3">
-      <img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded img-fluid mb-1" alt="<?php echo $nome;?>" title="<?php echo $nome;?>">
+      <img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded img-fluid mb-2" alt="<?php echo $nome;?>" title="<?php echo $nome;?>">
     </div>
     <div class="col-md-9">
       <div class="card p-2">
