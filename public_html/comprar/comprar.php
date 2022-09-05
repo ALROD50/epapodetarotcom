@@ -449,7 +449,7 @@ if($row_onlinex=="offline" OR $row_onlinex=="") {
 	    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 offset-xl-4 offset-lg-4">
 	    	<center>
 	    		<p><i class="fas fa-arrow-up"></i><i class="fas fa-arrow-up"></i><i class="fas fa-arrow-up"></i></p>
-	        	<h2 class="text-danger"><i class="fas fa-exclamation-triangle"></i> <b>Entre</b> ou <b>Cadastre-se</b>, acima antes de continuar...</h2>
+	        	<h2 class="text-danger"><i class="fas fa-exclamation-triangle"></i> <b>Entre</b> ou <b>Cadastre-se</b> acima antes de continuar...</h2>
 		        <button disabled="" type="button" class="btn btn-lg btn-success btn-block text-white shadow"><i class="fas fa-check-circle"></i> CONSULTAR</button>
 		        <div class="text-center mt-3">
 				  <div class="spinner-border" role="status" aria-hidden="true"></div>
