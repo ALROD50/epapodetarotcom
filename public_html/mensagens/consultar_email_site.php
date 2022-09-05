@@ -87,7 +87,7 @@ if ($cliente_online == 'positivo' AND $cliente_credito == 'positivo'){
 
 		<h2 class="text-success">Envie sua mensagem aqui</h2>
 
-		<img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded" alt="<?php echo $tarologo_nome;?>" title="<?php echo $tarologo_nome;?>" style="max-width:200px; float: left;">
+		<img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded mr-2 mb-3" alt="<?php echo $tarologo_nome;?>" title="<?php echo $tarologo_nome;?>" style="max-width:200px; float: left;">
 		<figcaption class="figure-caption">
 			<?php echo $tarologo_nome; ?>
 		</figcaption>
