@@ -8,7 +8,7 @@ while ($mostrar_config = $sql_config->fetch(PDO::FETCH_ASSOC)){
 <!-- Necessário para funcionar a função de ocultar o formulário assim que for submetido. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<h1><i class="fas fa-envelope"></i> Realizar Consulta Por E-mail</h1>
+<h1 class="vinho mt-2"><i class="fas fa-envelope"></i> Realizar Consulta Por E-mail</h1>
 <hr>
 
 <div id="pre_texto">
