@@ -40,7 +40,11 @@ if ($row > 0){
   <div style="float:left; margin: 15px 15px 15px 0px;" class="col-md-3">
     <figure class="figure">
       <img src="tarologos_admin/fotos/<?php echo $logo; ?>" class="rounded img-fluid" alt="<?php echo $nome;?>" title="<?php echo $nome;?>">
-      <div class="card p-2 mt-2">
+      
+    </figure>
+  </div>
+
+  <div class="card p-2 mt-2">
         <p><u><i class="fas fa-arrow-right"></i> Atendimentos Disponíveis:</u></p>
         <figcaption class="figure-caption">
 
@@ -99,8 +103,6 @@ if ($row > 0){
           ?>
         </figcaption>
       </div>
-    </figure>
-  </div>
 
   <?php echo $infos; ?>
 
