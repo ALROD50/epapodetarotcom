@@ -56,7 +56,10 @@ if(@$row_onlinex=="offline" OR @$row_onlinex=="") { ?>
       <div class="card bg-light mb-3 shadow">
         <div class="card-header"><h2 class="mb-0">Entrar</h2></div>
         <div class="card-body">
-          <center><h5 class="card-title">Bem-Vindo De Volta!</h5></center>
+          <center>
+						<h5 class="card-title"><i class="fas fa-handshake"></i> Bem-Vindo De Volta!</h5>
+						<p>Que bom te ver novamente!</p>
+					</center>
           <!-- <a button href="<?php //echo $loginUrl; ?>" id="xface" class="btn btn-lg btn-primary btn-block bot_cadastro_facebook" type="submit" title="Cadastrar Via Facebook" alt="Cadastrar Via Facebook" name="cadastro_facebook"><i class="fab fa-facebook"></i> Entrar Com Facebook</button></a>
           <div id="customBtn" class="customGPlusSignIn mt-2">
             <button class="btn btn-lg btn-danger btn-block" title="Entrar Via Google" alt="Entrar Via Google"><span class="text-white"><i class="fab fa-google"></i> Entrar Com Google</span></button>
