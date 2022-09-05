@@ -71,7 +71,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
   <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     
     <center>
-      <h2 style="margin-top:0px;" class="vinho">Fale Com Um Tarólogo Online!</h2>
+      <h2 style="margin-top:0px;" class="vinho">Fale online com um Tarólogo!</h2>
     </center>
 
     <div style="padding: 30px; background-image: url('images/bgbanner.png');background-size:1150px 1115px;background-repeat: no-repeat;background-attachment: fixed;background-position: center;border: none; color:#c69e88;">
