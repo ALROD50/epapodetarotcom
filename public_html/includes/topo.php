@@ -214,7 +214,7 @@ $rowQuantidade = $sql_produto->rowCount();
           <div class="d-xl-none d-lg-none pt-3 pr-2">
             <?php
             $usuario_nome=limita_caracteres($usuario_nome, '10', $quebra = true);
-            echo '<p class="">Saldo: <span><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> <a href="/minha-conta"><i class="fas fa-user-circle"></i> Olá '.$usuario_nome.'</a>  <a href="/carrinho-compras"><i class="fas fa-shopping-cart ml-1"></i> <span class="badge badge-pill  corpadrao1">'.$rowQuantidade.'</span> </a></p>';
+            echo '<p class="" style="margim-bottom:-0.5rem">Saldo: <span><i class="fas fa-dollar-sign"></i> '.$valor.' Minutos</span> <a href="/minha-conta"><i class="fas fa-user-circle"></i> Olá '.$usuario_nome.'</a>  <a href="/carrinho-compras"><i class="fas fa-shopping-cart ml-1"></i> <span class="badge badge-pill  corpadrao1">'.$rowQuantidade.'</span> </a></p>';
             ?>
           </div>
           <?php
