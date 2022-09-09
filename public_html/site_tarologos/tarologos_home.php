@@ -102,7 +102,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     $infos2=$mostrar2['infos'];
     $descricaocurta=$mostrar2['infos2'];
     $descricaocurta = strip_tags($descricaocurta);
-    $descricaocurta = strip_tags(limita_caracteres($descricaocurta, 250, true));
+    $descricaocurta = strip_tags(limita_caracteres($descricaocurta, 200, true));
     $logo2=$mostrar2['logo'];
     $videochamada=$mostrar2['videochamada'];
     // Verificando se tarólogo esta online.
@@ -209,7 +209,7 @@ $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$usuario_id'");
     $infos2=$mostrar2['infos'];
     $descricaocurta=$mostrar2['infos2'];
     $descricaocurta = strip_tags($descricaocurta);
-    $descricaocurta = strip_tags(limita_caracteres($descricaocurta, 250, true));
+    $descricaocurta = strip_tags(limita_caracteres($descricaocurta, 200, true));
     $logo2=$mostrar2['logo'];
     $videochamada=$mostrar2['videochamada'];
     // Verificando se tarólogo esta online.
