@@ -611,10 +611,6 @@ main {
     border: 2px solid #0DC143 !important;
 }
 
-#chat-application {
-    display: none !important;
-}
-
 .grecaptcha-badge {
     opacity: 0 !important;
 }
