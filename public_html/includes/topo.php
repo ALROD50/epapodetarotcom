@@ -279,8 +279,8 @@ $rowQuantidade = $sql_produto->rowCount();
   </div>
 
   <!-- Logomarca Somente PC -->
-  <div class="row col-md-12 justify-content-center mb-3">
-    <div id="" class="d-xl-block d-lg-block d-none">
+  <div class="row col-md-12 justify-content-center">
+    <div id="" class="d-xl-block d-lg-block d-none mb-3">
       <a href="https://www.epapodetarot.com.br/home" title="Site É Papo de Tarot" class="p-0 m-0">
         <img id="sizelogo" src="images/Logo-Site.fw.png" alt="Site É Papo de Tarot" title="Site É Papo de Tarot">
       </a>
