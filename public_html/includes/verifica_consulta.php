@@ -16,7 +16,6 @@ if ($row > 0) {
     $cred_final=$mostrar['cred_final'];
     $pagina=$mostrar['pagina'];
     $tipo=$mostrar['tipo'];
-    echo $cod_consulta."<br>";
   }
 
   if ($tipo=='Video') {
