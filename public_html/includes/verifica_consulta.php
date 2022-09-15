@@ -1,8 +1,8 @@
 
 <?php
 // Pega a última consulta
-$executa=$pdo->query("SELECT * FROM atendimento WHERE cod_consulta!='0' ORDER BY id DESC LIMIT 1");
-// $executa=$pdo->query("SELECT * FROM atendimento WHERE cod_consulta='4638' ORDER BY id DESC LIMIT 1");
+// $executa=$pdo->query("SELECT * FROM atendimento WHERE cod_consulta!='0' ORDER BY id DESC LIMIT 1");
+$executa=$pdo->query("SELECT * FROM atendimento WHERE cod_consulta='124' ORDER BY id DESC LIMIT 1");
 
 $row = $executa->rowCount();
 if ($row > 0) {
