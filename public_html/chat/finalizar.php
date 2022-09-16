@@ -149,6 +149,37 @@ if (!empty($_SESSION["cod_sala"])){
                'Chat'
             )");
 
+            // Verifica se cliente quer mandar conversa para o e-mail, se sim, enviar.
+            $dadoss3="SELECT * FROM clientes WHERE id='$id_cliente' ";
+            $executa2 = $pdo->query($dadoss3);
+            while ( $encontrado1 = $executa2->fetch(PDO::FETCH_ASSOC) ) { 
+                $conversa_no_email=$encontrado1['conversa_no_email'];
+                $email=$encontrado1['email'];
+                $nome1=$encontrado1['nome'];
+            }
+            if ($conversa_no_email == 'SIM') {
+                $seuemail = $email;
+                $assunto  = "Consulta - Taroando";
+                /*Configuramos os cabeçalho do e-mail*/
+                $headers  = "MIME-Version: 1.0\r\n";
+                $headers .= "Content-type: text/html; charset=utf-8\r\n";
+                $headers .= "From: contato@epapodetarot.com.br \r\n";
+                /*Configuramos o conte?do do e-mail*/
+                $conteudo  = "Olá $nome1 , reveja sua última consulta no site.<br>";
+                $conteudo .= "<br>";
+                $dadoss ="SELECT * FROM chat WHERE cod_sala='$cod_sala' ORDER BY id ASC "; 
+                $executa = $pdo->query($dadoss);
+                while ( $mostrartempo = $executa->fetch(PDO::FETCH_ASSOC) ) { 
+                    $nome=$mostrartempo['nome'];
+                    $mensagem=$mostrartempo['mensagem'];
+                    $conteudo .= "<p><b> $nome: </b> $mensagem </p>";
+                }
+                $conteudo .= "<br>";
+                $conteudo .= "epapodetarot.com.br<br/>";
+                /*Enviando o e-mail...*/
+                $enviando = mail($seuemail, $assunto, $conteudo, $headers);
+            }
+
             // Deleta a chamada para entrar no chat
             $pdo->query("DELETE FROM chamada_consulta WHERE id_cliente='$id_cliente'");
 
