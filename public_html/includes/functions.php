@@ -461,19 +461,19 @@ function EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensa
   // $PHPMaileremail->SMTPDebug   = 2; // debugging: 1 = errors and messages, 2 = messages only
   $PHPMaileremail->SMTPSecure  = 'ssl'; // secure transfer enabled REQUIRED for Gmail
   $PHPMaileremail->isSMTP(); // Define que o e-mail será enviado como HTML
-  $PHPMaileremail->addCustomHeader("List-Unsubscribe: <mailto:epapodetarot@gmail.com?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
+  $PHPMaileremail->addCustomHeader("List-Unsubscribe: <mailto:contato@epapodetarot.com.br?subject=Unsubscribe>, <https://www.epapodetarot.com.br>");
   $PHPMaileremail->Host     ="mail.epapodetarot.com.br";  
   $PHPMaileremail->SMTPAuth =true;
   $PHPMaileremail->Port     =465; //  Usar 587 porta SMTP
-  $PHPMaileremail->Username ="epapodetarot@gmail.com"; 
+  $PHPMaileremail->Username ="contato@epapodetarot.com.br"; 
   $PHPMaileremail->Password ="AG!eo{wOQRHA";
-  $PHPMaileremail->setFrom('epapodetarot@gmail.com', 'É Papo de Tarot');
-  $PHPMaileremail->addReplyTo('epapodetarot@gmail.com', 'É Papo de Tarot'); // Remetente
+  $PHPMaileremail->setFrom('contato@epapodetarot.com.br', 'É Papo de Tarot');
+  $PHPMaileremail->addReplyTo('contato@epapodetarot.com.br', 'É Papo de Tarot'); // Remetente
   // $PHPMaileremail->DKIM_domain = 'epapodetarot.com.br';
   // $PHPMaileremail->DKIM_private = '/home/novasyst/public_html/admin/area51/.htkeyprivate';
   // $PHPMaileremail->DKIM_selector = '1484161502.tarotdehorus'; //Prefix for the DKIM selector
   // $PHPMaileremail->DKIM_passphrase = ''; //leave blank if no Passphrase
-  // $PHPMaileremail->DKIM_identity = "epapodetarot@gmail.com";
+  // $PHPMaileremail->DKIM_identity = "contato@epapodetarot.com.br";
   // $PHPMailer->addCC('tarotdehorus.atendimento@hotmail.com', 'É Papo de Tarot'); // Copia
   $PHPMaileremail->addBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia Oculta
   // $PHPMailer->addAttachment('images/phpmailer.gif');      // Adicionar um anexo
