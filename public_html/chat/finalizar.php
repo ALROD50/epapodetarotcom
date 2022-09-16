@@ -175,7 +175,7 @@ if (!empty($_SESSION["cod_sala"])){
                     $conteudo .= "<p><b> $nome: </b> $mensagem </p>";
                 }
                 $conteudo .= "<br>";
-                $conteudo .= "epapodetarot.com.br<br/>";
+                $conteudo .= "www.epapodetarot.com.br<br/>";
                 /*Enviando o e-mail...*/
                 $enviando = mail($seuemail, $assunto, $conteudo, $headers);
             }
