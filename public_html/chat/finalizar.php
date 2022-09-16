@@ -159,7 +159,7 @@ if (!empty($_SESSION["cod_sala"])){
             }
             if ($conversa_no_email == 'SIM') {
                 $seuemail = $email;
-                $assunto  = "Consulta - Taroando";
+                $assunto  = "Consulta - É Papo de Tarot";
                 /*Configuramos os cabeçalho do e-mail*/
                 $headers  = "MIME-Version: 1.0\r\n";
                 $headers .= "Content-type: text/html; charset=utf-8\r\n";
