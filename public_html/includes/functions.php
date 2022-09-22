@@ -475,7 +475,7 @@ function EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensa
   // $PHPMaileremail->DKIM_passphrase = ''; //leave blank if no Passphrase
   // $PHPMaileremail->DKIM_identity = "contato@epapodetarot.com.br";
   // $PHPMailer->addCC('tarotdehorus.atendimento@hotmail.com', 'É Papo de Tarot'); // Copia
-  $PHPMaileremail->addBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia Oculta
+  // $PHPMaileremail->addBCC('logs@novasystems.com.br', 'Nova Systems'); // Cópia Oculta
   // $PHPMailer->addAttachment('images/phpmailer.gif');      // Adicionar um anexo
   $PHPMaileremail->addAddress($memaildestinatario, $mnomedestinatario); // Destinatário
   $PHPMaileremail->Subject = $massunto;
