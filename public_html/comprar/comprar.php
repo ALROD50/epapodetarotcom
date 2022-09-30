@@ -83,8 +83,8 @@ if (isset($_GET['pack'])) {
 			demonstrativo
 		) VALUES (
 			'$usuario_id',
-			'$minutos',
-			'$minutos',
+			'$MinutosMaisBonus',
+			'$MinutosMaisBonus',
 			'$valor',
 			'$ref', 
 			'Aguardando', 
