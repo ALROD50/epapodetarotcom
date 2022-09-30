@@ -124,6 +124,7 @@ if (isset($_GET['pack'])) {
 		###################### EMAIL ##############################
 		
 		echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod'</script>";
+	}
 }
 ?>
 
