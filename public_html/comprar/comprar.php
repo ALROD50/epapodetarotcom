@@ -336,14 +336,37 @@ if (isset($_GET['pack'])) {
 			<p>Nossas consultas são realizadas exclusivamente ao vivo e através de minutagem, ou seja, você compra a quantidade de minutos que desejar e faz as perguntas que desejar nesse período. ATENÇÃO: se você precisar fazer várias perguntas diferentes, você precisa adquirir um tempo maior de consulta, ok?</p>
 			<p><b>Bora para o passo a passo!</b></p>
 			<ul>
-				<li>Valor da Consulta: apenas R$ 1,50 por minuto!</li>
+				<li>Valor da Consulta: apenas R$ <?php echo $config_valor_minutos; ?> por minuto!</li>
 				<li>Consulta AO VIVO!</li>
 				<li>Faça sua consulta via <i class="fas fa-comments"></i> Chat - Texto ao vivo.</li>
 				<li>Faça sua consulta via <i class="fas fa-video"></i> Vídeo Chamada - Com áudio e vídeo ao vivo.</li>
 				<li>Clique no seu tarólogo para saber qual tipo de consulta está disponível.</li>
 			</ul>
 	  		<p><b class="text-success">Escolha o tempo:</b></p>
-	  		<div class="custom-control custom-radio">
+
+			<?php 
+	  		$sql22 = $pdo->query("SELECT * FROM planos_consulta ORDER by valor ASC"); 
+		    $rows = $sql22->rowCount();
+		    if ($rows >= 1) {
+		      	while ($dados22= $sql22->fetch(PDO::FETCH_ASSOC)) {
+		        	$id=$dados22['id'];
+			    	$ref=$dados22['ref'];
+			        $minutos=$dados22['minutos'];
+			        $valor=$dados22['valor'];
+			        $bonus=$dados22['bonus'];
+			        ?>
+			        <div class="custom-control custom-radio<?php echo $id; ?>">
+					  <input type="radio" id="customRadio<?php echo $id; ?>" name="customRadio" class="custom-control-input" value="<?php echo $id; ?>">
+					  <label class="custom-control-label" for="customRadio<?php echo $id; ?>"><i class="fas fa-clock"></i> <?php echo $minutos; ?> Minutos <?php if ($bonus!=""){ echo " + ".$bonus." Minutos de Bônus"; } ?> = R$ <?php echo $valor; ?></label>
+					</div>
+			        <?php
+		        }
+		    } else {
+		      echo "<p>Nenhum planos encontrado...</p>";
+		    } 
+		    ?>
+
+	  		<!-- <div class="custom-control custom-radio">
 			  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="1">
 			  <label class="custom-control-label" for="customRadio1" id="focuCompra"><i class="fas fa-clock"></i> 10 Minutos = R$ 15,00</label>
 			</div>
@@ -366,7 +389,8 @@ if (isset($_GET['pack'])) {
 			<div class="custom-control custom-radio">
 			  <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input" value="6">
 			  <label class="custom-control-label" for="customRadio6" id="focuCompra6"><i class="fas fa-clock"></i> 150 Minutos = R$ 225,00</label>
-			</div>
+			</div> -->
+
 		</div>
 		<div class="tab-pane fade show <?php if ($URLCATEGORIA=='chatmensal'){echo 'active';}?>" id="chatmensal" role="tabpanel" aria-labelledby="chatmensal-tab">
 	  		<p>Valor da Consulta via Chat: R$ 1,50 o Minuto.</br>
