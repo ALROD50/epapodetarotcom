@@ -19,7 +19,7 @@ function toggle(source) {
 <?php
 include "filtro.php";
 $ano = date('Y');
-$sql = $pdo->query("SELECT * FROM controle WHERE vencimento BETWEEN '$ano_escolhido-$tab-01' AND '$ano_escolhido-$tab-31 23:59:00' ORDER BY id DESC ");
+$sql = $pdo->query("SELECT * FROM controle WHERE data BETWEEN '$ano_escolhido-$tab-01' AND '$ano_escolhido-$tab-31 23:59:00' ORDER BY id DESC ");
 $row = $sql->rowCount();
 if ($row > 0){
 ?>
@@ -30,7 +30,7 @@ $datahoje = date("Y-m-d");
 $data_dia = date("d");
 $data_mes = date("m");
 $data_ano = date("Y");
-$sql4 = $pdo->query("SELECT SUM(valor) as soma4 FROM controle WHERE status='PAGO' AND vencimento BETWEEN '$ano_escolhido-$tab-01' AND '$ano_escolhido-$tab-31 23:59:00'  ");
+$sql4 = $pdo->query("SELECT SUM(valor) as soma4 FROM controle WHERE status='PAGO' AND data BETWEEN '$ano_escolhido-$tab-01' AND '$ano_escolhido-$tab-31 23:59:00'  ");
 $cont4 = $sql4->fetch(PDO::FETCH_ASSOC);
 $valor44 = $cont4["soma4"];
 $valor4 = number_format($valor44, 2, ',', '.');//Formatando para mostrar ao usuario.
