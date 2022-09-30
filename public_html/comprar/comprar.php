@@ -47,256 +47,83 @@ if (isset($_GET['pack'])) {
 		echo "<script>document.location.href='https://www.epapodetarot.com.br/minha-conta'</script>";
 
     } else {
+
     	// Compra não registrada
-    	switch($pacote) {
-			case "1":
-				$demonstrativo = "Consulta Via Chat - 10 Minutos = R$ 15,00";
-				$minutos = "10";
-				$valor = "15.00";
-				$tipo  = "padrao";
-				break;
-			case "2":
-				$demonstrativo = "Consulta Via Chat - 20 Minutos = R$ 30,00";
-				$minutos = "20";
-				$valor = "30.00";
-				$tipo  = "padrao";
-				break;
-			case "3":
-				$demonstrativo = "Consulta Via Chat - 30 Minutos = R$ 45,00";
-				$minutos = "30";
-				$valor = "45.00";
-				$tipo  = "padrao";
-				break;
-			case "4":
-				$demonstrativo = "Consulta Via Chat - 40 Minutos = R$ 60,00";
-				$minutos = "40";
-				$valor = "60.00";
-				$tipo  = "padrao";
-				break;
-			case "5":
-				$demonstrativo = "Consulta Via Chat - 80 Minutos = R$ 120,00";
-				$minutos = "80";
-				$valor = "120.00";
-				$tipo  = "padrao";
-				break;
-			case "6":
-				$demonstrativo = "Consulta Via Chat - 150 Minutos = R$ 225,00";
-				$minutos = "150";
-				$valor = "225.00";
-				$tipo  = "padrao";
-				break;
-			case "7":
-				$demonstrativo = "Consulta Via Whatsapp - 42 Minutos = R$ 70,00";
-				$minutos = "42";
-				$valor = "70.00";
-				$tipo  = "whatsapp";
-				break;
-			case "8":
-				$demonstrativo = "Consulta Via Whatsapp - 60 Minutos = R$ 100,00";
-				$minutos = "60";
-				$valor = "100.00";
-				$tipo  = "whatsapp";
-				break;
-			case "9":
-				$demonstrativo = "Consulta Via E-mail - Tirar Dúvida - R$ 19,90 - Faça uma pergunta simples e objetiva com até 350 caracteres - Resposta: Até 1.000 caracteres - Prazo: em um dia útil.";
-				$minutos = "0";
-				$valor = "19.90";
-				$tipo  = "email";
-				break;
-			case "10":
-				$demonstrativo = "Consulta Via E-mail - Consulta Completa - R$ 69,90 - Faça um questionamento completo com até 4.000 caracteres - Resposta: Analise Aprofundada com até 8.000 caracteres - Prazo: em até 3 dias úteis";
-				$minutos = "0";
-				$valor = "69.90";
-				$tipo  = "email";
-				break;
-			case "11":
-				$demonstrativo = "Consulta Via Chat - 100 Minutos = R$ 150,00";
-				$minutos = "100";
-				$valor = "150.00";
-				$tipo  = "padrao";
-				$consultamensal  = "sim";
-				break;
-			case "12":
-				$demonstrativo = "Consulta Via Chat - 200 Minutos = R$ 300,00";
-				$minutos = "200";
-				$valor = "300.00";
-				$tipo  = "padrao";
-				$consultamensal  = "sim";
-				break;
-			case "13":
-				$demonstrativo = "Consulta Via Chat - 300 Minutos = R$ 450,00";
-				$minutos = "300";
-				$valor = "450.00";
-				$tipo  = "padrao";
-				$consultamensal  = "sim";
-				break;
-			case "14":
-				$demonstrativo = "Consulta Via Chat - 400 Minutos = R$ 600,00";
-				$minutos = "400";
-				$valor = "600.00";
-				$tipo  = "padrao";
-				$consultamensal  = "sim";
-				break;
-			case "50":
-				$demonstrativo = "Consulta Via Chat - 1 Minuto = R$ 00,01";
-				$minutos = "1";
-				$valor = "00.01";
-				$tipo  = "padrao";
-				break;
-		}
-
-        if ($consultamensal == "sim") {
-
-			$vencimento     = date('d-m-Y', strtotime("+1 days"));
-			$dia_venc_orig  = Data_Mostra_Dia ($vencimento);
-        	
-        	for ($i = 0; $i < 12; $i++) {
-
-			    $ref            = uniqid("", true);
-			    $cod            = Codificador::Codifica("$usuario_id, $ref");
-			    $url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
-
-			    if($i > 0) {
-			      // Adiciona mais 1 mês na data de vencimento conforme a quantidade de parcelas do loop
-			      $vencimento = date("d-m-Y", strtotime("+1 month",strtotime($dia_venc_orig.'-'.$mes_vencimento.'-'.$ano_vencimento)));
-			      // Transforma vencimento em dia util caso necessário
-			      $vencimento = proximoDiaUtil($vencimento, $saida = 'd-m-Y');
-			      // Atualiza URL's
-			      $cod        = Codificador::Codifica("$usuario_id, $ref");
-			      $url        = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
-			    }
-
-			    //dia, mes e ano de vencimento novo separados
-			    $dia_vencimento = Data_Mostra_Dia ($vencimento);
-			    $mes_vencimento = Data_Mostra_Mes ($vencimento);
-			    $ano_vencimento = Data_Mostra_Ano ($vencimento);
-
-			    $pdo->query( "INSERT INTO controle (
-			      id_nome_cliente,
-			      minutos,
-			      minutos_dispo,
-			      valor,
-			      cod_pagamento,
-			      status,
-			      data,
-			      vencimento,
-			      metodo,
-			      tipo,
-			      demonstrativo,
-			      url
-			    ) VALUES (
-			      '$usuario_id',
-			      '$minutos',
-			      '$minutos',
-			      '$valor',
-			      '$ref', 
-			      'Aguardando', 
-			      '$data_hoje',
-			      '$ano_vencimento-$mes_vencimento-$dia_vencimento', 
-			      '',
-			      '$tipo',
-			      '$demonstrativo',
-			      '$url'
-			    )");
-			}
-
-			###################### EMAIL ##############################
-			$memaildestinatario = $email_usuario;
-			$mnomedestinatario  = $nome_usuario;
-			$massunto           = "Nova Cobrança Gerada É Papo de Tarot";
-			$mmensagem          = "
-				<p>Olá <b>$nome_usuario</b>, </p>
-				<p>O seu pedido foi realizado com sucesso.</p>
-				<strong>Demonstrativo:</strong> $demonstrativo <br/>
-				<p>Conclua seu pagamento para realizar sua consulta.</p>
-				<p>Para mais detalhes acesse sua conta em:</p>
-				<p><b>Minha Conta:</b></p>
-				<p><a href='https://www.epapodetarot.com.br/minha-conta/'>https://www.epapodetarot.com.br/minha-conta</a></p>
-				<br/>
-				<br/>
-				<b>É Papo de Tarot</b> <br/>
-				Departamento Financeiro <br/>
-				epapodetarot@gmail.com <br/>
-				Site: www.epapodetarot.com.br <br/>
-			";
-			EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
-			###################### EMAIL ##############################
-
-			// Selecionando a primeira parcela
-			$sql = $pdo->query("SELECT * FROM controle WHERE demonstrativo='$demonstrativo' AND id_nome_cliente='$usuario_id' ORDER by id DESC");
-			while ($mostrar = $sql->fetch(PDO::FETCH_ASSOC)){  
-      			$url=$mostrar['url'];
-      		}
-
-			echo "<script>document.location.href='$url'</script>";
-
-        } else {
-
-        	$vencimento     = date('d-m-Y', strtotime("+1 days"));
-			$cod            = Codificador::Codifica("$usuario_id, $ref");
-			$url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
-
-			// Transforma vencimento em dia util caso necessário
-			$vencimento = proximoDiaUtil($vencimento, $saida = 'Y-m-d');
-
-			$q = $pdo->query("INSERT INTO controle (
-	            id_nome_cliente,
-	            minutos,
-	            minutos_dispo,
-	            valor,
-	            cod_pagamento,
-	            status,
-	            data,
-	            metodo,
-	            tipo,
-	            vencimento,
-	            url,
-	            demonstrativo
-	        ) VALUES (
-	            '$usuario_id',
-	            '$minutos',
-	            '$minutos',
-	            '$valor',
-	            '$ref', 
-	            'Aguardando', 
-	            '$data_hoje',
-	            '',
-	            '$tipo',
-	            '$vencimento',
-	            '$url',
-				'$demonstrativo'
-	        )");
-
-	        ###################### EMAIL ##############################
-			$memaildestinatario = $email_usuario;
-			$mnomedestinatario  = $nome_usuario;
-			$massunto           = "Nova Cobrança Gerada É Papo de Tarot";
-			$mmensagem          = "
-				<p>Olá <b>$nome_usuario</b>, </p>
-				<p>Estes são os dados para realizar sua consulta.</p>
-				<strong>Demonstrativo:</strong> $demonstrativo <br/>
-				<strong>Valor:</strong> $valor <br/>
-				<strong>Código:</strong> $ref <br/>
-				<strong>Data Vencimento:</strong> $vencimento <br/>
-				<strong>Link para pagamento:</strong> <a href=".$url.">$url</a> <br/>
-				<p>Caso não seja possível clicar no link da cobrança acima, tente copiar todo o endereço e colar na barra de navegação do seu navegador de internet.</p>
-				<p>Conclua seu pagamento para realizar sua consulta.</p>
-				<p>Para mais detalhes acesse sua conta em:</p>
-				<p><b>Minha Conta:</b></p>
-				<p><a href='https://www.epapodetarot.com.br/minha-conta/'>https://www.epapodetarot.com.br/minha-conta</a></p>
-				<br/>
-				<br/>
-				<b>É Papo de Tarot</b> <br/>
-				Departamento Financeiro <br/>
-				epapodetarot@gmail.com <br/>
-				Site: www.epapodetarot.com.br <br/>
-			";
-			EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
-			###################### EMAIL ##############################
+		$sql22 = $pdo->query("SELECT * FROM planos_consulta WHERE id='$pacote' "); 
+      	while ($dados22= $sql22->fetch(PDO::FETCH_ASSOC)) {
+        	$id=$dados22['id'];
+	        $minutos=$dados22['minutos'];
+	        $valor=$dados22['valor'];
+	        $bonus=$dados22['bonus'];
         }
+
+        $MinutosMaisBonus=$minutos + $bonus;
+		$demonstrativo = "Consulta Via Chat - ".$MinutosMaisBonus." Minutos = R$ ".$valor;
+		$tipo  = "padrao";
+
+		$vencimento     = date('d-m-Y', strtotime("+1 days"));
+		$cod            = Codificador::Codifica("$usuario_id, $ref");
+		$url            = 'https://www.epapodetarot.com.br/pagamentos/pagar.php?cod='.$cod;
+
+		// Transforma vencimento em dia util caso necessário
+		$vencimento = proximoDiaUtil($vencimento, $saida = 'Y-m-d');
+
+		$q = $pdo->query("INSERT INTO controle (
+			id_nome_cliente,
+			minutos,
+			minutos_dispo,
+			valor,
+			cod_pagamento,
+			status,
+			data,
+			metodo,
+			tipo,
+			vencimento,
+			url,
+			demonstrativo
+		) VALUES (
+			'$usuario_id',
+			'$minutos',
+			'$minutos',
+			'$valor',
+			'$ref', 
+			'Aguardando', 
+			'$data_hoje',
+			'',
+			'$tipo',
+			'$vencimento',
+			'$url',
+			'$demonstrativo'
+		)");
+
+		###################### EMAIL ##############################
+		$memaildestinatario = $email_usuario;
+		$mnomedestinatario  = $nome_usuario;
+		$massunto           = "Nova Cobrança Gerada É Papo de Tarot";
+		$mmensagem          = "
+			<p>Olá <b>$nome_usuario</b>, </p>
+			<p>Estes são os dados para realizar sua consulta.</p>
+			<strong>Demonstrativo:</strong> $demonstrativo <br/>
+			<strong>Valor:</strong> $valor <br/>
+			<strong>Código:</strong> $ref <br/>
+			<strong>Data Vencimento:</strong> $vencimento <br/>
+			<strong>Link para pagamento:</strong> <a href=".$url.">$url</a> <br/>
+			<p>Caso não seja possível clicar no link da cobrança acima, tente copiar todo o endereço e colar na barra de navegação do seu navegador de internet.</p>
+			<p>Conclua seu pagamento para realizar sua consulta.</p>
+			<p>Para mais detalhes acesse sua conta em:</p>
+			<p><b>Minha Conta:</b></p>
+			<p><a href='https://www.epapodetarot.com.br/minha-conta/'>https://www.epapodetarot.com.br/minha-conta</a></p>
+			<br/>
+			<br/>
+			<b>É Papo de Tarot</b> <br/>
+			Departamento Financeiro <br/>
+			epapodetarot@gmail.com <br/>
+			Site: www.epapodetarot.com.br <br/>
+		";
+		EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
+		###################### EMAIL ##############################
 		
 		echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod'</script>";
-    }
 }
 ?>
 
