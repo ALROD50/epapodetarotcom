@@ -35,7 +35,7 @@ $status         = $data['resource']['state'];
 
 // Atualiza no Banco
 if ($status == 'completed') {
-    include '/home/epapodetarotcom/public_html/includes/conexao.php';
+    include '/home/epapodetarotcom/public_html/includes/conexaoPdo.php';
     $pdo = conexao();
     $ref = $invoice_number;
     // Verificando Pagamento
