@@ -16,7 +16,7 @@ if (@$paymentIDRegister == "1") {
     $ref   = $_POST['ref'];
     $query = $pdo->query("UPDATE controle SET 
         paymentIDPaypal='$paymentID',
-        forma_pag='Paypal'
+        metodo='Paypal'
     WHERE numero_cobranca='$ref'");
 }
 
