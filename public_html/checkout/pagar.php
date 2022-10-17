@@ -37,6 +37,13 @@ if ($sessionCode=="") {
     echo "<script>document.location.href='https://www.epapodetarot.com.br/pagamentos/pagar.php?cod=$cod_codificado'</script>";
     exit();
 }
+// Pix
+require __DIR__.'/../scripts/gerencianet_pix/vendor/autoload.php';
+require __DIR__.'/../scripts/gerencianet_pix/config-pix.php';
+use \App\Pix\Api;
+use \App\Pix\Payload;
+use Mpdf\QrCode\QrCode;
+use Mpdf\QrCode\Output;
 // Cupom de Desconto
 if (@$_POST['cupom']) {
     $cupom = trim($_POST["cupom"]);
