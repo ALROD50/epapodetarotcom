@@ -114,7 +114,6 @@ if(isset($_POST['envia'])){
 <div class="row">
     <div class="col-md-6">
       <h3>DADOS DE LOGIN</h3>
-      <hr>
       <div class="form-group">
         <label for="" class="">E-mail:</label>
         <div class="">
@@ -127,9 +126,7 @@ if(isset($_POST['envia'])){
           <input type="text" class="form-control"  name="Senha" value="<?php echo $Senha = isset($_POST['Senha']) ? $_POST['Senha'] : ''; ?>" required autofocus />
         </div>
       </div>
-      <hr>
       <h3>DADOS PESSOAIS</h3>
-      <hr>
       <div class="form-group">
         <label for="" class="">Nome Completo:</label>
         <div class="">
@@ -158,7 +155,6 @@ if(isset($_POST['envia'])){
     </div>
     <div class="col-md-6">
       <h3>DADOS PROFISSIONAIS</h3>
-      <hr>
       
       <div class="form-group">
         <label for="" class="">Nome Profissional:</label>
@@ -190,9 +186,7 @@ if(isset($_POST['envia'])){
           <textarea name="perfil" class="form-control"/></textarea>
         </div>
       </div>
-      <hr>
       <h3>DADOS PARA PAGAMENTOS</h3>
-      <hr>
       <div class="form-group">
         <label for="" class="">Contas Bancárias:</label>
         <div class="">
