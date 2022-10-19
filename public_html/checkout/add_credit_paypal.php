@@ -56,13 +56,13 @@ if (@$ERRO == "ERRONOPAGAMENTO") {
             // consulta via whatsapp
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', metodo='Paypal' WHERE cod_pagamento='$ref'");
             ?>
-            <p>Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a></p>
+           
             <?php
         } elseif ($tipo=="email") {
             // consulta via e-mail
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', metodo='Paypal' WHERE cod_pagamento='$ref'");
             ?>
-            <p>Para receber instruções da consulta via e-mail, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de receber instruções da consulta via e-mail!'>CLIQUE AQUI.</a></p>
+           
             <?php
         } elseif ($tipo=="loja") {
             # produto da loja

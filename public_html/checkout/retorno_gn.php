@@ -151,7 +151,7 @@ if ($status_atual_da_cobranca == "PAGO") {
         } elseif ($tipo=="whatsapp") {
             // consulta via whatsapp
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', valor='$valor', status='PAGO' WHERE id='$id_cobranca'");
-            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href=\'https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a>";
+            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href=\'https://api.whatsapp.com/send?phone=55&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!'>CLIQUE AQUI.</a>";
         } elseif ($tipo=="email") {
             // consulta via e-mail
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', valor='$valor', status='PAGO' WHERE id='$id_cobranca'");

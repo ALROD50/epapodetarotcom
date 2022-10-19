@@ -41,7 +41,7 @@
 
 	    <!-- whatsapp -->
 		<div id="whatsapp" class="d-none">
-		    <a href="https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?"><img src="images/whatsapp.png" alt=""></a>
+		    <a href="https://api.whatsapp.com/send?phone=55&text=Olá É Papo de Tarot, pode me ajudar com uma duvida?"><img src="images/whatsapp.png" alt=""></a>
 		</div>
 
 		<!-- Subir -->

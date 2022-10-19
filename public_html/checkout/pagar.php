@@ -370,8 +370,12 @@ require 'processa.php';
                     	<a href="#tabBoleto" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabBoleto-tab" role="tab" aria-controls="tabBoleto" aria-selected="false"><i class="fas fa-barcode"></i> Boleto</a>
                     </li>
                    
+                    <li class="nav-item d-none" role="presentation">
+                    	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><img src="images/bancos/pix.png"> Depósito</a>
+                    </li>
+
                     <li class="nav-item" role="presentation">
-                    	<a href="#tabDeposito" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabDeposito-tab" role="tab" aria-controls="tabDeposito" aria-selected="false"><img src="images/bancos/pix.png"> Pix</a>
+                        <a href="#tabPIX" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link active shadow" id="tabPIX-tab" role="tab" aria-controls="tabPIX" aria-selected="true"><img src="images/bancos/pix.png"> Pix</a>
                     </li>
                 </ul>
 
@@ -924,7 +928,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Depósito -->
-                    <div class="tab-pane fade show" id="tabDeposito" role="tabpanel" aria-labelledby="tabDeposito-tab">
+                    <div class="tab-pane fade show d-none" id="tabDeposito" role="tabpanel" aria-labelledby="tabDeposito-tab">
 
                         <h2 class="mb-4">Transferência</h2>
 
@@ -987,6 +991,381 @@ require 'processa.php';
                                     <button id="enviarDeposito" name="enviarDeposito" class="btn btn-success btn-lg btn-block" type="button" data-loading-text="Aguarde..."><i class="fas fa-check-double"></i> PAGAR</button>
                                     <p><small>Confirmar Pagamento</small></p>
                                     <div id="carregandoDeposito" class="text-center mt-3" style="display:none;">
+                                      <div class="spinner-border" role="status" aria-hidden="true"></div>
+                                      Carregando...
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Pix -->
+                    <div class="tab-pane fade show active" id="tabPIX" role="tabpanel" aria-labelledby="tabPIX-tab">
+
+                        <h2 class="mb-4">Pague com o Pix!</h2>
+
+                        <p>Com o pix seu pagamento é identificado na hora!<br> É rápido e fácil! Transfira de qualquer banco, dia e hora sem pagar taxa.</p>
+
+                        <div class="alert alert-primary mt-2" role="alert">
+                            <center>
+                                <h3>Como Funciona <i class="fas fa-question-circle" aria-hidden="true"></i></h3>
+                            </center>
+                        </div>
+
+                        <center>
+                            <p><b>Muito Fácil!</b> No seu celular abra o App em que você usa o Pix, agora é só pagar com o Código abaixo. Prontinho! Confirme o pagamento no celular.</p>
+                        </center>
+
+                        <?php
+                        // INTEGRAÇÃO PIX DINÂMICO NOVA SYSTEMS
+                        // Verifica quando o pix foi gerado
+                        $resultadoHoraPix = datediff('h', $data, $data_hoje, false);
+                        $bloqueiapix = false;
+                        // echo 'QRCODEPIX: '.$QRCODEPIX.'<br>';
+                        // echo 'refPix: '.$refPixBanco;
+                        // echo 'resultadoHoraPix: '.$resultadoHoraPix;
+                        // exit();
+                        // Verifica se precisa refazer o Pix
+                        @$repix = $_GET['repix'];
+                        if ($repix=="true") {
+                            // Refazendo o Pix
+                            // A variável abaixo impede de execultar o if ($QRCODEPIX !="" AND $resultadoHoraPix <= 1)
+                            $bloqueiapix = true;
+                            // $refPix  = uniqid(rand(), true);
+                            // $refPix  = preg_replace("/[.]/", "", $refPix);
+                            $refPix1  = uniqid();
+                            $refPix2  = uniqid();
+                            $refPix  = $refPix1.$refPix2;
+                            //INSTANCIA DA API PIX
+                            $obApiPix = new Api(API_PIX_URL,API_PIX_CLIENT_ID,API_PIX_CLIENT_SECRET,API_PIX_CERTIFICATE);
+                            //CORPO DA REQUISIÇÃO
+                            $request = [
+                                    'calendario' => [
+                                    'expiracao' => 3600
+                                ],
+                                    'devedor' => [
+                                    'cpf' => '12345678909',
+                                    'nome' => $nome
+                                ],
+                                    'valor' => [
+                                    'original' => $valor
+                                ],
+                                    'chave' => PIX_KEY,
+                                    'solicitacaoPagador' => $demonstrativo
+                            ];
+                            //RESPOSTA DA REQUISIÇÃO DE CRIAÇÃO
+                            $response = $obApiPix->createCob($refPix,$request);  // 26 até 35
+                            //VERIFICA A EXISTÊNCIA DO ITEM 'LOCATION'
+                            if(!isset($response['location'])){
+                                ?>
+                                <p style="color: red;">Erro!</p>
+                                <p>O código pix não foi gerado.</p>
+                                <p style="font-size: 30px;"><a href="<?php echo $urldacopra; ?>">Clique aqui para tentar novamente!</a></p>
+                                <style>
+                                    #imagempix {
+                                        display: none !important;
+                                    }
+                                    #QRCODEPIX {
+                                        display: none !important;
+                                    }
+                                </style>
+                                <?php
+                                $payloadQrCode = null;
+                                // echo 'Problemas ao gerar Pix dinâmico';
+                                // echo "<pre>";
+                                // print_r($response);
+                                // echo "</pre>"; 
+                            }
+                            //INSTANCIA PRINCIPAL DO PAYLOAD PIX
+                            $obPayload = (new Payload)->setMerchantName(PIX_MERCHANT_NAME)->setMerchantCity(PIX_MERCHANT_CITY)->setAmount($response['valor']['original'])->setTxid('***')->setUrl($response['location'])->setUniquePayment(true);
+                            //CÓDIGO DE PAGAMENTO PIX
+                            $payloadQrCode = $obPayload->getPayload();
+                            //Salva o QRCODE e o REF PIX
+                            $query = $pdo->query("UPDATE controle SET refPix='$refPix', metodo='Pix', QRCODEPIX='$payloadQrCode', data='$data_hoje' WHERE cod_pagamento='$ref'");
+                            //QR CODE
+                            $obQrCode = new QrCode($payloadQrCode);
+                            //IMAGEM DO QRCODE
+                            $image = (new Output\Png)->output($obQrCode,300);
+                            ?>
+                            <!-- somente pc -->
+                            <div class="d-xl-block d-lg-block d-none">
+                                <center>
+                                    <span style="text-decoration:underline;color:#007bff;">Use a opção <b>Pagar QR Code</b>, no seu app do Pix, para scannear o QR Code abaixo:</br> 
+                                    <img id="imagempix" src="data:image/png;base64, <?=base64_encode($image)?>"></br>
+                                    Ou, se preferir, copie a <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <!-- somente cel -->
+                            <div class="d-xl-none d-lg-none pt-2">
+                                <center>
+                                     <span style="text-decoration:underline;color:#007bff;">Copie o <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+                                <div class="input-group">
+                                    <input type="text" onclick="CopiaQRCODE(this.value);" id="QRCODEPIX" value="<?=$payloadQrCode?>" class="form-control" style="color: #0eb500; font-weight: bold;"/>
+                                </div>
+                                <center><p><span style="font-size:64%;">Clique no código acima para copiar e pagar via Pix.</span></p></center>
+                                <div id="QRCODEPIXCOPIADA" class="alert alert-success" role="alert" style="display:none;">
+                                    <center>
+                                        <p>Código Pix Copiado!</p>
+                                        <p>Agora no seu aplicativo que tenha o Pix, use a opção:</p>
+                                        <p><b>Pix Copia e Cola</b></p>
+                                        <p>Exemplo:</p>
+                                        <img src="../images/pixcopiacola.png" alt="" style="max-width: 100%;">
+                                    </center>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        if ($QRCODEPIX =="" AND $resultadoHoraPix == 0 AND $bloqueiapix == false) {
+                            // Se for a primeira vez e não existir pix, e tiver menos de 1 hora, cria o primeiro.
+                            $refPix1  = uniqid();
+                            $refPix2  = uniqid();
+                            $refPix  = $refPix1.$refPix2;
+                            //INSTANCIA DA API PIX
+                            $obApiPix = new Api(API_PIX_URL,API_PIX_CLIENT_ID,API_PIX_CLIENT_SECRET,API_PIX_CERTIFICATE);
+                            //CORPO DA REQUISIÇÃO
+                            $request = [
+                                    'calendario' => [
+                                    'expiracao' => 3600
+                                ],
+                                    'devedor' => [
+                                    'cpf' => '12345678909',
+                                    'nome' => $nome
+                                ],
+                                    'valor' => [
+                                    'original' => $valor
+                                ],
+                                    'chave' => PIX_KEY,
+                                    'solicitacaoPagador' => $demonstrativo
+                            ];
+                            //RESPOSTA DA REQUISIÇÃO DE CRIAÇÃO
+                            $response = $obApiPix->createCob($refPix,$request);  // 26 até 35
+                            //VERIFICA A EXISTÊNCIA DO ITEM 'LOCATION'
+                            if(!isset($response['location'])){
+                                ?>
+                                <p style="color: red;">Erro!</p>
+                                <p>O código pix não foi gerado.</p>
+                                <p style="font-size: 30px;"><a href="<?php echo $urldacopra; ?>">Clique aqui para tentar novamente!</a></p>
+                                <style>
+                                    #imagempix {
+                                        display: none !important;
+                                    }
+                                    #QRCODEPIX {
+                                        display: none !important;
+                                    }
+                                </style>
+                                <?php
+                                $payloadQrCode = null;
+                                // echo 'Problemas ao gerar Pix dinâmico';
+                                // echo "<pre>";
+                                // print_r($response);
+                                // echo "</pre>"; 
+                            }
+                            //INSTANCIA PRINCIPAL DO PAYLOAD PIX
+                            $obPayload = (new Payload)->setMerchantName(PIX_MERCHANT_NAME)->setMerchantCity(PIX_MERCHANT_CITY)->setAmount($response['valor']['original'])->setTxid('***')->setUrl($response['location'])->setUniquePayment(true);
+                            //CÓDIGO DE PAGAMENTO PIX
+                            $payloadQrCode = $obPayload->getPayload();
+                            //Salva o QRCODE e o REF PIX
+                            $query = $pdo->query("UPDATE controle SET refPix='$refPix', metodo='Pix', QRCODEPIX='$payloadQrCode', data='$data_hoje' WHERE cod_pagamento='$ref'");
+                            //QR CODE
+                            $obQrCode = new QrCode($payloadQrCode);
+                            //IMAGEM DO QRCODE
+                            $image = (new Output\Png)->output($obQrCode,300);
+                            ?>
+                            <!-- somente pc -->
+                            <div class="d-xl-block d-lg-block d-none">
+                                <center>
+                                    <span style="text-decoration:underline;color:#007bff;">1 Use a opção <b>Pagar QR Code</b>, no seu app do Pix, para scannear o QR Code abaixo:</br> 
+                                    <img id="imagempix" src="data:image/png;base64, <?=base64_encode($image)?>"></br>
+                                    Ou, se preferir, copie a <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <!-- somente cel -->
+                            <div class="d-xl-none d-lg-none pt-2">
+                                <center>
+                                     <span style="text-decoration:underline;color:#007bff;">Copie o <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+                                <div class="input-group">
+                                    <input type="text" onclick="CopiaQRCODE(this.value);" id="QRCODEPIX" value="<?=$payloadQrCode?>" class="form-control" style="color: #0eb500; font-weight: bold;"/>
+                                </div>
+                                <center><p><span style="font-size:64%;">Clique no código acima para copiar e pagar via Pix.</span></p></center>
+                                <div id="QRCODEPIXCOPIADA" class="alert alert-success" role="alert" style="display:none;">
+                                    <center>
+                                        <p>Código Pix Copiado!</p>
+                                        <p>Agora no seu aplicativo que tenha o Pix, use a opção:</p>
+                                        <p><b>Pix Copia e Cola</b></p>
+                                        <p>Exemplo:</p>
+                                        <img src="../images/pixcopiacola.png" alt="" style="max-width: 100%;">
+                                    </center>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        if ($QRCODEPIX !="" AND $resultadoHoraPix <= 1 AND $bloqueiapix == false) {
+                            // Já tem 1 pix gerado a menos em até 1 hora, então mostra o atual mesmo.
+                            // QR CODE
+                            $obQrCode = new QrCode($QRCODEPIX);
+                            // IMAGEM DO QRCODE
+                            $image = (new Output\Png)->output($obQrCode,300);
+                            ?>
+                            <!-- somente pc -->
+                            <div class="d-xl-block d-lg-block d-none">
+                                <center>
+                                    <span style="text-decoration:underline;color:#007bff;">1 - Use a opção <b>Pagar QR Code</b>, no seu app do Pix, para scannear o QR Code abaixo:</br> 
+                                    <img id="imagempix" src="data:image/png;base64, <?=base64_encode($image)?>"></br>
+                                    Ou, se preferir, copie a <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <!-- somente cel -->
+                            <div class="d-xl-none d-lg-none pt-2">
+                                <center>
+                                     <span style="text-decoration:underline;color:#007bff;">Copie o <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+                                <div class="input-group">
+                                    <input type="text" onclick="CopiaQRCODE(this.value);" id="QRCODEPIX" value="<?=$QRCODEPIX?>" class="form-control" style="color: #0eb500; font-weight: bold;"/>
+                                </div>
+                                <center><p><span style="font-size:64%;">Clique no código acima para copiar e pagar via Pix.</span></p></center>
+                                <div id="QRCODEPIXCOPIADA" class="alert alert-success" role="alert" style="display:none;">
+                                    <center>
+                                        <p>Código Pix Copiado!</p>
+                                        <p>Agora no seu aplicativo que tenha o Pix, use a opção:</p>
+                                        <p><b>Pix Copia e Cola</b></p>
+                                        <p>Exemplo:</p>
+                                        <img src="../images/pixcopiacola.png" alt="" style="max-width: 100%;">
+                                    </center>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        if ($QRCODEPIX !="" AND $resultadoHoraPix > 1 AND $bloqueiapix == false) {
+                            // Gera um novo pix
+                            $refPix1  = uniqid();
+                            $refPix2  = uniqid();
+                            $refPix  = $refPix1.$refPix2;
+                            //INSTANCIA DA API PIX
+                            $obApiPix = new Api(API_PIX_URL,API_PIX_CLIENT_ID,API_PIX_CLIENT_SECRET,API_PIX_CERTIFICATE);
+                            //CORPO DA REQUISIÇÃO
+                            $request = [
+                              'calendario' => [
+                                'expiracao' => 3600
+                              ],
+                              'devedor' => [
+                                'cpf' => '12345678909',
+                                'nome' => $nome
+                              ],
+                              'valor' => [
+                                'original' => $valor
+                              ],
+                              'chave' => PIX_KEY,
+                              'solicitacaoPagador' => $demonstrativo
+                            ];
+                            //RESPOSTA DA REQUISIÇÃO DE CRIAÇÃO
+                            $response = $obApiPix->createCob($refPix,$request);  // 26 até 35
+                            //VERIFICA A EXISTÊNCIA DO ITEM 'LOCATION'
+                            if(!isset($response['location'])){
+                                ?>
+                                <p style="color: red;">Erro!</p>
+                                <p>O código pix não foi gerado.</p>
+                                <p style="font-size: 30px;"><a href="<?php echo $urldacopra; ?>">Clique aqui para tentar novamente!</a></p>
+                                <style>
+                                    #imagempix {
+                                        display: none !important;
+                                    }
+                                    #QRCODEPIX {
+                                        display: none !important;
+                                    }
+                                </style>
+                                <?php
+                                $payloadQrCode = null;
+                                // echo 'Problemas ao gerar Pix dinâmico';
+                                // echo "<pre>";
+                                // print_r($response);
+                                // echo "</pre>"; 
+                            }
+                            // INSTANCIA PRINCIPAL DO PAYLOAD PIX
+                            $obPayload = (new Payload)->setMerchantName(PIX_MERCHANT_NAME)->setMerchantCity(PIX_MERCHANT_CITY)->setAmount($response['valor']['original'])->setTxid('***')->setUrl($response['location'])->setUniquePayment(true);
+                            // CÓDIGO DE PAGAMENTO PIX
+                            $payloadQrCode = $obPayload->getPayload();
+                            // Salva o QRCODE e o REF PIX
+                            $query = $pdo->query("UPDATE controle SET refPix='$refPix', metodo='Pix', QRCODEPIX='$payloadQrCode', data='$data_hoje', status='Aguardando' WHERE cod_pagamento='$ref'");
+                            // QR CODE
+                            $obQrCode = new QrCode($payloadQrCode);
+                            // IMAGEM DO QRCODE
+                            $image = (new Output\Png)->output($obQrCode,300);
+                            ?>
+                            <!-- somente pc -->
+                            <div class="d-xl-block d-lg-block d-none">
+                                <center>
+                                    <span style="text-decoration:underline;color:#007bff;">1: Use a opção <b>Pagar QR Code</b>, no seu app do Pix, para scannear o QR Code abaixo:</br> 
+                                    <img id="imagempix" src="data:image/png;base64, <?=base64_encode($image)?>"></br>
+                                    Ou, se preferir, copie a <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <!-- somente cel -->
+                            <div class="d-xl-none d-lg-none pt-2">
+                                <center>
+                                     <span style="text-decoration:underline;color:#007bff;">Copie o <b>Código</b> Pix abaixo para fazer o pagamento:</span><br>
+                                </center>
+                            </div>
+                            <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+                                <div class="input-group">
+                                    <input type="text" onclick="CopiaQRCODE(this.value);" id="QRCODEPIX" value="<?=$payloadQrCode?>" class="form-control" style="color: #0eb500; font-weight: bold;"/>
+                                </div>
+                                <center><p><span style="font-size:64%;">Clique no código acima para copiar e pagar via Pix.</span></p></center>
+                                <div id="QRCODEPIXCOPIADA" class="alert alert-success" role="alert" style="display:none;">
+                                    <center>
+                                        <p>Código Pix Copiado!</p>
+                                        <p>Agora no seu aplicativo que tenha o Pix, use a opção:</p>
+                                        <p><b>Pix Copia e Cola</b></p>
+                                        <p>Exemplo:</p>
+                                        <img src="../images/pixcopiacola.png" alt="" style="max-width: 100%;">
+                                    </center>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                        <!-- VERIFICA SE O PIX FOI PAGO AUTOMATICAMENTE -->
+                        <script>
+                            setInterval(function() {
+                                $.post('https://www.epapodetarot.com.br/scripts/gerencianet_pix/updatepix.php',
+                                {
+                                    ref : '<?php echo $ref; ?>',
+                                    cod : '<?php echo $cod_codificado; ?>',
+                                    URLSESSAO : '<?php echo $URLSESSAO; ?>'
+                                }, 
+                                function(retorno){
+                                    $("#retorno_pix").html(retorno);
+                                });
+                            }, 1000);
+                        </script>
+
+                        <div id="retorno_pix"></div>
+
+                        <hr style="border-top: 3px solid #eee;">
+
+                        <div style="font-size: 15px">
+                            <center>
+                                <h5 class="azul">Depois de fazer o pagamento, clique no botão verde abaixo <b>PAGAR</b> para que o sistema do Tarot de Hórus confirme o pedido!</h5>
+                                <p><em>Clique somente após o pagamento ter sido concluído usando o QR Code ou o Código acima.</em></p>
+                            </center>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <center>
+                                    <br>
+                                    <button id="enviarPix" name="enviarPix" class="btn btn-success btn-lg btn-block" type="button" data-loading-text="Aguarde..."><i class="fas fa-check-double"></i> PAGAR</button>
+                                    <p><small>Confirmar Pagamento</small></p>
+                                    <div id="carregandoPix" class="text-center mt-3" style="display:none;">
                                       <div class="spinner-border" role="status" aria-hidden="true"></div>
                                       Carregando...
                                     </div>

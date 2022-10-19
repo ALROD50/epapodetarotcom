@@ -135,64 +135,64 @@ $rowQuantidade = $sql_produto->rowCount();
             }
           }
           // Verificando Pagamento PIX
-          // $executapix = $pdo->query("SELECT * FROM controle WHERE metodo='Pix' AND status!='PAGO'");
-          // $nLinhasPix = $executapix->rowCount();
-          // if ($nLinhasPix > 0) {
-          //   // pega data da criação do pix e o id
-          //   while ($dadosspix= $executapix->fetch(PDO::FETCH_ASSOC)) { 
-          //     $refPixx=$dadosspix['refPix'];
-          //     $dataCriado=$dadosspix['data'];
-          //     $reference=$dadosspix['cod_pagamento'];
-          //     $minutos=$dadosspix['minutos_dispo'];
-          //     $tipo=$dadosspix['tipo'];
-          //     // Verifica quando o pix foi gerado
-          //     $resultadoHoraPix = datediff('h', $dataCriado, $data_hoje, false);
-          //     // Verifica Status
-          //     include __DIR__.'/../scripts/gerencianet_pix/consultar-qrcode-dinamico.php';
-          //     $status_compra = $responsex["status"];
-          //     // Atualiza
-          //     if ($resultadoHoraPix == 0) {
-          //       if ($status_compra == 'ATIVA') {
-          //       // Ainda não foi paga não faz nada.
-          //       } elseif ($status_compra == 'CONCLUIDA') {
-          //         // Atualiza a fatura para pago.
-          //         if ($tipo=="padrao") {
-          //             // consulta via chat
-          //             $query = $pdo->query("UPDATE controle SET data='$data_hoje', minutos_dispo='$minutos', status='PAGO' WHERE cod_pagamento='$reference'");
-          //         } elseif ($tipo=="email") {
-          //             // consulta via e-mail
-          //             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-          //         } elseif ($tipo=="loja") {
-          //             # produto da loja
-          //             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-          //         }
-          //       }
-          //     }
-          //     // Atualiza
-          //     if ($resultadoHoraPix <= 1) {
-          //       if ($status_compra == 'ATIVA') {
-          //       // Ainda não foi paga não faz nada.
-          //       } elseif ($status_compra == 'CONCLUIDA') {
-          //         // Atualiza a fatura para pago.
-          //         if ($tipo=="padrao") {
-          //             // consulta via chat
-          //             $query = $pdo->query("UPDATE controle SET data='$data_hoje', minutos_dispo='$minutos', status='PAGO' WHERE cod_pagamento='$reference'");
-          //         } elseif ($tipo=="email") {
-          //             // consulta via e-mail
-          //             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-          //         } elseif ($tipo=="loja") {
-          //             # produto da loja
-          //             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-          //         }
-          //       }
-          //     }
-          //     // Pix expirado
-          //     if ($resultadoHoraPix > 1) {
-          //       $query = $pdo->query("UPDATE controle SET status='Aguardando', metodo='' WHERE cod_pagamento='$reference'");
-          //     }
+          $executapix = $pdo->query("SELECT * FROM controle WHERE metodo='Pix' AND status!='PAGO'");
+          $nLinhasPix = $executapix->rowCount();
+          if ($nLinhasPix > 0) {
+            // pega data da criação do pix e o id
+            while ($dadosspix= $executapix->fetch(PDO::FETCH_ASSOC)) { 
+              $refPixx=$dadosspix['refPix'];
+              $dataCriado=$dadosspix['data'];
+              $reference=$dadosspix['cod_pagamento'];
+              $minutos=$dadosspix['minutos_dispo'];
+              $tipo=$dadosspix['tipo'];
+              // Verifica quando o pix foi gerado
+              $resultadoHoraPix = datediff('h', $dataCriado, $data_hoje, false);
+              // Verifica Status
+              include __DIR__.'/../scripts/gerencianet_pix/consultar-qrcode-dinamico.php';
+              $status_compra = $responsex["status"];
+              // Atualiza
+              if ($resultadoHoraPix == 0) {
+                if ($status_compra == 'ATIVA') {
+                // Ainda não foi paga não faz nada.
+                } elseif ($status_compra == 'CONCLUIDA') {
+                  // Atualiza a fatura para pago.
+                  if ($tipo=="padrao") {
+                      // consulta via chat
+                      $query = $pdo->query("UPDATE controle SET data='$data_hoje', minutos_dispo='$minutos', status='PAGO' WHERE cod_pagamento='$reference'");
+                  } elseif ($tipo=="email") {
+                      // consulta via e-mail
+                      $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
+                  } elseif ($tipo=="loja") {
+                      # produto da loja
+                      $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
+                  }
+                }
+              }
+              // Atualiza
+              if ($resultadoHoraPix <= 1) {
+                if ($status_compra == 'ATIVA') {
+                // Ainda não foi paga não faz nada.
+                } elseif ($status_compra == 'CONCLUIDA') {
+                  // Atualiza a fatura para pago.
+                  if ($tipo=="padrao") {
+                      // consulta via chat
+                      $query = $pdo->query("UPDATE controle SET data='$data_hoje', minutos_dispo='$minutos', status='PAGO' WHERE cod_pagamento='$reference'");
+                  } elseif ($tipo=="email") {
+                      // consulta via e-mail
+                      $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
+                  } elseif ($tipo=="loja") {
+                      # produto da loja
+                      $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
+                  }
+                }
+              }
+              // Pix expirado
+              if ($resultadoHoraPix > 1) {
+                $query = $pdo->query("UPDATE controle SET status='Aguardando', metodo='' WHERE cod_pagamento='$reference'");
+              }
   
-          //   }
-          // }
+            }
+          }
           // Verifica se cliente tem crédito
           $sql_credito = $pdo->query("SELECT COALESCE(SUM(minutos_dispo), 0) as soma FROM controle WHERE id_nome_cliente='$usuario_id' AND status='PAGO' ");
           $cont = $sql_credito->fetch(PDO::FETCH_ASSOC);

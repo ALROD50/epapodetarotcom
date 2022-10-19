@@ -248,7 +248,7 @@ if (@$_POST['Cartao'] == 'enviarCartao'){
             } elseif ($tipo=="whatsapp") {
                 // consulta via whatsapp
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', meteodo='PagSeguro' WHERE cod_pagamento='$reference'");
-                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
+                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=55&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
             } elseif ($tipo=="email") {
                 // consulta via e-mail
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO', metodo='PagSeguro' WHERE cod_pagamento='$reference'");
@@ -1055,7 +1055,7 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
             } elseif ($tipo=="whatsapp") {
                 // consulta via whatsapp
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
+                $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=55&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
             } elseif ($tipo=="email") {
                 // consulta via e-mail
                 $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
@@ -1134,7 +1134,6 @@ if (@$_POST['CartaoGE'] == 'enviarCartaoGE'){
             <button type="button" class="close" data-dismiss="alert">×</button>
                 <h3>Erro - Desculpe o processamento do seu pagamento falhou.</h3>
                 <p>Você pode fazer uma nova tentativa, <a href="<?php echo $urldacopra; ?>">Clique Aqui.</a></p>
-                <p>Ou falar conosco no whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de ajuda com o meu pagamento.' target='_blank'>CLIQUE AQUI.</a></p>
             </div>
             <?php
         }
@@ -1221,7 +1220,7 @@ if (@$_POST['Pix'] == 'enviarPix'){
         } elseif ($tipo=="whatsapp") {
             // consulta via whatsapp
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
-            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
+            $consultawhatsapp="Para realizar sua consulta via whatsapp, <a href='https://api.whatsapp.com/send?phone=55&text=Olá É Papo de Tarot, Gostaria de agendar minha consulta via WhatsApp!' target='_blank'>CLIQUE AQUI.</a>";
         } elseif ($tipo=="email") {
             // consulta via e-mail
             $query = $pdo->query("UPDATE controle SET data='$data_hoje', status='PAGO' WHERE cod_pagamento='$reference'");
@@ -1290,7 +1289,6 @@ if (@$_POST['Pix'] == 'enviarPix'){
         <button type="button" class="close" data-dismiss="alert">×</button>
             <h3>Erro - Desculpe o processamento do seu pagamento falhou.</h3>
             <p>Você pode fazer uma nova tentativa, <a href="<?php echo $urldacopra; ?>">Clique Aqui.</a></p>
-            <p>Ou falar conosco no whatsapp, <a href='https://api.whatsapp.com/send?phone=5511941190306&text=Olá É Papo de Tarot, Gostaria de ajuda com o meu pagamento.' target='_blank'>CLIQUE AQUI.</a></p>
         </div>
         <?php
     }
