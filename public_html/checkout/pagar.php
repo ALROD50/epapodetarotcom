@@ -375,7 +375,7 @@ require 'processa.php';
                     </li>
 
                     <li class="nav-item" role="presentation">
-                        <a href="#tabPIX" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link active shadow" id="tabPIX-tab" role="tab" aria-controls="tabPIX" aria-selected="true"><img src="images/bancos/pix.png"> Pix</a>
+                        <a href="#tabPIX" data-toggle="tab" class="flex-sm-fill text-sm-center nav-link shadow" id="tabPIX-tab" role="tab" aria-controls="tabPIX" aria-selected="true"><img src="images/bancos/pix.png"> Pix</a>
                     </li>
                 </ul>
 
@@ -1001,7 +1001,7 @@ require 'processa.php';
                     </div>
 
                     <!-- Pix -->
-                    <div class="tab-pane fade show active" id="tabPIX" role="tabpanel" aria-labelledby="tabPIX-tab">
+                    <div class="tab-pane fade show" id="tabPIX" role="tabpanel" aria-labelledby="tabPIX-tab">
 
                         <h2 class="mb-4">Pague com o Pix!</h2>
 
