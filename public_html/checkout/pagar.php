@@ -1353,7 +1353,7 @@ require 'processa.php';
 
                         <div style="font-size: 15px">
                             <center>
-                                <h5 class="azul">Depois de fazer o pagamento, clique no botão verde abaixo <b>PAGAR</b> para que o sistema do Tarot de Hórus confirme o pedido!</h5>
+                                <h5 class="azul">Depois de fazer o pagamento, clique no botão verde abaixo <b>PAGAR</b> para que o sistema do É papo de Tarot confirme o pedido!</h5>
                                 <p><em>Clique somente após o pagamento ter sido concluído usando o QR Code ou o Código acima.</em></p>
                             </center>
                         </div>
