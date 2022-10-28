@@ -1,5 +1,5 @@
 <?php 
-$regex = "/^[a-z]{2,}\ [a-z]{2,}/gi";
+$regex = "/^[a-z]{2,}\ [a-z]{2,}/";
 $nome = "andreia silva";
 $resultado = preg_match($regex, $nome);
 
