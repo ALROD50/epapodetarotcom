@@ -183,12 +183,6 @@ if(isset($_POST['enviacadastrar'])) {
       } else { $emailv3 = null; }
     } else {$emailv3 = null;}
 
-    // validação
-    if (empty($_POST['nome'])) { 
-      $erros++;
-      $nomev="Nome vazio, por favor preencha o nome corretamente."; 
-    } else { $nomev = null; }
-
     if (empty($_POST['email'])) { 
       $erros++;
       $emailv="E-mail vazio, por favor preencha o e-mail corretamente."; 
