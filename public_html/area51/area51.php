@@ -1,6 +1,6 @@
 <?php 
 $regex = "/^[a-z]{2,}\ [a-z]{2,}/";
-$nome = "andreia silva";
+$nome = "andreia Silva";
 $resultado = preg_match($regex, $nome);
 
 if ($resultado) { 
