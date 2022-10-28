@@ -164,6 +164,14 @@ if(isset($_POST['enviacadastrar'])) {
         }
     // Captcha ###############################################################
 
+    // Nome e Sobrenome Teste
+    // $regex = "^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$";
+    // preg_match_all($regex, $nome, $resultado);
+    // if (empty($_POST['nome'])) { 
+    //   $erros++;
+    //   $nomev="Nome vazio, por favor preencha o nome corretamente."; 
+    // } else { $nomev = null; }
+
     // Verifica se e-mail ja existe no sistema
     if (!empty($_POST['email']) ) { // se o campo e-mail estiver vazio não faz verificação
 
@@ -344,23 +352,6 @@ if(isset($_POST['enviacadastrar'])) {
                 online='online',
                 time='$datacompleta2'
             WHERE id='$usuario_id'");
-            
-            // adiciona no getresponse
-            ?>
-            <div id="retorno"></div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <script type="text/javascript">
-                $.post('https://app.getresponse.com/add_subscriber.html',{
-                  campaign_token: 'rnqFX',
-                  start_day: '0',
-                  name: '<?php echo $nome; ?>',
-                  email: '<?php echo $email; ?>'
-                }, 
-                function(retorno){
-                  $("#retorno").html(retorno);
-                });
-            </script>
-            <?php
 
         // Redireciona o visitante
             if ($URLSESSAO=='carrinho-compras') {
