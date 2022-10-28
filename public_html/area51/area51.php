@@ -1,6 +1,6 @@
 <?php 
 $regex = "/^((\b[A-zÀ-ú']{2,40}\b)\s*){2,}$/";
-$nome = "alexandre rodrigues";
+$nome = "Andréia ";
 $resultado = preg_match($regex, $nome);
 
 if ($resultado) { 
