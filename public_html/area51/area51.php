@@ -12,7 +12,7 @@ if ($resultado === true) {
 echo "<br>";
 echo "<hr>";
 
-echo $resultado;
+echo "resultado: ".$resultado;
 
 
 ?>
