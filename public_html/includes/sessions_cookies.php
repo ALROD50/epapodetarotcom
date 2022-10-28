@@ -164,6 +164,21 @@ if(isset($_POST['enviacadastrar'])) {
         }
     // Captcha ###############################################################
 
+    // Não permite menor de idade
+    $nascimento = $data_nascimento;
+    // Separando yyyy, mm, ddd
+    list($ano, $mes, $dia) = explode('-', $nascimento);
+    // Data atual
+    $hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
+    // Descobre a unix timestamp da data de nascimento do fulano
+    $nascimento = mktime( 0, 0, 0, $mes, $dia, $ano);
+    // Idade 
+    $idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
+    if ($idade < 18) { 
+      $erros++;
+      $idadev="Não é permitido menos de 18 anos"; 
+    } else { $idadev = null; }
+
     // Nome e Sobrenome Teste
     $nome = preg_replace("/[][><}{)(:;,!?*%~^`&#@]/", "", $nome);
     $regex = "/^[A-zÀ-ú]{2,}\ [A-zÀ-ú]{2,}/";
@@ -223,6 +238,7 @@ if(isset($_POST['enviacadastrar'])) {
         if (!empty($senhav)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Senha vazio, por favor preencha a senha corretamente.'</script>"; }
         if (!empty($whatsappv)) { echo"<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Telefone vazio, por favor preencha o celular corretamente'</script>"; }
         if (!empty($captchav)) { echo"<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=You are not a human.'</script>"; }
+        if (!empty($idadev)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=$idadev'</script>"; }
 
     } else {
 
