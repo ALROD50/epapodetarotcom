@@ -3,7 +3,7 @@ $regex = "^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\
 $nome = "Alexandre Rodrigues";
 $resultado = preg_match($regex, $nome);
 
-if ($resultado === true) { 
+if ($resultado == true) { 
   echo "true"; 
 } else { 
   echo "false";
