@@ -217,7 +217,7 @@ if(isset($_POST['enviacadastrar'])) {
     // Se tiver mais de um erro mostra a mensagem de erro
     if($erros >= 1) {
 
-        if (!empty($nomev)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Nome de usuário ou senha inválidos!'</script>"; }
+        if (!empty($nomev)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=$nomev'</script>"; }
         if (!empty($emailv)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=E-mail vazio, por favor preencha o e-mail corretamente.'</script>"; }
         if (!empty($emailv2)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=Por favor, digite seu <b>E-mail</b> corretamente.'</script>"; }
         if (!empty($emailv3)) { echo "<script>document.location.href='https://www.epapodetarot.com.br/$URLSESSAO/?msge=E-mail <b>$email</b> ja existe no sistema!'</script>"; }
