@@ -9,6 +9,7 @@ if ($resultado) {
 }
 
 echo "<br>";
+echo "<hr>";
 
 echo $resultado;
 
