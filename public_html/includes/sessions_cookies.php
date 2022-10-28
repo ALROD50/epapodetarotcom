@@ -165,12 +165,13 @@ if(isset($_POST['enviacadastrar'])) {
     // Captcha ###############################################################
 
     // Nome e Sobrenome Teste
-    // $regex = "^(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*(?: (?:(?:e|y|de(?:(?: la| las| lo| los))?|do|dos|da|das|del|van|von|bin|le) )?(?:(?:(?:d'|D'|O'|Mc|Mac|al\-))?(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+|(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+(?:\-(?:[\p{Lu}&&[\p{IsLatin}]])(?:(?:')?(?:[\p{Ll}&&[\p{IsLatin}]]))+)*))+(?: (?:Jr\.|II|III|IV))?$";
-    // preg_match_all($regex, $nome, $resultado);
-    // if (empty($_POST['nome'])) { 
-    //   $erros++;
-    //   $nomev="Nome vazio, por favor preencha o nome corretamente."; 
-    // } else { $nomev = null; }
+    $nome = preg_replace("/[][><}{)(:;,!?*%~^`&#@]/", "", $nome);
+    $regex = "/^[A-zÀ-ú]{2,}\ [A-zÀ-ú]{2,}/";
+    $resultado = preg_match($regex, $nome);
+    if (!$resultado) { 
+      $erros++;
+      $nomev="Por favor preencha o nome e sobrenome corretamente."; 
+    } else { $nomev = null; }
 
     // Verifica se e-mail ja existe no sistema
     if (!empty($_POST['email']) ) { // se o campo e-mail estiver vazio não faz verificação
