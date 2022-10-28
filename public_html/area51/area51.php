@@ -1,6 +1,6 @@
 <?php 
 // Data de nascimento
-$data_nascimento = "07-08-1986";
+$data_nascimento = "03-06-1969";
 $nascimento   = date("Y-m-d", strtotime("$data_nascimento"));
 // Separando yyyy, mm, ddd
 list($ano, $mes, $dia) = explode('-', $nascimento);
