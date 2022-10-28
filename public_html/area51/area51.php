@@ -1,5 +1,5 @@
 <?php 
-$regex = "/^[a-z]{2,}\ [a-z]{2,}/";
+$regex = "/^[A-zÀ-ú]{2,}\ [A-zÀ-ú]{2,}/";
 $nome = "andreia Silva";
 $resultado = preg_match($regex, $nome);
 
