@@ -175,7 +175,6 @@ if(isset($_POST['enviacadastrar'])) {
 
     // Verifica se e-mail ja existe no sistema
     if (!empty($_POST['email']) ) { // se o campo e-mail estiver vazio não faz verificação
-
       $sqlmail = $pdo->query("SELECT * FROM clientes WHERE email ='$email' ");
       if ($sqlmail->rowCount() >= 1){
         $erros++;

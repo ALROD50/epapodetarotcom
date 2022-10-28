@@ -1,17 +1,8 @@
 <?php 
-$regex = "/^[A-zÀ-ú]{2,}\ [A-zÀ-ú]{2,}/";
-$nome = "alexandre rodrigues";
-$resultado = preg_match($regex, $nome);
-
-if (!$resultado) { 
-  echo "true"; 
-} else { 
-  echo "false";
-}
-
-echo "<pre>";
-var_dump($resultado);
-echo "</pre>";
+$nascimento = date("Y-m-d", strtotime("07-08-1986"));
+$hoje = date("Y-m-d");
+$idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
+echo $idade;
 
 
 ?>
