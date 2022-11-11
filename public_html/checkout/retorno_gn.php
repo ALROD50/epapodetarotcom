@@ -190,25 +190,6 @@ if ($status_atual_da_cobranca == "PAGO") {
         EnviarEmail($memaildestinatario, $mnomedestinatario, $massunto, $mmensagem);
         ###################### EMAIL ##############################
     }
-
-    ###################################################################
-    $seuemail = "logs@novasystems.com.br";
-    $assunto  = "Retorno Gerencianet É Papo de Tarot";
-    /*Configuramos os cabe?alhos do e-mail*/
-    $headers  = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: logs@novasystems.com.br \r\n";
-    /*Configuramos o conte?do do e-mail*/
-    $conteudo = "Status na Gerencianet: <b>$status_compra</b><br>";
-    $conteudo .= "Pagamento atualizado para: <b>$statusDois</b><br>";
-    $conteudo .= "ID Cobrança: <b>$id_cobranca</b><br>";
-    $conteudo .= "Valor Pago Gerencianet - <b>$valor_pago_gn</b><br>";
-    $conteudo .= "$cliente_nome - $cliente_email<br>";
-    $conteudo .= "<br>";
-    $conteudo .= "É Papo de Tarot<br>";
-    /*Enviando o e-mail...*/
-    $enviando = mail($seuemail, $assunto, $conteudo, $headers);
-    ###################################################################
 }
 
 echo "Ok";

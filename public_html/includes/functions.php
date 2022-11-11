@@ -321,6 +321,8 @@ function datediff($interval, $datefrom, $dateto, $using_timestamps = false) {
   n - Number of full minutes
   s - Number of full seconds (default)
   */
+
+  $months_difference="";
   
   if (!$using_timestamps) {
       $datefrom = strtotime($datefrom, 0);
