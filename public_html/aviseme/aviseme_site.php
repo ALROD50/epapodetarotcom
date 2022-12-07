@@ -113,7 +113,7 @@ if ($cliente_online == 'positivo'){
         /*Configuramos os cabeçalho do e-mail*/
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
-        $headers .= "From: É Papo de Tarot epapodetarot@gmail.com \r\n";
+        $headers .= "From: epapodetarot@gmail.com \r\n";
         $headers .= "Reply-To: epapodetarot@gmail.com \r\n";
         // $headers .= "BCC: logs@novasystems.com.br";
         /*Configuramos o conte?do do e-mail*/
